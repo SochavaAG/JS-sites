@@ -1,0 +1,53 @@
+@font-face {
+  font-family: uruana;
+  src:  url(../fonts/uruana/uruana.eot);
+  src:  url(../fonts/uruana/uruana.eot#iefix) format('embedded-opentype'),
+  url(../fonts/uruana/uruana.ttf) format('truetype'),
+  url(../fonts/uruana/uruana.woff) format('woff'),
+  url(../fonts/uruana/uruana.svg#uruana) format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+[class*=" uruana-icon-"],[class^=uruana-icon-] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: uruana !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.uruana-icon-account:before {
+  content: "\e900";
+}
+.uruana-icon-cart:before {
+  content: "\e901";
+}
+.uruana-icon-email:before {
+  content: "\e902";
+}
+.uruana-icon-map:before {
+  content: "\e903";
+}
+.uruana-icon-mobile:before {
+  content: "\e904";
+}
+.uruana-icon-quickview:before {
+  content: "\e905";
+}
+.uruana-icon-search:before {
+  content: "\e906";
+}
+.uruana-icon-setting:before {
+  content: "\e907";
+}
+.uruana-icon-wishlist:before {
+  content: "\e908";
+}

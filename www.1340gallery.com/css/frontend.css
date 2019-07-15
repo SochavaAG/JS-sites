@@ -1,0 +1,433 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+
+@font-face {
+			font-family: "HelveticaRegular";
+			src: url("../../fonts/HelveticaRegular/HelveticaRegular.eot");
+			src: url("../../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+			url("../../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+			url("../../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+}
+
+body {
+	background: #fff !important;
+}
+
+.kayzp_form_wrap{
+	width: 100%;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+.kayzp_step1,
+.kayzp_step2,
+.kayzp_step3,
+.kayzp_step1-0,
+.kayzp_step1-1,
+.kayzp_step2-1,
+.kayzp_step2-2,
+.kayzp_step2-3{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	transition: all .5s;
+	border: 1px solid #dcdcdc;
+    padding: 0px 60px 20px 60px;
+    margin-bottom: 30px;
+}
+
+.kayzp_error{
+	margin: 5px 0;
+	color: red;
+}
+
+
+.kayzp_logo{
+	max-width: 1300px;
+    margin: 20px auto;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 30px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+p.kayzp_title{
+	color: #595d64;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0;
+	font-family: "HelveticaRegular",sans-serif;
+}
+
+.kayzp_step3{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	font-size: 25px;
+}
+.kayzp_step3 span{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.kayzp_step3 .fa{
+	font-size: 45px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.kayzp_form_wrap input,
+.kayzp_form_wrap select{
+	color: #595d64 !important;
+	background: #fff !important;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	padding: 0.7em;
+	width: 100%;
+	font-family: 'Lato';
+}
+
+.kayzp_form_wrap input:focus,
+.kayzp_form_wrap select:focus{
+	color: #222;
+	border-color: #333;
+}
+
+.kayzp_form_wrap label{
+	color: #595d64;
+	display: block;
+	font-weight: 400;
+	width: 100%;
+	font-family: "HelveticaRegular",sans-serif;
+}
+
+.kayzp_form_wrap label input,
+.kayzp_form_wrap label select{
+	margin-top: 10px;
+}
+
+#kayzp_avatar{
+	display: none;
+}
+
+.kayzp_work{
+	margin-bottom: 30px;
+}
+
+.kayzp_work .kayzp_input_group{
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-align: left;
+	
+}
+
+.kayzp_work .kayzp_input_group span{
+	display: block;
+	width: 100%;
+	font-family: 'Lato';
+    color: #595d64;
+}
+
+.kayzp_avatar_upload{
+	width: 250px;
+	height: 250px;
+	background: #f3f3f3;
+	cursor: pointer;
+	margin: 20px auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+}
+
+.kayzp_avatar_upload .fa.fa-camera{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.kayzp_input_group{
+	display: -webkit-flex ;
+	display: flex ;
+	-webkit-align-items: center ;
+	align-items: center ;
+	-webkit-justify-content: space-between ;
+	justify-content: space-between ;
+	margin: 10px 0;
+}
+
+.kayzp_input_group.kayzp_2inputs input{
+	width: calc(100% - 5px);
+}
+
+.kayzp_form_wrap button{
+	max-width: 376px;
+    width: 100%;
+	background-color: #000;
+	border: 0;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1;
+	margin: 0 auto;
+	text-shadow: none;
+	-webkit-transition: background 0.2s;
+	transition: background 0.2s;
+	margin-top: 25px;
+	font-family: "HelveticaRegular",sans-serif;
+	height: 40px;
+}
+
+.kayzp_form_wrap button:hover{
+	background: #808080;
+}
+
+.kayzp_input_group textarea{
+	width: 100%;
+}
+
+
+.kayzp_step2,
+.kayzp_step3,
+.kayzp_step1-0,
+.kayzp_step1-1,
+.kayzp_step2-1,
+.kayzp_step2-2,
+.kayzp_step2-3{
+	display: none;
+}
+
+
+.kayzp_input_group>p{
+	display: flex;
+	display: -webkit-flex;
+	margin: 20px 0;
+	width: 100%;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.kayzp_input_group>p span:nth-child(2){
+	margin: 0 10px;
+}
+
+.kayzp_work  .kayzp_input_group>p>span{
+	display: flex;
+	display: -webkit-flex;
+	width: 100px;
+}
+
+.kayzp_work  .kayzp_input_group>p>span input{
+	margin-left: 10px;
+}
+
+.kayzp_input_group.kayzp_2inputs input:focus {
+	box-shadow: 0 0 5px rgba(89,93,100,.75) !important;
+	border: 1px solid #cfd4d8 !important;
+}
+
+.kayzp_input_group input:focus {
+	box-shadow: 0 0 5px rgba(89,93,100,.75) !important;
+	border: 1px solid #cfd4d8 !important;
+}
+
+.kayzp_input_group textarea:focus {
+	box-shadow: 0 0 5px rgba(89,93,100,.75) !important;
+	border: 1px solid #cfd4d8 !important;
+}
+
+.kayzp_input_group input {
+	font-size: 14px;
+}
+
+.kayzp_step3.bg-gray {
+	background: #EDEFF0;
+    padding: 15px;
+    font-family: 'Lato';
+    text-align: center;
+}
+
+.kayzp_logo img {
+	display: block;
+	margin: 0 auto;
+}
+
+.kayzp_next_step_btn.kayzp_register_btn.par-2 {
+	max-width: 480px;
+}
+
+.kayzp_title.register-2.par-3 {
+	padding-bottom: 10px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.text-form {
+	font-size: 11px;
+    margin-top: 40px;
+    text-align: center;
+    color: #595d64;
+   	font-family: "HelveticaRegular",sans-serif;
+    border-top: 1px solid #dcdcdc;
+    padding-top: 20px;
+}
+
+.text-form a {
+	color: #49a2d1 !important;
+}
+
+.text-33 {
+	text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-family: "Crimson Text",serif;
+}
+
+.background-rgba {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	display: none;
+	justify-content: center;
+	width: 100%;
+	background: #fff;
+	opacity: 0.5;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 780px;
+}
+
+.background-rgba img {
+	width: 100px;
+    height: 100px;
+    margin-top: 60%;
+}
+
+
+.text-two-form {
+	font-family: "Crimson Text",serif;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.file-photo {
+	padding: 40px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    will-change: background;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rell-pos {
+	position: relative;
+}
+
+.text-y {
+	font-family: "Lato";
+	font-weight: bold;
+}
+
+.pos-abb {
+	height: 100px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fa.fa-camera {
+	cursor: pointer;
+	display: block;
+    font-size: 120px;
+    margin: 20px 0;
+    color: #dcdcdc;
+}
+
+.tex-teria {
+	background: #fff;
+}
+
+.kayzp_step1-1 textarea {
+	margin-top: 10px;
+	height: 300px;
+}
+
+.kayzp_title.register-2.par-3.min-text {
+	border-bottom: none;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.thank-you {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.thank-text {
+	font-size: 16px;
+}
+
+#avatar_src{
+	margin: 20px 0;
+	border: 1px solid #ddd;
+	display: none;
+}
+
+.kayzp_skin_btn2.kayzp_register_btn.par-2,
+.kayzp_skin_btn3.kayzp_register_btn.par-2 {
+	background: none;
+	color: #000;
+	font-style: italic;
+    text-transform: capitalize;
+}
+
+.kayzp_skin_btn2.kayzp_register_btn.par-2:hover {
+	color: #808080;
+}
+
+.kayzp_skin_btn3.kayzp_register_btn.par-2:hover {
+	color: #808080;
+}
+
+@media all and (max-width: 450px){
+	.text-33{
+		font-size: 38px;
+	}
+}

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <!--<base href="http://mediaaim.ru/"/>-->
+  <meta name='yandex-verification' content='4e8518679ce2106b'/>
+  <meta name="google-site-verification" content="MZ2WdAQZ-6BIfopke60oJPyJuKV6w5knCTPiOVGX3xg"/>
+  <meta name="description" content="Разработка и обслуживание сайтов. Современные технологии и красивый дизайн от 7000 рублей."/>
+  <meta name="keywords" content="Создать сайт, сделать интернет-магазин, создание корпоративного сайта, сайт-визитка, сделать сайт, заказать сайт, веб-студия"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" Content="ru">
+
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+
+  <link rel="stylesheet" href="css/styler.css" type="text/css"/>
+  <link rel="stylesheet" href="css/popup.css" type="text/css"/>
+  <link rel="stylesheet" href="css/form-popup.css" type="text/css"/>
+  <link rel="stylesheet" media="only screen and (min-width: 1250px) and (max-width: 1490px)" type="text/css" href="css/style1330.css"/>
+  <link rel="stylesheet" media="only screen and (min-width: 980px) and (max-width: 1250px)" type="text/css" href="css/style1024.css"/>
+  <link rel="stylesheet" media="only screen and (min-width: 210px) and (max-width: 979px)" type="text/css" href="css/style768.css"/>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK5JY04JQnyZnfwJ2KNoKcetYuCjcqKFw"></script>
+
+  <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 15,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(52.602500, 39.575167), // New York
+
+        // How you would like to style the map.
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{"featureType": "all", "elementType": "all", "stylers": [{"saturation": -100}, {"gamma": 0.5}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(52.602500, 39.575167),
+        map: map,
+        title: 'Snazzy!'
+      });
+    }
+  </script>
+
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox-3.5.6.min.css"/>
+  <link rel="stylesheet" href="css/pnotify.custom.css" type="text/css"/>
+  <link rel="stylesheet" href="css/default.css" type="text/css"/>
+</head>
+
+<body class="glitch-transition">
+<main class="cd-main-content">
+  <div id="wrGrid">
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+    <span class="wrGridLine"></span>
+  </div>
+
+  <div id="hTop">
+    <div id="hTopLogo"><img src="images/logo-media.svg"/>
+      <p>качественные сайты</p></div>
+    <div id="hTopNav">
+      <nav>
+        <ul>
+          <li><a title="Примеры сайтов" class="link--nukun" href="#IndexOutText">Ра<span>бо</span>ты</a></li>
+          <li><a title="Сколько стоит сайт?" class="link--nukun" href="#IndexPrice">Сто<span>имо</span>сть</a></li>
+          <li><a title="Наши преимущства" class="link--nukun" href="#IndexWhyUs">О <span>на</span>с</a></li>
+          <li>
+            <a title="Контакты веб-студии в Одессе" class="link--nukun" onclick="ga('send', 'event', 'contact', 'view');" href="#IndexContact">Кон<span>та</span>кты</a>
+          </li>
+          <li><a title="Создание сайтов в Одесса" class="link--nukun" href="#Index01">На<span>ве</span>рх</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="hTopOrder"><a class="open_popuplight" rel="popuplight">заказать сайт</a></div>
+  </div>
+
+  <!--<div id="hTopSocial">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+  </div>
+  -->
+  <div id="Index01">
+    <div id="IndexSlogan">
+      <img src="images/logo-media.svg">
+      <h1 class="cd-headline loading-bar">
+        <span>Мы не просто разрабатываем сайты, мы</span>
+        <span class="cd-words-wrapper">
+				        <b class="is-visible"> создаем идеи...</b>
+				        <b class="is-hidden"> делаем крутые лендинги</b>
+				        <b class="is-hidden"> делаем любимую работу</b>
+				        <b class="is-hidden"> продвигаем ваши проекты</b>
+				        <b class="is-hidden"> продаем ваш продукт</b>
+				        <b class="is-hidden"> их любим</b>
+			        </span>
+      </h1>
+
+      <p>
+        Мы уверены, что желание разработать сайт у вас не появилось просто так. У вас есть бизнес или увлечение и вы
+        желаете получить больше клиентов или рассказать о себе всем... мы это понимаем и готовы предложить Вам комплекс
+        современных решений.
+      </p>
+
+    </div>
+    <div id="IndexOrder"><a class="open_popuplight" rel="popuplight">заказать сайт</a></div>
+    <div id="IndexVideo">
+      <video autoplay muted poster="" id="bgvid" loop>
+        <source src="video/video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id="IndexTexts">
+      <p>Media</p>
+      <p>Aim</p>
+    </div>
+  </div>
+
+  <div class="IndexFormFile">
+    <p>У вас уже есть техническое задание? Отправьте нам его для рассчета стоимости</p>
+    <form class="ajax_form" action="" method="post" id="FormIndex" enctype="multipart/form-data">
+
+      <input type="hidden" name="nospam:blank" value="">
+      <input type="text" class="text" placeholder="Ваше имя" name="yourname" id="yourname" value="">
+      <input type="tel" class="text" placeholder="Телефон" name="yourphone" id="yourphone2" value="">
+      <label for="myfile" class="chous">Прикрепить файл</label>
+      <input type="file" class="my" id="myfile" name="myfile" multiple="multiple" value="">
+
+      <input type="submit" class="SubmitClose" value="Отправить">
+
+      <input type="hidden" name="af_action" value="b997cd7ea076ed4b389b14a1b8892302"/>
+    </form>
+  </div>
+
+  <div id="IndexOurWork">
+    <div id="IndexOutText"><p>2019</p></div>
+    <h2>Ниже представлены некоторые<br/> свежие работы за <span>2019</span> год.</h2>
+
+    <div class="IndexOurWorkBl">
+
+      <div class="IndexOurWorkBlImg">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/1.jpg" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/1.1.jpg" width=770 height=435>
+            </a>
+            <div class="project__detail">
+              <h2 class="project__title">TRUSTLIFE</h2>
+              <small class="project__category">Накопительное страхование. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="IndexOurWorkBlImgR">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/2.jpg" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/2.1.jpg" width=770 height=435>
+            </a>
+            <div class="project__detail">
+              <h2 class="project__title">СПРУТ</h2>
+              <small class="project__category">Автомобильные лебедки. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="IndexOurWorkBl">
+
+      <div class="IndexOurWorkBlImg">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/3.jpg" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/3.1.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">INTBOARD</h2>
+              <small class="project__category">Интерактивное оборудование. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="IndexOurWorkBlImgR">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/4.jpg" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/4.1.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">NAYUTA</h2>
+              <small class="project__category">Бизнес-сеть, оздоровительные препараты. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="IndexOurWorkBl">
+
+      <div class="IndexOurWorkBlImg">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/5.jpg" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/5.1.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">НАШ ОТВЕТ</h2>
+              <small class="project__category">Боксерский клуб. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="IndexOurWorkBlImgR">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/10.png" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/10.1.png" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">EUROTOUR</h2>
+              <small class="project__category">Пассажирские перевозки. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="IndexOurWorkBl">
+
+      <div class="IndexOurWorkBlImg">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/9.jpg" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/9.1.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">ТРЕНИНГ №3</h2>
+              <small class="project__category">Саморазвитие и презентация. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="IndexOurWorkBlImgR">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/new/8.jpg" title="Разработка сайта" class="project__image">
+              <img alt="Разработка сайта" title="Разработка сайта" src="images/works/new/8.1.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">ОБУВЬ</h2>
+              <small class="project__category">Распродажа. Лэндинг</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="IndexOurWorkBl">
+
+      <div class="IndexOurWorkBlImg">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/01_oldschool.png" title="Разработка сайта для барбершопа Oldschool" class="project__image">
+              <img alt="Разработка сайта для барбершопа Oldschool" title="Разработка сайта для барбершопа Oldschool" src="images/works/01.1_oldschool.png" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">Oldschool</h2>
+              <small class="project__category">Разработка сайта для барбершопа Oldschool</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="IndexOurWorkBlImgR">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/02_salem.jpg" title="Создание сайта-визитки для тату-школы Salem" class="project__image">
+              <img alt="Создание сайта-визитки для тату-школы Salem" title="Разработка сайта для барбершопа Oldschool" src="images/works/02.1_salem.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">Salem</h2>
+              <small class="project__category">Создание сайта-визитки для тату-школы Salem</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="IndexOurWorkBl">
+
+      <div class="IndexOurWorkBlImg">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/03_suitsu.jpg" title="Создание сайта онлайн-маркетплейса" class="project__image">
+              <img alt="Создание сайта онлайн-маркетплейса" title="Создание сайта онлайн-маркетплейса" src="images/works/03.1_suitsu.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">Suitsu</h2>
+              <small class="project__category">Создание сайта онлайн-маркетплейса</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="IndexOurWorkBlImgR">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/04_aktiv.jpg" title="Создание сайта Финансовой Академии “Актив”" class="project__image">
+              <img alt="Создание сайта Финансовой Академии “Актив”" title="Создание сайта Финансовой Академии “Актив”" src="images/works/04.1_aktiv.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">Актив</h2>
+              <small class="project__category">Создание сайта Финансовой Академии “Актив”</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="IndexOurWorkBl">
+
+      <div class="IndexOurWorkBlImg">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/05_matilda.jpg" title="Оптимизация сайта интернет-магазина Matilda" class="project__image">
+              <img alt="Оптимизация сайта интернет-магазина Matilda" title="Оптимизация сайта интернет-магазина Matilda" src="images/works/05.1_matilda.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">Matilda</h2>
+              <small class="project__category">Оптимизация сайта интернет-магазина Matilda</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="IndexOurWorkBlImgR">
+        <div class="project">
+          <div class="project__card">
+            <a data-fancybox="gallery" href="images/works/06_iptel.jpg" title="Разработка сайта для IPTEL" class="project__image">
+              <img alt="Разработка сайта для IPTEL" title="Разработка сайта для IPTEL" src="images/works/06.1_iptel.jpg" width=770 height=435></a>
+            <div class="project__detail">
+              <h2 class="project__title">IPTEL</h2>
+              <small class="project__category">Разработка сайта для IPTEL</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <div class="IndexFormCool">
+    <div class="IndexFormCoolL">
+      <h3>Давайте сделаем для вас крутой сайт визитку!</h3>
+      <span>Просто заполните форму, и наш специалист свяжется с вами в течение 10 минут</span>
+      <ul>
+        <li>обсудим условия работы и пожелания по реализации</li>
+        <li>сформируем цели и задачи проекта</li>
+        <li>предложим идеи</li>
+        <li>сориентируем по срокам</li>
+        <li>озвучим точную стоимость работ</li>
+      </ul>
+    </div>
+    <div class="IndexFormCoolR">
+      <form class="ajax_form" action="" method="post" id="FormCool">
+
+        <input type="hidden" name="nospam:blank" value="">
+        <label for="yourname1" class="coolLabel">Как к вам обращаться?</label>
+        <input type="text" class="text" placeholder="Ваше имя" name="yourname" id="yourname1" value="">
+        <label for="yourphone1" class="coolLabel">Номер телефона для связи</label>
+        <input type="tel" class="text" placeholder="Номер телефона" name="yourphone" id="yourphone1" value="">
+        <label for="youremail1" class="coolLabel">Куда выслать КП?</label>
+        <input type="mail" class="text" placeholder="Ваш e-mail" name="youremail" id="youremail1" value="">
+
+
+        <input type="submit" class="SubmitClose" value="Обсудить проект">
+        <!--<span>я согласен с политикой конфиденцальности</span>-->
+
+
+        <input type="hidden" name="af_action" value="2be9cb03c36a907c4d6747032c9df30f"/>
+      </form>
+    </div>
+  </div>
+
+  <div id="IndexPartners">
+    <h2>Наши партнеры</h2>
+    <div class="IndexPartnersWr">
+      <div class="IndexPartnersBox">
+        <a href="https://envybox.io/?r=3844&utm_source=infopartner&utm_medium=AlphaWebAgencyr&utm_campaign=logo&utm_term=alphaweb.agency" target="_blank">
+          <img src="img/600.png" alt="Envybox"></a>
+      </div>
+      <div class="IndexPartnersBox">
+        <a href="http://www.amostart.ru/" target="_blank"><img src="img/amocrm-logo-white.svg" alt="amoCRM"></a>
+      </div>
+      <div class="IndexPartnersBox">
+        <a href="https://www.jivochat.ru/" target="_blank"><img src="img/ru-jivo.svg" alt="jivochat"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="IndexPrice" class="tabs">
+    <div id="IndexPriceMenu"><h2>Сколько стоит сайт?</h2>
+      <ul class="tab-links">
+        <li><a title="Узнать о создание лендинга" class="link--takiri" href="#tab2">Лендинг<span>Бюджетно и круто</span></a>
+        </li>
+        <li><a title="Разработать одностраничный сайт" class="link--takiri" href="#tab3">Одностраничный сайт<span>Быстро и эффективно</span></a>
+        </li>
+        <li><a title="Цены на сайт визитку" class="link--takiri" href="#tab4">Сайт-визитка<span>Нужны клиенты и партнеры?</span></a>
+        </li>
+        <li><a title="Хотите интернет магазин?" class="link--takiri" href="#tab5">Интернет-магазин<span>Продавайте через интернет</span></a>
+        </li>
+        <li><a title="Верстка сайтов" class="link--takiri" href="#tab6">Из PDF в HTML<span>Сделаем сайт из макета</span></a>
+        </li>
+        <li><a title="Разработка прототипа сайта" class="link--takiri" href="#tab7">Прототипирование<span>Не знаете с чего начать?</span></a>
+        </li>
+      </ul>
+    </div>
+    <div id="IndexPriceInfo">
+      <div class="tab-content">
+        <div id="tab1" class="tab active">
+          <p>
+            Наверное, самый популярный вопрос, сколько же стоит сделать у нас сайт.
+            И конечно же мы могли бы ответить самым популярным ответом: "Все зависит от сайта".
+            Делать мы такого не будем, ведь у нас есть минимальный прайс наших услуг. Слева вы можете выбрать тип сайта
+            и получить цену "от".
+            В стоимость входит все, да, мы делаем только сайты "под ключ", никаких исправлений в чужих работах.
+            Только качественные сайты, в разработке которых мы разбираемся.
+          </p>
+        </div>
+        <div id="tab2" class="tab Abouttab">
+          <h4>Мини-лендинг</h4>
+          <h5>от 7000 руб</h5>
+          <p>В стоимость входит</p>
+          <ul>
+            <li>Уникальный дизайн</li>
+            <li>Лендинг на 1 экран</li>
+            <li>Почтовая форма</li>
+            <li>Почта вида @ваш_сайт</li>
+            <li>Подключение метрики и аналитики</li>
+            <li>Помощь в настройке контекстной рекламы</li>
+            <li>1 месяц обслуживания сайта</li>
+            <li>Хостинг</li>
+            <li>Наши интересные идеи</li>
+          </ul>
+        </div>
+        <div id="tab3" class="tab Abouttab">
+          <h4>Стоимость разработки леднинга</h4>
+          <h5>от 12000 руб</h5>
+          <p>В стоимость входит</p>
+          <ul>
+            <li>Уникальный дизайн</li>
+            <li>Почтовая форма</li>
+            <li>Почта вида @ваш_сайт</li>
+            <li>Подключение метрики и аналитики</li>
+            <li>Помощь в настройке контекстной рекламы</li>
+            <li>2 месяца обслуживания сайта</li>
+            <li>Хостинг</li>
+            <li>Доменное имя в зоне ru/com</li>
+            <li>Наши интересные идеи</li>
+          </ul>
+        </div>
+        <div id="tab4" class="tab Abouttab">
+          <h4>Крутой сайт для вашей фирмы</h4>
+          <h5>от 10000 руб</h5>
+          <p>В стоимость входит</p>
+          <ul>
+            <li>Уникальный дизайн</li>
+            <li>Заполнение страниц вашим текстом</li>
+            <li>Подключение метрики и аналитики</li>
+            <li>1 месяц обслуживания сайта</li>
+            <li>Хостинг</li>
+            <li>Доменное имя в зоне ru/com</li>
+            <li>Наши интересные идеи</li>
+          </ul>
+        </div>
+        <div id="tab5" class="tab Abouttab">
+          <h4>Интернет магазин по супер цене</h4>
+          <h5>от 15000 руб</h5>
+          <p>В стоимость входит</p>
+          <ul>
+            <li>Уникальный дизайн</li>
+            <li>50 страниц с товаром</li>
+            <li>Подключение метрики и аналитики</li>
+            <li>1 месяц обслуживания сайта</li>
+            <li>Хостинг</li>
+            <li>Доменное имя в зоне ru/com</li>
+            <li>Наши интересные идеи</li>
+          </ul>
+        </div>
+        <div id="tab6" class="tab Abouttab">
+          <h4>цена за 1 страницу</h4>
+          <h5>от 350 руб</h5>
+          <p>В стоимость входит</p>
+          <ul>
+            <li>Современная верстка</li>
+            <li>Подключение всех скриптов</li>
+            <li>Демонстрация верстки на нашем хостинге</li>
+          </ul>
+        </div>
+        <div id="tab7" class="tab Abouttab">
+          <h4>цена за 1 уникальный прототип</h4>
+          <h5>от 1300 руб</h5>
+          <p>В стоимость входит</p>
+          <ul>
+            <li>Написание текста</li>
+            <li>Подбор изображений (бесплатных или из фотостока)</li>
+            <li>Пртотип мобильной версии сайта</li>
+            <li>Разработка 3 вариантов прототипа</li>
+            <li>Описание блоков и рекомендации</li>
+            <li>Архив с демонстрацией прототипа в формате HTML</li>
+            <li>Разработка прототипа в Axure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="IndexFormWhy">
+    <p>У вас есть идея? Мы поможем ее реализовать!</p>
+    <span>Вам нужно лишь оставить заявку</span>
+    <form class="ajax_form" action="" method="post" id="FormWhy">
+
+      <input type="hidden" name="nospam:blank" value="">
+      <input type="text" class="text" placeholder="Ваше имя" name="yourname" id="yourname" value="">
+      <input type="tel" class="text" placeholder="Телефон" name="yourphone" id="yourphone" value="">
+      <input type="submit" class="SubmitClose" value="Обсудить проект">
+
+      <span>Нажав на кнопку, я даю согласие на <a>обработку персональных данных</a></span>
+
+
+      <input type="hidden" name="af_action" value="4cf34c31e6e1723a0e26e19bb2183712"/>
+    </form>
+  </div>
+
+  <div id="IndexWhyUs">
+    <div id="IndexWhyUsH"><h2>Почему мы?</h2></div>
+    <p>
+      Наш восьмилетний опыт разработки сайтов и профессионализм сотрудников способен осуществить любую поставленную Вами
+      задачу.
+      Мы создаем корпоративные сайты и сайты для продаж (лендинги) с индивидуальным дизайном и структурой сайта, с
+      учетом пожеланий клиента и тематической особенности проекта.
+      Кроме того, мы занимаемся SEO продвижением проектов, продвижением групп в социальных сетях, а также контекстной
+      рекламой.
+      После завершения проекта Вы сможете самостоятельно изменять любую информацию на сайте с помощью удобной панели
+      администрирования.
+    </p>
+    <div id="IndexWhyUsWrF">
+      <div class="IndexWhyUsBl"><h5>Цена</h5>
+        <p>Мы постоянно работаем над оптимизацией процесса разработки сайта, чтобы минимизировать стоимость при
+          сохранении качества. В основном это разработка и внедрение инструментов, которые нужны нашим клиентам, и,
+          которые не увеличивают стоимость работ по сайту.</p></div>
+      <div class="IndexWhyUsBl"><h5>Гарантия</h5>
+        <p>Все сотрудники и процессы создания сайта находятся под постоянным контролем руководителя проекта. Никакие
+          форс-мажорные обстоятельства не остановят ваш проект! Подкрепит это официальный договор с нами, в котором мы
+          гарантируем стабильную работу сайту как минимум в течение месяца, после сдачи проекта.</p></div>
+      <div class="IndexWhyUsBl"><h5>Проектирование</h5>
+        <p>Мы не любим сюрпризов в работе. Каждый шаг по созданию сайта заранее спланирован и утвержден. Мы предоставим
+          примеры дизайна, прототип структуры сайта, а также контекст. Вы также сможете отслеживать все задачи по своему
+          проекту в режиме он-лайн через наш таск-менеджер.</p></div>
+    </div>
+    <div id="IndexWhyUsWrS">
+      <div class="IndexWhyUsBl"><h5>Профессионализм</h5>
+        <p>8 лет мы разрабатываем сайты с учетом современных технологий и требований поисковых систем. Мы любим
+          разрабатывать сайты правильно: на сайте должно быть интересно пользователю и сайт должен соответствовать всем
+          современным стандартам!</p></div>
+      <div class="IndexWhyUsBl"><h5>Всегда на связи</h5>
+        <p>С вами будет работать один менеджер 7 дней в неделю, да, без выходных! Все вопросы, начиная от советов по
+          созданию сайтов и заканчивая консультацией по использованию разработанного сайта он возьмёт на себя!</p></div>
+      <div class="IndexWhyUsBl"><h5>Обучение</h5>
+        <p>Не просто обучение, а бесплатное обучение нашим квалифицированным сотрудником, который расскажет и покажет
+          все, что вас интересует, а при необходимости запишет видео-инструкцию. Но и это не все, вас ждет наш
+          репозиторий материалов, с помощью которого вы сможете правильно работать с сайтом и даже самостоятельно
+          "продвигать" его.</p></div>
+    </div>
+  </div>
+
+  <div class="IndexFormBus">
+    <div class="IndexFormBusL">
+      <h3>Давайте обсудим Ваш бизнес и найдем эффективное решение для его развития!</h3>
+      <span>Просто заполните форму, и наш специалист свяжется с Вами в течение 10 минут</span>
+      <ul>
+        <li>Обсудим задачу и предложим оптимальное решение</li>
+        <li>Просчитаем стоимость проекта</li>
+        <li>Определим четкие сроки реализации</li>
+      </ul>
+    </div>
+    <div class="IndexFormBusR">
+      <form class="ajax_form" action="" method="post" id="FormBus">
+
+        <input type="hidden" name="nospam:blank" value="">
+        <label for="yourname4" class="coolLabel">Как к Вам обращаться?</label>
+        <input type="text" class="text" placeholder="Ваше имя" name="yourname" id="yourname4" value="">
+        <label for="yourphone4" class="coolLabel">Номер телефона для связи</label>
+        <input type="tel" class="text" placeholder="Номер телефона" name="yourphone" id="yourphone4" value="">
+        <label for="youremail4" class="coolLabel">Куда выслать КП?</label>
+        <input type="mail" class="text" placeholder="Ваш e-mail" name="youremail" id="youremail4" value="">
+
+
+        <input type="submit" class="SubmitClose" value="Обсудить проект">
+        <!--<span>я согласен с политикой конфиденцальности</span>-->
+
+
+        <input type="hidden" name="af_action" value="65d02c00d85c7ba15cdca21e321dcc06"/>
+      </form>
+    </div>
+  </div>
+
+  <div id="IndexContact">
+    <div id="IndexContactImg"><img src="images/index-bg-02.jpg"/></div>
+    <div id="IndexContactH"><h2>Наши контакты</h2></div>
+    <div id="IndexContactInfo">
+      <div id="IndexContactInfoPhone">
+        <h6>телефон</h6>
+        <div id="IndexContactInfoPhoneMob"><p>8 (915) 168-64-64</p><span>Viber WhatsApp</span></div>
+        <!-- <div id="IndexContactInfoPhoneOff"><p></p><span>Многоканальный</span></div> -->
+      </div>
+      <div id="IndexContactInfoMail"><h6>e-mail</h6>
+        <p>info@mediaaim.ru</p></div>
+
+
+    </div>
+  </div>
+
+  <div class="IndexFooter">
+    <span>&#169; 2019. Все права защищены</span>
+  </div>
+</main>
+<div class="cd-modal" id="modal-1">
+  <div id="wrGridC">
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+    <span class="wrGridLineC"></span>
+  </div>
+  <div class="modal-content">
+    <h2>Чтобы заказать сайт вы можете связаться с нами</h2>
+    <div id="ContactPhone">
+      <h3>телефон</h3>
+      <p>8 (915) 168-64-64<br/>WhatsApp<br/>Viber</p>
+    </div>
+    <div id="ContactMail">
+      <h3>e-mail</h3>
+      <p>info@mediaaim.ru</p>
+    </div>
+    <!-- <div id="ContactSkype">
+        <h3>skype</h3>
+        <p>mbox-pro@yandex.ru</p>
+    </div> -->
+    <div id="ContactFullBl"><p>Контактное лицо<span>Кирилл</span></p></div>
+  </div> <!-- .modal-content -->
+
+  <a href="#0" class="modal-close"></a>
+</div> <!-- .cd-modal -->
+<div class="cd-transition-layer" data-frame="25">
+  <div class="bg-layer"></div>
+</div>
+
+
+<link href="https://fonts.googleapis.com/css?family=Khand:500,700|Merriweather+Sans:300,700,800|Oswald:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700i,800|Roboto+Condensed:300,400,700|Roboto:400,500,700,900" rel="stylesheet">
+
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
+<script src="js/jquery/jquery-2.2.0.min.js"></script>
+
+
+<script src="/js/jquery.hover3d.min.js"></script>
+
+<script src="/js/Index.js"></script>
+<script src="/js/modernizr.js"></script> <!-- Modernizr -->
+<script src="/js/main.js"></script> <!-- Resource jQuery -->
+
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>-->
+
+<script src="plugins/fancybox/jquery.fancybox-3.5.6.min.js"></script>
+
+
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+  $(function () {
+    $("#yourphone").mask("8(999) 999-9999");
+    $("#yourphone1").mask("8(999) 999-9999");
+    $("#yourphone2").mask("8(999) 999-9999");
+  });
+</script>
+
+<script>
+  $(document).on('af_complete', function (event, response) {
+    var form = response.form;
+    if (form.attr('id') == 'FormCool' && response.success) {
+      window.location.href = "spasibo!.html"
+    }
+  });
+</script>
+
+<script>
+  $('.my').change(function () {
+    if ($(this).val() != '') $(this).prev().text('Выбрано файлов: ' + $(this)[0].files.length);
+    else $(this).prev().text('Прикрепить файл');
+  });
+</script>
+
+
+<script>
+  $(document).on('af_complete', function (event, response) {
+    var form = response.form;
+    if (form.attr('id') == 'FormBus' && response.success) {
+      window.location.href = "spasibo!.html"
+    }
+  });
+</script>
+
+<script>
+  $(document).on('af_complete', function (event, response) {
+    var form = response.form;
+    if (form.attr('id') == 'FormPopUp' && response.success) {
+      window.location.href = "spasibo!.html"
+    }
+  });
+</script>
+
+<script>
+  $(document).on('af_complete', function (event, response) {
+    var form = response.form;
+    if (form.attr('id') == 'FormIndex' && response.success) {
+      window.location.href = "spasibo!.html"
+    }
+  });
+</script>
+
+<script>
+  $(document).on('af_complete', function (event, response) {
+    var form = response.form;
+    if (form.attr('id') == 'FormWhy' && response.success) {
+      window.location.href = "spasibo!.html"
+    }
+  });
+</script>
+
+<div class="overlaylight"></div>
+<div class="popuplight" id="popuplight"><span class="closepopuplight"></span>
+  <div class="FormPopUpLightTop">
+    <h2>Хотите узнать стоимость?</h2>
+  </div>
+  <h3>Хотите узнать стоимость Landing Page?</h3>
+  <p>Заполните форму и наш специалист свяжется с Вами в течение 10 минут!</p>
+  <div id="FormPopUpLight">
+    <form class="ajax_form" action="" method="post" id="FormPopUp">
+
+      <input type="hidden" name="nospam:blank" value="">
+      <input type="text" class="text" placeholder="Как к Вам обращаться?" name="yourname" id="yourname9" value="">
+      <input type="tel" class="text" placeholder="Номер телефона для связи" name="yourphone" id="yourphone9" value="">
+      <input type="mail" class="text" placeholder="Напишите Ваш e-mail" name="youremail" id="youremail9" value="">
+
+      <input type="submit" class="SubmitClose" value="Расчитать стоимость">
+      <!--<span>я согласен с политикой конфиденцальности</span>-->
+
+
+      <input type="hidden" name="af_action" value="a0eb5fa64cd1508b13a980e7f7de5194"/>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('.open_popuplight').click(function () {
+    var popup_id = $('#' + $(this).attr("rel"));
+    $(popup_id).show();
+    $('.overlaylight').show();
+    return false;
+  });
+
+  $('.popuplight .closepopuplight, .overlaylight').click(function () {
+    $('.overlaylight').hide();
+    $('.popuplight').hide();
+
+    return false;
+  });
+
+  $(document).on('af_complete', function (event, res) {
+    if (res.success) $('.closepopuplight').click();
+  });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99869877-49"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-99869877-49');
+</script>
+-->
+
+<script type="text/javascript" src="js/pnotify.custom.js"></script>
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript" src="js/ajaxform-default.js"></script>
+
+<script type="text/javascript">
+  AjaxForm.initialize({
+    "assetsUrl": "\/assets\/components\/ajaxform\/",
+    "actionUrl": "\/assets\/components\/ajaxform\/action.php",
+    "closeMessage": "\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435",
+    "formSelector": "form.ajax_form",
+    "pageId": 1
+  });
+</script>
+</body>
+</html>

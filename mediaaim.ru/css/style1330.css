@@ -1,0 +1,53 @@
+
+
+#hTopLogo h6 {font-size: 26px;}
+#hTopLogo p {font-size: 14px;}
+
+#hTopOrder a {height: 50px; line-height: 50px;}
+
+#IndexSlogan {position: relative; overflow: hidden; margin-left: 22.4vw; width: 40.0vw; top: 20%; z-index: 10;}
+#IndexSlogan h6 {position: relative; width: 100%; margin-bottom: 40px;}
+#IndexSlogan h6 span {font-size: 6.66vw; line-height: 9.0vw; font-weight: bold; border-bottom: 10px solid #f41d07; margin-bottom: 10px; position: relative; display: inline-block; color: #f41d07;}
+#IndexSlogan p {font-size: 18px; line-height: 38px; margin-left: 2px; font-family: 'Open Sans', sans-serif; width: 34vw;}
+#IndexSlogan p span {position: relative; font-family: 'Open Sans', sans-serif; overflow: hidden; width: 100%; margin-bottom: 30px; display: block; color: #34495e; font-family: 'Lato', sans-serif; font-size: 18px; font-weight: bold;}
+
+
+#IndexOurWork h2 {font-size: 40px;}
+#IndexOutText p {font-size: 20vmax; margin-left: 18.0vw;}
+.IndexOurWorkBlInfo p {font-size: 14px; font-weight: 900;}
+
+#IndexPriceMenu h2 {font-size: 34px;}
+#IndexPriceInfo {width: 36.7vw;}
+#IndexPriceInfo p {margin: 50px 60px; font-size: 18px; line-height: 32px;}
+
+
+.tabs .Abouttab h5 {font-size: 40px; margin-left: 9.4vw; margin-bottom: 20px; margin-top: 40px;}
+#IndexPriceInfo .Abouttab p {margin: 0px; margin-left: 11.4vw; font-size: 18px; padding-bottom: 2px; border-bottom: 4px solid #2c3e50;}
+.tabs .Abouttab ul {margin-left: 6vw; margin-top: 20px; padding-bottom: 60px;}
+.tabs .Abouttab ul li {font-size: 14px; line-height: 20px; margin-bottom: 10px;}
+
+.tabs .tab h4 {position: absolute; padding-bottom: 2px; line-height: 22px; text-transform: uppercase; font-size: 22px; display: block; font-weight: bold; transform: rotate(90deg); transform-origin: left top 0; float: right; left: 33.8vw; top: 0px; border-bottom: 4px solid #f41d07; color: #f41d07; width: 350px;}
+
+
+#IndexContactImg {margin-left: 11.11vw; width: 34.1vw; height: 70vh;}
+#IndexContactH {top: 10vh; left: 33.8vw;}
+#IndexContactH h2 {font-size: 6.6vw;}
+#IndexContactInfo {position: absolute; top: 30vh; left: 56.6vw; }
+
+
+
+/* Nukun */
+.link--nukun {font-size: 20px; padding: 7px 0; -webkit-transition: color 0.3s; transition: color 0.3s; position: relative; display: inline-block; line-height: 1;}
+
+/* Takiri */
+.link--takiri {color: #646669; font-size: 34px;}
+
+
+.cd-modal .modal-content h2 {margin-left: 11.3vw; text-transform: uppercase; margin-top: 10%; color: #fff; font-size: 3.2vw; font-weight: bold; display: inline-block; position: relative; padding-bottom: 4px; border-bottom: 4px solid #fff;}
+
+#ContactPhone {margin-left: 22.7vw;}
+#ContactMail {margin-left: 0.4vw;}
+#ContactSkype {margin-left: 11.7vw;}
+#ContactFullBl p {margin-left: 22.6vw; font-size: 3vw;}
+
+

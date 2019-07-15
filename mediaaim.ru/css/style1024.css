@@ -1,0 +1,121 @@
+
+#hTop {width: 16vw;}
+
+#hTopLogo h6 {font-size: 20px;}
+#hTopLogo p {font-size: 14px;}
+
+#hTopOrder a {height: 40px; line-height: 40px; font-size: 14px;}
+
+#hTopSocial a {width: 30px; height: 30px; margin: 2px;}
+#hTopSocial a:nth-child(3) {background: url(/img/YouTube-64.png) center center no-repeat; background-size: 30px auto;}
+#hTopSocial a:nth-child(2) {background: url(/img/Instagram-50.png) center center no-repeat; background-size: 24px auto;}
+#hTopSocial a:nth-child(1) {background: url(/img/Facebook-50.png) center center no-repeat; background-size: 24px auto;}
+
+#IndexSlogan {margin-left: 16vw !important; width: 46vw;}
+#IndexSlogan h1 {position: relative; width: 100%; margin-bottom: 40px;}
+#IndexSlogan h1 span {font-size: 3vw; line-height: 5vw; font-weight: bold; border-bottom: 5px solid #f41d07; margin-bottom: 5px; position: relative; display: inline-block; color: #f41d07;}
+#IndexSlogan p {font-size: 14px; line-height: 30px; margin-left: 2px; font-family: 'Open Sans', sans-serif;}
+#IndexSlogan p span {width: 100%; margin-bottom: 30px; color: #34495e; font-size: 16px; font-weight: bold;}
+
+
+#IndexOurWork {padding-bottom: 50px;}
+#IndexOurWork h2 {font-size: 30px;}
+#IndexOutText p {font-size: 20vmax; margin-left: 18.0vw;}
+.IndexOurWorkBlInfo p {font-size: 14px; font-weight: 900;}
+
+#IndexPriceMenu {padding: 50px 40px; margin-left: 15.1vw;}
+#IndexPriceMenu h2 {font-size: 26px; margin-bottom: 40px;}
+#IndexPriceMenu ul li {margin-bottom: 20px;}
+#IndexPriceInfo {width: 43.7vw;}
+#IndexPriceInfo p {margin: 50px 40px; font-size: 18px; line-height: 32px;}
+
+#IndexWhyUsWrS {margin-top: 50px; display: flex; order: 2; margin-bottom: 50px;}
+#IndexWhyUsWrF {display: flex; order: 1;}
+.IndexWhyUsBl {padding-top: 90px;  background-size: 55px !important; width: 27.7vw;}
+#IndexWhyUs {display: flex;flex-direction: column;}
+#IndexWhyUs > p {    position: relative;
+  order: 3;
+  display: flex;
+  top: 0;
+  left: 11vw;
+  width: 77vw;
+  margin-bottom: 50px;}
+.tabs .Abouttab h5 {font-size: 40px; margin-left: 5.6vw; margin-bottom: 20px; margin-top: 40px;}
+#IndexPriceInfo .Abouttab p {margin-left: 5.6vw;}
+.tabs .Abouttab ul {margin-left: 2vw;}
+
+.tabs .tab h4 {font-size: 22px; left: 31.6vw; top: 0px; width: 350px;}
+
+
+#IndexContactH {top: 10vh; left: 33.8vw;}
+#IndexContactImg {    position: relative;
+  overflow: hidden;
+  margin-left: 11.11vw;
+  width: 34.9vw;
+  height: auto;
+  padding-bottom: 40px;}
+#IndexContactImg img {position: relative; width: 100%;}
+#IndexContactH h2 {font-size: 6.6vw;}
+#IndexContactInfo {position: absolute; top: 30vh; left: 57.5vw; }
+#IndexContact #map {  width: 100%;}
+
+
+/* Nukun */
+.link--nukun {font-size: 20px; padding: 7px 0; -webkit-transition: color 0.3s; transition: color 0.3s; position: relative; display: inline-block; line-height: 1;}
+
+/* Takiri */
+.link--takiri {font-size: 22px;}
+
+.cd-modal .modal-content h2 {margin-left: 11.3vw; margin-top: 10%; font-size: 3.2vw;}
+
+#ContactPhone {margin-left: 22.8vw; width: 15vw;}
+#ContactMail {margin-left: 8.1vw; width: 13vw;}
+#ContactSkype {margin-left: 10.2vw;}
+#ContactFullBl p {margin-left: 22.6vw; font-size: 3vw;}
+
+#ContactPhone h3 {font-size: 14px;}
+#ContactPhone p {font-size: 14px;}
+
+#ContactMail h3 {font-size: 14px;}
+#ContactMail p {font-size: 14px;}
+
+#ContactSkype h3 {font-size: 14px;}
+#ContactSkype p {font-size: 14px;}
+
+
+.IndexFooter {
+  margin-left: 57.2vw;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+
+#IndexPartners {    
+  position: relative;
+  overflow: hidden;
+  margin-left: 11.11vw;
+  margin-bottom: 8vw;
+}
+#IndexPartners h2 {    
+  font-size: 6.6vw;
+  font-weight: bold;
+  line-height: 1;
+  width: 60vw;
+  margin: 0 0 45px 0px;
+  margin-left: 25.5vw;
+  position: relative;
+  z-index: 10;
+  font-family: 'lettersoup-RopaSansPro-Regular', sans-serif;
+  text-transform: uppercase;
+}
+.IndexPartnersWr {display: flex; flex-wrap: wrap;}
+.IndexPartnersBox {    
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 22.7vw;
+  text-align: center;
+}
+.IndexPartnersBox img {    display: block;
+  width: 100%;}

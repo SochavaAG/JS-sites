@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* line 1, ../sass/popup.scss */
+.open_popup {
+  cursor: pointer;
+}
+
+/* line 5, ../sass/popup.scss */
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.95;
+  background: #222;
+}
+
+/* line 19, ../sass/popup.scss */
+.popup {
+  display: none;
+  position: fixed;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  z-index: 99999999999;
+  margin-top: -300px;
+  margin-left: -300px;
+  border-radius: 15px;
+  text-align: center;
+}
+/* line 35, ../sass/popup.scss */
+.popup h3 {
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: #373737;
+  font-size: 25px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 75px;
+  font-weight: 900;
+}
+/* line 48, ../sass/popup.scss */
+.popup p {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #373737;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+/* line 57, ../sass/popup.scss */
+.popup .FormPopUp {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* line 63, ../sass/popup.scss */
+.popup .FormPopUp form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 68, ../sass/popup.scss */
+.popup .FormPopUp form div {
+  position: relative;
+}
+/* line 73, ../sass/popup.scss */
+.popup .FormPopUp form div.tit:after {
+  visibility: visible;
+}
+/* line 79, ../sass/popup.scss */
+.popup .FormPopUp form div:after {
+  content: 'пустое поле';
+  position: absolute;
+  bottom: 0;
+  color: #ff0000;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18.01px;
+  text-transform: uppercase;
+  visibility: hidden;
+  left: 0;
+  width: 100%;
+}
+/* line 96, ../sass/popup.scss */
+.popup input {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  color: #373737;
+  font-size: 18px;
+  background: #e8e8e8;
+  outline: none;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  width: 250px;
+  text-align: center;
+  font-weight: 900;
+}
+/* line 116, ../sass/popup.scss */
+.popup input.error {
+  background: #f3dada;
+}
+/* line 120, ../sass/popup.scss */
+.popup input.SubmitClose {
+  width: 280px;
+  height: 60px;
+  background: #ffb400;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 30px;
+  color: #373737;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 70px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+/* line 135, ../sass/popup.scss */
+.popup input.SubmitClose:hover {
+  background: #ffc71a;
+}
+/* line 140, ../sass/popup.scss */
+.popup input::placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #373737;
+  text-align: center;
+}
+/* line 148, ../sass/popup.scss */
+.popup input:hover {
+  cursor: pointer;
+  background: #f3ebd9;
+}
+/* line 153, ../sass/popup.scss */
+.popup input:focus {
+  background: #f3ebd9;
+}
+/* line 158, ../sass/popup.scss */
+.popup .close {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  background: url(/img/close-popup.png) center center no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  z-index: 9;
+  cursor: pointer;
+}
+/* line 169, ../sass/popup.scss */
+.popup .close:hover {
+  background: url(/img/close-popup-h.png) center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 178, ../sass/popup.scss */
+  .popup {
+    width: 400px;
+    margin-top: -240px;
+    margin-left: -200px;
+  }
+  /* line 183, ../sass/popup.scss */
+  .popup h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-weight: 900;
+  }
+  /* line 190, ../sass/popup.scss */
+  .popup p {
+    margin-bottom: 15px;
+  }
+  /* line 196, ../sass/popup.scss */
+  .popup input.SubmitClose {
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 205, ../sass/popup.scss */
+  .popup {
+    width: 300px;
+    margin-top: -220px;
+    margin-left: -150px;
+  }
+  /* line 210, ../sass/popup.scss */
+  .popup h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-weight: 900;
+    padding: 0 10%;
+  }
+  /* line 218, ../sass/popup.scss */
+  .popup p {
+    margin-bottom: 7px;
+    font-size: 13px;
+  }
+  /* line 223, ../sass/popup.scss */
+  .popup input {
+    font-size: 15px;
+    width: 80%;
+    margin-right: 0px;
+    margin: 0.5em auto;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 2.5em;
+    padding: 0 1.5em;
+    font-weight: 600;
+  }
+  /* line 234, ../sass/popup.scss */
+  .popup input.SubmitClose {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 2.5em;
+    height: 2.5em;
+    padding: 0 2.5em;
+    width: max-content;
+  }
+}

@@ -1,0 +1,1690 @@
+@charset "UTF-8";
+/* line 1, ../sass/form/form-1.scss */
+.IndexFormFile {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-left: 22.4vw;
+  margin-right: 22.4vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+/* line 10, ../sass/form/form-1.scss */
+.IndexFormFile p {
+  font-size: 2.4vw;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  z-index: 10;
+  font-family: 'lettersoup-RopaSansPro-Regular', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+/* line 21, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex {
+  display: flex;
+}
+/* line 24, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text {
+  height: 50px;
+  background-color: #eaeaea;
+  color: #373737;
+  font-size: 16px;
+  line-height: 50px;
+  padding: 0 28px;
+  width: calc(25% - 17px);
+  outline: none;
+  margin-right: 17px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #eaeaea;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 41, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text.error {
+  color: #373737;
+  border: 1px solid  #f41d07;
+}
+/* line 45, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text.error::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #373737;
+}
+/* line 48, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text.error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #373737;
+}
+/* line 51, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text.error:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #373737;
+}
+/* line 55, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text.error:-moz-placeholder {
+  /* Firefox 18- */
+  color: #373737;
+}
+/* line 60, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:hover {
+  background-color: #222529;
+  color: #eaeaea;
+}
+/* line 64, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:hover::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eaeaea;
+}
+/* line 67, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:hover::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eaeaea;
+}
+/* line 70, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:hover:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eaeaea;
+}
+/* line 73, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:hover:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eaeaea;
+}
+/* line 79, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:focus {
+  color: white;
+  background-color: #222529;
+}
+/* line 83, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:focus::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eaeaea;
+}
+/* line 86, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eaeaea;
+}
+/* line 89, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:focus:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eaeaea;
+}
+/* line 92, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:focus:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eaeaea;
+}
+/* line 98, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 103, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 108, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 114, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .text:-moz-placeholder {
+  /* Firefox 18- */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 122, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .chous {
+  width: calc(25% - 17px);
+  border: none;
+  outline: none;
+  background: transparent;
+  line-height: 52px;
+  border-bottom: 2px solid #e3e5e6;
+  transition: 0.5s all;
+  color: #898989;
+  cursor: pointer;
+  position: relative;
+  padding: 2px;
+  padding-right: 50px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  height: 52px;
+  margin-right: 17px;
+  transition: 0.5s all;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 143, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .chous:after {
+  content: '';
+  background: url(../../img/plus.svg) center center no-repeat;
+  background-size: 15px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 17px;
+  right: 0;
+  transition: 0.5s all;
+}
+/* line 155, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .chous:hover {
+  border-bottom: 2px solid #222529;
+}
+/* line 158, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .chous:hover:after {
+  content: '';
+  transform: rotate(90deg);
+  transition: 0.5s all;
+}
+/* line 166, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .my {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+/* line 175, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .SubmitClose {
+  background: #f41d07;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  width: 25%;
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 196, ../sass/form/form-1.scss */
+.IndexFormFile #FormIndex .SubmitClose:hover {
+  background: #222529;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 204, ../sass/form/form-1.scss */
+  .IndexFormFile {
+    margin-left: 22.4vw;
+    margin-right: 18.4vw;
+  }
+  /* line 209, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex .text {
+    font-size: 14px;
+    height: 46px;
+    line-height: 46px;
+  }
+  /* line 215, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex .chous {
+    font-size: 14px;
+    height: 48px;
+    line-height: 46px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 225, ../sass/form/form-1.scss */
+  .IndexFormFile {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  /* line 229, ../sass/form/form-1.scss */
+  .IndexFormFile p {
+    font-size: 26px;
+  }
+  /* line 234, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex .text {
+    font-size: 14px;
+    height: 46px;
+    line-height: 46px;
+  }
+  /* line 240, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex .chous {
+    font-size: 14px;
+    height: 48px;
+    line-height: 46px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 250, ../sass/form/form-1.scss */
+  .IndexFormFile {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  /* line 254, ../sass/form/form-1.scss */
+  .IndexFormFile p {
+    font-size: 7vw;
+    margin-bottom: 4vw;
+  }
+  /* line 259, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex {
+    flex-direction: column;
+  }
+  /* line 262, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex .text {
+    font-size: 4vw;
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+    margin-bottom: 2vw;
+    padding: 0 15px;
+  }
+  /* line 271, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex .chous {
+    width: 100%;
+    margin-bottom: 4vw;
+    font-size: 4vw;
+    height: 48px;
+    line-height: 46px;
+  }
+  /* line 279, ../sass/form/form-1.scss */
+  .IndexFormFile #FormIndex .SubmitClose {
+    font-size: 4vw;
+    height: 3em;
+    line-height: 3em;
+    width: 100%;
+  }
+}
+/* line 1, ../sass/form/form-2.scss */
+#IndexFormWhy {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-left: 22.4vw;
+  margin-right: 22.4vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+/* line 10, ../sass/form/form-2.scss */
+#IndexFormWhy > p {
+  font-size: 2.4vw;
+  line-height: 1.2;
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+/* line 19, ../sass/form/form-2.scss */
+#IndexFormWhy > span {
+  display: block;
+  margin-bottom: 1.5vw;
+  text-align: center;
+  font-size: 1.2vw;
+}
+/* line 26, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy {
+  display: flex;
+  padding: 2vw;
+  border: 1px solid #222529;
+  flex-wrap: wrap;
+}
+/* line 32, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text {
+  height: 60px;
+  background-color: #eaeaea;
+  color: #373737;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 28px;
+  width: calc(100% / 3 - 25px);
+  outline: none;
+  margin-right: 25px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #222529;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 51, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text.error {
+  color: #373737;
+  border: 1px solid  #f41d07;
+}
+/* line 55, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text.error::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #373737;
+}
+/* line 58, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text.error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #373737;
+}
+/* line 61, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text.error:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #373737;
+}
+/* line 65, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text.error:-moz-placeholder {
+  /* Firefox 18- */
+  color: #373737;
+}
+/* line 70, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:hover {
+  background-color: #222529;
+  color: #eaeaea;
+}
+/* line 74, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:hover::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eaeaea;
+}
+/* line 77, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:hover::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eaeaea;
+}
+/* line 80, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:hover:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eaeaea;
+}
+/* line 83, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:hover:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eaeaea;
+}
+/* line 89, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:focus {
+  color: white;
+  background-color: #222529;
+}
+/* line 93, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:focus::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eaeaea;
+}
+/* line 96, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eaeaea;
+}
+/* line 99, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:focus:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eaeaea;
+}
+/* line 102, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:focus:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eaeaea;
+}
+/* line 108, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+/* line 114, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+/* line 120, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+/* line 127, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .text:-moz-placeholder {
+  /* Firefox 18- */
+  color: #373737;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+/* line 137, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .SubmitClose {
+  background: #f41d07;
+  height: 60px;
+  line-height: 60px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s all;
+  width: calc(100% / 3);
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 157, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy .SubmitClose:hover {
+  background: #222529;
+}
+/* line 162, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy > span {
+  display: block;
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 0.9vw;
+  width: 100%;
+  float: left;
+}
+/* line 170, ../sass/form/form-2.scss */
+#IndexFormWhy #FormWhy > span > a {
+  color: #f41d07;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 180, ../sass/form/form-2.scss */
+  #IndexFormWhy {
+    margin-left: 23.4vw;
+    margin-right: 18.4vw;
+  }
+  /* line 184, ../sass/form/form-2.scss */
+  #IndexFormWhy > p {
+    font-size: 24px;
+  }
+  /* line 189, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .text {
+    height: 54px;
+    font-size: 15px;
+    line-height: 54px;
+  }
+  /* line 195, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .SubmitClose {
+    height: 54px;
+    line-height: 54px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 205, ../sass/form/form-2.scss */
+  #IndexFormWhy {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  /* line 209, ../sass/form/form-2.scss */
+  #IndexFormWhy > p {
+    font-size: 24px;
+  }
+  /* line 213, ../sass/form/form-2.scss */
+  #IndexFormWhy > span {
+    font-size: 11px;
+  }
+  /* line 219, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy > span {
+    font-size: 10px;
+  }
+  /* line 223, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .text {
+    font-size: 14px;
+    height: 46px;
+    line-height: 46px;
+  }
+  /* line 228, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .text::placeholder {
+    font-size: 14px;
+  }
+  /* line 233, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .SubmitClose {
+    font-size: 14px;
+    height: 46px;
+    line-height: 46px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 243, ../sass/form/form-2.scss */
+  #IndexFormWhy {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  /* line 247, ../sass/form/form-2.scss */
+  #IndexFormWhy > p {
+    font-size: 7vw;
+    margin-bottom: 4vw;
+  }
+  /* line 252, ../sass/form/form-2.scss */
+  #IndexFormWhy > span {
+    font-size: 3vw;
+  }
+  /* line 256, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy {
+    flex-direction: column;
+  }
+  /* line 259, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy > span {
+    font-size: 3vw;
+    margin-top: 3vw;
+  }
+  /* line 264, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .text {
+    font-size: 4vw;
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+    margin-bottom: 2vw;
+    padding: 0 15px;
+  }
+  /* line 272, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .text::placeholder {
+    font-size: 4vw;
+  }
+  /* line 277, ../sass/form/form-2.scss */
+  #IndexFormWhy #FormWhy .SubmitClose {
+    font-size: 4vw;
+    height: 3em;
+    line-height: 3em;
+    width: 100%;
+  }
+}
+/* line 1, ../sass/form/form-3.scss */
+.IndexFormCool {
+  position: relative;
+  overflow: hidden;
+  margin-left: 22.5vw;
+  margin-right: 19.9vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  display: flex;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+/* line 11, ../sass/form/form-3.scss */
+.IndexFormCool .IndexFormCoolL {
+  background: #fff;
+  width: 54%;
+  padding: 4vw;
+  box-sizing: border-box;
+  z-index: 9999999;
+}
+/* line 18, ../sass/form/form-3.scss */
+.IndexFormCool .IndexFormCoolL h3 {
+  font-size: 1.4vw;
+  line-height: 1.2;
+  position: relative;
+  font-weight: 700;
+  z-index: 10;
+  margin-bottom: 1vw;
+}
+/* line 27, ../sass/form/form-3.scss */
+.IndexFormCool .IndexFormCoolL span {
+  display: block;
+  margin-bottom: 1.5vw;
+  font-size: 1vw;
+  line-height: 1.3;
+  font-weight: 400;
+}
+/* line 35, ../sass/form/form-3.scss */
+.IndexFormCool .IndexFormCoolL ul {
+  margin-top: 70px;
+  position: relative;
+}
+/* line 39, ../sass/form/form-3.scss */
+.IndexFormCool .IndexFormCoolL ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+/* line 45, ../sass/form/form-3.scss */
+.IndexFormCool .IndexFormCoolL ul li:after {
+  content: '✓';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  height: 20px;
+  color: #fff;
+  background: red;
+}
+/* line 63, ../sass/form/form-3.scss */
+.IndexFormCool .IndexFormCoolR {
+  padding: 5.5vw 4vw 4vw;
+  width: 46%;
+  box-sizing: border-box;
+  background: #000000;
+}
+/* line 70, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 74, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .coolLabel {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* line 80, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 40px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 35px;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 98, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text.error {
+  color: #ffffff;
+  border-bottom: 2px solid #f41d07;
+}
+/* line 102, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text.error::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #f4f4f4;
+}
+/* line 105, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text.error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #f4f4f4;
+}
+/* line 108, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text.error:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #f4f4f4;
+}
+/* line 112, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text.error:-moz-placeholder {
+  /* Firefox 18- */
+  color: #f4f4f4;
+}
+/* line 117, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text:hover {
+  border-bottom: 2px solid #222529;
+}
+/* line 121, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text:focus {
+  border-bottom: 2px solid #222529;
+}
+/* line 127, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #f4f4f4;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 132, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #f4f4f4;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 137, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #f4f4f4;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 142, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .text:-moz-placeholder {
+  /* Firefox 18- */
+  color: #f4f4f4;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 150, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .SubmitClose {
+  background: #f41d07;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 170, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool .SubmitClose:hover {
+  background: #222529;
+}
+/* line 175, ../sass/form/form-3.scss */
+.IndexFormCool #FormCool span {
+  margin: 0 auto;
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+  font-size: 10px;
+  line-height: 1.3;
+  display: block;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 189, ../sass/form/form-3.scss */
+  .IndexFormCool {
+    margin-left: 22.5vw;
+    margin-right: 5.9vw;
+  }
+  /* line 194, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL h3 {
+    font-size: 22px;
+  }
+  /* line 198, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL span {
+    font-size: 13px;
+  }
+  /* line 202, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL ul {
+    margin-top: 55px;
+  }
+  /* line 207, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL #FormCool .text {
+    margin-bottom: 30px;
+  }
+  /* line 214, ../sass/form/form-3.scss */
+  .IndexFormCool #FormCool .SubmitClose {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 223, ../sass/form/form-3.scss */
+  .IndexFormCool {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  /* line 227, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL {
+    width: 52%;
+  }
+  /* line 230, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL h3 {
+    font-size: 22px;
+  }
+  /* line 234, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL span {
+    font-size: 12px;
+  }
+  /* line 238, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL ul {
+    margin-top: 50px;
+  }
+  /* line 241, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL ul li {
+    font-size: 14px;
+  }
+  /* line 247, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL #FormCool .text {
+    margin-bottom: 30px;
+    height: 37px;
+    line-height: 37px;
+  }
+  /* line 255, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolR {
+    width: 48%;
+  }
+  /* line 260, ../sass/form/form-3.scss */
+  .IndexFormCool #FormCool .SubmitClose {
+    height: 42px;
+    line-height: 42px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 269, ../sass/form/form-3.scss */
+  .IndexFormCool {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    flex-direction: column;
+  }
+  /* line 274, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL {
+    width: 100%;
+  }
+  /* line 277, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL h3 {
+    font-size: 7vw;
+  }
+  /* line 281, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL span {
+    font-size: 3.5vw;
+  }
+  /* line 285, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL ul {
+    margin-top: 35px;
+  }
+  /* line 288, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolL ul li {
+    font-size: 4vw;
+    margin-bottom: 15px;
+  }
+  /* line 295, ../sass/form/form-3.scss */
+  .IndexFormCool .IndexFormCoolR {
+    width: 100%;
+  }
+  /* line 300, ../sass/form/form-3.scss */
+  .IndexFormCool #FormCool .coolLabel {
+    font-size: 5vw;
+  }
+  /* line 304, ../sass/form/form-3.scss */
+  .IndexFormCool #FormCool .text {
+    font-size: 4vw;
+    margin-bottom: 25px;
+    height: 37px;
+    line-height: 37px;
+  }
+  /* line 311, ../sass/form/form-3.scss */
+  .IndexFormCool #FormCool .SubmitClose {
+    font-size: 4vw;
+    height: 3em;
+    line-height: 3em;
+  }
+}
+/* line 1, ../sass/form/form-4.scss */
+.IndexFormBus {
+  position: relative;
+  overflow: hidden;
+  margin-left: 19.5vw;
+  margin-right: 19.9vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  display: flex;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+/* line 12, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusL {
+  background-color: #f7f4f6;
+  width: 58%;
+  padding: 4vw;
+  box-sizing: border-box;
+  z-index: 9999999;
+  position: relative;
+}
+/* line 20, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusL h3 {
+  font-size: 1.4vw;
+  line-height: 1.2;
+  position: relative;
+  font-weight: 700;
+  z-index: 10;
+  margin-bottom: 1vw;
+}
+/* line 29, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusL span {
+  display: block;
+  margin-bottom: 1.5vw;
+  font-size: 1vw;
+  line-height: 1.3;
+  font-weight: 400;
+}
+/* line 38, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusL ul {
+  margin-top: 70px;
+  position: relative;
+}
+/* line 42, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusL ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+/* line 48, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusL ul li:after {
+  content: '✓';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  height: 20px;
+  color: #fff;
+  background: red;
+}
+/* line 64, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusL:after {
+  content: '';
+  position: absolute;
+  width: 8vw;
+  height: 12vw;
+  bottom: 12px;
+  right: 30px;
+  background: url(../../img/docs.svg) center center no-repeat;
+  background-size: cover;
+}
+/* line 77, ../sass/form/form-4.scss */
+.IndexFormBus .IndexFormBusR {
+  padding: 5.5vw 4vw 4vw;
+  width: 42%;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 11;
+}
+/* line 85, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 89, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .coolLabel {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* line 95, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #000000;
+  color: #000000;
+  font-size: 14px;
+  line-height: 40px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 35px;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 113, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text.error {
+  color: #000000;
+  border-bottom: 2px solid #f41d07;
+}
+/* line 117, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text.error::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eaeaea;
+}
+/* line 120, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text.error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eaeaea;
+}
+/* line 123, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text.error:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eaeaea;
+}
+/* line 127, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text.error:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eaeaea;
+}
+/* line 132, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text:hover {
+  border-bottom: 2px solid #222529;
+}
+/* line 136, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text:focus {
+  border-bottom: 2px solid #222529;
+}
+/* line 142, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eaeaea;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 147, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eaeaea;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 152, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eaeaea;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 157, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .text:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eaeaea;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 165, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .SubmitClose {
+  background: #f41d07;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 185, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus .SubmitClose:hover {
+  background: #222529;
+}
+/* line 190, ../sass/form/form-4.scss */
+.IndexFormBus #FormBus span {
+  margin: 0 auto;
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+  font-size: 10px;
+  line-height: 1.3;
+  display: block;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 1241px) and (max-width: 1366px) {
+  /* line 203, ../sass/form/form-4.scss */
+  .IndexFormBus {
+    margin-left: 22.8vw;
+    margin-right: 19vw;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 210, ../sass/form/form-4.scss */
+  .IndexFormBus {
+    margin-left: 22.5vw;
+    margin-right: 5.9vw;
+  }
+  /* line 216, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL h3 {
+    font-size: 22px;
+  }
+  /* line 220, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL span {
+    font-size: 13px;
+  }
+  /* line 224, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL ul {
+    margin-top: 55px;
+  }
+  /* line 227, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL ul li {
+    font-size: 14px;
+  }
+  /* line 234, ../sass/form/form-4.scss */
+  .IndexFormBus #FormBus .SubmitClose {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 243, ../sass/form/form-4.scss */
+  .IndexFormBus {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  /* line 247, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL {
+    width: 52%;
+  }
+  /* line 250, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL h3 {
+    font-size: 22px;
+  }
+  /* line 254, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL span {
+    font-size: 12px;
+  }
+  /* line 258, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL ul {
+    margin-top: 40px;
+  }
+  /* line 261, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL ul li {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  /* line 269, ../sass/form/form-4.scss */
+  .IndexFormBus #FormBus .text {
+    margin-bottom: 30px;
+    height: 37px;
+    line-height: 37px;
+  }
+  /* line 275, ../sass/form/form-4.scss */
+  .IndexFormBus #FormBus .SubmitClose {
+    height: 42px;
+    line-height: 42px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 284, ../sass/form/form-4.scss */
+  .IndexFormBus {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    flex-direction: column;
+  }
+  /* line 289, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL {
+    width: 100%;
+  }
+  /* line 292, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL h3 {
+    font-size: 7vw;
+  }
+  /* line 296, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL span {
+    font-size: 3.5vw;
+  }
+  /* line 300, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL ul {
+    margin-top: 35px;
+  }
+  /* line 303, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL ul li {
+    font-size: 4vw;
+    margin-bottom: 15px;
+  }
+  /* line 309, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusL:after {
+    width: 10vw;
+    height: 14vw;
+    bottom: 16px;
+    right: 12px;
+  }
+  /* line 317, ../sass/form/form-4.scss */
+  .IndexFormBus .IndexFormBusR {
+    width: 100%;
+  }
+  /* line 322, ../sass/form/form-4.scss */
+  .IndexFormBus #FormBus .coolLabel {
+    font-size: 5vw;
+  }
+  /* line 326, ../sass/form/form-4.scss */
+  .IndexFormBus #FormBus .text {
+    font-size: 4vw;
+    margin-bottom: 25px;
+    height: 37px;
+    line-height: 37px;
+  }
+  /* line 333, ../sass/form/form-4.scss */
+  .IndexFormBus #FormBus .SubmitClose {
+    font-size: 4vw;
+    height: 3em;
+    line-height: 3em;
+  }
+}
+/* line 1, ../sass/form/form-popup-5.scss */
+.overlaylight {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.6;
+  background: #000;
+}
+
+/* line 15, ../sass/form/form-popup-5.scss */
+.popuplight {
+  display: none;
+  position: fixed;
+  background: #fff;
+  width: 500px;
+  height: 666px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 9999999;
+  box-sizing: border-box;
+}
+/* line 27, ../sass/form/form-popup-5.scss */
+.popuplight h3 {
+  position: relative;
+  overflow: hidden;
+  font-size: 32px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 40px;
+}
+/* line 41, ../sass/form/form-popup-5.scss */
+.popuplight p {
+  padding: 0 40px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.3;
+  font-size: 17px;
+}
+/* line 49, ../sass/form/form-popup-5.scss */
+.popuplight .FormPopUpLightTop {
+  background: url(../../img/941.jpg) center center no-repeat;
+  background-size: cover;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/* line 58, ../sass/form/form-popup-5.scss */
+.popuplight .FormPopUpLightTop:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  background: url(../../img/hands.svg) center center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 220px;
+}
+/* line 69, ../sass/form/form-popup-5.scss */
+.popuplight .FormPopUpLightTop h2 {
+  position: relative;
+  overflow: hidden;
+  font-size: 34px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #fff;
+  padding-right: 170px;
+  padding-left: 40px;
+}
+/* line 84, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 40px;
+  box-sizing: border-box;
+}
+/* line 90, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .coolLabel {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* line 96, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #000000;
+  color: #000000;
+  font-size: 14px;
+  line-height: 40px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 114, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text.error {
+  color: #000000;
+  border-bottom: 2px solid #f41d07;
+}
+/* line 118, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text.error::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000000;
+}
+/* line 121, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text.error::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000000;
+}
+/* line 124, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text.error:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000000;
+}
+/* line 128, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text.error:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000000;
+}
+/* line 133, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text:hover {
+  border-bottom: 2px solid #222529;
+}
+/* line 137, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text:focus {
+  border-bottom: 2px solid #222529;
+}
+/* line 143, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000000;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 148, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000000;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 153, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000000;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 158, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .text:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000000;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 166, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .SubmitClose {
+  background: #f41d07;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s all;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 186, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp .SubmitClose:hover {
+  background: #222529;
+}
+/* line 191, ../sass/form/form-popup-5.scss */
+.popuplight #FormPopUp span {
+  margin: 0 auto;
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+  font-size: 10px;
+  line-height: 1.3;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 203, ../sass/form/form-popup-5.scss */
+.closepopuplight {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: url(/img/CloseWindow-501.png) center center no-repeat;
+  background-size: 30px auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 99999999;
+}
+/* line 216, ../sass/form/form-popup-5.scss */
+.closepopuplight:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* line 222, ../sass/form/form-popup-5.scss */
+#FormPopUp input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+/* line 223, ../sass/form/form-popup-5.scss */
+#FormPopUp input::-moz-placeholder {
+  color: #fff;
+}
+
+/* Firefox 19+ */
+/* line 224, ../sass/form/form-popup-5.scss */
+#FormPopUp input:-moz-placeholder {
+  color: #fff;
+}
+
+/* Firefox 18- */
+/* line 225, ../sass/form/form-popup-5.scss */
+#FormPopUp input:-ms-input-placeholder {
+  color: #fff;
+}
+
+@media only screen and (min-width: 1241px) and (max-width: 1366px) {
+  /* line 230, ../sass/form/form-popup-5.scss */
+  .popuplight {
+    width: 420px;
+    height: 600px;
+  }
+  /* line 234, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop {
+    height: 180px;
+  }
+  /* line 237, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop h2 {
+    font-size: 30px;
+  }
+  /* line 242, ../sass/form/form-popup-5.scss */
+  .popuplight h3 {
+    font-size: 24px;
+  }
+  /* line 246, ../sass/form/form-popup-5.scss */
+  .popuplight p {
+    font-size: 14px;
+  }
+  /* line 250, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp {
+    padding: 20px 45px;
+  }
+  /* line 253, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp .SubmitClose {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1240px) {
+  /* line 262, ../sass/form/form-popup-5.scss */
+  .popuplight {
+    width: 370px;
+    height: 550px;
+  }
+  /* line 266, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop {
+    height: 150px;
+  }
+  /* line 269, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop:after {
+    height: 150px;
+  }
+  /* line 273, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop h2 {
+    font-size: 24px;
+  }
+  /* line 278, ../sass/form/form-popup-5.scss */
+  .popuplight h3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  /* line 283, ../sass/form/form-popup-5.scss */
+  .popuplight p {
+    font-size: 12px;
+  }
+  /* line 287, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp {
+    padding: 15px 30px;
+  }
+  /* line 290, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp .SubmitClose {
+    height: 42px;
+    line-height: 42px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 999px) {
+  /* line 299, ../sass/form/form-popup-5.scss */
+  .popuplight {
+    width: 320px;
+    height: 475px;
+  }
+  /* line 303, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop {
+    height: 120px;
+  }
+  /* line 306, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop:after {
+    height: 120px;
+  }
+  /* line 310, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop h2 {
+    font-size: 20px;
+    padding-right: 120px;
+    padding-left: 30px;
+  }
+  /* line 317, ../sass/form/form-popup-5.scss */
+  .popuplight h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0 20px;
+  }
+  /* line 323, ../sass/form/form-popup-5.scss */
+  .popuplight p {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+  /* line 328, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp {
+    padding: 15px 25px;
+  }
+  /* line 331, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp .text {
+    font-size: 12px;
+    line-height: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  /* line 338, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp .SubmitClose {
+    height: 37px;
+    line-height: 37px;
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 709px) {
+  /* line 348, ../sass/form/form-popup-5.scss */
+  .popuplight {
+    width: 300px;
+    height: auto;
+  }
+  /* line 352, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop {
+    height: 100px;
+  }
+  /* line 355, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop:after {
+    height: 100px;
+    width: 99px;
+  }
+  /* line 360, ../sass/form/form-popup-5.scss */
+  .popuplight .FormPopUpLightTop h2 {
+    font-size: 17px;
+    padding-right: 120px;
+    padding-left: 20px;
+    line-height: 1.2;
+  }
+  /* line 368, ../sass/form/form-popup-5.scss */
+  .popuplight h3 {
+    font-size: 17px;
+    line-height: 1.2;
+    padding: 0 20px;
+  }
+  /* line 374, ../sass/form/form-popup-5.scss */
+  .popuplight p {
+    font-size: 11px;
+    padding: 0 20px;
+  }
+  /* line 379, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp {
+    padding: 15px 20px 30px;
+  }
+  /* line 382, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp .text {
+    font-size: 12px;
+    line-height: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  /* line 389, ../sass/form/form-popup-5.scss */
+  .popuplight #FormPopUp .SubmitClose {
+    height: 35px;
+    line-height: 35px;
+    font-size: 11px;
+  }
+}
