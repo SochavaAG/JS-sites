@@ -1,0 +1,433 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Главная</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <link href='css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/scroll.css">
+  <link rel="stylesheet" type="text/css" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/video-js.css">
+  <link rel="stylesheet" type="text/css" href="css/videojs-resolution-switcher.css">
+</head>
+<body>
+<div class="popup-box large-popup" id="form-reg">
+  <div class="bg" onclick="changeform('reg'); return false;"></div>
+  <div class="popup">
+    <h1 class="bold">регистрация</h1>
+    <form method="POST" action="https://hackgames.su/link" enctype="multipart/form-data">
+      <div class="required">
+        <input type="text" name="login" required placeholder="логин" onchange="checkform('form-reg','reg-check-login',0)">
+        <div class="alert">логин занят</div>
+      </div>
+      <div class="required">
+        <input type="email" name="email" required placeholder="e-mail" onchange="checkform('form-reg','reg-check-email',1)">
+        <div class="alert">e-mail занят</div>
+      </div>
+      <div class="required">
+        <input type="password" name="password" required placeholder="пароль" onchange="checkpass('form-reg',2)">
+        <div class="alert">короткий</div>
+      </div>
+      <div class="required">
+        <input type="password" name="repass" required placeholder="подтверждение пароля" onchange="checkrepass('form-reg',2,3)">
+        <div class="alert">не совпадает</div>
+      </div>
+      <div class="required">
+        <input type="text" name="name" required placeholder="ваше имя">
+        <div class="alert"></div>
+      </div>
+      <div>
+        <input type="text" name="vk" placeholder="ссылка на профиль ВК">
+        <div class="alert"></div>
+      </div>
+      <div>
+        <label class="checkbox">
+          <input type="checkbox" name="show-vk">
+          <div class="checkbox__text">скрыть информацию</div>
+        </label>
+      </div>
+      <div>
+        <input type="text" name="skype" placeholder="ваш скайп">
+        <div class="alert"></div>
+      </div>
+      <div>
+        <label class="checkbox">
+          <input type="checkbox" name="show-skype">
+          <div class="checkbox__text">скрыть информацию</div>
+        </label>
+      </div>
+      <div>
+        <h2 class="regular">Загрузить аватар</h2>
+        <label class="file_upload">
+          <span class="upload_button">Выбрать файл</span>
+          <mark>Файл не выбран</mark>
+          <input type="file" name="photo">
+        </label>
+      </div>
+      <div class="g-recaptcha-s" id="recaptcha-reg"></div>
+      <label class="checkbox accept">
+        <input type="checkbox" name="accept" required>
+        <div class="checkbox__text">Я ознакомился с <a href='https://hackgames.su/policies/#terms' target="_blank">соглашением</a>
+          и <a href='https://hackgames.su/policies/#privacy' target="_blank">политикой</a> сайта
+        </div>
+      </label>
+      <input type="submit" value="Зарегистрироваться" name="registration" onclick="check_if_capcha_is_filled('reg')" class="last">
+    </form>
+  </div>
+</div>
+<!--<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>-->
+<script src='js/recaptcha-api.js' async defer></script>
+<div class="popup-box mini-popup" id="form-login">
+  <div class="bg" onclick="changeform('login'); return false;"></div>
+  <div class="popup">
+    <h1 class=" bold">Авторизация</h1>
+    <p class="error-alert">Неправильный Email или пароль</p>
+    <p class="error-alert-captcha">Подтвердите капчу!</p>
+    <form method="POST" action="https://hackgames.su/link">
+      <input type="email" name="email" required placeholder="e-mail">
+      <input type="password" name="password" required placeholder="пароль">
+      <label class="checkbox">
+        <input type="checkbox" name="know" value="1">
+        <div class="checkbox__text">Запомнить меня</div>
+      </label>
+      <input type="hidden" name="auth" value="true">
+      <input type="button" onclick="checklogin('form-login');" value="Войти">
+      <div class="g-recaptcha-s" id="recaptcha-login"></div>
+    </form>
+    <p><a href="#" class="bold" onclick="changeform('login'); changeform('reg'); return false;">Регистрация</a> |
+      <a href="#" onclick="changeform('login');changeform('recovery'); return false;" class="light">Напомнить пароль</a>
+    </p>
+    <p class="last"><a href="https://hackgames.su/vk" class="vk-auth">Войти с помощью:</a></p>
+  </div>
+</div>
+<div class="popup-box mini-popup" id="form-recovery">
+  <div class="bg" onclick="changeform('recovery')"></div>
+  <div class="popup">
+    <h1 class="bold">восстановление пароля</h1>
+    <form method="POST" action="https://hackgames.su/link" id="recovery-form">
+      <h3 class="light tcenter">Ваш e-mail на сайте:</h3>
+      <input type="email" name="email" id="recovery-email" required onchange="recoveryPass()">
+      <h3 class="light tcenter recovery1">Введите ответ на секретный вопрос:<br><span id="recovery-quest"></span></h3>
+      <input type="text" name="recovery-answer" required class="recovery1">
+      <h3 class="light tcenter recovery2">Введите дополнительный пароль:</h3>
+      <input type="password" name="recovery-pass" required class="recovery2">
+      <a href="#" class="light tunderline2" class="changerecovery" onclick="changerecovery();">Сменить тип
+        подтверждения</a>
+      <input type="button" value="ОК" onclick="recoveryPass();" step="0" id="recovery" class="last">
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+  var onloadCallback = function () {
+    mysitekey = '6LcG2lsUAAAAAJ9bqWM1QkLybmz3IiBo-iZQxemz';
+    grecaptcha.render('recaptcha-login', {
+      'sitekey': mysitekey
+    });
+    grecaptcha.render('recaptcha-reg', {
+      'sitekey': mysitekey
+    });
+  };
+</script>
+<div class="popup-box popup-alert" id="form-alert">
+  <div class="popup">
+    <h1 class="bold">ВНИМАНИЕ!</h1>
+    <h3 class="regular">//Text</h3>
+    <input type="button" value="ОК" onclick="changeform('alert');">
+  </div>
+</div>
+<header class="popup-blur">
+  <script type="text/javascript">var mactive = true;
+  var mainPage = true;</script>
+  <div id='video'>
+    <video playsinline muted loop autoplay poster="video/poster2.png" id="player" preload="none">
+      <source data-src="video/header2.mp4" type="video/mp4" media="all and (min-width:880px)">
+    </video>
+  </div>
+  <div id="header-img"></div>
+  <div class="content-header">
+    <div id='hack'>
+      <h1>HACKGAMES.SU</h1>
+      <p>ЛУЧШИЕ ПРИВАТНЫЕ ЧИТЫ</p>
+    </div>
+    <div id='login'>
+      <div id='registration' class='button'>
+        <a href='#' onclick="changeform('reg'); return false;">РЕГИСТРАЦИЯ</a>
+      </div>
+      <div id='enter' class='button'>
+        <a href='#' onclick="changeform('login'); return false;">ВОЙТИ</a>
+      </div>
+    </div>
+    <div class='clear'>
+    </div>
+    <div id='play' class="stop">
+      <a href='#' onclick="video(); return false;">
+        <img src='video/play.png' alt='play' id="play1">
+        <img src='video/stop.png' alt='stop' id="play2">
+      </a>
+    </div>
+    <div id='down'>
+      <a href='#'><img src='images/do.png' alt='вниз'></a>
+    </div>
+  </div>
+</header>
+<div id="mstart" class="popup-blur">
+  <div id='start'>
+    <div id='label'>
+      <h3>HACKGAMES</h3>
+    </div>
+
+    <div id='room'>
+      <div onclick="menu();" id="burger">
+        <div class="burger"></div>
+      </div>
+    </div>
+    <div id='menu'>
+      <div id="close" onclick="menu();"></div>
+      <div id='main' class='menu'><a href='/'>ГЛАВНАЯ</a>
+      </div>
+      <div class='menu'><a href='/news'>НОВОСТИ</a>
+      </div>
+      <div class='menu'><a href='/how-buy'>КАК КУПИТЬ</a>
+      </div>
+      <div class='menu'><a href='/help'>ПОМОЩЬ</a>
+      </div>
+      <div class='menu'><a href='/collaboration' target="_blank">СОТРУДНИЧЕСТВО</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='slider' class="popup-blur">
+  <p class='p show-animate'>КУПИТЬ ЧИТЫ</p>
+  <div id='purchase' class='center show-animate-zoom'>
+    <div class='slider'><a href='https://hackgames.su/cheat/1'>
+      <div class='banner'><img src='images/46.png' alt='war thunder'></div>
+    </a>
+      <div class='game'>
+        <div class='price'><p>2990<span class='rub'>P</span></p></div>
+        <div class='condition'><p>PlayerUnknown's Battlegrounds</p>
+          <p class='line'><span class='grey'>1 месяц</span></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div id='benefit' class="popup-blur">
+  <p class='p show-animate'>ПОЧЕМУ СТОИТ ПОКУПАТЬ У НАС?</p>
+  <div class='center'>
+    <div class='benefit show-animate-zoom'>
+      <div class='icon'>
+        <div>
+          <img src='images/icon.png' alt='иконка'>
+        </div>
+        <div>
+          <p>ПОСТОЯННЫЕ ОБНОВЛЕНИЯ</p>
+        </div>
+      </div>
+      <div class='text'>
+        <p>
+          Команда наших разработчиков обеспечивает полную защиту читов от VAC/BattlEye/FairFight и прочих анти-читов.
+          М<span style="font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;">
+          ы тщательно исследуем анти-чит модули, чтобы быть на 100% уверенными в безопасности нашего продукта.
+        </span>
+        </p>
+      </div>
+    </div>
+    <div class='benefit show-animate-zoom fade1'>
+      <div class='icon'>
+        <div>
+          <img src='images/icon2.png' alt='иконка'>
+        </div>
+        <div>
+          <p>КОМПЕНСАЦИЯ СРЕДСТВ</p>
+        </div>
+      </div>
+      <div class='text'>
+        <p>В случае, если Вас забанят за наш софт, мы компенсируем ущерб покупкой новой игры, либо возвратом денег за
+          чит.</p>
+      </div>
+    </div>
+    <div class='benefit show-animate-zoom fade2'>
+      <div class='icon'>
+        <div>
+          <img src='images/icon3.png' alt='иконка'>
+        </div>
+        <div>
+          <p>МУТАЦИЯ КОДА</p>
+        </div>
+      </div>
+      <div class='text'>
+        <p>Нами была приобретена одна из самых лучших программ для защиты памяти чита, которая шифрует данные, обходя
+          разного вида анти-читы.</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class='benefit show-animate-zoom fade3'>
+      <div class='icon'>
+        <div>
+          <img src='images/icon4.png' alt='иконка'>
+        </div>
+        <div>
+          <p>ЧАСТЫЕ СКИДКИ И БОНУСЫ</p>
+        </div>
+      </div>
+      <div class='text'>
+        <p>Мы знаем, что Вы любите подарки, поэтому после покупки двух читов на третий дарим Вам скидку до 50%. Также
+          время от времени на сайте проходят различные акции.</p>
+      </div>
+    </div>
+    <div class='benefit show-animate-zoom fade4'>
+      <div class='icon'>
+        <div>
+          <img src='images/icon5.png' alt='иконка'>
+        </div>
+        <div>
+          <p>ПОСТОЯННАЯ ПОДДЕРЖКА</p>
+        </div>
+      </div>
+      <div class='text'>
+        <p>Специалисты технической поддержки нашего проекта всегда готовы прийти Вам на помощь. Вы не останетесь с
+          нерешенным вопросом. В случае затруднительных ситуаций, мы подключимся к Вашему ПК и сами устраним
+          проблему.</p>
+      </div>
+    </div>
+    <div class='benefit show-animate-zoom fade5'>
+      <div class='icon'>
+        <div>
+          <img src='images/icon6.png' alt='иконка'>
+        </div>
+        <div>
+          <p>РЕФЕРАЛЬНАЯ СИСТЕМА</p>
+        </div>
+      </div>
+      <div class='text'>
+        <p>
+
+          Хотите сэкономить, покупая читы? У нас есть уникальное предложение: приводите друзей на наш сайт и получайте
+          10% от суммы их пополнения. Читерите в удовольствие и выгоду. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='info' class="popup-blur">
+  <div id='center'>
+    <div id='left' class="show-animate-zoom">
+      <div id='color'>
+      </div>
+      <div id='img'>
+        <img src='images/photo.png' alt='приватные читы'>
+      </div>
+      <div id='text' class='text'>
+        <p><span id='bold'>Приватные читы</span> - это читерский софт, предназначенный для узкого круга пользования.</p>
+      </div>
+    </div>
+    <div id='right'>
+      <div class='p show-animate'><p>ЧТО ТАКОЕ <span class='blue'>ПРИВАТНЫЕ ЧИТЫ?</span></p></div>
+      <div class='text show-animate-zoom'><p>Такого рода читы отличаются наличием уникального функционала, качественным
+        обходом систем анти-чита и защитой, которую Вы нигде не встретите. Продукт тестируется несколько раз перед
+        публикацией в продажу и имеет ряд возможностей, которых нет в бесплатных читах. Получить бан игрового аккаунта
+        за приватный софт намного сложнее, нежели за пабликовский, по причине слаженной и оперативной работы команды
+        кодеров, которые незамедлительно выпустят обновление во избежании детекта чита. Выбирая наш приватный софт, Вы
+        обеспечиваете себе не только комфортную игру, а также значительную доминацию в игровом процессе, но и отличную
+        защиту от блокировки аккаунта.</p></div>
+    </div>
+  </div>
+</div>
+<div id='guarantie' class="popup-blur">
+  <div class='center'>
+    <div class='p show-animate'><p>ГАРАНТИЯ</p></div>
+    <div class='guarantie text show-animate-fadeleft'>
+      <p>
+        Сайт <span class="fonth">HACKGAMES</span> открылся относительно недавно, по этой причине нашей главной целью на
+        данный момент является зарекомендовать себя с лучшей стороны на рынке приватного софта. Мы разработали
+        уникальную систему отзывов, Вы всегда сможете ознакомиться с тем, что думают о данном софте уже купившие его
+        люди. </p>
+    </div>
+    <div class='guarantie show-animate-faderight'>
+      <div class='text'><p>
+        <p>
+          <span style="font-family: ROBOTO-MEDIUM;">﻿</span>Команда проекта заинтересована в увеличении потенциальной
+          аудитории и старается обеспечить максимальную защиту трейнеров от разного вида анти-читов на разных игровых
+          площадках: <span style="font-family: ROBOTO-MEDIUM;">Steam</span><span style="font-family: ROBOTO-MEDIUM;">, Origin,</span>
+        <span style="font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;">&nbsp;<span style="font-family: ROBOTO-MEDIUM;">Mail.Ru</span></span>.
+          В отличии от подобных читерских порталов, мы прикладываем все усилия для того, чтобы Вы остались довольны.
+        </p></div>
+      <div class='stamp text'>
+        <img src='images/stamp1.png' alt='печать'>
+        <p>С уважением,<br> Администрация сайта<br> HACKGAMES.SU</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='networks' class="popup-blur">
+  <div class='center'>
+    <div id='youtube'>
+      <div id='chanel'>
+        <p><span class='blue'>НАШ КАНАЛ</span> НА YOUTUBE</p>
+        <script async src="js/platform.js"></script>
+        <div class="g-ytsubscribe" data-channelid="UC4-ez9RvK5aFyB7z8IUs6Bw" data-layout="full" data-count="default"></div>
+      </div>
+      <div id='frame'>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mVTJRyd_WmI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id='vk'>
+      <p><span class='blue'>НАШ КАНАЛ</span> TELEGRAM</p>
+      <div id='group'>
+        <iframe src="https://tgwidget.com/channel/v2.0/?id=5b6c385d83ba888b508b4567" frameborder="0" scrolling="no" horizontalscrolling="no" verticalscrolling="no" width="100%" height="540px" async></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='footer' class="popup-blur">
+  <div class='center'>
+    <div class='agree'>
+      <div class='agreement text'>
+        <a href='https://hackgames.su/policies/#terms' target="_blank">Пользовательское соглашение</a>
+      </div>
+      <div class='agreement text'>
+        <a href='https://hackgames.su/policies/#privacy' target="_blank">Политика конфиденциальности</a>
+      </div>
+    </div>
+    <div class='agree1'>
+      <a href='https://vk.com/hackgames_official'><img src='images/vk.png'></a>
+      <a href='https://www.youtube.com/c/hackgames_off'><img src='images/youtube1.png'></a>
+      <a href='https://t.me/hackgames_official'><img src='images/tweeter.png'></a>
+    </div>
+    <div id='rule'>
+      <div class='social'>
+        <p><span class='fonth'>HACKGAMES.SU</span></p>
+      </div>
+      <div class='social text'>
+        <p>Все права защищены © 2018</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<script type="text/javascript" src="https://vk.com/js/api/openapi.js"></script>
+&lt;!&ndash; VK Widget &ndash;&gt;
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 169823693, {
+    disableExpandChatSound: "1",
+    tooltipButtonText: "Ответим на Ваш вопрос"
+  });
+</script>-->
+
+<div id="clipboard"></div>
+<script src="js/jquery/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script defer src="plugins/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script defer src="js/script.js"></script>
+<script defer src="js/gallery.js"></script>
+<script defer src="js/jquery.viewportchecker.js"></script>
+<script defer type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+<script defer type="text/javascript" src="plugins/fancybox/jquery.fancybox.min.js"></script>
+</body>
+</html>

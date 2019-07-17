@@ -1,0 +1,834 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*---| media queries |---*/
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	#Nav li a{
+		letter-spacing: 1px;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	#mainLogo{
+		width: 226px;
+		height: 68px;
+		background: url(../images/logoMain.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:310px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramelg.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavlg.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 30px;
+	}
+	#sectionComingSoon{
+		background: #000;
+	}
+	#sectionComingSoon .bgZero{
+		background: url(../images/Intro2.jpg) center center no-repeat;
+	}
+	#sectionComingSoon .bgOne{
+		background: url(../images/Intro5.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgTwo{
+		background: url(../images/Intro3.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgThree{
+		background: url(../images/Intro4.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFour{
+		background: url(../images/Intro1.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFive{
+		background: url(../images/Intro6.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgsix{
+		background: url(../images/Intro7.png) center center no-repeat;
+	}
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/secHeader1Back.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/secHeader1Tractor.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/secHeader1TractorWheels.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/secHeader1Seed.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/secHeader1.png) center center no-repeat;
+	}
+	#sectionTwo{
+		background: #542C22;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/secHeader2Back.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/secHeader2BackHills.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/secHeader2Wheat.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/secHeader2Cock.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+	}
+	#sectionThree{
+		background: #A05842;
+	}
+	#sectionThree .bgOne{
+		background:  #A05842 url(../images/secHeader3Back.jpg) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/secHeader3DarkestCloud.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/secHeader3LightestCloud.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/secHeader3.png) center center no-repeat;
+	}
+	#sectionFour{
+		background: #00BB2E;
+	}
+	#sectionFour .bgZero{
+		background: url(../images/secHeader4Back.jpg) center center no-repeat;
+	}
+	#sectionFour .bgOne{
+		background: url(../images/secHeader4RaysGrass.png) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/secHeader4Barn.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/secHeader4BarnDoor.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/secHeader4Road.png) center center no-repeat;
+	}
+	#sectionFive{
+		background: #E9CF00;
+	}
+	#sectionFive .bgZero{
+		background: url(../images/secHeader5Back.jpg) center center no-repeat;
+	}
+	#sectionFive .bgOne{
+		background: url(../images/crops2.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/crops1.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/secHeader5b.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/secHeader5a.png) center center no-repeat;
+	}
+	#sectionSix{
+		background: #5FBBC6;
+	}
+	#sectionSix .bgOne{
+		background: url(../images/secHeader6Back.jpg) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/secHeader6HillCloud.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/secHeader6Cow.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/secHeader6Grass.png) center center no-repeat;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px){
+	#Nav li a{
+		letter-spacing: 1px;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	#mainLogo{
+		width: 226px;
+		height: 68px;
+		background: url(../images/logoMain.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:310px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramelg.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavlg.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 30px;
+	}
+	#sectionComingSoon{
+		background: #000;
+	}
+	#sectionComingSoon .bgZero{
+		background: url(../images/Intro2.jpg) center center no-repeat;
+	}
+	#sectionComingSoon .bgOne{
+		background: url(../images/Intro5.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgTwo{
+		background: url(../images/Intro3.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgThree{
+		background: url(../images/Intro4.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFour{
+		background: url(../images/Intro1.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFive{
+		background: url(../images/Intro6.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgsix{
+		background: url(../images/Intro7.png) center center no-repeat;
+	}
+
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/secHeader1Back.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/secHeader1Tractor.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/secHeader1TractorWheels.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/secHeader1Seed.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/secHeader1.png) center center no-repeat;
+	}
+	#sectionTwo{
+		background: #542C22;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/secHeader2Back.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/secHeader2BackHills.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/secHeader2Wheat.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/secHeader2Cock.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+	}
+	#sectionThree{
+		background: #A05842;
+	}
+	#sectionThree .bgOne{
+		background:  #A05842 url(../images/secHeader3Back.jpg) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/secHeader3DarkestCloud.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/secHeader3LightestCloud.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/secHeader3.png) center center no-repeat;
+	}
+	#sectionFour{
+		background: #00BB2E;
+	}
+	#sectionFour .bgZero{
+		background: url(../images/secHeader4Back.jpg) center center no-repeat;
+	}
+	#sectionFour .bgOne{
+		background: url(../images/secHeader4RaysGrass.png) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/secHeader4Barn.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/secHeader4BarnDoor.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/secHeader4Road.png) center center no-repeat;
+	}
+	#sectionFive{
+		background: #E9CF00;
+	}
+	#sectionFive .bgZero{
+		background: url(../images/secHeader5Back.jpg) center center no-repeat;
+	}
+	#sectionFive .bgOne{
+		background: url(../images/crops2.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/crops1.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/secHeader5b.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/secHeader5a.png) center center no-repeat;
+	}
+	#sectionSix{
+		background: #5FBBC6;
+	}
+	#sectionSix .bgOne{
+		background: url(../images/secHeader6Back.jpg) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/secHeader6HillCloud.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/secHeader6Cow.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/secHeader6Grass.png) center center no-repeat;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+		#Nav li a{
+		letter-spacing: 1px;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	#mainLogo{
+		width: 226px;
+		height: 68px;
+		background: url(../images/logoMain.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:310px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramelg.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavlg.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 30px;
+	}
+	#sectionComingSoon{
+		background: #000;
+	}
+	#sectionComingSoon .bgZero{
+		background: url(../images/Intro4.jpg) center center no-repeat;
+	}
+	#sectionComingSoon .bgOne{
+	}
+	#sectionComingSoon .bgTwo{
+		background: url(../images/Intro3.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgThree{
+		background: url(../images/Intro2.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFour{
+		background: url(../images/Intro1.png) center center no-repeat;
+	}
+
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/secHeader1Back.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/secHeader1Tractor.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/secHeader1TractorWheels.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/secHeader1Seed.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/secHeader1.png) center center no-repeat;
+	}
+	#sectionTwo{
+		background: #542C22;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/secHeader2Back.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/secHeader2BackHills.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/secHeader2Wheat.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/secHeader2Cock.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+	}
+	#sectionThree{
+		background: #A05842;
+	}
+	#sectionThree .bgOne{
+		background:  #A05842 url(../images/secHeader3Back.jpg) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/secHeader3DarkestCloud.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/secHeader3LightestCloud.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/secHeader3.png) center center no-repeat;
+	}
+	#sectionFour{
+		background: #00BB2E;
+	}
+	#sectionFour .bgZero{
+		background: url(../images/secHeader4Back.jpg) center center no-repeat;
+	}
+	#sectionFour .bgOne{
+		background: url(../images/secHeader4RaysGrass.png) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/secHeader4Barn.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/secHeader4BarnDoor.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/secHeader4Road.png) center center no-repeat;
+	}
+	#sectionFive{
+		background: #E9CF00;
+	}
+	#sectionFive .bgZero{
+		background: url(../images/secHeader5Back.jpg) center center no-repeat;
+	}
+	#sectionFive .bgOne{
+		background: url(../images/crops2.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/crops1.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/secHeader5b.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/secHeader5a.png) center center no-repeat;
+	}
+	#sectionSix{
+		background: #5FBBC6;
+	}
+	#sectionSix .bgOne{
+		background: url(../images/secHeader6Back.jpg) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/secHeader6HillCloud.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/secHeader6Cow.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/secHeader6Grass.png) center center no-repeat;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#Nav li a{
+		letter-spacing: 1px;
+		font-size: 12px;
+		line-height: 12px;
+		text-transform: uppercase;
+	}
+	#mainLogo{
+		width: 100px;
+		height: 30px;
+		background: url(../images/logoMainSm.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:260px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramesm.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavsm.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 20px;
+	}
+	#sectionComingSoon{
+		background: #000;
+	}
+	#sectionComingSoon .bgZero{
+		background: url(../images/Intro2Sm.jpg) center center no-repeat;
+	}
+	#sectionComingSoon .bgOne{
+		background: url(../images/Intro5Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgTwo{
+		background: url(../images/Intro3Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgThree{
+		background: url(../images/Intro4Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFour{
+		background: url(../images/Intro1Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFive{
+		background: url(../images/Intro6Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgSix{
+		background: url(../images/Intro7Sm.png) center center no-repeat;
+	}
+
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/secHeader1BackSm.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/secHeader1TractorSm.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/secHeader1TractorWheelsSm.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/secHeader1SeedSm.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/secHeader1Sm.png) center center no-repeat;
+	}
+	#sectionTwo{
+		background: #542C22;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/secHeader2BackSm.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/secHeader2BackHillsSm.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/secHeader2WheatSm.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/secHeader2CockSm.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+	}
+	#sectionThree{
+		background: #A05842;
+	}
+	#sectionThree .bgOne{
+		background:  #A05842 url(../images/secHeader3BackSm.jpg) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/secHeader3DarkestCloudSm.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/secHeader3LightestCloudSm.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/secHeader3Sm.png) center center no-repeat;
+	}
+	#sectionFour{
+		background: #00BB2E;
+	}
+	#sectionFour .bgZero{
+		background: url(../images/secHeader4BackSm.jpg) center center no-repeat;
+	}
+	#sectionFour .bgOne{
+		background: url(../images/secHeader4RaysGrassSm.png) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/secHeader4BarnSm.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/secHeader4BarnDoorSm.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/secHeader4RoadSm.png) center center no-repeat;
+	}
+	#sectionFive{
+		background: #E9CF00;
+	}
+	#sectionFive .bgZero{
+		background: url(../images/secHeader5BackSm.jpg) center center no-repeat;
+	}
+	#sectionFive .bgOne{
+		background: url(../images/crops2Sm.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/crops1Sm.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/secHeader5bSm.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/secHeader5aSm.png) center center no-repeat;
+	}
+	#sectionSix{
+		background: #5FBBC6;
+	}
+	#sectionSix .bgOne{
+		background: url(../images/secHeader6BackSm.jpg) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/secHeader6HillCloudSm.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/secHeader6CowSm.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/secHeader6GrassSm.png) center center no-repeat;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#Nav li a{
+		letter-spacing: 1px;
+		font-size: 12px;
+		line-height: 12px;
+		text-transform: uppercase;
+	}
+	#mainLogo{
+		width: 100px;
+		height: 30px;
+		background: url(../images/logoMainSm.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:260px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramesm.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavsm.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 20px;
+	}
+	#sectionComingSoon{
+		background: #000;
+	}
+	#sectionComingSoon .bgZero{
+		background: url(../images/Intro2Sm.jpg) center center no-repeat;
+	}
+	#sectionComingSoon .bgOne{
+		background: url(../images/Intro5Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgTwo{
+		background: url(../images/Intro3Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgThree{
+		background: url(../images/Intro4Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFour{
+		background: url(../images/Intro1Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgFive{
+		background: url(../images/Intro6Sm.png) center center no-repeat;
+	}
+	#sectionComingSoon .bgSix{
+		background: url(../images/Intro7Sm.png) center center no-repeat;
+	}
+
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/secHeader1BackSm.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/secHeader1TractorSm.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/secHeader1TractorWheelsSm.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		display:none;
+		background: url(../images/secHeader1SeedSm.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/secHeader1Sm.png) center center no-repeat;
+	}
+	#sectionTwo{
+		background: #542C22;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/secHeader2BackSm.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/secHeader2BackHillsSm.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/secHeader2WheatSm.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/secHeader2CockSm.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+	}
+	#sectionThree{
+		background: #A05842;
+	}
+	#sectionThree .bgOne{
+		background:  #A05842 url(../images/secHeader3BackSm.jpg) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/secHeader3DarkestCloudSm.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/secHeader3LightestCloudSm.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/secHeader3Sm.png) center center no-repeat;
+	}
+	#sectionFour{
+		background: #00BB2E;
+	}
+	#sectionFour .bgZero{
+		background: url(../images/secHeader4BackSm.jpg) center center no-repeat;
+	}
+	#sectionFour .bgOne{
+		background: url(../images/secHeader4RaysGrassSm.png) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/secHeader4BarnSm.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/secHeader4BarnDoorSm.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/secHeader4RoadSm.png) center center no-repeat;
+	}
+	#sectionFive .bgZero{
+		background: url(../images/secHeader5BackSm.jpg) center center no-repeat;
+	}
+	#sectionFive .bgOne{
+		background: url(../images/crops2Sm.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/crops1Sm.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/secHeader5bSm.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/secHeader5aSm.png) center center no-repeat;
+	}
+	#sectionSix{
+		background: #5FBBC6;
+	}
+	#sectionSix .bgOne{
+		background: url(../images/secHeader6BackSm.jpg) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/secHeader6HillCloudSm.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/secHeader6CowSm.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/secHeader6GrassSm.png) center center no-repeat;
+	}
+}

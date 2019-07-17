@@ -1,0 +1,297 @@
+@charset "UTF-8";
+body, #error-page {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #010101;
+  line-height: 24px;
+  background: #fff;
+}
+p {
+  line-height: 24px;
+}
+.side-breadcrumb.type-1 {
+  background-image: url('//wp.arrowhitech.net/franco/wp-content/themes/franco/images/bg-breadcrumb.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: inherit;
+}
+.header-bottom, .header-v10 .header-bottom:not(.show-breadcrumb) {
+  background-color: transparent;
+}
+.header-v12, .header-v8 {
+  background-color: transparent;
+}
+.header-v14 {
+  background-color: #2a2a2a;
+}
+.header-v2 .header-bottom.show-breadcrumb {
+  background-color: #161616;
+}
+.header-v6 .header-bottom {
+  background-color: #000;
+}
+.header-v9 .header-bottom {
+  background-color: transparent;
+}
+.header-v13 .mega-menu > li > a, .header-v16 .mega-menu > li > a, .header-v15 .mega-menu > li > a {
+  color: #000;
+}
+.header-v13 .header-bottom, .header-v16 .header-bottom, .header-v15 .header-bottom {
+  background-color: #fff;
+}
+.header-v13 .mega-menu > li > a, .header-v1 .mega-menu > li > a, .header-v3 .mega-menu > li > a, .header-v10 .mega-menu > li > a, .header-v4 .mega-menu > li > a, .header-v5 .mega-menu > li > a, .header-v12 .mega-menu > li > a, .header-v8 .mega-menu > li > a {
+  color: #000;
+}
+.header-v6 .mega-menu > li > a, .header-v9 .mega-menu > li > a, .header-v6 .btn-open, .header-v9 .btn-open, .header-v6 .right-header .search-block-top > .btn-search, .header-v9 .right-header .search-block-top > .btn-search {
+  color: #fff;
+}
+.header-v9 .header-bottom .mega-menu > li > a {
+  color: #fff;
+}
+.header-v7 .mega-menu > li > a, .header-v7 .btn-open, .header-v7 .text-quote, .header-v7 .social_icon_list li a, .header-v7 .subscribe a, .header-v7 .search-block-top > .btn-search {
+  color: #fff;
+}
+.header-v7 .text-quote::before {
+  background: #fff;
+}
+.header-v14 .mega-menu > li > a, .header-v14 .search-block-top > .btn-search, .header-v14 .top-link .customlinks > a i, .header-v14 .mini-cart .cart_label i:before {
+  color: #fff;
+}
+.header-v16 .header-top {
+  background: #000;
+}
+.header-v16 .header-top a {
+  color: #4d4d4d;
+}
+.header-v17 {
+  background: #fff;
+}
+.header-v17 .header-top {
+  background: #fff;
+}
+.header-v17 .header-top .display-inline a, .header-v17 .header-top .header-text p {
+  color: #8d8d8d;
+}
+.header-v17.is-sticky {
+  background: #fff;
+}
+.header-v11 .mega-menu > li > a, .header-v11 .btn-open, .header-v11 .social_icon_list li a, .header-v11 .subscribe a, .header-v11 .search-block-top > .btn-search {
+  color: #fff;
+}
+.footer .footer_wrap .footer-office, .footer .bottom-footer {
+  background-color: #222;
+}
+.footer-v3 .footer-top, .footer-v3 .bottom-footer, .footer-v3 .footer_wrap .footer-office {
+  background-color: #e2e2e2;
+}
+.footer-v4 .bottom-footer {
+  background-color: #5c97c3;
+  color: #fff;
+}
+.footer-v5 .bottom-footer {
+  background-color: #000;
+}
+.footer-v7 .bottom-footer, .footer-v7 .footer_wrap .footer-office {
+  background-color: #f0f0f0;
+}
+.footer-v10, .footer-v10 .bottom-footer, .footer-v10 .footer_wrap .footer-office {
+  background-color: #efefef;
+}
+.footer .footer-v10 a {
+  color: #999;
+}
+.footer .footer-v10 p {
+  color: #aaa;
+}
+.footer-v11 .bottom-footer, .footer-v11 .footer_wrap .footer-office {
+  background-color: #fff;
+}
+.footer .footer-v11 .widget .footer-title, .footer .footer-v11 .widget p, .footer .footer-v11 a, .footer .footer-v11 .location i {
+  color: #000;
+}
+.footer .footer-v3 {
+  color: #424242;
+}
+.footer .footer-v3 a {
+  color: #424242;
+}
+.footer .footer-v2 {
+  color: #aaa;
+}
+.footer .footer-v2 a {
+  color: #aaa;
+}
+.footer {
+  color: #888;
+}
+.footer a {
+  color: #888;
+}
+.bg-footer {
+  background-image: ;
+  background-repeat: ;
+  background-size: ;
+  background-attachment: ;
+}
+h1 {
+  font-family: Montserrat;
+  color: #000;
+  font-size: 36px;
+}
+h2 {
+  font-family: Montserrat;
+  color: #000;
+  font-size: 36px;
+}
+h3 {
+  font-family: Montserrat;
+  color: #000;
+  font-size: 24px;
+}
+h4 {
+  font-family: Montserrat;
+  color: #000;
+  font-size: 16px;
+}
+h5 {
+  font-family: Montserrat;
+  color: #000;
+  font-size: 14px;
+}
+h6 {
+  font-family: Montserrat;
+  color: #000;
+  font-size: 12px;
+}
+/*Color*/
+.product-type-2.prd_type3 .product-action .add-to a:hover i,.main-3 .instagram-gallery .banner_text_overlay.show_custom_text a, .shop-2 .term-description > p, .product-type-2.prd_type3 .product-action .add-to a:hover, body .btn, .footer .footer-v6 .to-top a:hover, .footer .footer-v6 .bottom-footer a:hover, .mega-menu .dropdown-menu li a:hover, .header-v12 .search-block-top > .btn-search:hover, .header-v12 .mega-menu > li > a:hover, .blog-masonry .blog-item .post-name > a:hover, .recentcomments a:hover, .mega-menu li a:hover, .mega-menu li a:focus, .header-v8 .search-block-top > .btn-search:hover, .header-v8 .mega-menu > li > a:hover, .woocommerce-MyAccount-navigation ul > li.is-active a, .shop_table td.product-thumbnail .prd_info > a:hover, .shop_table .product-remove a:hover, .widget_nav_menu .menu-sticky ul li.selected a, .widget_product_categories .current-cat > a, .widget_franco_brands .current-cat > a, .widget_pages .current-cat > a, .widget_product_categories .current-cat-parent > a, .widget_franco_brands .current-cat-parent > a, .widget_pages .current-cat-parent > a, .widget_product_categories .current_page_item > a, .widget_franco_brands .current_page_item > a, .widget_pages .current_page_item > a, .widget_product_categories .current-page-parent > a, .widget_franco_brands .current-page-parent > a, .widget_pages .current-page-parent > a, .paginationtype-2 li a:hover, .tooltbars a:hover, .tooltbars a.active, .addthis_sharing_toolbox .f-social li a:hover, .footer .footer-v8 a:hover, .widget_categories ul li a:hover, .widget_product_categories ul li a:hover, .widget_franco_brands ul li a:hover, .widget_pages ul li a:hover, .active-sidebar .widget_nav_menu ul li a:hover, .widget_archive ul li a:hover, .widget_meta ul li a:hover, .header-v8 .subscribe a:hover, .header-v8 .social_icon_list li a:hover, .category-blog ul li a:hover, .header-v12 .social_icon_list li a:hover, .header-v12 .subscribe a:hover, .blog-content .blog-item .blog-info .info a:hover, .blog-content .blog-item .blog-info .info:hover > i, .footer .footer-v3 a:hover, .footer .footer-v3 .bottom-footer a:hover, .footer .footer-v3 .footer-top a:hover, .blog-type-3 .blog-item .read-more > a, .header-v4 .right-header > div > a:hover, .footer .footer-v2 .mc4wp-form [type="submit"]:hover, .footer .footer-v2 a:hover, .footer .footer-v2 .bottom-footer a, .controls-custom .owl-nav > div:hover, .mini-cart-special .cart-block .widget_shopping_cart_content .cart-actions .total .price, .btn, .blog-type-1 .blog-info .post_social_event a:hover span, .blog-type-2 .blog-info .post_social_event a:hover span, .button-group button:hover, .button-group button.is-checked, .video-content .title-video span, .footer .bottom-footer a:hover, .price, .blog-item .blog-info .post_social_event a:hover, .blog-item:hover .post-name > a, .product-img:hover .product-action .add_to_cart_button, .price ins, .custom.tparrows:hover::after, .tabs-sort .button-group button:hover, .tabs-sort .button-group button.is-checked, .franco-heading p, .widget_shopping_cart_content .cart-info .product-name a:hover, .widget_shopping_cart_content .remove-product:hover, a:focus, a:hover, .search-block-top .btn-search:hover, .search-block-top .btn-search:hover, .mega-menu li:hover > a, .mega-menu li.current-menu-item > a, .mega-menu li.current-menu-ancestor > a, .header-v14 .mini-cart .cart_label i:hover::before, .header-v14 .top-link .customlinks > a i:hover, .banner-jewelry-1 .btn-banner .btn, [class*="banner-jewelry-"] .banner-desc h4, .discover_more a, .header-v2 .right-header > div > a:hover, .product-type-2 .product-action .add-to a:hover, .info-franco .icon-q, .widget_layered_nav_filters li a span, .banner_style_5 .banner-desc .btn:hover, .banner_style_5 .banner-desc .btn:focus, .banner_style_5 .banner-desc .btn:active, .testimonial-container .owl-nav > div:hover::before, .brands-container .owl-nav > div:hover::before, .btn-slide-bottom.testimonial-container .owl-nav > div:hover::before, .btn-slide-bottom.brands-container .owl-nav > div:hover::before, .header-v17 .top-link .customlinks > a i, .header-v17 .header-top .display-inline a:hover, .products-tab .posted_in a:hover, .uvc-sub-heading .deal-content .price span, body .btn.btn-default.btn-icon:hover, body .btn.btn-default.btn-icon:focus, .header-v17 .header-text > p i, .footer .footer-v11 .widget_nav_menu div > ul > li a:hover, .footer .footer-v11 a:hover, .featured-product.product-list .product-content .posted_in a:hover {
+  color: #1165cb;
+}
+.ult-carousel-wrapper .slick-dots li.slick-active i, .btn-slide-bottom.ult-carousel-wrapper button.circle-bg:hover, .btn-slide-bottom.ult-carousel-wrapper button.circle-border:hover, .add-to-wishlist .fa-heart {
+  color: #1165cb !important;
+}
+.service-content .serv_icon {
+  color: #dab986;
+}
+.load-more.blog-load > a.btn:hover, .sale-of,.shop-by::before, .shop-2 .shop-by::before, .header-v17 .search-block-top > .btn-search, .woocommerce-account input[type="submit"], .prev-btn:hover, .next-btn:hover, .scroll-to-top, .main-images .owl-dots .owl-dot.active, .tooltip-inner, .yith-woocompare-widget .clear-all, .yith-woocompare-widget .compare.button, .cart-btn.button, .price_slider_amount .button, .wishlist_table .product-add-to-cart > .add_to_cart.button, .widget-title::before, .widgettitle::before, .header-v11::before, .comment-reply-title::before, .testimonial_style2 .owl-dot.active, .testimonial_style2 .owl-dot:hover, .load-more > a.btn, .widget.widget_tag_cloud a:hover, .header-v7::before, #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span, #fp-nav ul li .fp-tooltip, #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, .footer-office .mc4wp-form-fields [type="submit"], .right-sidebar .mc4wp-form-fields [type="submit"], .left-sidebar .mc4wp-form-fields [type="submit"], .header-v4 .right-header > div > a::after, .header-v4 .right-header > div > a::before, .tooltip:hover:after, .blog-type-2 .blog-item .blog-date, .testimonial-content::after, .product-slide .product-img::before, .btn.btn-default:hover, .has_overlay::before, .img-design::after, .product-action-grid.product-action .add_to_cart_button, .product-action .add-to a:hover, .franco-heading h1::before, .franco-heading h2::before, .franco-heading h3::before, .franco-heading h4::before, .franco-heading h5::before, .franco-heading h6::before, .custom.tparrows:hover::before, .btn.btn-primary, .widget_shopping_cart_content .cart-btn .cart-btn:hover, .widget_shopping_cart_content .cart-btn .cart-btn:first-child, .popup_holder .popup .mc4wp-form [type="submit"], .mega-menu > li > a::before, .mega-menu > li > a::after, .cart_nu_count, .component__list-item, .banner_style_6 .banner-desc .link-cate::before, .banner_style_4::before, .widget_price_filter .ui-slider .ui-slider-handle, .banner-jewelry-1 .banner-content::before, body .btn.btn-primary, .product-type-2.prd_type3 .product-action-grid.product-action .add_to_cart_button, .header-v13 .cart_label, .img-member::before, .bg-primary, .blog-item .blog-date, .img-right .vc_figure::before, .ads-type-2, .ads-type-2::before, .ads-type-2::after, .tabs_sort .isotope.gallery-style2 .item figure:hover figcaption::before, .children.dropdown-menu::before, .header-v3 .header-logo > a::before, .header-v2 .right-header > div > a::before, .header-v2 .right-header > div > a::after, .post-type-archive-product .pagination ul.page-numbers .current, .tax-product_cat .pagination ul.page-numbers .current, .post-type-archive-product .pagination ul.page-numbers li:hover, .tax-product_cat .pagination ul.page-numbers li:hover, .header-v17 .cart_label, .products-tab .product-img .product-action .add_to_cart_button:hover, .footer .footer-v11 .ft_newsletter, .footer .footer-v11 .footer-title::before, #cart_added_msg_popup, #compare_added_msg_popup {
+  background: #1165cb;
+}
+.footer .footer-v2 .footer-newsletter, .footer .footer-newsletter {
+  background-color: #1165cb;
+}
+.cart-block::-webkit-scrollbar-thumb {
+  background-color: #1165cb !important;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default:active:focus, .btn-default:focus:active, .mc4wp-form [type="submit"]:hover {
+  background: #1165cb !important;
+}
+.prev-btn:hover, .next-btn:hover, .popup_holder .popup .mc4wp-form [type="submit"], .widget.widget_tag_cloud a:hover, .footer .footer-v8 .widget_nav_menu div > ul > li a:hover, .footer .footer-v3 .widget_nav_menu div > ul > li a:hover, .footer-v7 .widget.widget_tag_cloud a:hover, .footer .footer-v7 .widget_nav_menu div > ul > li a:hover, .footer .footer-v2 .widget_nav_menu div > ul > li a:hover, .border-primary::before, .products-tab .product-img .product-action .add_to_cart_button:hover, .widget_shopping_cart_content .cart-btn .cart-btn:first-child, .widget_shopping_cart_content .cart-btn .cart-btn:hover {
+  border-color: #1165cb;
+}
+.mc4wp-form [type="submit"]:hover {
+  border-color: #1165cb !important;
+}
+.sale-of:before{
+	border-color: #1165cb rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+.sale-of:after{
+	 border-color: transparent transparent #1165cb;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #1165cb;
+}
+.tooltip.right .tooltip-arrow{
+  border-right-color:#1165cb;
+}
+.tooltip.left .tooltip-arrow{
+    border-left-color:#1165cb;
+}
+.product-type-2.prd_type3 .price, .product-type-2 .price {
+  color: #2e3091;
+}
+.product-type-2 .product-action-grid.product-action .add_to_cart_button {
+  background: #2e3091;
+}
+.products-tab .product-img::before {
+  background: -moz-linear-gradient(90deg, #2e3091 0%, #1165cb 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1165cb), color-stop(100%, #2e3091));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #2e3091 0%, #1165cb 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #2e3091 0%, #1165cb 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #2e3091 0%, #1165cb 100%);
+  /* ie10+ */
+  background: linear-gradient(0deg, #2e3091 0%, #1165cb 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary_color', endColorstr='$highlight_color',GradientType=0);
+  /* ie6-9 */
+}
+.bg-gradient:before {
+  background: -moz-linear-gradient(135deg, #2e3091 0%, #1165cb 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1165cb), color-stop(100%, #2e3091));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(135deg, #2e3091 0%, #1165cb 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(135deg, #2e3091 0%, #1165cb 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(135deg, #2e3091 0%, #1165cb 100%);
+  /* ie10+ */
+  background: linear-gradient(315deg, #2e3091 0%, #1165cb 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primary_color', endColorstr='$highlight_color',GradientType=0);
+  /* ie6-9 */
+}
+/* Color themes */
+.default .children.dropdown-menu::before {
+  background-color: #8262b5;
+}
+.awesome .children.dropdown-menu::before {
+  background-color: #ff1a56;
+}
+.banana .children.dropdown-menu::before {
+  background-color: #f1c40f;
+}
+.cherry .children.dropdown-menu::before {
+  background-color: #c0392b;
+}
+.di-serria .children.dropdown-menu::before {
+  background-color: #1165cb;
+}
+.leaf .children.dropdown-menu::before {
+  background-color: #27ae60;
+}
+.nightsky .children.dropdown-menu::before {
+  background-color: #2980b9;
+}
+.orange .children.dropdown-menu::before {
+  background-color: #f96015;
+}
+.pastel .children.dropdown-menu::before {
+  background-color: #ffb546;
+}
+.niagara .children.dropdown-menu::before {
+  background-color: #16a085;
+}
+.electric .children.dropdown-menu::before {
+  background-color: #0091ea;
+}
+.light-taupe .children.dropdown-menu::before {
+  background-color: #ad8368;
+}
+.pastel-red .children.dropdown-menu::before {
+  background-color: #ff6d6d;
+}
+.light-green .children.dropdown-menu::before {
+  background-color: #2ecc71;
+}
+.rodeo-dust .children.dropdown-menu::before {
+  background-color: #c7b29b;
+}
+.sunglo .children.dropdown-menu::before {
+  background-color: #d86d65;
+}

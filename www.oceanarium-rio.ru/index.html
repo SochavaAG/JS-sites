@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="keywords" content="Океанариум"/>
+  <meta name="description" content="Океанариум"/>
+
+  <link href="css/normalize.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+  <link href="css/owl.carousel.min.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+  <link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+  <link href="css/jquery.fancybox.min.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+
+  <script type="text/javascript" src="js/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/likely.js"></script>
+
+  <!--
+  <script type="text/javascript">
+    var _ba = _ba || [];
+    _ba.push(["aid", "ca7a275783e318ea596dd650e1f07e6a"]);
+    _ba.push(["host", "www.oceanarium-rio.ru"]);
+    (function () {
+      var ba = document.createElement("script");
+      ba.type = "text/javascript";
+      ba.async = true;
+      ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ba, s);
+    })();
+  </script>
+  -->
+
+  <title>Океанариум</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+  <script type="text/javascript" src="js/TicketManager.js"></script>
+</head>
+
+<body class="main">
+<div class="to_top"></div>
+<div id="panel">
+</div>
+<div class="ocean_x_form">
+  <div class="head" id="head">
+    <a href="/#price" class="btn">Купить билет</a>
+    <div class="video_wrapper">
+
+      <video id="bg_video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" muted="">
+        <script>
+          var tmp = "<source src='video/okeanarium-web.mp4'><source src='video/okeanarium-web.webm' type='video/webm'>";
+          var widthWin = $('body').width();
+          $("#bg_video").append(tmp);
+        </script>
+      </video>
+      <!--		<video width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+              <source src="video/okeanarium-web.mp4" type="video/mp4" class="video" />
+              <source src="video/okeanarium-web.webm" type="video/webm" />
+          </video>-->
+    </div>
+    <div class="bg"></div>
+    <a href="/" class="logo"></a>
+    <div class="burger tablet">Меню</div>
+
+    <div class="menu_ss">
+      <a href="https://www.instagram.com/oceanariummsk/" class="soc in" target="_blank"></a>
+      <a href="https://vk.com/oceanariummsk" class="soc vk" target="_blank"></a>
+      <a href="https://www.facebook.com/oceanariummsk" class="soc fb" target="_blank"></a>
+    </div>
+    <div class="left_block">
+      <div class="menu">
+        <div class="close tablet"></div>
+        <a href="/" class="logo_text tablet"></a>
+        <table class="mobile_hide">
+          <tr>
+            <td>
+              <ul>
+                <li><a href="/about/"><span>О проекте</span></a></li>
+                <li><a href="/our_world/"><span>Наш мир</span></a></li>
+                <li><a href="/#price"><span>Цены</span></a></li>
+                <li><a href="/action/"><span>Акции</span></a></li>
+                <li><a href="/news/"><span>Новости</span></a></li>
+                <li><a href="/gallery/"><span>Галерея</span></a></li>
+                <li class="contacts tablet"><a href="/#map" class="contacts"><span>Контакты</span></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <table class="mobile">
+          <tr>
+            <td>
+              <ul class="">
+                <li><a href="/about/"><span>О проекте</span></a></li>
+                <li><a href="/our_world/"><span>Наш мир</span></a></li>
+                <li><a href="/#price"><span>Цены</span></a></li>
+                <li><a href="/action/"><span>Акции</span></a></li>
+                <li><a href="/news/"><span>Новости</span></a></li>
+                <li><a href="/gallery/"><span>Галерея</span></a></li>
+                <li><a href="/#map"><span>контакты</span></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <div class="tablet menu_contacts">
+          <div class="phone">
+            <span>+7 495 755 29 59</span>
+            Ежедневно с 10 до 22, касса до 21
+          </div>
+          <a href="#contacts" class="btn_contacts">
+            Контакты
+          </a>
+          <div class="menu_ss">
+            <span>Группы в соцсетях:</span>
+            <a href="https://www.facebook.com/oceanariummsk/videos/1114989188601088" class="soc fb" target="_blank"></a>
+            <a href="https://vk.com/wall-31735901_2575" class="soc vk" target="_blank"></a>
+            <a href="https://www.instagram.com/p/BWo-_dTlM9l/" class="soc in" target="_blank"></a>
+            <!--<a href="/" class="soc tw" target="_blank"></a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right_block mobile_hide">
+      <div class="phone">
+        <span>+7 495 755 29 59</span>
+        Работаем ежедневно с 10 до 22
+      </div>
+    </div>
+
+    <div class="arrow_bottom"></div>
+    <div class="numbers left">
+      <b>2500</b><span class="m">М<sup>2</sup></span><br/>
+      Площадь океанариума
+    </div>
+    <div class="numbers right">
+      <b>1000</b><span class="m">М<sup>3</sup></span><br/>
+      Воды в аквариуме
+    </div>
+    <div class="waves"></div>
+  </div>
+  <div class="ocean_bg">
+
+
+    <div class="about_block" id="about">
+      <div class="title">
+        Взрослым и&nbsp;детям <span>
+	    Взрослым и&nbsp;детям	</span>
+      </div>
+      <div class="img img_1" style="background-image: url(images/about_1.jpg);">
+        <div><span>
+	    Кормить рыб	    </span></div>
+      </div><div class="img img_2" style="background-image: url(images/about_2.jpg);">
+        <div><span>
+	    Отметить день рождения	</span></div>
+      </div><div class="img img_3" style="background-image: url(images/about_3.jpg);">
+        <div><span>
+	    Устроить романтическое свидание	</span></div>
+      </div><div class="img img_4" style="background-image: url(images/about_4.jpg);">
+        <div><span>
+	    Плавать с акулами	</span></div>
+      </div>
+      <div class="all_events">
+	<span>
+	    Мы придумаем, спланируем, организуем и&nbsp;проведем эксклюзивные детские и&nbsp;взрослые
+    праздники в&nbsp;окружении подводного  царства и&nbsp;тропических джунглей!
+  </span>
+        <a href="/" class="btn order order_event">Заказать мероприятие</a>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <a href="/our_world/" class="page_numbers">
+      <b><span>Более</span> 3000</b><br/><span>видов рыб и животных</span>
+    </a>
+    <div class="main_gallery_block">
+      <svg class="swipe" version="1.1" baseProfile="full"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:ev="http://www.w3.org/2001/xml-events"
+          height="109px"
+          width="119px"
+      >
+        <path fill="rgb( 255, 255, 255 )"
+            d="M117.793,20.2759999999998 L97.7760000000001,34.8049999999998 C97.249,35.1869999999999 96.6220000000001,35.3820000000001 95.99,35.3820000000001 C95.5319999999999,35.3820000000001 95.0719999999999,35.2800000000002 94.6469999999999,35.0709999999999 C93.6369999999999,34.5749999999998 92.999,33.5650000000001 92.999,32.46 L92.999,20.9780000000001 L79.981,20.9780000000001 C78.329,20.9780000000001 76.989,19.6700000000001 76.989,18.056 C76.989,16.442 78.329,15.009 79.981,15.009 L92.999,15.009 L92.999,3.40200000000004 C92.999,2.29700000000003 93.636,1.28699999999981 94.6469999999999,0.79100000000017 C95.6569999999999,0.29599999999982 96.8679999999999,0.39800000000014 97.7750000000001,1.05699999999979 L117.792,15.585 C118.552,16.1370000000002 119,17.0059999999999 119,17.931 C119,18.855 118.552,19.7249999999999 117.793,20.2759999999998 ZM98.9829999999999,9.21399999999994 L98.9829999999999,26.6480000000001 L110.992,17.931 L98.9829999999999,9.21399999999994 ZM104.496,56.9560000000001 C108.93,61.9450000000002 111.372,68.3319999999999 111.372,74.9389999999999 L111.372,75.2370000000001 C111.372,81.1170000000002 109.904,86.982 107.124,92.1979999999999 L99.008,107.426 C98.4749999999999,108.426 97.432,109 96.3520000000001,109 C95.886,109 95.414,108.893 94.973,108.669 C93.5070000000001,107.924 92.9369999999999,106.159 93.7,104.728 L101.816,89.4989999999998 C104.153,85.114 105.389,80.1819999999998 105.389,75.2370000000001 L105.389,74.9389999999999 C105.389,64.2559999999999 97.222,55.0659999999998 86.3920000000001,53.5630000000001 C86.3779999999999,53.5610000000001 86.3630000000001,53.5590000000002 86.3489999999999,53.5569999999998 L68.54,50.8159999999998 C66.963,50.5740000000001 65.8720000000001,49.1700000000001 66.03,47.6379999999999 C66.018,47.5329999999999 66.011,47.4270000000001 66.011,47.319 L66.011,19.2579999999998 C66.011,16.2660000000001 63.424,13.8310000000001 60.3599999999999,13.8310000000001 L60.1869999999999,13.8310000000001 C57.123,13.8310000000001 54.9949999999999,16.2660000000001 54.9949999999999,19.2579999999998 L54.9949999999999,65.7179999999998 C54.9949999999999,65.913 54.9760000000001,66.1109999999999 54.934,66.3069999999998 C54.873,66.5999999999999 54.7670000000001,66.8760000000002 54.623,67.1300000000001 C54.607,67.1570000000002 54.5899999999999,67.183 54.5730000000001,67.21 C54.5409999999999,67.2640000000001 54.508,67.3180000000002 54.472,67.3699999999999 C54.443,67.4119999999998 54.4110000000001,67.4490000000001 54.3810000000001,67.489 C54.3530000000001,67.5239999999999 54.327,67.5599999999999 54.298,67.5929999999998 C54.2619999999999,67.636 54.222,67.6759999999999 54.184,67.7159999999999 C54.1559999999999,67.7449999999999 54.1310000000001,67.7739999999999 54.1020000000001,67.8009999999999 C54.0630000000001,67.8380000000002 54.0219999999999,67.8739999999998 53.981,67.9090000000001 C53.9490000000001,67.9360000000001 53.9169999999999,67.9639999999999 53.884,67.991 C53.847,68.02 53.808,68.047 53.77,68.0740000000001 C53.729,68.1039999999998 53.6890000000001,68.1329999999998 53.646,68.1599999999999 C53.614,68.181 53.5809999999999,68.1999999999998 53.547,68.2190000000001 C53.4960000000001,68.2489999999998 53.4459999999999,68.279 53.393,68.306 C53.365,68.3209999999999 53.336,68.3330000000001 53.308,68.3470000000002 C53.249,68.3739999999998 53.1900000000001,68.402 53.1289999999999,68.4259999999999 C53.1030000000001,68.4369999999999 53.076,68.4450000000002 53.049,68.4549999999999 C52.9849999999999,68.4780000000001 52.922,68.5 52.857,68.52 C52.825,68.529 52.7909999999999,68.5360000000001 52.759,68.5439999999999 C52.7,68.5590000000002 52.6410000000001,68.5749999999998 52.5799999999999,68.5859999999998 C52.527,68.5970000000002 52.4739999999999,68.6030000000001 52.4200000000001,68.6100000000001 C52.3789999999999,68.616 52.338,68.6239999999998 52.296,68.6280000000002 C52.001,68.6559999999999 51.7,68.643 51.4010000000001,68.5830000000001 C51.2,68.5419999999999 51.008,68.482 50.8240000000001,68.4050000000002 L30.415,60.0149999999999 C29.0599999999999,59.4479999999999 27.576,59.578 26.345,60.3710000000001 C25.115,61.163 24.4090000000001,62.444 24.4090000000001,63.8829999999998 L24.4090000000001,64.0250000000001 C24.4090000000001,65.2260000000001 24.9359999999999,66.3719999999998 25.855,67.1689999999999 L53.98,91.288 C54.6189999999999,91.8420000000001 54.9839999999999,92.6370000000002 54.9839999999999,93.471 L54.9839999999999,106.077 C54.9839999999999,107.691 53.645,108.999 51.992,108.999 C50.3399999999999,108.999 49,107.691 49,106.077 L49,94.7829999999999 L21.8779999999999,71.5360000000001 C19.684,69.6309999999999 18.425,66.8919999999998 18.425,64.0250000000001 L18.425,63.8829999999998 C18.425,60.4940000000001 20.155,57.357 23.0519999999999,55.4920000000002 C25.9490000000001,53.6260000000002 29.5820000000001,53.3090000000002 32.7719999999999,54.6439999999998 L49.011,61.2890000000002 L49.011,19.2579999999998 C49.011,13.0439999999999 53.8240000000001,7.98700000000008 60.1869999999999,7.98700000000008 L60.3599999999999,7.98700000000008 C66.7239999999999,7.98700000000008 71.9949999999999,13.0439999999999 71.9949999999999,19.2579999999998 L71.9949999999999,45.4290000000001 L87.2560000000001,47.7809999999999 C93.9449999999999,48.7139999999999 100.067,51.9720000000002 104.496,56.9560000000001 ZM39.018,20.9780000000001 L26,20.9780000000001 L26,32.46 C26,33.5650000000001 25.3630000000001,34.5749999999998 24.3520000000001,35.0709999999999 C23.9269999999999,35.2800000000002 23.4670000000001,35.3820000000001 23.009,35.3820000000001 C22.377,35.3820000000001 21.75,35.1869999999999 21.2239999999999,34.8049999999998 L1.20700000000011,20.2759999999998 C0.44800000000009,19.7249999999999 0,18.855 0,17.931 C0,17.0070000000001 0.44800000000009,16.1370000000002 1.20700000000011,15.585 L21.2239999999999,1.05699999999979 C22.1320000000001,0.39800000000014 23.3420000000001,0.29599999999982 24.3520000000001,0.79100000000017 C25.3620000000001,1.28699999999981 26,2.29799999999977 26,3.40200000000004 L26,15.009 L39.018,15.009 C40.671,15.009 42.01,16.442 42.01,18.056 C42.01,19.6700000000001 40.671,20.9780000000001 39.018,20.9780000000001 ZM20.0170000000001,9.21399999999994 L8.00700000000006,17.931 L20.0170000000001,26.6480000000001 L20.0170000000001,9.21399999999994 Z "/>
+      </svg>
+      <div class="owl-carousel mobile_hide">
+        <div class="item">
+          <div class="top">
+            <div class="small">
+              <a href="/our_world/4/9/"><img src="images/9fd681ceb54cb0ebc4d6ea3d1f88e4c9.jpg"/><span>Прилипаловые</span></a>
+              <a href="/our_world/3/7/"><img src="images/3cdfa42afa8f3e1c368083a2934c4dda.jpg"/><span>Угрехвостые сомы</span></a>
+            </div>
+            <a href="/our_world/2/6/"><img src="images/c73bb03511d02e0a04c7e9bf766d1d3e.jpg"/><span>Рыба-нож</span></a>
+          </div>
+          <div class="bottom">
+            <a href="/our_world/1/5/"><img src="images/f93af1001a1c5dc03ac278192d88a8a8.jpg"/><span>Талассома лунная или губан лунный (Thalassoma lunare)</span></a>
+            <div class="small">
+              <a href=""><img src=""/><span></span></a>
+              <a href=""><img src=""/><span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel mobile">
+        <div class="item">
+          <a href="/our_world/4/9/"><img src="images/9fd681ceb54cb0ebc4d6ea3d1f88e4c9.jpg"/><span>Прилипаловые</span></a><a href="/our_world/3/7/">
+          <img src="images/3cdfa42afa8f3e1c368083a2934c4dda.jpg"/><span>Угрехвостые сомы</span></a><a href="/our_world/2/6/">
+          <img src="images/c73bb03511d02e0a04c7e9bf766d1d3e.jpg"/><span>Рыба-нож</span></a>
+        </div>
+        <div class="item">
+          <a href="/our_world/1/5/"><img src="images/f93af1001a1c5dc03ac278192d88a8a8.jpg"/><span>Талассома лунная или губан лунный (Thalassoma lunare)</span></a>
+        </div>
+      </div>
+    </div>
+    <a href="/our_world/" class="link_btn">Вся экспозиция</a>
+    <div class="prices" id="price">
+      <div class="tickets_block">
+        <div class="left">
+          <div>
+            <h3>Цены на билеты</h3>
+          </div>
+          <!--	    <div class="price">
+              <img src="images/price_1.png">
+              <img class="tablet_big" src="images/price-kids-big.png">
+              <span>детский <a class="what" href="#"><img src="images/icon_question.png"></a></span>
+              <b>250</b>
+              <span class="price_text">Ваш ребенок будет в восторге от разнообразия подводного мира</span>
+              <div class="photo">
+                  <span>150</span>Фотосъемка без вспышки 
+              </div>
+              <a class="btn" href="javascript:ticketManager.creationSchedule('3144c590-73aa-4c84-b0a1-232d801d7658',49076,2,30);">Купить билет</a>
+                </div>-->
+          <div class="price">
+            <img src="images/price_2.png">
+            <!-- <span>взрослый <a class="what" href="#"><img src="images/icon_question.png"></a></span> -->
+            <span class="price_text">
+		    Билет Взрослый<br>
+ Понедельник - Пятница - 500 руб.<br>
+ Выходные и праздничные дни - 600 руб. <br>
+Детям до 5 лет бесплатно&nbsp;<br>
+ Билет Детский от 5 до 14 лет<br>
+ Понедельник - Пятница - 250 руб.<br>
+ Выходные и праздничные дни - 300 руб. <br>
+<br>
+Фотосъемка: 150 руб.		</span>
+            <a class="btn" href="javascript:ticketManager.placeSchedule('5cee5c5f-31af-4662-a86a-fcc40470adae', 84215)">Купить
+              билет</a>
+          </div>
+        </div>
+        <div class="right">
+          <div>
+            <h3>Цены на билеты</h3>
+          </div>
+          <div class="price">
+            <img src="images/price_3.png">
+            <!-- <span>индивидуальные и групповые <a class="what" href="#"><img src="images/icon_question.png"></a></span> -->
+            <span class="price_text">
+		    индивидуальные и групповые<br>
+ <br>
+ Наши опытные гиды расскажут и покажут Вам всех обитателей океанариума - ни что не останется не замеченным, и Вы узнаете много интересного.&nbsp;Бронирование экскурсий:&nbsp;&nbsp;8 903 755 29 59&nbsp;<br>
+ <br>
+Фотосъемка для группы: 300 руб.		</span>
+            <a class="btn order order_excursion" href="#">Заказать экскурсию</a>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="eczoopark_wrapper">
+      <div class="eczoopark">
+        <img src="images/logo-eczoopark.png">
+        <div class="text">
+          В ТРЦ «РИО» на Дмитровском шоссе открылся уникальный для Москвы проект - Экзоопарк, площадь которого <b>3 500
+          кв.м.</b> более <b>300 обитателей</b> жарких саванн, бескрайних пустынь и непроходимых тропических лесов,
+          более <b>50 видов</b> редких экзотических представителей из самых разных уголков нашей планеты
+        </div>
+        <a class="btn" href="https://www.ekzootarium-rio.ru/" target="_blank">Перейти на сайт</a>
+      </div>
+    </div>
+    <div class="events">
+      <a name="events"></a>
+      <a href="/news/" class="title"><span>Новости</span></a>
+      <div class="list">
+        <ul>
+          <li id="bx_651765591_76">
+            <a href="/news/76/" class="item">
+              <div class="img">
+                <img src="images/c481276f69c650a98e27e4e3314d0036.jpg" alt="В нашем океанариуме - пополнение!"/>
+              </div>
+              <div class="title"><span>В нашем океанариуме - пополнение!</span></div>
+              <div class="text">В океанариуме торгового центра «РИО» на Дмитровском шоссе Москвы празднуют пополнение –
+                в семье северных морских котиков родился малыш. <a href="http://oceanariumrio.tilda.ws/">Подробности
+                  тут</a></div>
+              <div class="date">20 марта 2019</div>
+            </a>
+          </li>
+          <li id="bx_651765591_75">
+            <a href="/news/75/" class="item">
+              <div class="img">
+                <img src="images/d04d16936807e56f4292fed1ec7e8e14.png" alt="Благотворительная выставка «Океан - это ты» в Океанариуме "/>
+              </div>
+              <div class="title"><span>Благотворительная выставка «Океан - это ты» в Океанариуме </span></div>
+              <div class="text">21 декабря в торгово-развлекательном центре «РИО» на Дмитровском ьшоссе открывается
+                благотворительная выставка «Океан - это ты», которая пройдет при поддержке «Океанариума».
+              </div>
+              <div class="date">17 декабря 2018</div>
+            </a>
+          </li>
+          <li id="bx_651765591_61">
+            <a href="/news/61/" class="item">
+              <div class="img">
+                <img src="images/09236c19491dad6ec75130acea2095dd.jpg" alt="Новая волна приключений: Океанариум ждет своих гостей"/>
+              </div>
+              <div class="title"><span>Новая волна приключений: Океанариум ждет своих гостей</span></div>
+              <div class="text">После недолгих каникул Океанариум снова открывает двери.</div>
+              <div class="date">10 сентября 2018</div>
+            </a>
+          </li>
+          <li id="bx_651765591_4">
+            <a href="/news/4/" class="item">
+              <div class="img">
+                <img src="images/2fe6f13c4a5e3e64ebb7b523f21349ce.jpg" alt="Анимационные программы в Океанариуме "/>
+              </div>
+              <div class="title"><span>Анимационные программы в Океанариуме </span></div>
+              <div class="text">Дорогие родители! Предлагаем Вам и Вашим детям новые анимационные программы. Приглашаем
+                отметить день рождения Вашего ребенка в Океанариуме.
+              </div>
+              <div class="date">6 сентября 2018</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <a href="#" name="contacts"></a>
+  <div class="footer">
+    <div class="map" id="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A24b76b574a951412eb86edf3d413448d4ba085430d995e59709ff29b50bbbf11&amp;width=100%&amp;height=570&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="contacts">
+      <div class="phone">
+        <div class="mobile_hide">ТРЦ РИО, Дмитровское ш., 163, Москва, 127204</div>
+        <span>+7 495 755 29 59</span>
+        Работаем ежедневно с 10 до 22,
+        <div class="mobile"></div>
+        касса до 21
+      </div>
+    </div>
+    <div class="bottom_block">
+      <div class="top">Московский Океанариум в
+        <nobr>торгово-развлекательном</nobr>
+        центре «РИО»
+      </div>
+      <div class="bottom_menu">
+        <a href="/about/">О проекте</a><a href="/our_world/">Наш мир</a><a href="/#price">Цены</a><a href="/action/">Акции</a><a href="/news/">Новости</a><a href="/gallery/">Галерея</a>
+      </div>
+      <a href="https://www.facebook.com/oceanariummsk" class="soc fb" target="_blank"></a>
+      <a href="https://vk.com/oceanariummsk" class="soc vk" target="_blank"></a>
+      <!--<a href="/" class="soc tw" target="_blank"></a>-->
+      <a href="https://www.instagram.com/oceanariummsk/" class="soc in" target="_blank"></a>
+    </div>
+    <div class="copy">
+      © 2018 Океанариум
+    </div>
+  </div>
+
+  <div class="popup" id="order_event">
+    <div class="popup-wrapper">
+      <div class="dialogue">
+        <a href="#" class="close"><img src="images/close.svg"></a>
+        <h2>Заказать мероприятие</h2>
+        <form>
+          <div class="text">Здравствуйте, наш менеджер свяжется с вами в ближайшее время и обсудит с вами детали
+            мероприятия.
+          </div>
+          <input type="hidden" name="type" value="Заказ мероприятия">
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="text" name="phone" placeholder="Ваш телефон">
+          <button>Отправить</button>
+          <div class="ok">Ваше сообщение успешно отправлено</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="order_excursion">
+    <div class="popup-wrapper">
+      <div class="dialogue">
+        <a href="#" class="close"><img src="images/close.svg"></a>
+        <h2>Заказать экскурсию</h2>
+        <form>
+          <div class="text">Здравствуйте, наш менеджер свяжется с вами в ближайшее время и обсудит с вами детали
+            экскурсии.
+          </div>
+          <input type="hidden" name="type" value="Заказ экскурсии">
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="text" name="phone" placeholder="Ваш телефон">
+          <button>Отправить</button>
+          <!--<input type="submit" value="Отправить">-->
+          <div class="ok">Ваше сообщение успешно отправлено</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global site tag (gtag.js) - Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114496685-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114496685-1');
+  </script>
+  ->
+  <!-- Yandex.Metrika counter -
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter47785081 = new Ya.Metrika({
+            id: 47785081,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+          });
+        } catch (e) {
+        }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/47785081" style="position:absolute; left:-9999px;" alt=""/></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</div>
+</body>
+</html>

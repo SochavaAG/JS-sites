@@ -1,0 +1,894 @@
+/*---| media queries |---*/
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	#mainLogo{
+		width: 226px;
+		height: 68px;
+		background: url(../images/logoMain.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:310px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramelg.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavlg.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 30px;
+	}
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/Harvest_services_Brand_back1.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/Harvest_services_Brand_plane4.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/Harvest_services_Brand_plane3.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/Harvest_services_Brand_plane2.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/Harvest_services_Brand_plane1.png) center center no-repeat;
+	}
+	/*---| sectionTwo |---*/
+	#sectionTwo{
+	}
+	#sectionTwo .bgNegOne{
+		background: url(../images/Harvest_services_Advertising_back1.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/Harvest_services_Advertising_6_sun.png) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/Harvest_services_Advertising_5_mt.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/Harvest_services_Advertising_4_type.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/Harvest_services_Advertising_3_mt.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+		background: url(../images/Harvest_services_Advertising_2_trees.png) center center no-repeat;
+	}
+	#sectionTwo .bgFive{
+		background: url(../images/Harvest_services_Advertising_1_farm.png) center center no-repeat;
+	}
+	/*---| sectionThree |---*/
+	#sectionThree{
+	}
+	#sectionThree .bgNegOne{
+		background: url(../images/Harvest_services_Web_back1.jpg) center center no-repeat;
+	}
+	#sectionThree .bgZero{
+		background: url(../images/Harvest_services_Web_8_barn.png) center center no-repeat;
+	}
+	#sectionThree .bgOne{
+		background: url(../images/Harvest_services_Web_7_wheat.png) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/Harvest_services_Web_6_type.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/Harvest_services_Web_5_wheat.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/Harvest_services_Web_4_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgFive{
+		background: url(../images/Harvest_services_Web_3_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgSix{
+		background: url(../images/Harvest_services_Web_2_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgSeven{
+		background: url(../images/Harvest_services_Web_1_tractor.png) center center no-repeat;
+	}
+	/*---| sectionFour |---*/
+	#sectionFour{
+	}
+	#sectionFour .bgOne{
+		background: url(../images/Harvest_services_Mobile_back1.jpg) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/Harvest_services_Mobile_4_pond.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/Harvest_services_Mobile_3_fish.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/Harvest_services_Mobile_2_boat.png) center center no-repeat;
+	}
+	#sectionFour .bgFive{
+		background: url(../images/Harvest_services_Mobile_1_type.png) center center no-repeat;
+	}
+	/*---| sectionFive |---*/
+	#sectionFive{
+	}
+	#sectionFive .bgOne{
+		background: url(../images/Harvest_services_POP_4_holes.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/Harvest_services_POP_3_type.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/Harvest_services_POP_2_soil.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/Harvest_services_POP_1_roots.png) center center no-repeat;
+	}
+	/*---| sectionSix |---*/
+	#sectionSix{
+	}
+	#sectionSix .bgOne{
+		background: url(../images/Harvest_services_OCD_gearsSlow_4.gif) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/Harvest_services_OCD_gears_3.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/Harvest_services_OCD_logos_2.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/Harvest_services_OCD_type_1.png) center center no-repeat;
+	}
+	#sectionOne .bglabel{
+	background: url(../images/Harvest_label_1.png) right bottom no-repeat;
+	}
+	/*---| labels |---*/
+	#sectionOne .bglabel{
+		background: url(../images/Harvest_label_1.png) right bottom no-repeat;
+	}
+	#sectionTwo .bglabel{
+		background: url(../images/Harvest_label_2.png) right bottom no-repeat;
+	}
+	#sectionThree .bglabel{
+		background: url(../images/Harvest_label_3.png) right bottom no-repeat;
+	}
+	#sectionFour .bglabel{
+		background: url(../images/Harvest_label_4.png) right bottom no-repeat;
+	}
+	#sectionFive .bglabel{
+		background: url(../images/Harvest_label_5.png) right bottom no-repeat;
+	}
+	#sectionSix .bglabel{
+	background: url(../images/Harvest_label_6.png) right bottom no-repeat;
+	}
+	.scrolllabel{
+		background: url(../images/Info_scrollDown.png) left bottom no-repeat;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px){
+	#mainLogo{
+		width: 226px;
+		height: 68px;
+		background: url(../images/logoMain.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:310px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramelg.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavlg.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:100px;
+		width:100px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 30px;
+	}
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/Harvest_services_Brand_back1.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/Harvest_services_Brand_plane4.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/Harvest_services_Brand_plane3.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/Harvest_services_Brand_plane2.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/Harvest_services_Brand_plane1.png) center center no-repeat;
+	}
+	/*---| sectionTwo |---*/
+	#sectionTwo{
+	}
+	#sectionTwo .bgNegOne{
+		background: url(../images/Harvest_services_Advertising_back1.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/Harvest_services_Advertising_6_sun.png) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/Harvest_services_Advertising_5_mt.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/Harvest_services_Advertising_4_type.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/Harvest_services_Advertising_3_mt.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+		background: url(../images/Harvest_services_Advertising_2_trees.png) center center no-repeat;
+	}
+	#sectionTwo .bgFive{
+		background: url(../images/Harvest_services_Advertising_1_farm.png) center center no-repeat;
+	}
+	/*---| sectionThree |---*/
+	#sectionThree{
+	}
+	#sectionThree .bgNegOne{
+		background: url(../images/Harvest_services_Web_back1.jpg) center center no-repeat;
+	}
+	#sectionThree .bgZero{
+		background: url(../images/Harvest_services_Web_8_barn.png) center center no-repeat;
+	}
+	#sectionThree .bgOne{
+		background: url(../images/Harvest_services_Web_7_wheat.png) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/Harvest_services_Web_6_type.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/Harvest_services_Web_5_wheat.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/Harvest_services_Web_4_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgFive{
+		background: url(../images/Harvest_services_Web_3_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgSix{
+		background: url(../images/Harvest_services_Web_2_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgSeven{
+		background: url(../images/Harvest_services_Web_1_tractor.png) center center no-repeat;
+	}
+	/*---| sectionFour |---*/
+	#sectionFour{
+	}
+	#sectionFour .bgOne{
+		background: url(../images/Harvest_services_Mobile_back1.jpg) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/Harvest_services_Mobile_4_pond.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/Harvest_services_Mobile_3_fish.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/Harvest_services_Mobile_2_boat.png) center center no-repeat;
+	}
+	#sectionFour .bgFive{
+		background: url(../images/Harvest_services_Mobile_1_type.png) center center no-repeat;
+	}
+	/*---| sectionFive |---*/
+	#sectionFive{
+	}
+	#sectionFive .bgOne{
+		background: url(../images/Harvest_services_POP_4_holes.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/Harvest_services_POP_3_type.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/Harvest_services_POP_2_soil.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/Harvest_services_POP_1_roots.png) center center no-repeat;
+	}
+	/*---| sectionSix |---*/
+	#sectionSix{
+	}
+	#sectionSix .bgOne{
+		background: url(../images/Harvest_services_OCD_gearsSlow_4.gif) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/Harvest_services_OCD_gears_3.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/Harvest_services_OCD_logos_2.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/Harvest_services_OCD_type_1.png) center center no-repeat;
+	}
+	/*---| labels |---*/
+	#sectionOne .bglabel{
+		background: url(../images/Harvest_label_1.png) right bottom no-repeat;
+	}
+	#sectionTwo .bglabel{
+		background: url(../images/Harvest_label_2.png) right bottom no-repeat;
+	}
+	#sectionThree .bglabel{
+		background: url(../images/Harvest_label_3.png) right bottom no-repeat;
+	}
+	#sectionFour .bglabel{
+		background: url(../images/Harvest_label_4.png) right bottom no-repeat;
+	}
+	#sectionFive .bglabel{
+		background: url(../images/Harvest_label_5.png) right bottom no-repeat;
+	}
+	#sectionSix .bglabel{
+		background: url(../images/Harvest_label_6.png) right bottom no-repeat;
+	}
+	.scrolllabel{
+		background: url(../images/Info_scrollDown.png) left bottom no-repeat;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	#mainLogo{
+		width: 226px;
+		height: 68px;
+		background: url(../images/logoMain.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:285px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramemed.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:75px;
+		width:75px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavmed.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:75px;
+		width:75px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 30px;
+	}
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/Harvest_services_Brand_back1.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/Harvest_services_Brand_plane4.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/Harvest_services_Brand_plane3.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/Harvest_services_Brand_plane2.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/Harvest_services_Brand_plane1.png) center center no-repeat;
+	}
+	/*---| sectionTwo |---*/
+	#sectionTwo{
+	}
+	#sectionTwo .bgNegOne{
+		background: url(../images/Harvest_services_Advertising_back1.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/Harvest_services_Advertising_6_sun.png) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/Harvest_services_Advertising_5_mt.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/Harvest_services_Advertising_4_type.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/Harvest_services_Advertising_3_mt.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+		background: url(../images/Harvest_services_Advertising_2_trees.png) center center no-repeat;
+	}
+	#sectionTwo .bgFive{
+		background: url(../images/Harvest_services_Advertising_1_farm.png) center center no-repeat;
+	}
+	/*---| sectionThree |---*/
+	#sectionThree{
+	}
+	#sectionThree .bgNegOne{
+		background: url(../images/Harvest_services_Web_back1.jpg) center center no-repeat;
+	}
+	#sectionThree .bgZero{
+		background: url(../images/Harvest_services_Web_8_barn.png) center center no-repeat;
+	}
+	#sectionThree .bgOne{
+		background: url(../images/Harvest_services_Web_7_wheat.png) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/Harvest_services_Web_6_type.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/Harvest_services_Web_5_wheat.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/Harvest_services_Web_4_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgFive{
+		background: url(../images/Harvest_services_Web_3_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgSix{
+		background: url(../images/Harvest_services_Web_2_tractor.png) center center no-repeat;
+	}
+	#sectionThree .bgSeven{
+		background: url(../images/Harvest_services_Web_1_tractor.png) center center no-repeat;
+	}
+	/*---| sectionFour |---*/
+	#sectionFour{
+	}
+	#sectionFour .bgOne{
+		background: url(../images/Harvest_services_Mobile_back1.jpg) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/Harvest_services_Mobile_4_pond.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/Harvest_services_Mobile_3_fish.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/Harvest_services_Mobile_2_boat.png) center center no-repeat;
+	}
+	#sectionFour .bgFive{
+		background: url(../images/Harvest_services_Mobile_1_type.png) center center no-repeat;
+	}
+	/*---| sectionFive |---*/
+	#sectionFive{
+	}
+	#sectionFive .bgOne{
+		background: url(../images/Harvest_services_POP_4_holes.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/Harvest_services_POP_3_type.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/Harvest_services_POP_2_soil.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/Harvest_services_POP_1_roots.png) center center no-repeat;
+	}
+	/*---| sectionSix |---*/
+	#sectionSix{
+	}
+	#sectionSix .bgOne{
+		background: url(../images/Harvest_services_OCD_gearsSlow_4.gif) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/Harvest_services_OCD_gears_3.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/Harvest_services_OCD_logos_2.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/Harvest_services_OCD_type_1.png) center center no-repeat;
+	}
+	/*---| labels |---*/
+	#sectionOne .bglabel{
+		background: url(../images/Harvest_label_1.png) right bottom no-repeat;
+	}
+	#sectionTwo .bglabel{
+		background: url(../images/Harvest_label_2.png) right bottom no-repeat;
+	}
+	#sectionThree .bglabel{
+		background: url(../images/Harvest_label_3.png) right bottom no-repeat;
+	}
+	#sectionFour .bglabel{
+		background: url(../images/Harvest_label_4.png) right bottom no-repeat;
+	}
+	#sectionFive .bglabel{
+		background: url(../images/Harvest_label_5.png) right bottom no-repeat;
+	}
+	#sectionSix .bglabel{
+	background: url(../images/Harvest_label_6.png) right bottom no-repeat;
+	}
+	.scrolllabel{
+		background: url(../images/Info_scrollDown.png) left bottom no-repeat;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#mainLogo{
+		width: 100px;
+		height: 30px;
+		background: url(../images/logoMainSm.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:none;
+		width:20%;
+	}
+	.logonav{
+		left:-200px;
+		width:260px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramesm.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavsm.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 20px;
+	}
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/Harvest_services_Brand_back1sm.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/Harvest_services_Brand_plane4sm.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/Harvest_services_Brand_plane3sm.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/Harvest_services_Brand_plane2sm.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/Harvest_services_Brand_plane1sm.png) center center no-repeat;
+	}
+	/*---| sectionTwo |---*/
+	#sectionTwo{
+	}
+	#sectionTwo .bgNegOne{
+		background: url(../images/Harvest_services_Advertising_back1sm.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/Harvest_services_Advertising_6_sunsm.png) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/Harvest_services_Advertising_5_mtsm.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/Harvest_services_Advertising_4_typesm.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/Harvest_services_Advertising_3_mtsm.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+		background: url(../images/Harvest_services_Advertising_2_treessm.png) center center no-repeat;
+	}
+	#sectionTwo .bgFive{
+		background: url(../images/Harvest_services_Advertising_1_farmsm.png) center center no-repeat;
+	}
+	/*---| sectionThree |---*/
+	#sectionThree{
+	}
+	#sectionThree .bgNegOne{
+		background: url(../images/Harvest_services_Web_back1sm.jpg) center center no-repeat;
+	}
+	#sectionThree .bgZero{
+		background: url(../images/Harvest_services_Web_8_barnsm.png) center center no-repeat;
+	}
+	#sectionThree .bgOne{
+		background: url(../images/Harvest_services_Web_7_wheatsm.png) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/Harvest_services_Web_6_typesm.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/Harvest_services_Web_5_wheatsm.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/Harvest_services_Web_4_tractorsm.png) center center no-repeat;
+	}
+	#sectionThree .bgFive{
+		background: url(../images/Harvest_services_Web_3_tractorsm.png) center center no-repeat;
+	}
+	#sectionThree .bgSix{
+		background: url(../images/Harvest_services_Web_2_tractorsm.png) center center no-repeat;
+	}
+	#sectionThree .bgSeven{
+		background: url(../images/Harvest_services_Web_1_tractorsm.png) center center no-repeat;
+	}
+	/*---| sectionFour |---*/
+	#sectionFour{
+	}
+	#sectionFour .bgOne{
+		background: url(../images/Harvest_services_Mobile_back1sm.jpg) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/Harvest_services_Mobile_4_pondsm.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/Harvest_services_Mobile_3_fishsm.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/Harvest_services_Mobile_2_boatsm.png) center center no-repeat;
+	}
+	#sectionFour .bgFive{
+		background: url(../images/Harvest_services_Mobile_1_typesm.png) center center no-repeat;
+	}
+	/*---| sectionFive |---*/
+	#sectionFive{
+	}
+	#sectionFive .bgOne{
+		background: url(../images/Harvest_services_POP_4_holessm.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/Harvest_services_POP_3_typesm.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/Harvest_services_POP_2_soilsm.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/Harvest_services_POP_1_rootssm.png) center center no-repeat;
+	}
+	/*---| sectionSix |---*/
+	#sectionSix{
+	}
+	#sectionSix .bgOne{
+		background: url(../images/Harvest_services_OCD_gearsSlow_4sm.gif) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/Harvest_services_OCD_gears_3sm.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/Harvest_services_OCD_logos_2sm.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/Harvest_services_OCD_type_1sm.png) center center no-repeat;
+	}
+	/*---| labels |---*/
+	#sectionOne .bglabel{
+		background: url(../images/Harvest_label_1sm.png) right bottom no-repeat;
+	}
+	#sectionTwo .bglabel{
+		background: url(../images/Harvest_label_2sm.png) right bottom no-repeat;
+	}
+	#sectionThree .bglabel{
+		background: url(../images/Harvest_label_3sm.png) right bottom no-repeat;
+	}
+	#sectionFour .bglabel{
+		background: url(../images/Harvest_label_4sm.png) right bottom no-repeat;
+	}
+	#sectionFive .bglabel{
+		background: url(../images/Harvest_label_5sm.png) right bottom no-repeat;
+	}
+	#sectionSix .bglabel{
+		background: url(../images/Harvest_label_6sm.png) right bottom no-repeat;
+	}
+	.scrolllabel{
+		background: url(../images/Info_scrollDownSm.png) left bottom no-repeat;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#mainLogo{
+		width: 100px;
+		height: 30px;
+		background: url(../images/logoMainSm.png) top left no-repeat;
+	}
+	.logoTop{
+		float:left;
+		clear:left;
+		width:100%;
+	}
+	.logonav{
+		left:-200px;
+		width:260px;
+	}
+	.logonavinnerframe{
+		background: url(../images/HarvestNavFramesm.png) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.logonavinner{
+		background: url(../images/HarvestNavsm.gif) top left no-repeat;
+		top:10px;
+		left:210px;
+		height:50px;
+		width:50px;
+	}
+	.navigation li span{
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size: 20px;
+	}
+	#sectionOne{
+	}
+	#sectionOne .bgZero{
+		background: url(../images/Harvest_services_Brand_back1sm.jpg) center center no-repeat;
+	}
+	#sectionOne .bgOne{
+		background: url(../images/Harvest_services_Brand_plane4sm.png) center center no-repeat;
+	}
+	#sectionOne .bgTwo{
+		background: url(../images/Harvest_services_Brand_plane3sm.png) center center no-repeat;
+	}
+	#sectionOne .bgThree{
+		background: url(../images/Harvest_services_Brand_plane2sm.png) center center no-repeat;
+	}
+	#sectionOne .bgFour{
+		background: url(../images/Harvest_services_Brand_plane1sm.png) center center no-repeat;
+	}
+	/*---| sectionTwo |---*/
+	#sectionTwo{
+	}
+	#sectionTwo .bgNegOne{
+		background: url(../images/Harvest_services_Advertising_back1sm.jpg) center center no-repeat;
+	}
+	#sectionTwo .bgZero{
+		background: url(../images/Harvest_services_Advertising_6_sunsm.png) center center no-repeat;
+	}
+	#sectionTwo .bgOne{
+		background: url(../images/Harvest_services_Advertising_5_mtsm.png) center center no-repeat;
+	}
+	#sectionTwo .bgTwo{
+		background: url(../images/Harvest_services_Advertising_4_typesm.png) center center no-repeat;
+	}
+	#sectionTwo .bgThree{
+		background: url(../images/Harvest_services_Advertising_3_mtsm.png) center center no-repeat;
+	}
+	#sectionTwo .bgFour{
+		background: url(../images/Harvest_services_Advertising_2_treessm.png) center center no-repeat;
+	}
+	#sectionTwo .bgFive{
+		background: url(../images/Harvest_services_Advertising_1_farmsm.png) center center no-repeat;
+	}
+	/*---| sectionThree |---*/
+	#sectionThree{
+	}
+	#sectionThree .bgNegOne{
+		background: url(../images/Harvest_services_Web_back1sm.jpg) center center no-repeat;
+	}
+	#sectionThree .bgZero{
+		background: url(../images/Harvest_services_Web_8_barnsm.png) center center no-repeat;
+	}
+	#sectionThree .bgOne{
+		background: url(../images/Harvest_services_Web_7_wheatsm.png) center center no-repeat;
+	}
+	#sectionThree .bgTwo{
+		background: url(../images/Harvest_services_Web_6_typesm.png) center center no-repeat;
+	}
+	#sectionThree .bgThree{
+		background: url(../images/Harvest_services_Web_5_wheatsm.png) center center no-repeat;
+	}
+	#sectionThree .bgFour{
+		background: url(../images/Harvest_services_Web_4_tractorsm.png) center center no-repeat;
+	}
+	#sectionThree .bgFive{
+		background: url(../images/Harvest_services_Web_3_tractorsm.png) center center no-repeat;
+	}
+	#sectionThree .bgSix{
+		background: url(../images/Harvest_services_Web_2_tractorsm.png) center center no-repeat;
+	}
+	#sectionThree .bgSeven{
+		background: url(../images/Harvest_services_Web_1_tractorsm.png) center center no-repeat;
+	}
+	/*---| sectionFour |---*/
+	#sectionFour{
+	}
+	#sectionFour .bgOne{
+		background: url(../images/Harvest_services_Mobile_back1sm.jpg) center center no-repeat;
+	}
+	#sectionFour .bgTwo{
+		background: url(../images/Harvest_services_Mobile_4_pondsm.png) center center no-repeat;
+	}
+	#sectionFour .bgThree{
+		background: url(../images/Harvest_services_Mobile_3_fishsm.png) center center no-repeat;
+	}
+	#sectionFour .bgFour{
+		background: url(../images/Harvest_services_Mobile_2_boatsm.png) center center no-repeat;
+	}
+	#sectionFour .bgFive{
+		background: url(../images/Harvest_services_Mobile_1_typesm.png) center center no-repeat;
+	}
+	/*---| sectionFive |---*/
+	#sectionFive{
+	}
+	#sectionFive .bgOne{
+		background: url(../images/Harvest_services_POP_4_holessm.png) center center no-repeat;
+	}
+	#sectionFive .bgTwo{
+		background: url(../images/Harvest_services_POP_3_typesm.png) center center no-repeat;
+	}
+	#sectionFive .bgThree{
+		background: url(../images/Harvest_services_POP_2_soilsm.png) center center no-repeat;
+	}
+	#sectionFive .bgFour{
+		background: url(../images/Harvest_services_POP_1_rootssm.png) center center no-repeat;
+	}
+	/*---| sectionSix |---*/
+	#sectionSix{
+	}
+	#sectionSix .bgOne{
+		background: url(../images/Harvest_services_OCD_gearsSlow_4sm.gif) center center no-repeat;
+	}
+	#sectionSix .bgTwo{
+		background: url(../images/Harvest_services_OCD_gears_3sm.png) center center no-repeat;
+	}
+	#sectionSix .bgThree{
+		background: url(../images/Harvest_services_OCD_logos_2sm.png) center center no-repeat;
+	}
+	#sectionSix .bgFour{
+		background: url(../images/Harvest_services_OCD_type_1sm.png) center center no-repeat;
+	}
+	/*---| labels |---*/
+	#sectionOne .bglabel{
+		background: url(../images/Harvest_label_1sm.png) right bottom no-repeat;
+	}
+	#sectionTwo .bglabel{
+		background: url(../images/Harvest_label_2sm.png) right bottom no-repeat;
+	}
+	#sectionThree .bglabel{
+		background: url(../images/Harvest_label_3sm.png) right bottom no-repeat;
+	}
+	#sectionFour .bglabel{
+		background: url(../images/Harvest_label_4sm.png) right bottom no-repeat;
+	}
+	#sectionFive .bglabel{
+		background: url(../images/Harvest_label_5sm.png) right bottom no-repeat;
+	}
+	#sectionSix .bglabel{
+		background: url(../images/Harvest_label_6sm.png) right bottom no-repeat;
+	}
+	.scrolllabel{
+		background: url(../images/Info_scrollDownSm.png) left bottom no-repeat;
+	}
+}

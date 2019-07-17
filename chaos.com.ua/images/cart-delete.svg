@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Shopping-cart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-7-/-Shopping-Cart-mobile" transform="translate(-105.000000, -443.000000)">
+            <g id="product" transform="translate(0.000000, 180.000000)">
+                <g id="product_info" transform="translate(0.000000, 8.000000)">
+                    <g id="delete" transform="translate(0.500000, 255.000000)">
+                        <g id="Group-17" transform="translate(105.000000, 0.000000)">
+                            <circle id="Oval-5" fill="#222222" cx="10" cy="10" r="10"/>
+                            <path d="M8.89949494,9 L2.89949494,9 L2.89949494,11 L8.89949494,11 L8.89949494,17 L10.8994949,17 L10.8994949,11 L16.8994949,11 L16.8994949,9 L10.8994949,9 L10.8994949,3 L8.89949494,3 L8.89949494,9 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(9.899495, 10.000000) rotate(45.000000) translate(-9.899495, -10.000000) "/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

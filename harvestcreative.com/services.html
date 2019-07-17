@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Harvest is a branding firm that excels in developing comprehensive brand strategies and point of purchase marketing."/>
+  <meta name="keywords" content="Branding firm, point of purchase design, POP marketing, brand development,brand strategy"/>
+  <title>Branding Firm | Web Design | Memphis </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <link href='//fonts.googleapis.com/css?family=Montserrat|Parisienne' rel='stylesheet' type='text/css'>
+  <script>
+
+    //--| date & time |---//
+
+    var harvestdate = new Date();
+    var harvesthour = harvestdate.getHours();
+    var harvesttime = "";
+
+    if ((harvesthour >= 19) || (harvesthour <= 5)) {
+      harvesttime = "night";
+    } else {
+      harvesttime = "";
+    }
+
+    //---| include style sheet for modern browser scrollbars (except ipad and iphone) |---//
+    if (navigator.userAgent.indexOf("iPhone") != -1 || navigator.userAgent.indexOf("iPad") != -1) {
+      //nothing
+    } else {
+      document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/scrollbar.css\" />")
+    }
+    document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/services" + harvesttime + ".css\" />")
+    document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/services" + harvesttime + "-response.css\" />")
+  </script>
+  <link rel="image_src" href="images/Harvest2012.jpg"/>
+  <link rel="shortcut icon" href="images/Harvest2012.ico">
+</head>
+
+<body style="background:#E13B2A;" scroll=no>
+<div id="TheLoader">
+  <div id="TheLoaderInner">
+    <img src="images/HarvestLoader.gif" alt="HarvestLoader" width="100" height="100" class="TheLoaderImg"/>
+    <div class="loaderTxt">Growin...</div>
+  </div>
+  <div class="TheLoaderBack"></div>
+</div>
+<div class="logonav">
+  <div class="logonavinnerframe"></div>
+  <div class="logonavinner"></div>
+  <div class="navigation">
+    <ul class="menu">
+      <li><span class="navclick" name="home">Home</span></li>
+      <li><span class="navclick" name="work">Work</span></li>
+      <li><span class="navclick" name="services">Services</span></li>
+      <li><span class="navclick" name="about">About</span></li>
+      <li><span class="navclick" name="contact">Contact</span></li>
+      <li><span class="navclick" name="career">Careers</span></li>
+      <li><span class="navclick" name="hire-us">Hire Us</span></li>
+    </ul>
+  </div>
+</div>
+<div id="mainLogo"></div>
+<div id="wrapper">
+  <div id="innerWrapper">
+    <div class="section" id="sectionOne">
+      <div class="sectioncenter">
+        <div class="bgZero allSameHeight"></div>
+        <div class="bgOne allSameHeight"></div>
+        <div class="bgTwo allSameHeight"></div>
+        <div class="bgThree allSameHeight"></div>
+        <div class="bgFour allSameHeight"></div>
+      </div>
+      <div class="bglabel allSameHeight"></div>
+      <div class="scrolllabel allSameHeight"></div>
+    </div>
+    <div class="section" id="sectionTwo">
+      <div class="sectioncenter">
+        <div class="bgNegOne allSameHeight"></div>
+        <div class="bgZero allSameHeight"></div>
+        <div class="bgOne allSameHeight"></div>
+        <div class="bgTwo allSameHeight"></div>
+        <div class="bgThree allSameHeight"></div>
+        <div class="bgFour allSameHeight"></div>
+        <div class="bgFive allSameHeight"></div>
+      </div>
+      <div class="bglabel allSameHeight"></div>
+    </div>
+    <div class="section" id="sectionThree">
+      <div class="sectioncenter">
+        <div class="bgNegOne allSameHeight"></div>
+        <div class="bgZero allSameHeight"></div>
+        <div class="bgOne allSameHeight"></div>
+        <div class="bgTwo allSameHeight"></div>
+        <div class="bgThree allSameHeight"></div>
+        <div class="bgFour allSameHeight"></div>
+        <div class="bgFive allSameHeight"></div>
+        <div class="bgSix allSameHeight"></div>
+        <div class="bgSeven allSameHeight"></div>
+      </div>
+      <div class="bglabel allSameHeight"></div>
+    </div>
+    <div class="section" id="sectionFour">
+      <div class="sectioncenter">
+        <div class="bgOne allSameHeight"></div>
+        <div class="bgTwo allSameHeight"></div>
+        <div class="bgThree allSameHeight"></div>
+        <div class="bgFour allSameHeight"></div>
+        <div class="bgFive allSameHeight"></div>
+      </div>
+      <div class="bglabel allSameHeight"></div>
+    </div>
+    <div class="section" id="sectionFive">
+      <div class="sectioncenter">
+        <div class="bgOne allSameHeight"></div>
+        <div class="bgTwo allSameHeight"></div>
+        <div class="bgThree allSameHeight"></div>
+        <div class="bgFour allSameHeight"></div>
+      </div>
+      <div class="bglabel allSameHeight"></div>
+    </div>
+
+    <div class="section-no" id="sectionSix-no">
+      <!-- <div class="sectioncenter">
+        <div class="bgOne allSameHeight"></div>
+        <div class="bgTwo allSameHeight"></div>
+        <div class="bgThree allSameHeight"></div>
+        <div class="bgFour allSameHeight"></div>
+      </div>
+      <div class="bglabel allSameHeight"></div> -->
+    </div>
+
+  </div>
+</div>
+<script src="js/modernizr-2.5.3.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
+<script src="js/jquery/jquery-1.5.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/services.js"></script>
+
+<!--
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-2249045-8");
+    pageTracker._trackPageview();
+  } catch (err) {
+  }</script>
+-->
+</body>
+
+</html>

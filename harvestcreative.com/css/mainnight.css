@@ -1,0 +1,736 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body { height: 100%; }
+
+body{
+	margin: 0px;
+	color: #FFF;
+	background-color: #FFF;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*---| basic |---*/
+
+p,h1,h2,h3,h4,h5,blockquote,strong,small,em{
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+a img{
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+li,ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+/*--- Loader ---*/
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+#TheLoader{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index: 99;
+
+}
+#TheLoaderInner{
+	position:absolute;
+	width:200px;
+	height:200px;
+	left:50%;
+	top:50%;
+	margin-left:-100px;
+	margin-top:-100px;
+	display:block;
+	overflow:hidden;
+	z-index: 101;
+}
+img.TheLoaderImg{
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30%;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.loaderTxt{
+	position:relative;
+	width:100px;
+	height:20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Montserrat", Arial;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+}
+.TheLoaderBack{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	/*background: url(../images/HarvestRedShade90.png) top left repeat;*/
+	background:#E13B2A;
+	z-index: 100;
+	/*opacity:.9;*/
+}
+
+/*---| Navigation |---*/
+
+.logonav{
+	position: fixed;
+	top:0px;
+	left:-200px;
+	display:block;
+	overflow: hidden;
+	width:310px;
+	z-index: 98;
+	cursor:pointer;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+
+.logonavinnerframe{
+	position: absolute;
+	background: url(../images/HarvestNavFramelg.png) top left no-repeat;
+	top:10px;
+	left:210px;
+	display:block;
+	overflow: hidden;
+	height:100px;
+	width:100px;
+	z-index: 21;
+}
+
+.logonavinner{
+	position: absolute;
+	background: url(../images/HarvestNavlg.gif) top left no-repeat;
+	top:10px;
+	left:210px;
+	display:block;
+	overflow: hidden;
+	height:100px;
+	width:100px;
+	z-index: 20;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+.logonavinner:hover{
+	background: url(../images/Harvest_nav_on.png) top left no-repeat;
+}
+
+.navigation{
+	position:absolute;
+	background:#E13B2A;/*#8B150A;*/
+	width:200px;
+	display:block;
+	overflow:hidden;
+	top:0px;
+	left:0px;
+	z-index: 20;
+
+}
+.navigation ul.menu{
+	float:left;
+	clear:none;
+	width:100%;
+}
+.navigation li{
+	float:left;
+	clear:left;
+	width:100%;
+	text-align: left;
+}
+.navigation li span{
+	color:#FFF;
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+.navigation li span:hover{
+	background: #FFF;
+	cursor:pointer;
+	color:#E13B2A;
+}
+
+/*---| main |---*/
+
+#wrapper{
+	position:relative;
+	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	display:block;
+	height: 720px;
+	width:100%;
+	top:0px;
+	left:0px;
+}
+#innerWrapper{
+	position:absolute;
+	overflow:hidden;
+	display:block;
+	top:0px;
+	left:0px;
+	height: 720px;
+	width:100%;
+}
+
+.section{
+	position:relative;
+	height: 720px;
+	width:100%;
+	overflow:hidden;
+}
+.section .allSameHeight{
+	height: 720px;
+	overflow:hidden;
+}
+.sectioncenter{
+	position: absolute;
+	height:100%;
+	width:3000px;
+	display:block;
+	overflow:hidden;
+	top:0px;
+	margin-top:0px;
+	left:50%;
+	margin-left:-1500px;
+}
+
+/*---| Navigation |---*/
+
+#Nav{
+	position:fixed;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+	z-index: 100;
+}
+#Nav ul{
+	position:relative;
+	float:left;
+	overflow:hidden;
+	padding:10px;
+}
+#Nav li{
+	color:#FFF;
+	display:block;
+	text-align: left;
+	text-transform: uppercase;
+}
+#Nav li a{
+	color:#FFF;
+	display:block;
+	padding-left:0px;
+	padding-bottom:5px;
+	letter-spacing: 1px;
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+#Nav li a:hover{
+	padding-left:10px;
+}
+#Nav li.count,
+#Nav li.secNum{
+	color:#FFF;
+	display:block;
+	font-size: 10px;
+	line-height: 10px;
+	letter-spacing: 1px;
+	padding-top:10px;
+	padding-bottom:5px;
+	text-transform: uppercase;
+}
+
+#Nav li.introType{
+	font-family: 'Parisienne', serif;
+	text-transform:capitalize;
+	font-size: 45px;
+	line-height: 45px;
+	padding-bottom: 15px;
+}
+
+#Nav li.introDesc{
+	font-family: 'Montserrat', serif;
+	text-transform:uppercase;
+	font-size: 10px;
+	line-height: 10px;
+	letter-spacing: 2px;
+	padding-bottom: 20px;
+}
+/*---| Main Logo |---*/
+
+#mainLogo{
+	position:fixed;
+	top:10px;
+	right:30px;
+	width: 226px;
+	height: 68px;
+	background: url(../images/logoMain.png) top left no-repeat;
+	display:block;
+	overflow:hidden;
+	z-index: 50;
+}
+
+/*---| Section Navigation |---*/
+
+#sectionNav{
+	position:fixed;
+	top:100px;
+	right:30px;
+	overflow:hidden;
+	z-index: 101;
+	display:none;
+}
+
+#sectionNav ul{
+	position:relative;
+	float:left;
+	overflow:hidden;
+	border-right: #FFF solid 1px;
+}
+#sectionNav li{
+	display:block;
+	overflow:hidden;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#sectionNav li a{
+	display:block;
+	overflow:hidden;
+	width: 100px;
+	height: 20px;
+	background: url(../images/sectionTab.png) top right no-repeat;
+	cursor:pointer;
+}
+
+/*---| sectionComingSoon |---*/
+
+#sectionComingSoon{
+	background: #000;
+}
+#sectionComingSoon .bgZero{
+	position: absolute;
+	background: url(../images/Intro2.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionComingSoon .bgOne{
+	position: absolute;
+	background: url(../images/Intro5.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+}
+#sectionComingSoon .bgTwo{
+	position: absolute;
+	background: url(../images/Intro3.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionComingSoon .bgThree{
+	position: absolute;
+	background: url(../images/Intro4.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionComingSoon .bgFour{
+	position: absolute;
+	background: url(../images/Intro1.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+#sectionComingSoon .bgFive{
+	position: absolute;
+	background: url(../images/Intro6.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+}
+#sectionComingSoon .bgSix{
+	position: absolute;
+	background: url(../images/Intro7.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 12;
+}
+
+
+/*---| sectionOne |---*/
+
+
+#sectionOne{
+	background: #7C1B12;
+}
+#sectionOne .bgZero{
+	position: absolute;
+	background: url(../images/mainnight/secHeader1Back.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionOne .bgOne{
+	position: absolute;
+	background: url(../images/mainnight/secHeader1Tractor.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionOne .bgTwo{
+	position: absolute;
+	background: url(../images/mainnight/secHeader1TractorWheels.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionOne .bgThree{
+	position: absolute;
+	background: url(../images/secHeader1Seed.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionOne .bgFour{
+	position: absolute;
+	background: url(../images/secHeader1.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+
+/*---| sectionTwo |---*/
+
+#sectionTwo{
+	background: #2F1E43;
+}
+#sectionTwo .bgZero{
+	position: absolute;
+	background: url(../images/mainnight/secHeader2Back.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+#sectionTwo .bgOne{
+	position: absolute;
+	background: url(../images/mainnight/secHeader2BackHills.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionTwo .bgTwo{
+	position: absolute;
+	background: url(../images/mainnight/secHeader2Wheat.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionTwo .bgThree{
+	position: absolute;
+	background: url(../images/mainnight/secHeader2Cock.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionTwo .bgFour{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+
+/*---| sectionThree |---*/
+
+#sectionThree{
+	background: #4C53A3;
+}
+#sectionThree .bgOne{
+	position: absolute;
+	background:  url(../images/mainnight/secHeader3Back.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionThree .bgTwo{
+	position: absolute;
+	background: url(../images/mainnight/secHeader3DarkestCloud.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionThree .bgThree{
+	position: absolute;
+	background: url(../images/mainnight/secHeader3LightestCloud.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionThree .bgFour{
+	position: absolute;
+	background: url(../images/secHeader3.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+
+/*---| sectionFour |---*/
+
+#sectionFour{
+	background: #2A87CB;
+}
+#sectionFour .bgZero{
+	position: absolute;
+	background:  url(../images/mainnight/secHeader4Back.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+#sectionFour .bgOne{
+	position: absolute;
+	background: url(../images/mainnight/secHeader4RaysGrass.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionFour .bgTwo{
+	position: absolute;
+	background: url(../images/mainnight/secHeader4Barn.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionFour .bgThree{
+	position: absolute;
+	background: url(../images/mainnight/secHeader4BarnDoor.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionFour .bgFour{
+	position: absolute;
+	background: url(../images/mainnight/secHeader4Road.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+
+
+/*---| sectionFive |---*/
+
+#sectionFive{
+	background: #5E185C;
+}
+#sectionFive .bgZero{
+	position: absolute;
+	background: url(../images/mainnight/secHeader5Back.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+#sectionFive .bgOne{
+	position: absolute;
+	background: url(../images/mainnight/crops2.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionFive .bgTwo{
+	position: absolute;
+	background: url(../images/mainnight/crops1.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionFive .bgThree{
+	position: absolute;
+	background: url(../images/secHeader5b.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionFive .bgFour{
+	position: absolute;
+	background: url(../images/secHeader5a.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+
+
+/*---| sectionSix |---*/
+
+#sectionSix{
+	background: #301F43;
+}
+#sectionSix .bgOne{
+	position: absolute;
+	background: url(../images/mainnight/secHeader6Back.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionSix .bgTwo{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	background: url(../images/mainnight/secHeader6HillCloud.png) center center no-repeat;
+	z-index: 4;
+}
+#sectionSix .bgThree{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	background: url(../images/mainnight/secHeader6Cow.png) center center no-repeat;
+	z-index: 6;
+}
+#sectionSix .bgFour{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	background: url(../images/mainnight/secHeader6Grass.png) center center no-repeat;
+	z-index: 8;
+}

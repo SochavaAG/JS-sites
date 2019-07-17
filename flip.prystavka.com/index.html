@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>FlipArt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="#" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="plugins/bootstrap/bootstrap-4.0.0.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css">
+</head>
+
+<body>
+<div class='header'>
+  <div id='phone' class='col-md-10 col-sm-10 center'>
+    <div class='flex-column phone float-right ml-md-5 m-2'>
+      <h4 class="condensed-bold"><strong>8 800 777 35 49</strong></h4>
+      <p class="lato-regular mb-0">
+        <small>Звонок по России бесплатный</small>
+      </p>
+    </div>
+    <div class='social float-sm-right float-left'>
+      <a href='#'><img src='images/whatsapp.png' alt='whatsapp' class='float-right ml-sm-4 ml-2 m-1 m-md-2'></a>
+      <a href='#'><img src='images/insta.png' alt='instagramm' class='float-right ml-sm-4 m-1 m-md-2'></a>
+    </div>
+    <div class='position-relative justify-content-center center'>
+      <img src='images/logo.png' alt='logo' class='position-absolute logo'>
+    </div>
+  </div>
+  <div class='col-lg-8 col-12 row center bg-white p-4 individ' id="individ">
+    <div class='col-sm-10 col-11 center row col-md-6 mb-3'>
+      <div class="col-md-11 ">
+        <div>
+          <h2 class="text-right condensed-bold mb-4">Закажите индивидуальный портрет по фото и нарисуйте его за 60 минут
+            своими руками!</h2>
+        </div>
+        <div>
+          <p class="text-right lato-medium">Изготовим эскиз за 3 часа и доставим за 1-2 дня до двери в любой город.
+            Гарантируем результат, даже если никогда не рисовал!</p>
+        </div>
+        <div class="gift mb-3 float-right d-none d-md-block">
+          <p class="float-left text-right lato-medium im-text">Идеально подходит для подарка на любой праздник</p>
+          <img src="images/gift.png" class="float-right">
+        </div>
+        <div class="gift mb-3 float-right d-none d-md-block">
+          <p class="float-left text-right lato-medium im-text">Гарантия удовольствия от процесса рисования и
+            положительных эмоций от результата</p>
+          <img src="images/gift1.png" class="float-right">
+        </div>
+        <div class="gift mb-3 float-right d-none d-md-block">
+          <p class="float-left text-right lato-medium im-text">Эскиз портрета вручную создадут профессиональные
+            художники. Вам остается самое интересное - раскрасить.</p>
+          <img src="images/gift2.png" class="float-right">
+        </div>
+      </div>
+    </div>
+    <div class='col-md-6 col-sm-10 col-12 center bg-gradient pt-5 pb-2 offset-md-0 mb-3'>
+      <div class='col-md-11 row center'>
+        <h3 class='text-center condensed-bold text-white m-center fs-35 mb-3'>Загрузите фотографии</h3>
+        <p class='text-center text-white lato-medium  col-md-10 offset-md-1'>Художник нарисует эскиз и отправит вам на
+          утверждение в течение 3 часов.</p>
+        <div class='col-md-12 btn-load  text-center p-0 center'>
+          <label class='gradient-text geometria-bold'>ЗАГРУЗИТЬ
+            ФОТО<input type="file" style="width:0px; left:0;opacity: 0; position: absolute;" name="file"></label>
+        </div>
+        <div class="w-50 radio">
+          <label class="radio-inline float-left">
+            <input class="radio-butt" type="radio" name="radio-test" checked>
+            <span class="radio-custom"></span>
+            <span class="label lato-light text-white fs-08">Получить эскиз в WhatsApp</span>
+          </label>
+        </div>
+        <div class="w-50 radio">
+          <label class="radio-inline float-left">
+            <input class="radio-butt" type="radio" name="radio-test">
+            <span class="radio-custom"></span>
+            <span class="label lato-light text-white fs-08">Получить эскиз на почту</span>
+          </label>
+        </div>
+        <div class='col-md-12 text-center p-0 center'>
+          <input type="text" name="phone" class="btn-phone" placeholder="Телефон">
+        </div>
+        <div class='col-md-12 btn-load box-shadow text-center p-0 center'>
+          <a href='#' class='gradient-text geometria-bold'>Заказать портрет</a>
+        </div>
+      </div>
+    </div>
+    <div class='d-sm-block d-md-none'>
+      <div class='col-sm-10 center pt-sm-5 pb-2 mb-sm-3 d-flex p-0 flex-column flex-sm-row'>
+        <div class="col-sm-4 mb-3 flex-sm-column-reverse d-flex flex-end p-0 p-sm-2 align-items-sm-end align-items-start">
+          <p class="text-right lato-medium p-3 p-sm-0">Идеально подходит для подарка на любой праздник</p>
+          <img src="images/gift.png" class="pb-sm-3 p-3 p-sm-0">
+        </div>
+        <div class="col-sm-4 mb-3 flex-sm-column-reverse d-flex flex-end p-0 p-sm-2 align-items-sm-end align-items-start">
+          <p class="text-right lato-medium p-3 p-sm-0">Гарантия удовольствия от процесса рисования и положительных
+            эмоций от результата</p>
+          <img src="images/gift1.png" class="pb-sm-3 p-3 p-sm-0">
+        </div>
+        <div class="col-sm-4 mb-3 flex-sm-column-reverse d-flex flex-end p-0 p-sm-2 align-items-sm-end align-items-start pr-sm-0">
+          <p class="text-right lato-medium p-3 p-sm-0">Эскиз портрета вручную создадут профессиональные художники. Вам
+            остается самое интересное - раскрасить.</p>
+          <img src="images/gift2.png" class="pb-sm-3 p-3 p-sm-0">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='col-lg-8 col-md-10 col-sm-10 row center pt-sm-4 pb-5 flex-column-reverse flex-md-row flex-md-row'>
+    <div class='row col-md-7 col-sm-10 scroll mt-3 mb-5 p-0 center'>
+      <figure class="cd-image-container">
+        <img src="images/format1.jpg" alt="Original Image" class='center'>
+        <span class="cd-image-label" data-type="original"></span>
+
+        <div class="cd-resize-img"> <!-- the resizable image on top -->
+          <img src="images/format2.jpg" alt="Modified Image">
+          <span class="cd-image-label" data-type="modified"></span>
+        </div>
+
+        <span class="cd-handle"></span>
+      </figure>
+    </div>
+    <div class='row col-md-5 mt-3 m-auto p-3'>
+      <div class='align-items-center d-flex justify-content-center col-sm-6 col-md-12'><h3 class='condensed-bold'>
+        Посмотрите, как обычное фото превращается в художественный шедевр</h3></div>
+      <div class='pl-sm-5 col-sm-6 col-md-12 d-flex justify-content-center justify-content-md-start  align-items-sm-center  align-items-md-start pt-3'>
+        <img src='images/mouse.png' class='float-sm-right float-md-none'>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='gift-box' class='pt-5'>
+  <h3 class='condensed-bold pb-4 d-sm-block d-md-none col-10 center'>В стильной подарочной упаковке вы найдете все, что
+    необходимо для создания портрета</h3>
+  <div class='col-lg-8 col-md-12 col-10 row center bg-white pr-0 mb-3 pb-3 pt-5'>
+    <div class='col-sm-6 pl-lg-5 pl-md-2'>
+      <h3 class='condensed-bold pb-4 col-10 d-none d-md-block'>В стильной подарочной упаковке вы найдете все, что
+        необходимо для создания портрета</h3>
+      <p class=' lato-medium pb-2 pt-2 col-10 d-none d-sm-block'><b>Основа портрета — 1 холст из 100% хлопка</b><br>Доступны
+        4 цвета холстов: белый, бронзовый, серебряный и золотой.</p>
+      <p class=' lato-medium pb-2 pt-2 col-10 d-none d-sm-block'><b>5 кистей из щетины для настоящих художников</b></p>
+      <p class=' lato-medium pb-2 pt-2 col-10 d-none d-sm-block'><b>5 акриловых красок выбранной вами палитры</b><br>Краски
+        полностью высыхают через 30-40 минут после нанесения на холст.</p>
+      <p class=' lato-medium pb-2 pt-2 col-10 d-none d-sm-block'><b>Склеивающая плёнка</b></p>
+      <p class=' lato-medium pb-2 pt-2 col-10 d-none d-sm-block'><b>Инструкция по созданию будущего ше</b></p>
+      <p class=' lato-medium pb-4 pt-2 col-10 d-none d-sm-block'><b>Карточка для разглаживания плёнки</b></p>
+      <div class='col-md-8 btn-buy load-photo text-center justify-content-md-start ml-md-3 p-0 d-none d-sm-block'>
+        <a href='#individ' class='geometria-bold'>Заказать портрет</a>
+      </div>
+    </div>
+    <div class='col-sm-6 pr-0'>
+      <img src='images/picture5.png' alt='set'>
+    </div>
+  </div>
+  <v class='col-12 col-sm-10 center d-block d-sm-none'>
+    <p class=' lato-medium pb-2 pt-2 col-10'><b>Основа портрета — 1 холст из 100% хлопка</b><br>Доступны 4 цвета
+      холстов: белый, бронзовый, серебряный и золотой.</p>
+    <p class=' lato-medium pb-2 pt-2 col-10'><b>5 кистей из щетины для настоящих художников</b></p>
+    <p class=' lato-medium pb-2 pt-2 col-10'><b>5 акриловых красок выбранной вами палитры</b><br>Краски полностью
+      высыхают через 30-40 минут после нанесения на холст.</p>
+    <p class=' lato-medium pb-2 pt-2 col-10'><b>Склеивающая плёнка</b></p>
+    <p class=' lato-medium pb-2 pt-2 col-10'><b>Инструкция по созданию будущего ше</b></p>
+    <p class=' lato-medium pb-4 pt-2 col-10'><b>Карточка для разглаживания плёнки</b></p>
+  </v>
+</div>
+<div id='video'>
+  <div class='col-lg-8 col-md-12 col-sm-10 row p-0 center bg-white flex-column-reverse flex-md-row'>
+    <div class='col-md-7 col-sm-10 center d-flex align-items-center'>
+      <iframe style="width: 100%!important" width="560" height="300" src="https://www.youtube.com/embed/o8PGIWYv6pM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class='col-md-5 p-2 pl-4 d-flex flex-column align-items-md-center'>
+      <h3 class='condensed-bold pb-4 pt-5'>Портрет "Флип Арт" сможет нарисовать даже ребенок</h3>
+      <p class=' lato-medium pb-2 pt-2'><b>Посмотрите, как это просто</b><br>Запустите видео и узнайте, как создать
+        настоящий шедевр своими руками!</p>
+    </div>
+  </div>
+</div>
+<div id='how'>
+  <div class='col-lg-8 col-md-10 col-sm-10 p-0 row center slider3 view-xs'>
+    <div class='position-relative how-steps' id="step1">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Распакуйте подарок «Флип-Арт»</b><br>Вооружитесь кисточками из
+          подарочного набора и начните прозвольо раскрашивать холст</p>
+      </div>
+    </div>
+    <div class='position-relative how-steps' id="step2">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Дождитесь, пока краска на холсте полностью высохнет</b><br>Раскрасьте
+          холст в произвольном порядке и подождите 30-60 минут пока высохнет краска</p>
+      </div>
+    </div>
+    <div class='position-relative how-steps' id="step3">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Наклейте на холст специальную плену</b><br>Чтобы разгладить пленку,
+          используйте специальную карточку</p>
+      </div>
+    </div>
+    <div class='position-relative how-steps' id="step4">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Снимите пленку</b><br>Поздравлем! Ваш шедевр готов.</p>
+      </div>
+    </div>
+  </div>
+  <div class='col-lg-8 col-md-12 col-sm-10 p-0 row center hidden-xs'>
+    <div class='position-relative how-steps' id="step1">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Распакуйте подарок «Флип-Арт»</b><br>Вооружитесь кисточками из
+          подарочного набора и начните прозвольо раскрашивать холст</p>
+      </div>
+    </div>
+    <div class='position-relative how-steps' id="step2">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Дождитесь, пока краска на холсте полностью высохнет</b><br>Раскрасьте
+          холст в произвольном порядке и подождите 30-60 минут пока высохнет краска</p>
+      </div>
+    </div>
+    <div class='position-relative how-steps' id="step3">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Наклейте на холст специальную плену</b><br>Чтобы разгладить пленку,
+          используйте специальную карточку</p>
+      </div>
+    </div>
+    <div class='position-relative how-steps' id="step4">
+      <div>
+        <p class='lato-light'><b class="lato-medium">Снимите пленку</b><br>Поздравлем! Ваш шедевр готов.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='choose'>
+  <div class='col-lg-8 col-md-11 col-sm-10 row flex-start center'>
+    <div class='col-sm-12 col-lg-11 col-md-12 center p-0 mr-xs-3  mr-lg-auto row'>
+      <h3 class='condensed-bold'>Выберите размер холста и палитру<br> для вашего подарка</h3>
+    </div>
+    <div class='col-md-11 center p-0 row align-items-end'>
+      <div class='col-lg-3 p-0 pt-2 pb-2 col-md-12 d-flex hidden-md'>
+        <h6 class='lato-regular'><b>Выберите палитру</b></h6>
+      </div>
+      <div class='col-lg-9 col-md-12 pr-0 choose-picture row-md hidden-xs'>
+        <div class='choose1 choose m-1' onclick="choose(1);">
+          <p class=' lato-regular'>40x50</p>
+          <img src='images/photo1.png'>
+          <p class=' lato-medium'>3990 руб</p>
+        </div>
+        <div class='choose2 choose m-1' onclick="choose(2);">
+          <p class=' lato-medium'>40x50</p>
+          <img src='images/photo2.png'>
+          <p class=' lato-medium'>3990 руб</p>
+        </div>
+        <div class='choose3 choose m-1 active' onclick="choose(3);">
+          <p class=' lato-medium'>40x50</p>
+          <img src='images/photo3.png'>
+          <p class=' lato-medium'>3990 руб</p>
+        </div>
+        <div class='choose4 choose m-1' onclick="choose(4);">
+          <p class=' lato-medium'>40x50</p>
+          <img src='images/photo4.png'>
+          <p class=' lato-medium'>3990 руб</p>
+        </div>
+        <div class='choose5 choose m-1' onclick="choose(5);">
+          <p class=' lato-medium'>40x50</p>
+          <img src='images/photo5.png'>
+          <p class=' lato-medium'>3990 руб</p>
+        </div>
+      </div>
+      <div class='col-lg-3 col-md-12 flex-row mt-2 view-xs p-0 p-md-auto'>
+        <h6 class='lato-regular mr-3 mt-2'><b>Выберите размер</b></h6>
+        <select class="col-12">
+          <option>40x50</option>
+          <option>40x50</option>
+          <option>40x50</option>
+          <option>40x50</option>
+          <option>40x50</option>
+          <option>40x50</option>
+          <option>40x50</option>
+        </select>
+      </div>
+      <div class='col-lg-3 col-md-12 row-sm flex-sm-row flex-row mt-2 view-md block flex-column flex-md-row p-0 p-md-auto'>
+        <h6 class='lato-regular mr-3 mt-2'><b>Выберите палитру</b></h6>
+        <select class="col-12 col-sm-auto">
+          <option>Уорхол</option>
+          <option>Уорхол</option>
+          <option>Уорхол</option>
+          <option>Уорхол</option>
+          <option>Уорхол</option>
+          <option>Уорхол</option>
+          <option>Уорхол</option>
+        </select>
+      </div>
+    </div>
+    <div class='col-md-11 row choose-color center p-0 pt-3'>
+      <div class='col-md-3 border hidden-md'>
+        <ul class='m-0 p-0'>
+          <li class='d-flex choose-2 hidden' onclick="choose2(1);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+          <li class='d-flex choose-2 hidden' onclick="choose2(2);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+          <li class='d-flex choose-2 hidden' onclick="choose2(3);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+          <li class='d-flex choose-2 active' onclick="choose2(4);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+          <li class='d-flex choose-2 hidden' onclick="choose2(5);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+          <li class='d-flex choose-2 hidden' onclick="choose2(6);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+          <li class='d-flex choose-2 hidden' onclick="choose2(7);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+          <li class='d-flex choose-2 hidden' onclick="choose2(8);">
+            <div class='col-sm-5 p-0'><p class='text-start lato-medium '>Уорхол</p></div>
+            <div class='col-sm-7 p-0 row circle'>
+              <div class='color1 color'></div>
+              <div class='color2 color'></div>
+              <div class='color3 color'></div>
+              <div class='color4 color'></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class='col-lg-9 col-md-12 row-md  pr-0'>
+        <section class="slider">
+          <img src="images/slider.jpg">
+          <img src="images/slider.jpg">
+          <img src="images/slider.jpg">
+          <img src="images/slider.jpg">
+          <img src="images/slider.jpg">
+          <img src="images/slider.jpg">
+        </section>
+      </div>
+    </div>
+    <div class="col-md-11 row choose-color center p-0 pt-3">
+      <div class='col-12 d-flex p-sm-0'>
+        <div class='col-12 cost mt-3 p-sm-0'>
+          <div class='lato-medium float-left'>Стоимость набора “Флип Арт” размером 40х50</div>
+          <div class="grow"><h3 class='lato-medium text-center text-sm-right'>3990 руб</h3></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='col-lg-8 col-md-11 col-sm-10 row flex-end center'>
+    <div class="col-lg-11 col-12 center row flex-end">
+      <div class='btn-buy col-sm-8 col-md-5 col-12 row  pr-0 pl-0 m-xs-0'>
+        <a href='#' class='col-12'>Заказать портрет</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="slider2">
+  <img src="images/sl1.jpg">
+  <img src="images/sl2.jpg">
+  <img src="images/sl3.jpg">
+  <img src="images/sl4.jpg">
+  <img src="images/sl5.jpg">
+  <img src="images/sl6.jpg">
+  <img src="images/sl7.jpg">
+  <img src="images/sl8.jpg">
+</div>
+<div class="col-md-12 col-sm-10 center mb-5">
+  <h2 class='condensed-bold text-center'>Заказать портрет "Флип Арт" легко</h2>
+  <div class="col-lg-8 col-md-10 center mt-4 d-flex align-items-center justify-content-center hidden-xs">
+    <div class="step active" onclick="steps(1);">Шаг 1</div>
+    <div class="step" onclick="steps(2);">Шаг 2</div>
+    <div class="step" onclick="steps(3);">Шаг 3</div>
+    <div class="step" onclick="steps(4);">Шаг 4</div>
+  </div>
+  <div id="st1" class="col-lg-9 col-md-10 center mt-5 st p-sm-0 overflow">
+    <div class="col-md-4 col-sm-4 float-left">
+      <button class="slick-prev slick-arrow view-xs" aria-label="Prev" type="button" onclick="steps(4);">Prev</button>
+      <img src="images/step-1.png">
+      <button class="slick-next slick-arrow view-xs" aria-label="Next" type="button" onclick="steps(2);">Next</button>
+    </div>
+    <div class="col-md-7 col-sm-7 offset-md-1 lato-medium p-sm-0 float-left">
+      <p class="fs-09" style="color: #3e3e3e;"><b>Вы отправляете фотографию<br>Вы можете прислать несколько фотографий.
+        Выберем лучшее фото для эскиза или объединим фотографии в одну композицию.<br><br>Чем выше качество фото, тем
+        лучше результат.</b></p>
+      <img src="images/step-5.png" class="col-6 row float-left">
+      <img src="images/step-6.png" class="col-6 row float-left" style="margin-left: 5px;">
+    </div>
+  </div>
+  <div id="st2" class="col-lg-9 col-md-10 center mt-5 p-sm-0 hidden st overflow">
+    <div class="col-md-4 col-sm-4 float-left">
+      <button class="slick-prev slick-arrow view-xs" aria-label="Prev" type="button" onclick="steps(1);">Prev</button>
+      <img src="images/step-2.png">
+      <button class="slick-next slick-arrow view-xs" aria-label="Next" type="button" onclick="steps(3);">Next</button>
+    </div>
+    <div class="col-md-7 col-sm-7 offset-md-1 lato-medium p-sm-0 float-left">
+      <p class="fs-09" style="color: #3e3e3e;"><b>Вы отправляете фотографию<br>Вы можете прислать несколько фотографий.
+        Выберем лучшее фото для эскиза или объединим фотографии в одну композицию.<br><br>Чем выше качество фото, тем
+        лучше результат.</b></p>
+      <img src="images/step-5.png" class="col-6 row float-left">
+      <img src="images/step-6.png" class="col-6 row float-left" style="margin-left: 5px;">
+    </div>
+  </div>
+  <div id="st3" class="col-lg-9 col-md-10 p-sm-0 center mt-5 hidden st overflow">
+    <div class="col-md-4 col-sm-4 float-left">
+      <button class="slick-prev slick-arrow view-xs" aria-label="Prev" type="button" onclick="steps(2);">Prev</button>
+      <img src="images/step-3.png">
+      <button class="slick-next slick-arrow view-xs" aria-label="Next" type="button" onclick="steps(4);">Next</button>
+    </div>
+    <div class="col-md-7 col-sm-7 offset-md-1 lato-medium  p-sm-0 float-left">
+      <p class="fs-09" style="color: #3e3e3e;"><b>Вы отправляете фотографию<br>Вы можете прислать несколько фотографий.
+        Выберем лучшее фото для эскиза или объединим фотографии в одну композицию.<br><br>Чем выше качество фото, тем
+        лучше результат.</b></p>
+      <img src="images/step-5.png" class="col-6 row float-left">
+      <img src="images/step-6.png" class="col-6 row float-left" style="margin-left: 5px;">
+    </div>
+  </div>
+  <div id="st4" class="col-lg-9 col-md-10 p-sm-0 center mt-5 hidden st overflow">
+    <div class="col-md-4 col-sm-4 float-left">
+      <button class="slick-prev slick-arrow view-xs" aria-label="Prev" type="button" onclick="steps(3);">Prev</button>
+      <img src="images/step-4.png">
+      <button class="slick-next slick-arrow view-xs" aria-label="Next" type="button" onclick="steps(1);">Next</button>
+    </div>
+    <div class="col-md-7 col-sm-7 offset-md-1 lato-medium p-sm-0 float-left">
+      <p class="fs-09" style="color: #3e3e3e;"><b>Вы отправляете фотографию<br>Вы можете прислать несколько фотографий.
+        Выберем лучшее фото для эскиза или объединим фотографии в одну композицию.<br><br>Чем выше качество фото, тем
+        лучше результат.</b></p>
+      <img src="images/step-5.png" class="col-6 row float-left">
+      <img src="images/step-6.png" class="col-6 row float-left" style="margin-left: 5px;">
+    </div>
+  </div>
+</div>
+<div id="review">
+  <div class='col-lg-8 col-sm-10 col-12 row center bg-white mb-3 pb-3 pt-sm-5'>
+    <h3 class='condensed-bold pb-4 col-12 col-sm-10 center row ml-md-5 ml-sm-0'>Отзывы о наборе "Флип Арт"</h3>
+    <div class="col-12 center row">
+      <div class="step-2 col-12 col-sm-3 active" onclick="steps2(1);">Клиенты</div>
+      <div class="step-2 col-12 col-sm-3 " onclick="steps2(2);">Блогеры</div>
+    </div>
+    <div class="col-12 row center">
+      <div class="step-2 col-12 col-sm-3 " onclick="steps2(3);">Видеоотзывы</div>
+    </div>
+    <div class="col-12 row-sm slider2">
+      <div class="reviews">
+        <div><img src="images/picture7.png"></div>
+        <div><p class="lato-regular">Петр Иванов</p>
+          <p class="lato-light italic">Этот текст на странице с контентом создан для того, чтобы показать где будет
+            расологаться текст на странице с контентом. Этот текст на странице с контентом создан для того, чтобы
+            показать где будет расологаться текст на странице с контентом. </p></div>
+      </div>
+      <div class="reviews">
+        <div><img src="images/sl4.png"></div>
+        <div><p class="lato-regular">Петр Иванов</p>
+          <p class="lato-light italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.</p></div>
+      </div>
+      <div class="reviews">
+        <div><img src="images/format1.jpg"></div>
+        <div><p class="lato-regular">Петр Иванов</p>
+          <p class="lato-light italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p></div>
+      </div>
+    </div>
+    <div class="col-12 row-sm slider2 hidden2">
+      <div class="reviews">
+        <div><img src="images/picture7.png"></div>
+        <div><p class="lato-regular">Петр Иванов2</p>
+          <p class="lato-light italic">Этот текст на странице с контентом создан для того, чтобы показать где будет
+            расологаться текст на странице с контентом. Этот текст на странице с контентом создан для того, чтобы
+            показать где будет расологаться текст на странице с контентом. </p></div>
+      </div>
+      <div class="reviews">
+        <div><img src="images/sl4.png"></div>
+        <div><p class="lato-regular">Петр Иванов2</p>
+          <p class="lato-light italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.</p></div>
+      </div>
+      <div class="reviews">
+        <div><img src="images/format1.jpg"></div>
+        <div><p class="lato-regular">Петр Иванов2</p>
+          <p class="lato-light italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p></div>
+      </div>
+    </div>
+    <div class="col-12 row-sm slider2 hidden2">
+      <div class="reviews">
+        <div><img src="images/picture7.png"></div>
+        <div><p class="lato-regular">Петр Иванов3</p>
+          <p class="lato-light italic">Этот текст на странице с контентом создан для того, чтобы показать где будет
+            расологаться текст на странице с контентом. Этот текст на странице с контентом создан для того, чтобы
+            показать где будет расологаться текст на странице с контентом. </p></div>
+      </div>
+      <div class="reviews">
+        <div><img src="images/sl4.png"></div>
+        <div><p class="lato-regular">Петр Иванов3</p>
+          <p class="lato-light italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.</p></div>
+      </div>
+      <div class="reviews">
+        <div><img src="images/format1.jpg"></div>
+        <div><p class="lato-regular">Петр Иванов3</p>
+          <p class="lato-light italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. </p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-8 col-md-10 col-sm-11 center offset-lg-2 offset-md-1 row mb-5">
+  <h2 class='condensed-bold pb-4 col-10'>Часто задаваемые вопросы</h2>
+  <div class="faq col-12" onclick="faq(1);">
+    <p class="lato-medium"><b>Основа портрета — 1 холст из 100% хлопка</b></p>
+    <p class="lato-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.</p>
+  </div>
+  <div class="faq col-12" onclick="faq(2);">
+    <p class="lato-medium"><b>Стоимость доставки?</b></p>
+    <p class="lato-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.</p>
+  </div>
+  <div class="faq col-12" onclick="faq(3);">
+    <p class="lato-medium"><b>Может ли не получиться?</b></p>
+    <p class="lato-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.</p>
+  </div>
+  <div class="faq col-12" onclick="faq(4);">
+    <p class="lato-medium"><b>Можно ли прислать разные фото для подготовки эскиза?</b></p>
+    <p class="lato-light">Да, можно! Художник сделает те лица, которые необходимо!</p>
+  </div>
+  <div class="faq col-12" onclick="faq(5);">
+    <p class="lato-medium"><b>Какое должно быть качество фото?</b></p>
+    <p class="lato-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.</p>
+  </div>
+  <div class="faq col-12" onclick="faq(6);">
+    <p class="lato-medium"><b>Почему вы работаете по предоплате?</b></p>
+    <p class="lato-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.</p>
+  </div>
+</div>
+<div id="im-map">
+  <img src="images/map.png">
+</div>
+<div id="map">
+  <h2>Хотите оперативо узнавать о наших скидках?</h2>
+  <div class="col-lg-10 col-md-12 offset-lg-1">
+    <div class='col-lg-4 col-md-12 text-center p-0 center float-left'>
+      <input type="text" name="phone" class="btn-phone" placeholder="Ваше имя">
+    </div>
+    <div class='col-lg-4 col-md-12  text-center p-0 center float-left'>
+      <input type="text" name="phone" class="btn-phone" placeholder="Ваш email">
+    </div>
+    <div class='col-lg-4 col-md-4 text-center p-0 center float-lg-left float-md-right float-left'>
+      <div class='btn-load load-photo2 text-center p-0'>
+        <a href='#' class='gradient-text geometria-bold'>Отправить</a>
+      </div>
+    </div>
+    <div class="d-flex flex-row col-lg-12 col-md-8 align-items-flex-start justify-content-lg-center justify-content-md-start">
+      <input type="checkbox" name="accept">
+      <p class="text-white lato-light col-lg-8">Согласен с обработкой моих персональных данных в соответствии с
+        политикой конфеденциальности</p>
+    </div>
+  </div>
+</div>
+<div class="col-lg-8 p-0 col-md-10 col-10 center">
+  <div class="col-lg-4 col-sm-5 float-left">
+    <div class="d-flex flex-row">
+      <img src="images/phone.png" class="icon mt-2">
+      <div>
+        <h2 class="condensed-bold fs-35">8 800 777 35 49</h2>
+        <p class="lato-regular fs-07">Звонок по России бесплатный</p>
+      </div>
+    </div>
+    <div class="d-flex flex-row">
+      <img src="images/whatsapp2.png" class="icon mt-0">
+      <div>
+        <p class="lato-regular fs-09"><u>Принимаем заявки по WhatsApp</u></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-8 row col-sm-7 float-lg-left float-sm-right">
+    <div class="d-flex flex-row col-lg-6 col-md-12">
+      <img src="images/location.png" class="icon mt-1">
+      <div>
+        <p class="lato-regular fs-09">Акционерное общество "Флип арт", Россия, Севастополь, с. Верхнесадовое, ул.
+          Севастопольская 64, 299802</p>
+      </div>
+    </div>
+    <div id="social-footer" class='col-lg-6 col-md-12'>
+      <div class="col-12 row mb-1">
+        <img src="images/fb.png" class="icon mt-1 float-left">
+        <img src="images/insta2.png" class="icon mt-1 float-left">
+        <img src="images/vk.png" class="icon mt-1 float-left">
+      </div>
+      <div class="col-12 row">
+        <p class="lato-regular fs-09">Следите за новостями и акциями “Флип Арт” в Instagram, Вконтакте и Facebook</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clean"></div>
+<footer>
+  <p>Данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной
+    офертой, которая определяется положениями Статьи 437 (2) Гражданского Кодекса РФ. Для получения подробной информации
+    о наличии и стоимости указанных услуг,пожалуйста, обращайтесь к нашим менеджерам. Связаться с нами Вы можете при
+    помощи формы обратнойсвязи или позвонив по телефону, указанному в контактах.</p>
+  <p><a href="#">Карта сайта</a></p>
+  <p><a href="#">Политика конфеденциальности</a></p><br>
+  <p>© 2018 Флип арт | Официальный сайт. Все права защищены</p>
+</footer>
+
+<script src="js/jquery/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+<script src="plugins/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

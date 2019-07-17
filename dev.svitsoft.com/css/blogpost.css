@@ -1,0 +1,43 @@
+/* 
+    Created on : Dec 8, 2016, 11:53:51 AM
+    Author     : Chameleon
+*/
+.blog-news-container:after {
+  content: '';
+  display: table;
+  height: 1px;
+  clear: both;
+}
+.blog-news-container .blog-news {
+  padding: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .blog-news-container .blog-news {
+    width: 33%;
+  }
+}
+@media (max-width: 767px) {
+  .blog-news-container .blog-news {
+    width: 100%;
+  }
+}
+.blog-news-container .blog-news h2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.blog-news-container .blog-news a {
+  text-decoration: none;
+}
+.blog-news-container .blog-news .news-image {
+  max-width: 300px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.blog-news-container .blog-news .news-image img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=blogpost.css.map */

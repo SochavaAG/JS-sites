@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*---| Scrollbar styles (when applicable) |---*/
+::-webkit-scrollbar,
+-moz-scrollbar {
+    width: 15px;
+    cursor: pointer;
+}
+/* Track */
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 2px 2px 5px #542C22; 
+    background: #E23D2A; 
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb{
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #FFF; 
+    -webkit-box-shadow: inset 0 0 6px #542C22, 0 0 5px #542C22;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+::-webkit-scrollbar-thumb:window-inactive{
+	background: #FFF; 
+}
+
+#slideshow #back,
+#slideshow #next{
+	display:block;
+}

@@ -1,0 +1,764 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body { height: 100%; }
+
+body{
+	margin: 0px;
+	color: #FFF;
+	background-color: #FFF;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*---| basic |---*/
+
+p,h1,h2,h3,h4,h5,blockquote,strong,small,em{
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+a img{
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+li,ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+/*--- Loader ---*/
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+#TheLoader{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index: 99;
+
+}
+#TheLoaderInner{
+	position:absolute;
+	width:200px;
+	height:200px;
+	left:50%;
+	top:50%;
+	margin-left:-100px;
+	margin-top:-100px;
+	display:block;
+	overflow:hidden;
+	z-index: 101;
+}
+img.TheLoaderImg{
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30%;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.loaderTxt{
+	position:relative;
+	width:100px;
+	height:20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Montserrat", Arial;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+}
+.TheLoaderBack{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	/*background: url(../images/HarvestRedShade90.png) top left repeat;*/
+	background:#E13B2A;
+	z-index: 100;
+	/*opacity:.9;*/
+}
+
+/*---| Navigation |---*/
+
+.logonav{
+	position: fixed;
+	top:0px;
+	left:-200px;
+	display:block;
+	overflow: hidden;
+	width:310px;
+	z-index: 98;
+	cursor:pointer;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+
+.logonavinnerframe{
+	position: absolute;
+	background: url(../images/HarvestNavFramelg.png) top left no-repeat;
+	top:10px;
+	left:210px;
+	display:block;
+	overflow: hidden;
+	height:100px;
+	width:100px;
+	z-index: 21;
+}
+
+.logonavinner{
+	position: absolute;
+	background: url(../images/HarvestNavlg.gif) top left no-repeat;
+	top:10px;
+	left:210px;
+	display:block;
+	overflow: hidden;
+	height:100px;
+	width:100px;
+	z-index: 20;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+.logonavinner:hover{
+	background: url(../images/Harvest_nav_on.png) top left no-repeat;
+}
+
+.navigation{
+	position:absolute;
+	background:#E13B2A;/*#8B150A;*/
+	width:200px;
+	display:block;
+	overflow:hidden;
+	top:0px;
+	left:0px;
+	z-index: 20;
+
+}
+.navigation ul.menu{
+	float:left;
+	clear:none;
+	width:100%;
+}
+.navigation li{
+	float:left;
+	clear:left;
+	width:100%;
+	text-align: left;
+}
+.navigation li span{
+	color:#FFF;
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+.navigation li span:hover{
+	background: #FFF;
+	cursor:pointer;
+	color:#E13B2A;
+}
+
+/*---| main |---*/
+
+#wrapper{
+	position:relative;
+	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	display:block;
+	height: 720px;
+	width:100%;
+	top:0px;
+	left:0px;
+	z-index: 1;
+}
+#innerWrapper{
+	position:absolute;
+	overflow:hidden;
+	display:block;
+	top:0px;
+	left:0px;
+	height: 720px;
+	width:100%;
+	z-index: 1;
+}
+
+.section{
+	position:relative;
+	height: 100%;
+	width:100%;
+	overflow:hidden;
+}
+.section .allSameHeight{
+	height: 720px;
+	overflow:hidden;
+}
+.bglabel{
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	bottom: 10px;
+	right: 10px;
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+}
+#sectionOne .bglabel{
+	background: url(../images/Harvest_label_1.png) right bottom no-repeat;
+}
+#sectionTwo .bglabel{
+	background: url(../images/Harvest_label_2.png) right bottom no-repeat;
+}
+#sectionThree .bglabel{
+	background: url(../images/Harvest_label_3.png) right bottom no-repeat;
+}
+#sectionFour .bglabel{
+	background: url(../images/Harvest_label_4.png) right bottom no-repeat;
+}
+#sectionFive .bglabel{
+	background: url(../images/Harvest_label_5.png) right bottom no-repeat;
+}
+#sectionSix .bglabel{
+	background: url(../images/Harvest_label_6.png) right bottom no-repeat;
+}
+.scrolllabel{
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	bottom: 10px;
+	left: 10px;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	background: url(../images/Info_scrollDown.png) left bottom no-repeat;
+}
+
+
+/*---| Navigation |---*/
+
+#Nav{
+	position:fixed;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+	z-index: 100;
+}
+#Nav ul{
+	position:relative;
+	float:left;
+	overflow:hidden;
+	padding:10px;
+}
+#Nav li{
+	color:#FFF;
+	display:block;
+	text-align: left;
+	text-transform: uppercase;
+}
+#Nav li a{
+	color:#FFF;
+	display:block;
+	padding-left:0px;
+	padding-bottom:5px;
+	letter-spacing: 1px;
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	-o-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+#Nav li a:hover{
+	padding-left:10px;
+}
+#Nav li.count,
+#Nav li.secNum{
+	color:#FFF;
+	display:block;
+	font-size: 10px;
+	line-height: 10px;
+	letter-spacing: 1px;
+	padding-top:10px;
+	padding-bottom:5px;
+	text-transform: uppercase;
+}
+
+#Nav li.introType{
+	font-family: 'Parisienne', serif;
+	text-transform:capitalize;
+	font-size: 45px;
+	line-height: 45px;
+	padding-bottom: 15px;
+}
+
+#Nav li.introDesc{
+	font-family: 'Montserrat', serif;
+	text-transform:uppercase;
+	font-size: 10px;
+	line-height: 10px;
+	letter-spacing: 2px;
+	padding-bottom: 20px;
+}
+/*---| Main Logo |---*/
+
+#mainLogo{
+	position:fixed;
+	top:10px;
+	right:30px;
+	width: 226px;
+	height: 68px;
+	background: url(../images/logoMain.png) top left no-repeat;
+	display:block;
+	overflow:hidden;
+	z-index: 50;
+}
+
+/*---| Section Navigation |---*/
+
+#sectionNav{
+	position:fixed;
+	top:100px;
+	right:30px;
+	overflow:hidden;
+	z-index: 101;
+	display:none;
+}
+
+#sectionNav ul{
+	position:relative;
+	float:left;
+	overflow:hidden;
+	border-right: #FFF solid 1px;
+}
+#sectionNav li{
+	display:block;
+	overflow:hidden;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#sectionNav li a{
+	display:block;
+	overflow:hidden;
+	width: 100px;
+	height: 20px;
+	background: url(../images/sectionTab.png) top right no-repeat;
+	cursor:pointer;
+}
+
+/*---| sectionOne |---*/
+
+
+#sectionOne{
+	background: #312044;
+}
+.sectioncenter{
+	position: absolute;
+	height:100%;
+	width:3000px;
+	display:block;
+	overflow:hidden;
+	top:0px;
+	margin-top:0px;
+	left:50%;
+	margin-left:-1500px;
+}
+#sectionOne .bgZero{
+	position: absolute;
+	background: url(../images/Harvest_services_Brand_back1.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+#sectionOne .bgOne{
+	position: absolute;
+	background: url(../images/Harvest_services_Brand_plane4.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionOne .bgTwo{
+	position: absolute;
+	background: url(../images/Harvest_services_Brand_plane3.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionOne .bgThree{
+	position: absolute;
+	background: url(../images/Harvest_services_Brand_plane2.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionOne .bgFour{
+	position: absolute;
+	background: url(../images/Harvest_services_Brand_plane1.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+/*---| sectionTwo |---*/
+
+#sectionTwo{
+	background: #5F1A5D;
+}
+#sectionTwo .bgNegOne{
+	position: absolute;
+	background: url(../images/Harvest_services_Advertising_back1.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionTwo .bgZero{
+	position: absolute;
+	background: url(../images/Harvest_services_Advertising_6_sun.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionTwo .bgOne{
+	position: absolute;
+	background: url(../images/Harvest_services_Advertising_5_mt.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+}
+#sectionTwo .bgTwo{
+	position: absolute;
+	background: url(../images/Harvest_services_Advertising_4_type.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionTwo .bgThree{
+	position: absolute;
+	background: url(../images/Harvest_services_Advertising_3_mt.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionTwo .bgFour{
+	position: absolute;
+	background: url(../images/Harvest_services_Advertising_2_trees.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+#sectionTwo .bgFive{
+	position: absolute;
+	background: url(../images/Harvest_services_Advertising_1_farm.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+}
+
+/*---| sectionThree |---*/
+
+#sectionThree{
+	background: #0186CB;
+}
+#sectionThree .bgNegOne{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_back1.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+#sectionThree .bgZero{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_8_barn.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionThree .bgOne{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_7_wheat.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+}
+#sectionThree .bgTwo{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_6_type.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionThree .bgThree{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_5_wheat.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 5;
+}
+#sectionThree .bgFour{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_4_tractor.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionThree .bgFive{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_3_tractor.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 7;
+}
+#sectionThree .bgSix{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_2_tractor.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+#sectionThree .bgSeven{
+	position: absolute;
+	background: url(../images/Harvest_services_Web_1_tractor.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 9;
+}
+
+/*---| sectionFour |---*/
+
+#sectionFour{
+	background: #4E53A5;
+}
+#sectionFour .bgOne{
+	position: absolute;
+	background: url(../images/Harvest_services_Mobile_back1.jpg) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionFour .bgTwo{
+	position: absolute;
+	background: url(../images/Harvest_services_Mobile_4_pond.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionFour .bgThree{
+	position: absolute;
+	background: url(../images/Harvest_services_Mobile_3_fish.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionFour .bgFour{
+	position: absolute;
+	background: url(../images/Harvest_services_Mobile_2_boat.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+#sectionFour .bgFive{
+	position: absolute;
+	background: url(../images/Harvest_services_Mobile_1_type.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+}
+
+
+/*---| sectionFive |---*/
+
+#sectionFive{
+	background: #312044;
+}
+#sectionFive .bgOne{
+	position: absolute;
+	background: url(../images/Harvest_services_POP_4_holes.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionFive .bgTwo{
+	position: absolute;
+	background: url(../images/Harvest_services_POP_3_type.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionFive .bgThree{
+	position: absolute;
+	background: url(../images/Harvest_services_POP_2_soil.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+#sectionFive .bgFour{
+	position: absolute;
+	background: url(../images/Harvest_services_POP_1_roots.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}
+
+
+/*---| sectionSix |---*/
+
+#sectionSix{
+	background: #574E47;
+}
+
+#sectionSix .bgOne{
+	position: absolute;
+	background: url(../images/Harvest_services_OCD_gearsSlow_4.gif) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+}
+#sectionSix .bgTwo{
+	position: absolute;
+	background: url(../images/Harvest_services_OCD_gears_3.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+}
+#sectionSix .bgThree{
+	position: absolute;
+	background: url(../images/Harvest_services_OCD_logos_2.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 6;
+}
+#sectionSix .bgFour{
+	position: absolute;
+	background: url(../images/Harvest_services_OCD_type_1.png) center center no-repeat;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 8;
+}

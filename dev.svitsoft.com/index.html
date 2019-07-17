@@ -1,0 +1,856 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+
+  <title>Svitsoft &#8211; Software development company</title>
+
+  <style>
+    .wpcf7-submit {
+      display: none;
+    }
+    .recaptcha-btn {
+      display: block;
+    }
+    .grecaptcha-badge {
+      display: none;
+    }
+  </style>
+  <script type="text/javascript">
+    var contactform = [];
+    var checkIfCalled = true;
+    var renderGoogleInvisibleRecaptchaFront = function () {
+      //jQuery(document).ready(function(){
+      // prevent form submit from enter key
+      jQuery("input[name=_wpcf7]").attr("class", "formid");
+      jQuery('.wpcf7-form').on('keyup keypress', "input", function (e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13) {
+          e.preventDefault();
+          return false;
+        }
+      });
+
+      jQuery('.wpcf7-submit').each(function (index) {
+
+        var checkexclude = 0;
+        var form = jQuery(this).closest('.wpcf7-form');
+        var value = jQuery(form).find(".formid").val();
+        // check form exclude from invisible recaptcha
+        if (checkexclude == 0) {
+          // Hide the form orig submit button
+          form.find('.wpcf7-submit').hide();
+
+          // Fetch class and value of orig submit button
+          btnClasses = form.find('.wpcf7-submit').attr('class');
+          btnValue = form.find('.wpcf7-submit').attr('value');
+
+          // Add custom button and recaptcha holder
+
+          form.find('.wpcf7-submit').after('<input type="button" id="wpcf-custom-btn-' + index + '" class="' + btnClasses + '  recaptcha-btn recaptcha-btn-type-css" value="' + btnValue + '" title="' + btnValue + '" >');
+          form.append('<div class="recaptcha-holder" id="recaptcha-holder-' + index + '"></div>');
+          // Recaptcha rendenr from here
+          var holderId = grecaptcha.render('recaptcha-holder-' + index, {
+            'sitekey': '6LdVYV4UAAAAAAA6gbt5vHoPL829xHSldpwZrFkW',
+            'size': 'invisible',
+            'badge': 'bottomright', // possible values: bottomright, bottomleft, inline
+            'callback': function (recaptchaToken) {
+              //console.log(recaptchaToken);
+              var response = jQuery('#recaptcha-holder-' + index).find('.g-recaptcha-response').val();
+              //console.log(response);
+              //Remove old response and store new respone
+              jQuery('#recaptcha-holder-' + index).parent().find(".respose_post").remove();
+              jQuery('#recaptcha-holder-' + index).after('<input type="hidden" name="g-recaptcha-response"  value="' + response + '" class="respose_post">')
+              grecaptcha.reset(holderId);
+
+              if (typeof customCF7Validator !== 'undefined') {
+                if (!customCF7Validator(form)) {
+                  return;
+                }
+              }
+              // Call default Validator function
+              else if (contactFormDefaultValidator(form)) {
+                return;
+              }
+              else {
+                // hide the custom button and show orig submit button again and submit the form
+                jQuery('#wpcf-custom-btn-' + index).hide();
+                form.find('input[type=submit]').show();
+                form.find("input[type=submit]").click();
+                form.find('input[type=submit]').hide();
+                jQuery('#wpcf-custom-btn-' + index).attr('style', '');
+              }
+            }
+          }, false);
+
+          // action call when click on custom button
+          jQuery('#wpcf-custom-btn-' + index).click(function (event) {
+            event.preventDefault();
+            // Call custom validator function
+            if (typeof customCF7Validator == 'function') {
+              if (!customCF7Validator(form)) {
+                return false;
+              }
+            }
+            // Call default Validator function
+            else if (contactFormDefaultValidator(form)) {
+              return false;
+            }
+            else if (grecaptcha.getResponse(holderId) != '') {
+              grecaptcha.reset(holderId);
+            }
+            else {
+              // execute the recaptcha challenge
+              grecaptcha.execute(holderId);
+            }
+          });
+        }
+      });
+      //});
+
+    };
+
+    /*
+     *** This function is to get all the messages related to  contact form
+     You need to pass form id and message key and this function will return contact form message.
+     *** Since: 1.3.0
+     *** @params:
+     1) form id
+     2) message key
+     *** return:
+     Contact form message
+     */
+    function getContactFormMessage(formid, key) {
+      if (contactform == "") {
+        return "";
+      }
+      else {
+        for (var i = 0; i < contactform.length; i++) {
+          var checkId = contactform[i][0];
+          var checkKey = contactform[i][1];
+          var returnMsg = contactform[i][2];
+
+          if (formid == checkId && checkKey == key) {
+            return returnMsg;
+            break;
+          }
+        }
+      }
+    }
+
+    // Default validator function
+    function contactFormDefaultValidator(objForm) {
+
+      var formid = jQuery(objForm).find(".formid").val();
+      var havingError = false;
+
+      // Fetch each validation field one by one
+      objForm.find('.wpcf7-validates-as-required').each(function () {
+        jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+        // Check if empty or checkbox checked or not
+        if (!jQuery(this).hasClass('wpcf7-checkbox')) {
+          // For GDPR
+          if (jQuery(this).hasClass('wpcf7-wpgdprc')) {
+            var checkselected = 0;
+            jQuery(this).find('input').each(function () {
+              if (jQuery(this).prop('checked') == true) {
+                checkselected++;
+              }
+            });
+            if (checkselected == 0) {
+              jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+              jQuery(this).after('<span class="wpcf7-not-valid-tip" role="alert">' + getContactFormMessage(formid, 'gdpr') + '</span>');
+              havingError = true;
+            }
+          }
+          else if (!jQuery(this).val()) {
+            jQuery(this).val('');
+            jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+            jQuery(this).after('<span class="wpcf7-not-valid-tip" role="alert">' + getContactFormMessage(formid, 'invalid_required') + '</span>');
+            havingError = true;
+          }
+          // Check if not valid email address entered
+          else {
+            if (jQuery(this).attr('class').indexOf("wpcf7-validates-as-email") >= 0) {
+              var emailField = jQuery(this).val();
+              if (!validateCustomFormEmail(emailField)) {
+                jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+                jQuery(this).after('<span role="alert" class="wpcf7-not-valid-tip">' + getContactFormMessage(formid, 'invalid_email') + '</span>');
+                havingError = true;
+              }
+            }
+            // Check if not valid url entered
+            else if (jQuery(this).attr('class').indexOf("wpcf7-validates-as-url") >= 0) {
+              var urlField = jQuery(this).val();
+              if (!validateCustomFormurl(urlField)) {
+                jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+                jQuery(this).after('<span role="alert" class="wpcf7-not-valid-tip">' + getContactFormMessage(formid, 'invalid_url') + '</span>');
+                havingError = true;
+              }
+            }
+            // Check if not valid telephone entered
+            else if (jQuery(this).attr('class').indexOf("wpcf7-validates-as-tel") >= 0) {
+              var telField = jQuery(this).val();
+              if (!validateCustomFormtel(telField)) {
+                jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+                jQuery(this).after('<span role="alert" class="wpcf7-not-valid-tip">' + getContactFormMessage(formid, 'invalid_tel') + '</span>');
+                havingError = true;
+              }
+            }
+            // Check if not valid number entered
+            else if (jQuery(this).attr('class').indexOf("wpcf7-validates-as-number") >= 0) {
+              var numField = jQuery(this).val();
+              var min = jQuery(this).attr('min');
+              var max = jQuery(this).attr('max');
+              var testnum = validateCustomFormnum(numField, min, max);
+              if (testnum != 0) {
+                jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+                if (testnum == 1) {
+                  jQuery(this).after('<span role="alert" class="wpcf7-not-valid-tip">' + getContactFormMessage(formid, 'invalid_number') + '</span>');
+                }
+                if (testnum == 2) {
+                  jQuery(this).after('<span role="alert" class="wpcf7-not-valid-tip">' + getContactFormMessage(formid, 'invalid_too_long') + '</span>');
+                }
+                if (testnum == 3) {
+                  jQuery(this).after('<span role="alert" class="wpcf7-not-valid-tip">' + getContactFormMessage(formid, 'invalid_too_short') + '</span>');
+                }
+                havingError = true;
+              }
+            }
+            // Check if not valid date entered
+            else if (jQuery(this).attr('class').indexOf("wpcf7-validates-as-date") >= 0) {
+              var date = jQuery(this).val();
+              if (!validateCustomFordate(date)) {
+                jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+                jQuery(this).after('<span role="alert" class="wpcf7-not-valid-tip">' + getContactFormMessage(formid, 'invalid_date') + '</span>');
+                havingError = true;
+              }
+            }
+          }
+        }
+        else {
+          var checkselected = 0;
+          jQuery(this).find('input').each(function () {
+            if (jQuery(this).prop('checked') == true) {
+              checkselected++;
+            }
+          });
+          if (checkselected == 0) {
+            jQuery(this).parent().find('.wpcf7-not-valid-tip').remove();
+            jQuery(this).after('<span class="wpcf7-not-valid-tip" role="alert">' + getContactFormMessage(formid, 'invalid_required') + '</span>');
+            havingError = true;
+          }
+        }
+      });
+      //for acceptance validation
+      if (jQuery(objForm).find('.wpcf7-acceptance').length > 0) {
+        if (jQuery(objForm).find('.wpcf7-acceptance').hasClass('wpcf7-invert')) {
+          if (jQuery(objForm).find('.wpcf7-acceptance').prop('checked') == true) {
+            jQuery(objForm).find('.wpcf7-acceptance').parent().find('.wpcf7-not-valid-tip').remove();
+            jQuery(objForm).find('.wpcf7-acceptance').after('<span class="wpcf7-not-valid-tip" role="alert">' + getContactFormMessage(formid, 'accept_terms') + '</span>');
+            havingError = true;
+          }
+          else {
+            jQuery(objForm).find('.wpcf7-acceptance').parent().find('.wpcf7-not-valid-tip').remove();
+          }
+        }
+        else {
+          if (jQuery(objForm).find('.wpcf7-acceptance').prop('checked') == false) {
+            jQuery(objForm).find('.wpcf7-acceptance').parent().find('.wpcf7-not-valid-tip').remove();
+            jQuery(objForm).find('.wpcf7-acceptance').after('<span class="wpcf7-not-valid-tip" role="alert">' + getContactFormMessage(formid, 'accept_terms') + '</span>');
+            havingError = true;
+          }
+          else {
+            jQuery(objForm).find('.wpcf7-acceptance').parent().find('.wpcf7-not-valid-tip').remove();
+          }
+        }
+      }
+
+      return havingError;
+    }
+    //email validation function
+    function validateCustomFormEmail(email) {
+      var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,10}|[0-9]{1,3})(\]?)$/;
+      return expr.test(email);
+    }
+    //url validation function
+    function validateCustomFormurl(url) {
+      if (url) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+    //telephone validation function
+    function validateCustomFormtel(number) {
+      var phoneno = /[a-zA-Z]/;
+      if (number.match(phoneno)) {
+        return false;
+      }
+      else {
+        return true;
+      }
+    }
+    //number filed validation function
+    function validateCustomFormnum(number, min, max) {
+      if (isNaN(number)) {
+        return 1;
+      }
+      else {
+        if (min) {
+          if (number < min) {
+            return 3;
+          }
+        }
+        if (max) {
+          if (number > max) {
+            return 2;
+          }
+        }
+        return 0;
+      }
+    }
+    //date filed validation function
+    function validateCustomFordate(input) {
+      var status = false;
+      if (!input || input.length <= 0) {
+        status = false;
+      }
+      else {
+        var result = new Date(input);
+        if (result == 'Invalid Date') {
+          status = false;
+        }
+        else {
+          status = true;
+        }
+      }
+      return status;
+    }
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=renderGoogleInvisibleRecaptchaFront&render=explicit" async defer></script>
+  <link rel='dns-prefetch' href='//dev.svitsoft.com'/>
+  <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+  <link rel='dns-prefetch' href='//s.w.org'/>
+  <link rel="alternate" type="application/rss+xml" title="Svitsoft &raquo; Feed" href="http://dev.svitsoft.com/feed/"/>
+  <link rel="alternate" type="application/rss+xml" title="Svitsoft &raquo; Comments Feed" href="http://dev.svitsoft.com/comments/feed/"/>
+  <script type="text/javascript">
+    window._wpemojiSettings = {
+      "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
+      "ext": ".png",
+      "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
+      "svgExt": ".svg",
+      "source": {"concatemoji": "http:\/\/dev.svitsoft.com\/wp-includes\/js\/wp-emoji-release.min.js"}
+    };
+    !function (a, b, c) {
+      function d(a) {
+        var b, c, d, e, f = String.fromCharCode;
+        if (!k || !k.fillText)return !1;
+        switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
+          case"flag":
+            return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c);
+          case"emoji4":
+            return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e
+        }
+        return !1
+      }
+
+      function e(a) {
+        var c = b.createElement("script");
+        c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+      }
+
+      var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d");
+      for (i = Array("flag", "emoji4"), c.supports = {
+        everything: !0,
+        everythingExceptFlag: !0
+      }, h = 0; h < i.length; h++)c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
+      c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
+        c.DOMReady = !0
+      }, c.supports.everything || (g = function () {
+        c.readyCallback()
+      }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () {
+          "complete" === b.readyState && c.readyCallback()
+        })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+    }(window, document, window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+
+  <link rel='stylesheet' id='sparkling-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700' type='text/css' media='all'/>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,400|Oswald:300,400,500' type='text/css' media='all'/>
+
+  <link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='blogpost-css' href='css/blogpost.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='sparkling-bootstrap-css' href='plugins/bootstrap/bootstrap-3.3.7.min.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='sparkling-icons-css' href='css/font-awesome.min.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='sparkling-style-css' href='css/style.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='slick-css' href='plugins/slick/slick.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='custom-styles-css' href='css/custom-styles.css' type='text/css' media='all'/>
+
+  <script type='text/javascript' src='js/jquery/jquery-1.12.4.min.js'></script>
+  <script type='text/javascript' src='js/jquery/jquery-migrate-1.4.1.min.js'></script>
+  <script type='text/javascript' src='js/modernizr.min.js'></script>
+  <script type='text/javascript' src='plugins/bootstrap/bootstrap-3.3.7.min.js'></script>
+  <script type='text/javascript' src='js/functions.min.js'></script>
+  <script type='text/javascript' src='plugins/ScrollMagic/ScrollMagic.js'></script>
+  <script type='text/javascript' src='js/debug.addIndicators.js'></script>
+  <script type='text/javascript' src='js/html2canvas.js'></script>
+  <script type='text/javascript' src='plugins/slick/slick.js'></script>
+  <script type='text/javascript' src='js/custom-scripts.js'></script>
+
+  <link rel='https://api.w.org/' href='http://dev.svitsoft.com/wp-json/'/>
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dev.svitsoft.com/xmlrpc.php?rsd"/>
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="xml/wlwmanifest.xml"/>
+  <meta name="generator" content="WordPress 4.7"/>
+  <link rel="canonical" href="http://dev.svitsoft.com/"/>
+  <link rel='shortlink' href='http://dev.svitsoft.com/'/>
+  <link rel="alternate" type="application/json+oembed" href="json/wp-json.json"/>
+  <link rel="alternate" type="text/xml+oembed" href="xml/wp-json.xml"/>
+
+  <style type="text/css">
+    .qtranxs_flag_en {
+      background-image: url(images/gb.png);
+      background-repeat: no-repeat;
+    }
+  </style>
+  <link hreflang="en" href="http://dev.svitsoft.com/en/" rel="alternate"/>
+  <link hreflang="x-default" href="http://dev.svitsoft.com/" rel="alternate"/>
+  <meta name="generator" content="qTranslate-X 3.4.6.8"/>
+
+  <link rel="icon" href="images/favicon.png" sizes="32x32"/>
+  <link rel="icon" href="images/favicon.png" sizes="192x192"/>
+  <link rel="apple-touch-icon-precomposed" href="images/favicon.png"/>
+  <meta name="msapplication-TileImage" content="images/favicon.png"/>
+</head>
+
+<body class="home page-template-default page page-id-344 group-blog">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+  <header id="masthead" class="site-header" role="banner">
+    <nav class="navbar navbar-default " role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="site-navigation-inner col-sm-12">
+            <div class="navbar-header ch-hamburger--menu">
+              <button type="button" class="navbar-toggle ch-hamburger ch-hamburger--htx" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span>Toggle navigation</span>
+              </button>
+              <div id="logo">
+                <p class="site-name">
+                  <a class="navbar-brand" href="http://dev.svitsoft.com/" title="Svitsoft" rel="home">Svitsoft</a>
+                </p>
+              </div><!-- end of #logo -->
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul id="menu-home-menu" class="nav navbar-nav">
+                <li id="menu-item-389" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-389">
+                  <a title="Our expertize" href="#expertize">Our expertize</a></li>
+                <li id="menu-item-390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-390">
+                  <a title="About us" href="#expertize">About us</a></li>
+                <li id="menu-item-391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-391">
+                  <a title="Our projects" href="#projects">Our projects</a></li>
+                <li id="menu-item-392" class="contact_us menu-item menu-item-type-custom menu-item-object-custom menu-item-392">
+                  <a title="Contact us" href="#contact_us">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav><!-- .site-navigation -->
+  </header><!-- #masthead -->
+
+  <div id="content" class="site-content">
+
+    <div class="top-section"></div>
+
+    <div class="main-content-area">
+      <div>
+        <div class="main-content-inner">
+
+          <div id="primary" class="content-area">
+
+            <main id="main" class="site-main" role="main">
+              <section id="welcome" class="section section-welcom">
+                <div class="back-image backgound_zoom_in" style="background-image: url(images/home-bg.jpg);">
+                  <div class="backgound_zoom_out"></div>
+                </div>
+                <div class="inner">
+                  <div class="container">
+                    <div class="features-list row">
+
+                      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+                        <span>Reduce Your <br/>Time-to-Market</span>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+                        <span>Bring Our Expertize Into Your Business</span>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+                        <span>Quality Standards for Development</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mouse-btn">
+                  <a class="ow-button-hover" data-action="next"><span></span></a>
+                </div>
+              </section>
+
+              <section id="expertize" class="section section-directions border-bottom">
+                <div class="container inner_container">
+                  <h2 class="section-title">What we do?</h2>
+
+                  <div class="row icon-blocks">
+                    <div class="block-item col-xs-12 col-sm-4">
+                      <div class="icon_box">
+                        <span><img src="images/shape.png"/></span>
+                      </div>
+                      <h4>DEVELOPMENT</h4>
+                      <p>Realize your ideas and meet your goals</p>
+                    </div>
+                    <div class="block-item col-xs-12 col-sm-4">
+                      <div class="icon_box">
+                        <span><img src="images/alm.png"/></span>
+                      </div>
+                      <h4>ALM</h4>
+                      <p>Improve maintainability reduce the costs</p>
+                    </div>
+                    <div class="block-item col-xs-12 col-sm-4">
+                      <div class="icon_box">
+                        <span><img src="images/team.png"/></span>
+                      </div>
+                      <h4>CREATE TEAM</h4>
+                      <p>Scale your engineering team with cream of the crop talents</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="projects" class="section section-projects border-bottom">
+                <div class="container inner_container">
+                  <h2 class="section-title">Our projects</h2>
+                  <div class="massonry-grid row">
+                    <div class="grid-item image_hover fade_hover col-xs-12 col-sm-4">
+                      <div class="rel">
+                        <img src="http://dev.svitsoft.com/wp-content/uploads/2016/12/AmCham-500x500.png"/>
+                        <div class="hover_block">
+                          <div>
+                            <h5>American Chamber of Commerce</h5>
+                            <div>American Chamber of Commerce is an internationally business community with 600+ member
+                              organizations.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item image_hover fade_hover col-xs-12 col-sm-4">
+                      <div class="rel">
+                        <img src="http://dev.svitsoft.com/wp-content/uploads/2016/12/Project-AdSaver-500x500.png"/>
+                        <div class="hover_block">
+                          <div>
+                            <h5>AdSaver</h5>
+                            <div>One of the main points in this application is tracking visits, orders, incoming</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item image_hover fade_hover col-xs-12 col-sm-4">
+                      <div class="rel">
+                        <img src="http://dev.svitsoft.com/wp-content/uploads/2016/12/Ukrbud-500x500.jpg"/>
+                        <div class="hover_block">
+                          <div>
+                            <h5>Ukrainian State Building Corporation &#8220;UKRBUD&#8221;</h5>
+                            <div>Business needs we solved are: to build an online presence for sales support, increase
+                              the number of incoming calls, growth dynamics visualization.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="works" class="section section-works border-bottom">
+                <div class="container inner_container">
+                  <h2 class="section-title">How it works?</h2>
+                  <div class="canvas-wrapper" data-role="canvas-wrapper">
+                    <canvas width="0" height="0"></canvas>
+                    <ul class="clear-list content-list">
+                      <li>
+                        <div>
+                          <div class="icon_circle" data-role="target-element">
+                            <img src="images/pen.png"/>
+                          </div>
+                          <span>Getting aquainted</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="icon_circle" data-role="target-element">
+                            <img src="images/list.png"/>
+                          </div>
+                          <span>Gathering equirements</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="icon_circle" data-role="target-element">
+                            <img src="images/ui_ux.png"/>
+                          </div>
+                          <span>UI/UX Design</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="icon_circle" data-role="target-element">
+                            <img src="images/dev_test.png"/>
+                          </div>
+                          <span>Development Testing</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="icon_circle" data-role="target-element">
+                            <img src="images/release.png"/>
+                          </div>
+                          <span>Release</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="icon_circle" data-role="target-element">
+                            <img src="images/support.png"/>
+                          </div>
+                          <span>Support</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section id="partners" class="section section-partners border-bottom">
+                <div class="container inner_container">
+                  <h2 class="section-title">& others as well</h2>
+
+                  <div class="inner row" data-action="slick">
+                    <div class="col-xs-12 col-sm-3">
+                      <img src="images/1478548809_microsoft.png"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                      <img src="images/Peugeot.png"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                      <img src="images/acc.jpg"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                      <img src="images/DownloadAttachment.png"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                      <img src="images/DownloadAttachment-1.jpg"/>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="contact_us" class="section section-contact">
+                <div class="container">
+                  <h2 class="section-title">Get in touch</h2>
+                  <div class="contact-form">
+                    <div role="form" class="wpcf7" id="wpcf7-f377-o1" lang="en-US" dir="ltr">
+                      <div class="screen-reader-response"></div>
+                      <form action="/#wpcf7-f377-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                          <input type="hidden" name="_wpcf7" value="377"/>
+                          <input type="hidden" name="_wpcf7_version" value="4.7"/>
+                          <input type="hidden" name="_wpcf7_locale" value="en_US"/>
+                          <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f377-o1"/>
+                          <input type="hidden" name="_wpnonce" value="28977309fa"/>
+                        </div>
+                        <div class="form-line">
+                          <label for="f-name"> Your
+                            Name </label><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" id="f-name" aria-required="true" aria-invalid="false"/></span>
+                        </div>
+                        <div class="form-line">
+                          <label for="f-email"> Your
+                            Email </label><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" id="f-email" aria-required="true" aria-invalid="false"/></span>
+                        </div>
+                        <div class="form-line">
+                          <label for="f-subject"> Choose direction of
+                            question </label><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" id="f-subject" aria-invalid="false"/></span>
+                        </div>
+                        <div class="form-line">
+                          <label for="f-message"> Your
+                            Message </label><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="f-message" aria-invalid="false"></textarea></span>
+                        </div>
+                        <div class="text-center">
+                          <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"/>
+                        </div>
+                        <noscript>
+                          <div class="wpcf7-response-output wpcf7-spam-blocked">Your browser does not support
+                            JavaScript!. Please enable javascript in your browser in order to get form work properly.
+                          </div>
+                        </noscript>
+                        <script type='text/javascript'>
+
+                          if (contactform === undefined) {
+                            var contactform = [];
+                          }
+                          var innerVal = [377, 'mail_sent_ok', 'Thank you for your message. It has been sent.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'mail_sent_ng', 'There was an error trying to send your message. Please try again later.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'validation_error', 'One or more fields have an error. Please check and try again.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'spam', 'There was an error trying to send your message. Please try again later.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'accept_terms', 'You must accept the terms and conditions before sending your message.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_required', 'The field is required.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_too_long', 'The field is too long.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_too_short', 'The field is too short.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_date', 'The date format is incorrect.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'date_too_early', 'The date is before the earliest one allowed.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'date_too_late', 'The date is after the latest one allowed.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'upload_failed', 'There was an unknown error uploading the file.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'upload_file_type_invalid', 'You are not allowed to upload files of this type.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'upload_file_too_large', 'The file is too big.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'upload_failed_php_error', 'There was an error uploading the file.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_number', 'The number format is invalid.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'number_too_small', 'The number is smaller than the minimum allowed.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'number_too_large', 'The number is larger than the maximum allowed.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'quiz_answer_not_correct', 'The answer to the quiz is incorrect.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'captcha_not_match', 'Your entered code is incorrect.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_email', 'The e-mail address entered is invalid.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_url', 'The URL is invalid.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'invalid_tel', 'The telephone number is invalid.'];
+                          contactform.push(innerVal);
+                          var innerVal = [377, 'gdpr', ''];
+                          contactform.push(innerVal);
+                        </script>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main><!-- #main -->
+
+          </div><!-- #primary -->
+
+        </div><!-- close .row -->
+      </div><!-- close .container -->
+    </div><!-- close .site-content -->
+
+    <div id="footer-area">
+      <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info container inner_container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2">
+              <div class="footer-logo">
+                <p class="site-name">
+                  <a class="navbar-brand" href="http://dev.svitsoft.com/" title="Svitsoft" rel="home">Svitsoft</a>
+                </p></div><!-- end of #logo -->
+            </div>
+
+            <nav role="navigation" class="hidden-xs col-md-8 text-center">
+              <ul id="menu-home-menu-1" class="nav footer-nav clearfix">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-389"><a href="#expertize">Our
+                  expertize</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-390"><a href="#expertize">About
+                  us</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-391"><a href="#projects">Our
+                  projects</a></li>
+                <li class="contact_us menu-item menu-item-type-custom menu-item-object-custom menu-item-392">
+                  <a href="#contact_us">Contact us</a></li>
+              </ul>
+            </nav>
+
+            <div class="col-xs-12 col-sm-2">
+              <nav id="menu-social" class="social-icons">
+                <ul id="menu-social-items" class="social-menu">
+                  <li id="menu-item-462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-462">
+                    <a target="_blank" href="https://www.facebook.com/svitsoft/"><i class="social_icon fa"><span>facebook</span></i></a>
+                  </li>
+                  <li id="menu-item-463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-463">
+                    <a target="_blank" href="https://www.linkedin.com/company/2429774"><i class="social_icon fa"><span>linkedin</span></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div><!-- .site-info -->
+        <div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+      </footer><!-- #colophon -->
+    </div>
+  </div><!-- #page -->
+
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      if ($(window).width() >= 767) {
+        $('.navbar-nav > li.menu-item > a').click(function () {
+          if ($(this).attr('target') !== '_blank') {
+            window.location = $(this).attr('href');
+          } else {
+            var win = window.open($(this).attr('href'), '_blank');
+            win.focus();
+          }
+        });
+      }
+    });
+  </script>
+  <script type='text/javascript' src='http://dev.svitsoft.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var _wpcf7 = {"recaptcha": {"messages": {"empty": "Please verify that you are not a robot."}}};
+    /* ]]> */
+  </script>
+  <script type='text/javascript' src='js/scripts.js'></script>
+  <script type='text/javascript' src='js/skip-link-focus-fix.js'></script>
+  <script type='text/javascript' src='js/imagesloaded.min.js'></script>
+  <script type='text/javascript' src='js/masonry.min.js'></script>
+  <script type='text/javascript' src='js/jquery.masonry.min.js'></script>
+  <script type='text/javascript' src='js/wp-embed.min.js'></script>
+</body>
+</html>

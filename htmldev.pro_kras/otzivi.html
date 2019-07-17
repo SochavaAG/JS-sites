@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kras</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet"  href="css/animate.css">
+	<link rel="stylesheet" href="plugins/jquery.fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet"  href="plugins/swiper/swiper.min.css">
+	<link rel="stylesheet"  href="css/style.min.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="header__wrap">
+			<div class="header__icons">
+				<a href="#"><img src="images/h-1.png" alt=""></a>
+				<a href="#"><img src="images/h-2.png" alt=""></a>
+				<a href="#"><img src="images/h-3.png" alt=""></a>
+				<a href="#"><img src="images/h-4.png" alt=""></a>
+			</div>
+			<div class="burger-content">
+				<div class="burger-mob"></div>
+			</div>
+			<nav class="header__menu">
+				<div class="mobile-menu-close">
+					<div class="cross"></div>
+				</div>
+				<ul>
+					<li><a href="sozdanie.html">разработка сайтов</a></li>
+					<li><a href="prodvijenie.html">продвижение и реклама</a></li>
+					<li><a href="kejsi.html">наши кейсы</a></li>
+					<li><a class="active" href="otzivi.html">отзывы</a></li>
+					<li class="mobile-hidden"><a class="scroll" href="#info">контакты</a></li>
+				</ul>
+				<div class="header__mobile-info">
+					<a class="header__mobile-tel" href="tel:+73912794420"><span>+7 (391)</span> 279 44 20</a>
+					<a class="header__mobile-email" href="mailto:web@krasdesign.ru">web@krasdesign.ru</a>
+				</div>
+				<div class="header__mobile-form">
+					<form action="">
+						<div class="info__fields">
+							<div class="info__field  info__field--big">
+								<input type="text" name="name" placeholder="Ваше имя">
+							</div>
+							<div class="info__field">
+								<input type="email" name="email" placeholder="E-mail">
+							</div>
+							<div class="info__field">
+								<input class="input-mask" type="tel" name="tel" placeholder="+7 ( ___ ) _______">
+							</div>
+							<div class="info__textarea">
+								<textarea name="message" placeholder="Ваше сообщение или вопрос"></textarea>
+							</div>
+							<button class="info__submit"><span>оставить заявку</span></button>
+							<p class="dispatch-message"></p>
+						</div>
+					</form>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<section class="intro intro-slider">
+		<div class="intro__wrap">
+			<div class="intro__info">
+				<a class="intro__logo" href="#">
+					<p class="intro__logo-title">Студия<span>Евгения Кононова</span></p>
+				</a>
+				<a class="intro__tel" href="tel:+73912794420"><span>+7 (391)</span> 279 44 20</a>
+			</div>
+		</div>
+		<div class="intro__slider-content">
+			<div class="site__parallax-2">
+				<div class="site__twist-1 rellax" data-rellax-speed="+5">
+					<img src="images/tw-3.png" alt="">
+				</div>
+				<div class="site__twist-2 rellax" data-rellax-speed="+3">
+					<img src="images/tw-2.png" alt="">
+				</div>
+			</div>
+			<button class="work__slider-btn  work__slider-btn--prev"><img src="images/left.png" alt=""></button>
+			<button class="work__slider-btn  work__slider-btn--next"><img src="images/right.png" alt=""></button>
+			<div id="intro-slider">
+				<div class="intro__slides">
+					<div class="intro__slides-container">
+						<div class="intro__slides-img">
+							<img src="images/people-1.png" alt="">
+						</div>
+						<div class="intro__slides-content">
+							<div class="intro__slides-text">
+								<p>Большое спасибо компании Красдизайн за замечательный сайт и потрясающее  поисковое продвижение по-прежнему является одним из эффективных методов привлечения клиентов на сайт. Обеспечивает улучшение позиций вашего сайта в результатах выдачи Яндекс и Google<span>”</span></p>
+							</div>
+							<div class="intro__person">
+								<p>Микитин Игорь Львович,</p>
+								<p>пластический хирург</p>
+							</div>
+							<div class="work__content-title">
+								<a href="#">Mikitin.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="intro__slides">
+					<div class="intro__slides-container">
+						<div class="intro__slides-img">
+							<img src="images/people-1.png" alt="">
+						</div>
+						<div class="intro__slides-content">
+							<div class="intro__slides-text">
+								<p>Большое спасибо компании Красдизайн за замечательный сайт и потрясающее  поисковое продвижение по-прежнему является одним из эффективных методов привлечения клиентов на сайт. Обеспечивает улучшение позиций вашего сайта в результатах выдачи Яндекс и Google<span>”</span></p>
+							</div>
+							<div class="intro__person">
+								<p>Микитин Игорь Львович,</p>
+								<p>пластический хирург</p>
+							</div>
+							<div class="work__content-title">
+								<a href="#">Mikitin.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="reviews__wrap">
+			<div class="reviews__title">
+				<h2>Письма с <br>благодарностями</h2>
+			</div>
+		</div>
+        <div class="reviews-slider-wrap">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a data-fancybox="gallery" href="images/reviews-1.jpg">
+                            <img src="images/reviews-1.jpg" alt="">
+                        </a>
+                        <p>Пейнтбольный клуб «Цитадель»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fancybox="gallery" href="images/reviews-2.jpg">
+                            <img src="images/reviews-2.jpg" alt="">
+                        </a>
+                        <p>ТД «Беларусь»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fancybox="gallery" href="images/reviews-3.jpg">
+                            <img src="images/reviews-3.jpg" alt="">
+                        </a>
+                        <p>Строительная компания «Союз»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fancybox="gallery" href="images/reviews-1.jpg">
+                            <img src="images/reviews-1.jpg" alt="">
+                        </a>
+                        <p>Пейнтбольный клуб «Цитадель»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fancybox="gallery" href="images/reviews-2.jpg">
+                            <img src="images/reviews-2.jpg" alt="">
+                        </a>
+                        <p>ТД «Беларусь»</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-fancybox="gallery" href="images/reviews-3.jpg">
+                            <img src="images/reviews-3.jpg" alt="">
+                        </a>
+                        <p>Строительная компания «Союз»</p>
+                    </div>
+					<div class="swiper-slide">
+						<a data-fancybox="gallery" href="images/reviews-1.jpg">
+							<img src="images/reviews-1.jpg" alt="">
+						</a>
+						<p>Пейнтбольный клуб «Цитадель»</p>
+					</div>
+					<div class="swiper-slide">
+						<a data-fancybox="gallery" href="images/reviews-2.jpg">
+							<img src="images/reviews-2.jpg" alt="">
+						</a>
+						<p>ТД «Беларусь»</p>
+					</div>
+                </div>
+            </div>
+			<div class="swiper-button-prev"><img src="images/left.png" alt=""></div>
+			<div class="swiper-button-next"><img src="images/right.png" alt=""></div>
+        </div>
+	</section>
+
+
+	<section class="info  info-review" id="info">
+		<div id="map"></div>
+		<div class="info__wrap">
+			<div class="info__content">
+				<form action="">
+					<div class="info__title">
+						<h3>Хотите стать нашим клиентом?</h3>
+					</div>
+					<div class="info__text">
+						<p>Наш менеджер свяжется с вами, обсудит проблему и предложит оптимальную стратегию сотрудничества.</p>
+					</div>
+					<div class="info__fields">
+						<div class="info__field  info__field--big">
+							<input type="text" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="info__field">
+							<input type="email" name="email" placeholder="E-mail">
+						</div>
+						<div class="info__field">
+							<input class="input-mask" type="tel" name="tel" placeholder="+7 ( ___ ) _______">
+						</div>
+						<div class="info__textarea">
+							<textarea name="message" placeholder="Ваше сообщение или вопрос"></textarea>
+						</div>
+						<button class="info__submit"><span>Отправить</span></button>
+						<p class="dispatch-message"></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	
+	<footer class="footer">
+		<div class="footer__wrap">
+			<div class="footer__logo-content">
+				<a class="intro__logo" href="#">
+					<p class="intro__logo-title">Студия<span>Евгения Кононова</p>
+				</a>
+				<div class="footer__description">
+					<span>Разработка сайтов.</span>
+					<span>Комплексная реклама в сети.</span>
+				</div>
+			</div>
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__sub-title">
+						<h4>мы предлагаем</h4>
+					</div>
+					<nav class="footer__menu-1">
+						<ul>
+							<li><a href="#">Комплексная реклама</a></li>
+							<li><a href="#">Создание сайтов</a></li>
+							<li><a href="#">Пакет услуг "Супер PR"</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__content">
+					<div class="footer__sub-title">
+						<h4>о компании</h4>
+					</div>
+					<nav class="footer__menu-1">
+						<ul>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Кейсы</a></li>
+							<li><a href="#">Отзывы клиентов</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contact">
+					<div class="footer__sub-title">
+						<h4>контакты</h4>
+					</div>
+					<div class="header__icons">
+						<a href="#"><img src="images/h-1.png" alt=""></a>
+						<a href="#"><img src="images/h-2.png" alt=""></a>
+						<a href="#"><img src="images/h-3.png" alt=""></a>
+						<a href="#"><img src="images/h-4.png" alt=""></a>
+					</div>
+					<div class="footer__mail">
+						<a href="mailto:web@krasdesign.ru">web@krasdesign.ru</a>
+					</div>
+					<div class="footer__tel">
+						<a href="tel:+73912794420">+7 (391) 279 44 20</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="menu-side">
+		<div class="menu-side__wrap">
+			<button class="menu-side__btn">смотреть все страницы</button>
+			<nav class="menu-side__nav">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="sozdanie.html">Создание сайтов</a></li>
+					<li><a href="prodvijenie.html">Продвижение</a></li>
+					<li><a href="kejsi.html">Кейсы</a></li>
+					<li><a href="otzivi.html">Отзывы</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<script src="js/jquery/jquery-2.1.4.min.js"></script>
+	<script src="plugins/validate/jquery.validate.min.js"></script>
+	<script src="plugins/slick/slick.min.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
+	<script src="js/jquery.parallax.min.js"></script>
+	<script src="plugins/jquery.fancybox/jquery.fancybox.min.js"></script>
+	<script src="js/ScrollMagic.min.js"></script>
+	<script src="js/jquery.ScrollMagic.min.js"></script>
+	<script src="js/rellax.min.js"></script>
+	<script src="js/jquery.viewportchecker.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/CSSPlugin.min.js"></script>
+	<script src="plugins/swiper/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+	<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhjCQNBCef_6oHiYOGRdVRAJRz8fNfT6Q&amp;callback=initMap">
+	</script>
+</body>
+</html>

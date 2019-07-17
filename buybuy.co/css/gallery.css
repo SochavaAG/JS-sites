@@ -1,0 +1,90 @@
+.mad_blog .post_news {
+    margin-bottom: 45px;
+}
+.post_news .post_item .post_body a:hover h4 {
+    text-decoration: underline;
+}
+.post_news .post_item .post_body h4 {
+    margin-bottom: 19px;
+    line-height: 23px;
+    padding-bottom: 0;
+}
+.post_news .post_item .post_body h4 {
+    text-transform: none;
+    color: #000;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    font-size: 24px;
+}
+.post_news .post_item .post_body .post_social .post_social_autor a:hover {
+    text-decoration: underline;
+}
+.post_news .post_social .post_social_autor {
+    float: left;
+}
+.post_news .post_social .post_social_event {
+    float: right;
+}
+.post_news .post_social {
+    clear: both;
+}
+.post_news .post_social {
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+.post_news .post_social .post_social_item:not(:last-child) {
+    margin-bottom: 5px;
+}
+.post_news .post_item .post_body {
+    position: relative;
+    top: 100%;
+    left: 0;
+}
+.post_news .post_item .post_body {
+    padding: 30px 0 0;
+    background-color: #fff;
+}
+.mad_list_view.post_news .post_item .post_body {
+    padding: 0;
+}
+.post_news .post_item p {
+    margin-bottom: 16px;
+}
+.isotope.four_collumn .item {
+    margin-bottom: 45px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+.isotope.four_collumn.post_news {
+    margin-bottom: 0;
+}
+.post_news .post_social_event .social_comment:before {
+    content: "\f075";
+}
+.post_news .post_social_event a:before {
+    color: #dedede;
+    font-family: FontAwesome;
+    vertical-align: top;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.post_news .post_social_event a:hover:before {
+    font-size: 16px;
+}
+.post_news .post_social_event a.social_comment span {
+    padding-bottom: 2px;
+    padding-right: 7px;
+    display: inline-block;
+    padding-left: 10px;
+}
+@media (max-width: 767px){
+	.mad_list_view.post_news .col-sm-8 .figure {
+	    padding: 0;
+	}
+}
