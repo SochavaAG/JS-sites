@@ -1,0 +1,1763 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Курс UX/UI WEB-DESIGN + MOBILE DESIGN онлайн</title>
+  <meta name="description" content="UX/UI WEB-DESIGN  + MOBILE DESIGN — это уникальный курс, основанный на систематизированных материалах и огромном практическом опыте преподавателей."/>
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Google Tag Manager
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MQV3H6Q');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--<link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">-->
+  <link media="all" type="text/css" rel="stylesheet" href="plugins/sweetalert/sweetalert.css">
+
+<!--  <link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">-->
+  <link media="all" type="text/css" rel="stylesheet" href="css/jquery-ui.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="css/materialize.css">
+  <link media="all" type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+  <link media="all" type="text/css" rel="stylesheet" href="plugins/flexslider/flexslider.css">
+  <link media="all" type="text/css" rel="stylesheet" href="plugins/slick/slick.css">
+  <link media="all" type="text/css" rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link media="all" type="text/css" rel="stylesheet" href="css/app.css">
+  <link media="all" type="text/css" rel="stylesheet" href="css/style.css">
+
+  <script>
+    "use strict";
+    // webGL line_strip
+    const webGL = {
+      init(options) {
+        this.elem = document.querySelector("canvas");
+        this.gl = (
+          this.elem.getContext("webgl", options) ||
+          this.elem.getContext("experimental-webgl", options)
+        );
+        if (!this.gl) return false;
+        const vertexShader = this.gl.createShader(this.gl.VERTEX_SHADER);
+        this.gl.shaderSource(vertexShader, `
+			precision highp float;
+			attribute vec2 aPosition;
+			uniform vec3 uHSV;
+			uniform vec2 uResolution;
+			varying vec4 vColor;
+			vec3 hsv2rgb(vec3 c) {
+				vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+				vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+				return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+			}
+			void main() {
+				gl_PointSize = 1.0;
+				gl_Position = vec4(
+					( aPosition.x / uResolution.x * 2.0) - 1.0,
+					(-aPosition.y / uResolution.y * 2.0) + 1.0,
+					0.0,
+					1.0
+				);
+				vColor = vec4(hsv2rgb(uHSV), 1.0);
+			}
+		`);
+        this.gl.compileShader(vertexShader);
+        const fragmentShader = this.gl.createShader(this.gl.FRAGMENT_SHADER);
+        this.gl.shaderSource(fragmentShader, `
+			precision highp float;
+			varying vec4 vColor;
+			void main() {
+				gl_FragColor = vColor;
+			}
+		`);
+        this.gl.compileShader(fragmentShader);
+        this.program = this.gl.createProgram();
+        this.gl.attachShader(this.program, vertexShader);
+        this.gl.attachShader(this.program, fragmentShader);
+        this.gl.linkProgram(this.program);
+        this.gl.useProgram(this.program);
+        this.aPosition = this.gl.getAttribLocation(this.program, "aPosition");
+        this.gl.enableVertexAttribArray(this.aPosition);
+        this.positionBuffer = this.gl.createBuffer();
+        this.uHSV = this.gl.getUniformLocation(this.program, "uHSV");
+        this.gl.enableVertexAttribArray(this.uHSV);
+        this.resize();
+        window.addEventListener("resize", () => this.resize(), false);
+        return this;
+      },
+      resize () {
+        this.width = this.elem.width = this.elem.offsetWidth;
+        this.height = this.elem.height = this.elem.offsetHeight;
+        const uResolution = this.gl.getUniformLocation(this.program, "uResolution");
+        this.gl.enableVertexAttribArray(uResolution);
+        this.gl.uniform2f(uResolution, this.width, this.height);
+        this.gl.viewport(0, 0,
+          this.gl.drawingBufferWidth,
+          this.gl.drawingBufferHeight
+        );
+      },
+      blend (s, d) {
+        this.gl.blendFunc(s, d);
+        this.gl.enable(this.gl.BLEND);
+      },
+      createBufferLine (len) {
+        this.num = len;
+        this.bufferLine = new Float32Array(len * 2);
+      },
+      beginPath () {
+        this.k = 0;
+      },
+      strokeStyle (h, s, v) {
+        this.gl.uniform3f(this.uHSV, h, s, v);
+      },
+      lineTo (x, y) {
+        this.bufferLine[this.k++] = x;
+        this.bufferLine[this.k++] = y;
+      },
+      stroke () {
+        this.gl.bindBuffer(this.gl.ARRAY_BUFFER, this.positionBuffer);
+        this.gl.vertexAttribPointer(this.aPosition, 2, this.gl.FLOAT, false, 0, 0);
+        this.gl.bufferData(
+          this.gl.ARRAY_BUFFER,
+          this.bufferLine,
+          this.gl.DYNAMIC_DRAW
+        );
+        this.gl.drawArrays(this.gl.LINE_STRIP, 0, this.num);
+      },
+      enableFullscreen(style) {
+
+        if (
+          document.fullscreenEnabled ||
+          document.webkitFullscreenEnabled ||
+          document.mozFullScreenEnabled ||
+          document.msFullscreenEnabled
+        ) {
+          this.bfs = document.createElement("button");
+          this.bfs.appendChild(document.createTextNode("Fullscreen"));
+          this.elem.parentElement.appendChild(this.bfs);
+          for (let s in style) this.bfs.style[s] = style[s];
+          this.bfs.addEventListener('click', e => {
+            e.preventDefault();
+          this.requestFullscreen();
+        });
+
+        }
+
+      },
+      requestFullscreen() {
+
+        if (this.elem.requestFullscreen) {
+          this.elem.requestFullscreen();
+        } else if (this.elem.webkitRequestFullscreen) {
+          this.elem.webkitRequestFullscreen();
+        } else if (this.elem.mozRequestFullScreen) {
+          this.elem.mozRequestFullScreen();
+        } else if (this.elem.msRequestFullscreen) {
+          this.elem.msRequestFullscreen();
+        }
+
+      }
+    };
+  </script>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript)
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQV3H6Q"
+      height="0" width="0" style="display:none;visibility:hidden">
+
+  </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+</div>
+
+<div class="header">
+  <nav class="main-navigation" role="navigation">
+
+    <div class="row">
+      <div class="col s12 header">
+        <div class="header__left">
+          <div class="logo header__logo">
+            <a href="https://mobios.school" class="header__logo_link">
+              <img class="header__logo_image" src="images/logo.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="adaptive_menu__wrapper hamburger hamburger--slider" id="hamburger_menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+
+        <ul class="main-menu" id="mobile-menu">
+          <li class="header__menu_item drop-city">
+            <a class="header__menu_link" href="javascript:void(0);">Курсы
+              <img src="images/arr-down.png" class="link-arr" alt=""></a>
+            <ul>
+              <li>
+                <span class="arr-course"></span>
+                <a href="https://mobios.school/courses-odessa">Одесса</a>
+              </li>
+              <li><a href="https://mobios.school/courses-kyiv">Киев</a></li>
+              <li><a href="https://mobios.school/courses-online">Онлайн</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-list"><a href="/blog">Блог</a></li>
+          <li class="main-menu-list"><a href="/kak-prohodiat-kursi">Как проходят занятия</a></li>
+          <li class="main-menu-list"><a href="/about-school">О школе</a></li>
+          <li class="main-menu-list"><a href="/pages/otzivi">Отзывы</a></li>
+          <li class="main-menu-list last-li"><a href="/contacts">Контакты</a></li>
+          <li class="mob__tel_item">
+            <a class="header__tel_link" href="tel:+38 (063) 712-27-13">
+              <span class="header__tel_text">+38 (063) 712-27-13</span>
+            </a>
+          </li>
+          <li class="mob__tel_item">
+            <a class="header__tel_link" href="tel: +38 (095) 097-78-91">
+              <span class="header__tel_text"> +38 (095) 097-78-91</span>
+            </a>
+          </li>
+          <li class="mob-social" style="margin-left: 20px">
+            <a rel="nofollow" href="//www.facebook.com/schoolmobios/">
+              <i class="fa fa-facebook" style="color: #000;"></i>
+            </a>
+          </li>
+          <li class="mob-social">
+            <a rel="nofollow" href="//www.instagram.com/mobioschool/">
+              <i class="fa fa-instagram" style="color: #000;"></i>
+            </a>
+          </li>
+          <li class="mob-social">
+            <a rel="nofollow" href="//vk.com/mobios_school">
+              <i class="fa fa-vk" style="color: #000;"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header__right">
+          <div class="menu header__menu">
+            <ul class="header__menu_wrapper" id="main-menu">
+              <li class="header__menu_item drop-city">
+                <a class="header__menu_link">Курсы <img src="images/arr-down.png" class="link-arr" alt=""></a>
+                <ul>
+                  <li>
+                    <span class="arr-course"></span>
+                    <a href="https://mobios.school/courses-odessa">Одесса</a>
+                  </li>
+                  <li><a href="https://mobios.school/courses-kyiv">Киев</a></li>
+                  <li><a href="https://mobios.school/courses-online">Онлайн</a></li>
+                </ul>
+              </li>
+              <li class="header__menu_item ">
+                <a class="header__menu_link" href="/blog">Блог</a>
+              </li>
+              <li class="header__menu_item ">
+                <a class="header__menu_link" href="/kak-prohodiat-kursi">Как проходят занятия</a>
+              </li>
+              <li class="header__menu_item ">
+                <a class="header__menu_link" href="/about-school">О школе</a>
+              </li>
+              <li class="header__menu_item ">
+                <a class="header__menu_link" href="/pages/otzivi">Отзывы</a>
+              </li>
+              <li class="header__menu_item ">
+                <a class="header__menu_link" href="/contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tel header__tel">
+            <ul class="header__tel_wrapper">
+              <li class="header__tel_item">
+                <a class="header__tel_link" href="tel:+38 (063) 712-27-13">
+                  <span class="header__tel_text">+38 (063) 712-27-13</span>
+                </a>
+              </li>
+              <li class="header__tel_item">
+                <a class="header__tel_link" href="tel: +38 (095) 097-78-91">
+                  <span class="header__tel_text"> +38 (095) 097-78-91</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__auth">
+            <ul class="header__auth_dropdown_menu unlogged-user">
+              <li class="header__auth_dropdown_menu_item login-icon">
+                <a href="#modal1" class="header__auth_dropdown_menu_link modal-trigger active">вход</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<section class="breadcrumbs-section">
+  <div class="container breadcrumbs-container col m12 s12">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-home"><a href="https://mobios.school">Главная</a></li>
+      <li><a href="https://mobios.school/courses-online">Курсы</a></li>
+      <li><a href="https://mobios.school/courses/ui-ux-design" class="active">UX/UI WEB-DESIGN + MOBILE DESIGN</a></li>
+    </ul>
+  </div>
+</section>
+
+
+<main class="ui-ux">
+
+  <section class="online-ui-ux__banner">
+    <canvas id="online-ui-ux__banner"></canvas>
+    <div class="container">
+      <div class="online-ui-ux__banner__inner">
+        <div class="online-ui-ux__banner__inner-block">
+          <div class="online-ui-ux__banner__price">
+            <p class="online-ui-ux__banner__price-num">Цена: 7800 грн/курс</p>
+            <p class="online-ui-ux__banner__price-date">&nbsp;</p>
+          </div>
+          <div class="online-ui-ux__banner__descr">
+            <p class="online-ui-ux__banner__descr-txt">ОНЛАЙН КУРС</p>
+          </div>
+          <div class="online-ui-ux__banner__name">
+            <h1 class="online-ui-ux__banner__name-bold">UX/UI</h1>
+            <div class="online-ui-ux__banner__name-wrap">
+              <h2 class="online-ui-ux__banner__name-subtitle">WEB-DESIGN</h2>
+              <p>+ MOBILE</p>
+            </div>
+          </div>
+          <div class="online-ui-ux__banner__rise">
+            <p class="online-ui-ux__banner__rise-txt">ДАТА НАЧАЛА КУРСА: 9 СЕНТЯБРЯ 2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="small-12 columns learn-more-about-course-wrapper">
+        <div class="learn-more-about-course"><span class="learn-more-about-course-txt">Узнать о курсе</span></div>
+        <div class="intro-line-btn-wrapper"><a class="custom-header-btn modal-trigger" href="#modal3">Записаться на
+          консультацию</a></div>
+      </div>
+    </div>
+  </section>
+  <div class="course-blocks-wrapper online__bottom-bg">
+    <div class="container-1200">
+      <div class="row">
+        <div class="col l2 m2 s0 for-small">
+          <p class="what-course-includes">что входит в <span class="what-course-includes-blue">курс?</span></p>
+        </div>
+        <div class="col l10 m10 s12 course-blocks"><!--первый ряд-->
+          <div class="row">
+            <div class="col s3 course-block-outer">
+              <div class="course-block">
+                <p class="course-top blue"><span id="anim-bottom-num-1" class="big-num blue">3,5</span> месяцев</p>
+                <p class="course-bottom">интенсивных <br/>практических занятий</p>
+              </div>
+            </div>
+            <div class="col s3 course-block-outer">
+              <div class="course-block">
+                <p class="course-top"><span id="anim-bottom-num-2" class="big-num">150+</span> страниц</p>
+                <p class="course-bottom">лекционных <br/>материалов и д/з</p>
+              </div>
+            </div>
+            <div class="col s3 course-block-outer">
+              <div class="course-block">
+                <p class="course-top"><span id="anim-bottom-num-3" class="big-num blue">24+</span></p>
+                <p class="course-bottom">видеоматериалов, <br/>лекций, стратегий</p>
+              </div>
+            </div>
+            <div class="col s3 course-block-outer">
+              <div class="course-block">
+                <p class="course-top"><span id="anim-bottom-num-4" class="big-num">10+</span> лет</p>
+                <p class="course-bottom">опыта работы <br/>преподавателей</p>
+              </div>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+          </div>
+          <!--/row-->
+          <div class="row"><!--2й ряд-->
+            <div class="col">
+              <p class="mobios-knowlage-base">база знаний <span class="blue">mobios</span></p>
+            </div>
+            <div class="col">
+              <p class="mobios-websafari">UI/UX Web-Design</p>
+            </div>
+            <div class="col">
+              <p class="prof-education">профессиональное обучение UI/UX дизайну через практику и опыт преподавателей</p>
+            </div>
+          </div>
+          <!--/row-->
+          <div class="row"><!--3й ряд-->
+            <div class="s3 col course-block-outer">
+              <div class="course-block">
+                <p class="course-top blue"><span id="anim-bottom-num-5" class="big-num blue">5</span> дней</p>
+                <p class="course-bottom">поддержки <br/>преподавателем</p>
+              </div>
+            </div>
+            <div class="s3 col course-block-outer">
+              <div class="course-block">
+                <p class="course-top"><span id="anim-bottom-num-6" class="big-num">4</span> проекта</p>
+                <p class="course-bottom">проработанных<br/>для Вашего портфолио</p>
+              </div>
+            </div>
+            <div class="s3 col course-block-outer">
+              <div class="course-block">
+                <p class="course-top blue"><span id="anim-bottom-num-7" class="big-num blue">66</span> часов</p>
+                <p class="course-bottom">интенсивных<br/>практических<br/>занятий</p>
+              </div>
+            </div>
+            <div class="s3 col course-block-outer">
+              <div class="course-block">
+                <p class="course-top"><span id="anim-bottom-num-8" class="big-num">5</span> программ</p>
+                <p class="course-bottom">профессиональных<br/>для дизайнеров</p>
+              </div>
+            </div>
+          </div>
+          <!--/row--></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="online__program-wpap">
+    <div class="online__program-container">
+      <p class="online__program-wpap_program what-course-includes what-course-includes_black">
+        ПРОГРАММА
+        <span class="what-course-includes-blue">КУРСА</span>
+      </p>
+      <div class="program__list-wrap js-masonry">
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">1</div>
+              </div>
+              <p class="program__list-inner-name">Работа с Adobe Photoshop</p>
+              <p class="program__list-inner-txt">
+              <p>-Дизайн мышление&nbsp;<br/>-Проектировщик как профессия<br/>-Фотошоп для веб-дизайнера<br/>-Знакомство
+                с базовым функционалом программы для веб-дизайнеров&nbsp;<br/><br/><br/></p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">2</div>
+              </div>
+              <p class="program__list-inner-name">UX - Проектирование интерфейсов</p>
+              <p class="program__list-inner-txt">
+              <p class="MsoNormal" style="line-height: 150%;">-&nbsp; Что такое UI/UX ?<br/>-&nbsp; Прототипирование,
+                методы сбора информации для проекта&nbsp; <br/>-&nbsp; Поэтапное построение архитектуры сайта&nbsp;
+                <br/>-&nbsp; Документы для разработки сайта&nbsp; <br/>-&nbsp; Создание брифинга</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">3</div>
+              </div>
+              <p class="program__list-inner-name">Создание Landing Page</p>
+              <p class="program__list-inner-txt">
+              <p>&nbsp;</p>
+              <p><span style="font-size: 14px;">- ТЗ работы с лендингом, что такое брендинг<br/>- Создание продающего макета лендинга - как заставить его работать<br/></span><span style="font-size: 14px;">- Какая структура важна при построении лендинга<br/></span><span style="font-size: 14px;">- Построение правильного макета</span>
+              </p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">4</div>
+              </div>
+              <p class="program__list-inner-name"> Колористика</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- Что такое колористика?&nbsp;<br/></span>- Основы колористики<br/>-
+                Психология цветового оформления<br/>- Какие цветовые комбинации возможны</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">5</div>
+              </div>
+              <p class="program__list-inner-name">Типографика </p>
+              <p class="program__list-inner-txt">
+              <p>
+                <span style="font-size: 14px;">- Типографика<br/>- Иконографика<br/>- Верстка текстовых блоков <br/></span>
+              </p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">6</div>
+              </div>
+              <p class="program__list-inner-name">Практический урок в программе Adobe Photoshop</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- работа на время&nbsp;<br/>- работа с композицией сайта</span></p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">7</div>
+              </div>
+              <p class="program__list-inner-name">Стилистика</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- Что такое стилистика?&nbsp;<br/></span>- Стилистика сайтостроения&nbsp;<br/>-
+                Основные гайды в оформлении современных тенденций дизайна теории</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">8</div>
+              </div>
+              <p class="program__list-inner-name">Психология графических интерфейсов</p>
+              <p class="program__list-inner-txt">
+              <p>-Юзабилити, психология интерфейсов. Почему нам так удобно? <br/>-В чем смысл визуальной группировки
+                <br/>-И как заточен мозг Вашего клиента <br/>-Правила построения структуры проектов -Методики
+                направления внимания</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">9</div>
+              </div>
+              <p class="program__list-inner-name"> UI-kit - гайдлайн</p>
+              <p class="program__list-inner-txt">
+              <p>
+                <span style="font-size: 14px;">- Правильное построение&nbsp;UI-kit&nbsp; &nbsp; &nbsp; &nbsp;<br/></span>-&nbsp;Работа
+                на время<br/>- Передача готового макета верстальщику</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">10</div>
+              </div>
+              <p class="program__list-inner-name">База в верстке</p>
+              <p class="program__list-inner-txt">
+              <p>-Краткий курс верстки. Верстка html-странички&nbsp; <br/>-Почему &laquo;я так вижу?&raquo; не проходит&nbsp;
+                <br/>-Как не заставить рыдать Вашего верстальщика?</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">10</div>
+              </div>
+              <p class="program__list-inner-name">Визуальный язык. Корпоративный сайт</p>
+              <p class="program__list-inner-txt">
+              <p>-Композиция + Модульные сетки&nbsp; <br/>-Визуальный язык, контролы&nbsp; - элементы интерфейса<br/>-Навигация
+                на сайте - где я?&nbsp; <br/>-Визуалильное представление контролов в макете&nbsp; <br/>-Передача макета
+                верстальщику. Как уменьшить его бессонные ночи? <br/><br/></p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">11</div>
+              </div>
+              <p class="program__list-inner-name">Продолжение практики по корпоративному сайту </p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- работа на время<br/></span>- передача работы верстальщику согласно
+                модульных сеток и композиции</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">12</div>
+              </div>
+              <p class="program__list-inner-name">Проектирование интернет-магазина</p>
+              <p class="program__list-inner-txt">
+              <p class="MsoNormal" style="line-height: 150%;">- Интернет магазин + создание техзадания для разработки
+                ИМ. Прототипирование<br/>- Создание архитектуры сайта. Бриф. ТЗ<br/>- Как повысить продажи?<br/>-
+                Проработка дизайна главной страницы<br/>- Дизайн макетов основных страниц ИМ<br/>- Навигация, функционал<br/><span lang="EN-US">- </span>Представление
+                проекта заказчику</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">13</div>
+              </div>
+              <p class="program__list-inner-name">Графический редактор Figma</p>
+              <p class="program__list-inner-txt">
+              <p>- Обучение продукта, с новыми значительными функциями: прототипирования и передачи проекта
+                разработчикам;<br/>- Обучение функционалу;<br/>- Разработка макета основных страниц интернет
+                магазина<br/><br/></p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">14</div>
+              </div>
+              <p class="program__list-inner-name">Адаптивность. Responsive web design</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- Адаптивность. Как показать Ваш сайт на мобильном? <br/>- Мобильная версия сайта <br/>- Проработка главной страницы сайта для мобильных устройств</span>
+              </p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">15</div>
+              </div>
+              <p class="program__list-inner-name">Юзабилити и вау-эффект </p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">-Юзабилити в проектах <br/>-Графика в вебе. "Убойная Композиция" <br/>-Как заставить Вашего клиента посещать Ваш сайт снова и снова</span>
+              </p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">16</div>
+              </div>
+              <p class="program__list-inner-name">Практика по созданию основных страниц </p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- работа на время<br/></span>- качественная проработка всех страниц<br/>-
+                подготовка макета для верстки и презентации</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">17</div>
+              </div>
+              <p class="program__list-inner-name">Ознакомление с программой Adobe Illustrator</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- Ознакомление с интерфейсом программы;<br/>- Работа с кривыми;</span>
+              </p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">18</div>
+              </div>
+              <p class="program__list-inner-name">Отрисовка иллюстраций проекта</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- работа в программе Adobe Illustrator<br/></span>- Cоздание собственных
+                персонажей и композиций&nbsp;</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">19</div>
+              </div>
+              <p class="program__list-inner-name">Дизайн мобильных приложений.IOS</p>
+              <p class="program__list-inner-txt">
+              <p>- Особенности дизайна приложений<br/>- Разработка дизайна на IOS<br/>- Гайдлайны платформы iOS,
+                типографика, макет, цвет, иконки, UI-kit. Размерs<br/>- Портирование с одной платформы на другую<br/>-
+                Сравнение платформ</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">20</div>
+              </div>
+              <p class="program__list-inner-name">Создание приложения.Состояния экранов </p>
+              <p class="program__list-inner-txt">
+              <p>-Практика по созданию приложений <br/>- Состояния экранов<br/>- Onboarding <br/>- Splashscreen</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">21</div>
+              </div>
+              <p class="program__list-inner-name">Прорисовка основных состояний экрана</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">-работа на дедлайн<br/></span>-подготовка макета для
+                программиста&nbsp;<br/>-проработка основных экранов<br/><br/></p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">22</div>
+              </div>
+              <p class="program__list-inner-name">Разработка дизайна</p>
+              <p class="program__list-inner-txt">
+              <p>
+                <span style="font-size: 14px;">- Планирование базовой стурктуры&nbsp;<br/>- Панель навигации<br/></span>-
+                Создание дизайна своего приложения</p>
+              <p>&nbsp;</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">23</div>
+              </div>
+              <p class="program__list-inner-name">Знакомство с основами Adobe After Effects</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- Знакомство, с основами Adobe After Effects основы и предназначение After Effects;<br/>- Основы моушн графики; интерфейс и создание проекта; <br/>- Законы анимации; <br/>- Работа с шейпами.</span>
+              </p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">24</div>
+              </div>
+              <p class="program__list-inner-name">Принципы анимации </p>
+              <p class="program__list-inner-txt">
+              <p>- Ознакомление с принципами анимаци<br/>- 12 принципов анимации по&nbsp; Disney<br/>- Ознакомление с
+                программой After Effect<br/><br/></p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">25</div>
+              </div>
+              <p class="program__list-inner-name"> Анимация дипломного проекта в After Effects </p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- Работа с основами motion графики&nbsp;<br/></span>- Завершение
+                анимаций макета</p></p>
+            </div>
+          </div>
+        </div>
+        <div class="program__list-item item-masonry wow bounceInLeft">
+          <div>
+            <div class="program__list-inner">
+              <div class="program__list-num-wrap">
+                <div class="program__list-num">27</div>
+              </div>
+              <p class="program__list-inner-name"> Презентация. Выпускной</p>
+              <p class="program__list-inner-txt">
+              <p><span style="font-size: 14px;">- Разработка портфолио <br/>- Ваши вопросы - наши ответы <br/>- Как найти работу?&nbsp; <br/>- Что нужно что бы быть востребованы дизайнером <br/>- Ну и праздник!!</span>
+              </p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="regCour" id="regCour">
+    <div class="row">
+      <div class="title"><p>Зарегистрируйтесь на программу обучения</p></div>
+      <div class="reg">
+        <div class="courseForm" data-form="course">
+          <div class="stage col m12 s12">
+            <ul class="progress-bar-wrapper">
+              <li class="form-step-one active" data-step="1">Зарегистрируйтесь</li>
+              <li class="center form-step-one" data-step="2">Оплатите</li>
+              <li class="form-step-one" style="text-align:right" data-step="3">Начните обучение</li>
+            </ul>
+            <p id="mStage">Зарегистрируйтесь</p>
+          </div>
+          <div id="info" class="phase col s12 step-form " data-step="1">
+            <div class="online-form__wrap">
+              <div class="regPrice online-form__price">
+                <p>Цена сегодня:</p>
+                <p id='price'>7550 <span>грн/курс</span></p>
+                <p class="online-form__bronik">*бронь места только при 100% <br> оплате</p>
+              </div>
+              <div class="online-form__form">
+                <form method="POST" action="https://mobios.school/api/payment/store-user" accept-charset="UTF-8" class="courses-form-1" role="form">
+                  <input name="_token" type="hidden" value="LmlDfCYisMOG1dV6C1UtougKOTxeJbPy82e4JFh4">
+                  <input placeholder="Ваше имя" required="required" name="name" type="text">
+                  <p class="error error-name"></p>
+                  <input placeholder="Ваш город" required="required" name="city" type="text">
+                  <p class="error error-city"></p>
+                  <select data-method="switch_course" data-route="https://mobios.school/api/courses/switch-course" required="required" name="course_id">
+                    <option value="">Ваш курс</option>
+                    <option value="30">FRONT-END разработка + JQUERY+CMS</option>
+                    <option value="31" selected="selected">UX/UI WEB-DESIGN + MOBILE DESIGN</option>
+                    <option value="38">MOTION DESIGN</option>
+                    <option value="39">UI/UX/WEB-design NEW</option>
+                    <option value="40">GRAPHIC DESIGN</option>
+                  </select>
+                  <p class="error error-course_id"></p>
+                  <input placeholder="Ваш email" required="required" name="email" type="email">
+                  <p class="error error-email"></p>
+                  <input placeholder="Ваш телефон" required="required" class="input-class-test" name="phone" type="text">
+                  <p class="error error-phone"></p>
+                  <input name="amount" type="hidden" value="7550">
+                  <p class="error error-amount"></p>
+                  <input type="submit" class="custom-header-btn online-form__btn" value="Записаться на курс" data-next-step="2" id="sign-up-btn">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="pay" class="phase col s12 step-form hide " data-step="2">
+
+          </div>
+          <div id="success" class="phase col s12 step-form hide" data-step="3"></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="online__monthly-wrap">
+      <div class="online__monthly-txt-wrap">
+        <p class="online__monthly-txt">ВОЗМОЖНА ОПЛАТА ПОМЕСЯЧНО</p>
+      </div>
+      <div class="online__monthly-price-wrap">
+        <p class="online__monthly-price">2800 <span>грн/месяц</span></p>
+      </div>
+    </div>
+    <div class="online__monthly__btn-wrap">
+      <a class="online__monthly__btn modal-trigger" href="#modal3">Записаться на консультацию</a>
+    </div>
+  </section>
+  <div class="container-fluid tabs-3-title">
+    <h3 class="online-section__title">РАБОТЫ НАШИХ СТУДЕНТОВ</h3>
+  </div>
+  <div class="container-fluid slick-section online__slick-section">
+    <div class="container">
+      <p class="draggable-text online-section__draggable-text">
+                    <span class="animated-hand">
+                        <span class="pointer-img"></span>
+                        <span class="pointer-img-2"></span>
+                    </span>
+        Удерживайте кнопку мыши и<br>перетаскивайте работы
+      </p>
+      <div class="courses-responsive-slick">
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-1.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-2.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-3.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-4.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-5.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-6.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-7.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-8.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-9.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-10.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-11.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-12.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-13.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-14.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-15.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-16.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-17.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-18.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-19.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-20.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-21.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-22.png" alt="">
+          </div>
+        </div>
+        <div class="testimonial-container">
+          <div class="stud-img-container course-desc image-samples col m3 s12">
+            <img src="images/app-23.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="all__wrap">
+        <a class="all__btn" href="//www.behance.net/msstudiopr490a" target="_blank">Посмотреть все
+          работы</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="section-6" class="online__what-obtain">
+    <div class="container-1400">
+      <div class="row online__what-obtain-wrap">
+        <p class="for-whom">Что <span class="for-whom-blue">получите?</span></p>
+        <div class="m12 s12 col">
+          <div class="row what-obtain">
+            <div class="m3 s6 col uniq-col wow fadeIn">
+              <div class="for-whom-text-2-wrap"><span class="for-whom-text-2-num">01</span>
+                <p class="for-whom-text-2">Навык<br/>создания</p>
+              </div>
+              <p class="for-whom-text-3">Любые типы сайтов, любые графические интерфейсы, прототипы, веб-сервисы.</p>
+            </div>
+            <div class="m3 s6 col uniq-col wow fadeIn">
+              <div class="for-whom-text-2-wrap"><span class="for-whom-text-2-num">02</span>
+                <p class="for-whom-text-2">Мастерство владения</p>
+              </div>
+              <p class="for-whom-text-3">Профессинальными программами, типографикой, модульными сетками, цветоведением,
+                композицией.</p>
+            </div>
+            <div class="m3 s6 col uniq-col wow fadeIn">
+              <div class="for-whom-text-2-wrap"><span class="for-whom-text-2-num">03</span>
+                <p class="for-whom-text-2">3-5 работ в портфолио</p>
+              </div>
+              <p class="for-whom-text-3">Лендинг, интернет-магазин, адаптивный сайт, корпоративный сайт, мобильное
+                приложение IOS</p>
+            </div>
+            <div class="m3 s6 col uniq-col wow fadeIn">
+              <div class="for-whom-text-2-wrap"><span class="for-whom-text-2-num">04</span>
+                <p class="for-whom-text-2">После<br/>курса</p>
+              </div>
+              <p class="for-whom-text-3">Вы получите постребованную профессию UI/UX-дизайнера сайтов и интерфейсов и
+                сможете работать в офисе или на фрилансе.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container online-rev-wrap">
+    <div class="container-fluid tabs-3-title">
+      <h3 class="online-section__title">ОТЗЫВЫ НАШИХ СТУДЕНТОВ</h3>
+    </div>
+    <div class="container">
+      <p class="draggable-text online-rev__draggable-text online-section__draggable-text">
+                    <span class="animated-hand">
+                        <span class="pointer-img"></span>
+                        <span class="pointer-img-2"></span>
+                    </span>
+        Удерживайте кнопку мыши и<br>перетаскивайте работы
+      </p>
+      <div class="courses-testimonials-slick">
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/ebba5011bbbd3d037b53e4b9a2c6f0abe1576b78_25152195_497411140642662_3358887451076873243_n.jpg"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Анастасия Быстрицкая</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Впечатлений, очень много!!! Спасибо Вам огромное, за бесценный опыт, который я получила, благодаря этим
+              курсам. Я для себя открыла много нового, приобрела хорошую базу. Было очень приятно работать с
+              профессиональной командой преподавателей!!!
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/64bddc511e64b1dee4f678bbacbf654cc414c20e_23244537_1832873206741139_2186673868396370965_n.jpg"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Андрей Грищенко</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Курс Веб-дизайна в школе (студии) Mobios позволил мне погрузится в мир дизайна интерфейсов с нуля. Когда я
+              подписывал договор о занятиях на курсе - я практически ничего не знал ни о дизайне, ни о том, как
+              пользоваться Photoshop. Сегодня, спустя лишь 2 месяца я могу создавать пользовательские интерфейсы,
+              некоторые из которых даже не вызывают кровотечение из глаз! Я получил необходимый &quot;практикум&quot; из
+              основных знаний и навыков дальше: развиваться, работать над качеством работ и моего портфолио
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/7e6d2ab202d04a0caeeb327dbe3654441af68c63_21192279_10212668025888426_9115052820773791638_n.jpg"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Кристина Шумович</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Для меня это открытие профессии UX/UI дизайнера было очень особенным! Я поняла, что это довольно
+              многогранная специальность и требует особой настойчивости , заинтересованности и терпения! Это творческая
+              профессия и я благодарю всех педагогов студии Mobios за профессионализм и подход к каждому студенту!!
+              Спасибо!&nbsp;
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/2e2b52c06cc7ed811c5fd74735eefacb10c8570c_girl (4).png"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Кристина Бобок</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Учение - свет!Не даром так говорят. Школа Mobios действительно пролила нам свет на интересную и
+              востребованную деятельность, после чего осталось только совершенствоваться и воплощать свои
+              профессиональные мечты в реальность. Я получила очень уверенную базу после которой действительно &#039;ничего
+              не страшно&#039;. Спасибо Вам за компетентный и кропотливый труд.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/34721148cd0b984eb3c1e85aabfea9545efe61dc_girl (5).png"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Марина Рубан</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Если вы хотите начать путь дизайнера, то эта школа отличный старт, вам все расскажут и научат. Много
+              практики, отличная команда преподавателей, которые мотивируют и вдохновляют)
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/cb624fc1ed4ee41cc41a31ec8f2032ce66f8d3d1_girl (3).png"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Ольга  Цымбал </span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Понравился курс. Хорошие, внимательные преподаватели. Считаю, что самые важные моменты в дизайне включены
+              в программу курса. Очень понравились печеньки и кофе :)&nbsp;Было приятно, что на первом занятии вручили
+              блокноты и ручки
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src=""
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Анонимно</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Курс мне дал много новых знаний которые буду применять в дальнейшем, 3 методички с подсказками и конечно
+              прибавилось уверенности в себе. Так что спасибо огромное за опыт и навики!
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/6e845405f3c765463110464aaccd7c88845babd0_boy (7).png"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Валерий  Ишинов</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Опыт того, как на практике разрабатывать дизайн лендинга, сайтов, моб приложения. Больше узнал о тонкостях
+              дизайна. Несколько проектов в портфолио) Курс дал желание развиваться дальше и не останавливаться, а также
+              было очень приятно познакомиться с коллективом Mobios.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-person-container">
+            <div class="testimonial-img-container">
+              <img src="https://mobios.school/images/users/cfdd639b230bf6b217f5c3c56ac8f97cbb1cb847_girl (7).png"
+                  class="testimonial-img">
+            </div>
+            <span class="stud-testimonial-title">Юлия Купчева</span>
+          </div>
+          <div class="txt-wrap">
+            <p class="testimonial-slide-text">
+              Прийдя в вашу школу мои умения оканчивались на обрезке фото инструментом crop в фотошопе. Сейчас я могу
+              отрисовать как минимум лендинг. За 3 месяца отличное достижение.)) Курс заложил базовые понимания этой
+              отрасли дизайна. Теперь есть над чем работать. Спасибо
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="all__wrap">
+      <a class="all__btn" rel="nofollow"
+          href="//www.youtube.com/playlist?list=PL7UwOX2KwcIRQQ-Ve0Qgl8CVs6QYA3BDf" target="_blank">Посмотреть
+        все отзывы</a>
+    </div>
+  </div>
+
+
+</main>
+
+<p class="hidden">31</p>
+
+
+<footer class="page-footer cd-section" id="section5">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="https://mobios.school"><img src="images/logo-footer-new.png" class="responsive-img"></a>
+        <a href="#modal3" class="request modal-trigger">Оставить заявку</a>
+      </div>
+      <div class="footer-about">
+        <div class="footer-col-wrapper">
+          <h5>О компании</h5>
+          <ul>
+            <li><a href="/blog">Блог</a></li>
+            <li><a href="/kak-prohodiat-kursi">Как проходят занятия</a></li>
+            <li><a href="/about-school">О школе</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-courses">
+        <div class="footer-col-wrapper">
+          <h5>Курсы в Киеве</h5>
+          <ul>
+            <li><a href="//mobios.school/kyiv/ui-ux.php">UX/UI Web-Design</a></li>
+            <li><a href="//mobios.school/kyiv/motion.php">Motion Design</a></li>
+            <li><a href="//mobios.school/kyiv/design-interior.php">Дизайн интерьера</a></li>
+            <li><a href="//mobios.school/kyiv/frontend.php">Front-End разработка</a></li>
+            <li><a href="//mobios.school/kyiv/graphic.php">Graphic Design</a></li>
+            <li><a href="//mobios.school/kyiv/sales.php">IT Sales Manager</a></li>
+            <li><a href="//mobios.school/kyiv/3d-max.php">3Ds Max | 3D Modeling</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-courses">
+        <div class="footer-col-wrapper">
+          <h5>Курсы в Одессе</h5>
+          <ul>
+            <li><a href="//mobios.school/odessa/ui-ux.php">UX/UI Web-Design</a></li>
+            <li><a href="//mobios.school/odessa/motion.php">Motion Design</a></li>
+            <li><a href="//mobios.school/odessa/design-interior.php">Дизайн интерьера</a></li>
+            <li><a href="//mobios.school/odessa/frontend.php">Front-End разработка</a></li>
+            <li><a href="//mobios.school/odessa/sales.php">IT Sales Manager</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-courses">
+        <div class="footer-col-wrapper">
+          <h5>Курсы Онлайн</h5>
+          <ul>
+            <li><a href="//mobios.school/courses/ui-ux-design">UX/UI Web-Design</a></li>
+            <li><a href="//mobios.school/courses/motion-design">Motion Design</a></li>
+            <li><a href="//mobios.school/courses/frontend-jquery-cms">Front-End разработка</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <div class="footer-col-wrapper">
+          <h5 class="text-center">Контакты</h5>
+          <ul>
+            <li><a href="tel:+38(063)712-27-13">+38 (063) 712-27-13<span class="footer-viber">Viber</span></a></li>
+            <li><a href="tel:+38(095)097-78-91">+38 (095)
+              097-78-91<span class="footer-viber">Viber & Telegram</span></a></li>
+            <li>
+              <a href="javascript:void(0);">msstudiopr@gmail.com</a>
+            </li>
+          </ul>
+          <a href="#modal3" class="request modal-trigger hide-on-med-and-up">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row no-mar">
+    <div class="footer-separator"><span></span></div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <div>
+        <div class="footer-copyright">
+                    <span>
+                        ©
+                        <a href="//mobios.ua/" target="_blank" rel="nofollow">Mobios</a>
+                        2013‐2018 / Все права защищены.
+                    </span>
+        </div>
+        <div class="social">
+          <a target="_blank" rel="nofollow" href="//www.facebook.com/schoolmobios/"><i class="fa fa-facebook" style="color: #000;"></i></a>
+          <a target="_blank" rel="nofollow" href="//www.instagram.com/mobioschool/"><i class="fa fa-instagram" style="color: #000; font-weight: 900;"></i></a>
+          <a target="_blank" rel="nofollow" href="//vk.com/mobios_school"><i class="fa fa-vk" style="color: #000;"></i></a>
+          <a target="_blank" rel="nofollow" href="//t.me/mobioschool"><img style="width: 15px;position: relative;top: 2px;" src="images/tg.png" alt=""></a>
+          <a target="_blank" rel="nofollow" href="//twitter.com/mobios_school"><i class="fa fa-twitter" style="color: #000;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="modal-del">
+  <div class="modal-del-ico">
+    <img src="images/warn.png" alt="">
+  </div>
+  <p>Подтверждение удаления</p>
+  <div class="modal-del-links">
+    <a href="#" id="delete">Подтвердить</a>
+    <a href="#" id="cancel">Отмена</a>
+  </div>
+</div>
+
+<div id="modal-rev">
+  <p>Отзыв будет виден после модерации администратором</p>
+  <div>
+    <a href="#" class="close-rev">ОК</a>
+  </div>
+</div>
+
+<div class="overlay"></div>
+
+<script src="js/jquery/jquery-2.1.4.min.js"></script>
+<script>
+  window.onload = function () {
+    if (window.innerWidth >= 767) {
+      if (Boolean(document.getElementById('lazy-video'))) {
+        document.getElementById('lazy-video').innerHTML += '<video muted autoplay="autoplay" loop="loop" poster="img/poster-video.jpg" style="background: dimgrey"><source src="img/mobios.mp4"></video>';
+      }
+      if (Boolean(document.getElementById('lazy-gif'))) {
+        document.getElementById('lazy-gif').innerHTML = '<img class="cat_first" src="images/cat3.gif" alt=""><img class="cat_second" src="images/cat-eyes.gif" alt="">';
+      }
+      if (Boolean(document.getElementById('lazy-gif2'))) {
+        document.getElementById('lazy-gif2').innerHTML = '<img class="cat_first" src="images/cat3.gif" alt=""><img class="cat_second" src="images/cat-eyes.gif" alt="">';
+      }
+      if (Boolean(document.getElementById('lazy-gif3'))) {
+        document.getElementById('lazy-gif3').innerHTML = '<img class="cat_first" src="images/cat3.gif" alt="">';
+      }
+    }
+  };
+
+  // $('html, body').css('overflow', 'hidden');
+  if (screen.width > 767) {
+    // $(window).load(function () {
+    //     $('#loader-wrapper').fadeOut();
+    //     $('html, body').css('overflow', 'visible');
+    // });
+    $(document).ready(function () {
+      $('#loader-wrapper').fadeOut();
+      // $('html, body').css('overflow-x', 'hidden');
+    });
+  } else {
+    setTimeout(function () {
+      $('#loader-wrapper').fadeOut();
+      // $('html, body').css('overflow-x', 'hidden');
+    }, 1500)
+  }
+
+  $(document).ready(function () {
+    $('#hamburger_menu').click(function (e) {
+      var hamburger = $(this);
+      var mobileM = $('#mobile-menu');
+      e.stopPropagation();
+      hamburger.toggleClass('is-active');
+      mobileM.fadeToggle(100);
+      mobileM.toggleClass('mobile-menu-active');
+      $('body, html').toggleClass('no-scroll');
+      $('.overlay').fadeToggle();
+      $('body').click(function (e) {
+        if ($(e.target).closest('#mobile-menu').length === 0) {
+          mobileM.fadeOut();
+          mobileM.removeClass('mobile-menu-active');
+          $('body, html').removeClass('no-scroll');
+          $('.overlay').fadeOut();
+          hamburger.removeClass('is-active');
+        }
+      });
+    });
+
+    $('#mobile-menu .drop-city').click(function () {
+      $('#mobile-menu .drop-city ul').slideToggle();
+    });
+
+
+    // РАСКОММЕНТИРОВАТЬ В КОНЦЕ РАЗРАБОТКИ MOBIOS SCHOOL
+
+    var img = document.getElementsByTagName('img');
+
+    for (var i in img) {
+      img[i].oncontextmenu = function () {
+        return false;
+      };
+      img[i].ondragstart = function () {
+        return false;
+      };
+    }
+
+    document.oncopy = function () {
+      var bodyElement = document.body;
+      var selection = getSelection();
+      var href = document.location.href;
+      var copyright = "<br><br>Источник: <a href='" + href + "'>" + href + "</a><br>© Блог Mobios School";
+      var text = selection + copyright;
+      var divElement = document.createElement('div');
+      divElement.style.position = 'absolute';
+      divElement.style.left = '-99999px';
+      divElement.innerHTML = text;
+      bodyElement.appendChild(divElement);
+      selection.selectAllChildren(divElement);
+      setTimeout(function () {
+        bodyElement.removeChild(divElement);
+      }, 0);
+    };
+
+    // РАСКОММЕНТИРОВАТЬ В КОНЦЕ РАЗРАБОТКИ MOBIOS SCHOOL
+  });
+</script>
+
+<!-- Start SiteHeart code
+<script>
+  (function () {
+    var widget_id = 890918;
+    _shcp = [{widget_id: widget_id}];
+    var lang = (navigator.language || navigator.systemLanguage
+    || navigator.userLanguage || "en")
+      .substr(0, 2).toLowerCase();
+    var url = "widget.siteheart.com/widget/sh/" + widget_id + "/" + lang + "/widget.js";
+    var hcc = document.createElement("script");
+    hcc.type = "text/javascript";
+    hcc.async = true;
+    hcc.src = ("https:" == document.location.protocol ? "https" : "http")
+      + "://" + url;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hcc, s.nextSibling);
+  })();
+</script>
+<!-- End SiteHeart code -->
+
+
+<script src="js/materialize.min.js"></script>
+
+<script>$.ajaxSetup({headers: {'X-CSRF-TOKEN': 'LmlDfCYisMOG1dV6C1UtougKOTxeJbPy82e4JFh4'}});</script>
+<script src="js/frontend.js"></script>
+
+<script src="js/js_index_tabs.js"></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>-->
+<script src="plugins/sweetalert/sweetalert-1.1.3.min.js"></script>
+
+<script src="js/front-end-allpages.js"></script>
+<!--<script async src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
+<script async src="js/masonry.pkgd.min.js"></script>
+
+
+<script src="plugins/slick/slick.min.js"></script> <!-- slick slider -->
+<script async src="plugins/slick/slick-init.js"></script> <!-- slick slider initialization/options-->
+
+<div id="modal1" class="modal modal-owl">
+  <div class="close-btn" id="login-close-btn"></div>
+  <div class="modal-content">
+    <div class="owl-block" id="lazy-gif">
+    </div>
+    <div class="form-block">
+      <h4 class="modal-login-title">Вход</h4>
+      <form role="form" id="loginForm" method="POST" action="/auth/login">
+        <fieldset>
+          <div class="form-group input-login-icon">
+            <input class="form-control" placeholder="E-mail" name="email" required type="email" autofocus>
+          </div>
+          <div class="form-group input-email-icon">
+            <input class="form-control cat-change" placeholder="Password" name="password" required type="password" value="">
+          </div>
+          <input type="hidden" name="_token" value="LmlDfCYisMOG1dV6C1UtougKOTxeJbPy82e4JFh4">
+          <!-- Change this to a button or input when using this as a form -->
+          <div class="checkboxes-wrapper">
+            <div class="forgot_pass">
+              <a class="forgot_pass_url" href="/password/reset">Забыли пароль?</a>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-lg btn-success btn-block">Войти</button>
+        </fieldset>
+        <div style="padding:10px 50px 30px;color:red;text-align: center" id="login-error"></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="modal3" class="modal modal-owl">
+  <div class="modal-content">
+    <div class="close-btn" id="request-close-btn"></div>
+    <div class="owl-block" id="lazy-gif3">
+    </div>
+    <div class="form-block reg-block">
+      <!--
+      <script>
+        var amo_forms_params = {
+          "id": 291505,
+          "hash": "efed86a96081aecb1d8138c8c13065dc",
+          "locale": "ru"
+        };
+      </script>
+      <script id="amoforms_script" async="async" charset="utf-8" src="js/amoforms.js"></script>
+      -->
+    </div>
+  </div>
+</div>
+
+<div id="modal2" class="modal modal-owl modal-owl-register">
+  <div class="close-btn" id="reg-close-btn"></div>
+  <div class="modal-content">
+    <div class="owl-block" id="lazy-gif2">
+    </div>
+    <div class="form-block">
+      <h4 class="modal-login-title">Регистрация</h4>
+      <form class="form-horizontal" role="form" id="registerForm" method="POST" action="/auth/register">
+        <input type="hidden" name="_token" value="LmlDfCYisMOG1dV6C1UtougKOTxeJbPy82e4JFh4">
+
+        <div class="form-group">
+          <div class="col-md-6 input-name">
+            <input type="text" class="form-control" name="first_name" value="" required
+                placeholder="Введите имя">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-6 input-name">
+            <input type="text" class="form-control" name="last_name" value="" required
+                placeholder="Введите фамилию">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-6 input-email">
+            <input type="email" class="form-control cat-change" name="email" value=""
+                placeholder="Введите e-mail">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-6 input-pass">
+            <input type="password" class="form-control cat-change" required name="password"
+                placeholder="Введите пароль">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-6 input-pass-confirm">
+            <input type="password" class="form-control cat-change" required name="password_confirmation"
+                placeholder="Подтвердите пароль">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-6 col-md-offset-4">
+            <button type="submit" class="btn btn-primary yellow-btn">
+              Зарегистрироваться
+            </button>
+          </div>
+        </div>
+        <div style="padding:10px 50px 30px;color:red;text-align: center" id="register-error"></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('#login-close-btn').click(function () {
+    $('#modal1').fadeOut("slow");
+    $('.lean-overlay').fadeOut("slow");
+    $('body').removeAttr('style');
+  });
+  $('#reg-close-btn').click(function () {
+    $('#modal2').fadeOut("slow");
+    $('.lean-overlay').fadeOut("slow");
+    $('body').removeAttr('style');
+  });
+  $('#request-close-btn').click(function () {
+    $('#modal3').fadeOut("slow");
+    $('.lean-overlay').fadeOut("slow");
+    $('body').removeAttr('style');
+  });
+  $('#sign-in-close-btn').click(function () {
+    $('#modal4').fadeOut("slow");
+    $('.lean-overlay').fadeOut("slow");
+    $('body').removeAttr('style');
+  });
+
+  var catChange = $('.cat-change');
+  catChange.focusin(
+    function () {
+      $('.cat_second').css('opacity', '1');
+      $('.cat_first').css('opacity', '0');
+    }
+  );
+  catChange.focusout(
+    function () {
+      $('.cat_second').css('opacity', '0');
+      $('.cat_first').css('opacity', '1');
+    }
+  );
+</script>
+
+<script src="js/login_register_ajax.js"></script>
+<script>
+  $('.alert-close-btn').each(function () {
+    $(this).click(function () {
+      $(this).closest('.alert').fadeOut(300)
+    })
+  });
+
+  setTimeout(function () {
+    $('.alert').fadeOut(300)
+  }, 5000)
+</script>
+
+
+
+<script>
+  if (screen.width > 992) {
+  }
+</script>
+
+
+<script>
+  // https://codepen.io/ge1doot/pen/MXObRj?editors=0010#0
+  // https://codepen.io/wikyware-net/pen/xaLxbY
+
+  if (screen.width > 992) {
+  "use strict";
+  {
+    // http://mrl.nyu.edu/~perlin/noise/
+    const perlin = {
+      init() {
+        this.p = new Uint8Array(512);
+        const p = new Uint8Array(256);
+        for (let i = 0; i < 256; i++) p[i] = i;
+        for (let i = 255; i > 0; i--) {
+          const n = Math.floor((i + 1) * Math.random());
+          [p[i], p[n]] = [p[n], p[i]];
+        }
+        for (let i = 0; i < 512; i++) this.p[i] = p[i & 255];
+      },
+      fade(t) {
+        return t * t * t * (t * (t * 6 - 15) + 10);
+      },
+      lerp(t, a, b) {
+        return a + t * (b - a);
+      },
+      grad(hash, x, y, z) {
+        const h = hash & 15;
+        const u = h < 8 ? x : y;
+        const v = h < 4 ? y : h == 12 || h == 14 ? x : z;
+        return ((h & 1) == 0 ? u : -u) + ((h & 2) == 0 ? v : -v);
+      },
+      noise(xi, yi, zi) {
+        const X = Math.floor(xi) & 255;
+        const Y = Math.floor(yi) & 255;
+        const Z = Math.floor(zi) & 255;
+        const x = xi - Math.floor(xi);
+        const y = yi - Math.floor(yi);
+        const z = zi - Math.floor(zi);
+        const u = this.fade(x);
+        const v = this.fade(y);
+        const w = this.fade(z);
+        const A = this.p[X] + Y;
+        const AA = this.p[A] + Z;
+        const AB = this.p[A + 1] + Z;
+        const B = this.p[X + 1] + Y;
+        const BA = this.p[B] + Z;
+        const BB = this.p[B + 1] + Z;
+        return this.lerp(
+          w,
+          this.lerp(
+            v,
+            this.lerp(u, this.grad(this.p[AA], x, y, z), this.grad(this.p[BA], x - 1, y, z)),
+            this.lerp(u, this.grad(this.p[AB], x, y - 1, z), this.grad(this.p[BB], x - 1, y - 1, z))
+          ),
+          this.lerp(
+            v,
+            this.lerp(u, this.grad(this.p[AA + 1], x, y, z - 1), this.grad(this.p[BA + 1], x - 1, y, z - 1)),
+            this.lerp(
+              u,
+              this.grad(this.p[AB + 1], x, y - 1, z - 1),
+              this.grad(this.p[BB + 1], x - 1, y - 1, z - 1)
+            )
+          )
+        );
+      }
+    };
+    const canvas = webGL.init({
+      alpha: false,
+      stencil: false,
+      antialias: false,
+      depth: false,
+    });
+    canvas.blend(canvas.gl.ONE, canvas.gl.ONE);
+    /*
+    canvas.enableFullscreen({
+      position: 'absolute',
+      right: '7px',
+      bottom: '7px',
+      cursor: 'pointer',
+      background: '#1e1e1e',
+      fontFamily: 'Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif',
+      fontSize: '0.8rem',
+      padding: '2px 7px',
+      borderRadius: '3px',
+      border: '3px solid transparent',
+      color: 'white',
+      whiteSpace: 'nowrap',
+      textAlign: 'center'
+    });
+    */
+    perlin.init();
+    canvas.createBufferLine(100);
+    let z = 0;
+    function run() {
+      const sw = canvas.width / 100;
+      const sh = sw * 30;
+      for (let i = 0; i < 180; i++) {
+        canvas.beginPath();
+        canvas.strokeStyle(
+          z + i / 360,
+          0.5,
+          0.3
+        );
+        for (let j = -50; j < 50; j++) {
+          const h = perlin.noise(j * 0.05, z - i * 0.01, z);
+          canvas.lineTo(
+            canvas.width * 0.5 + 0.01 * (i + 180) * j * sw * 0.5,
+            -90 + i + canvas.height * 0.5 + h * sh
+          );
+        }
+        canvas.stroke();
+      }
+      z += 0.0025;
+      requestAnimationFrame(run);
+    }
+    run();
+  }
+
+  }
+</script>
+</body>
+</html>

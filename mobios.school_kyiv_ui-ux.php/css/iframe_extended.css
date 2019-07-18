@@ -1,0 +1,3962 @@
+:root{
+  --plus_number: 0px;
+  --plus_mobile_font_size: 3px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic');
+
+input, textarea, [contenteditable] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  outline: none;
+  font-family: inherit;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.modal-amoforms .element-type-title {
+  background-color: #fff;
+  color: #999;
+  cursor: default;
+  text-align: center;
+  padding: 0
+}
+
+.modal-amoforms .element-type-title:before, html.no-touch .modal-amoforms .control--select--list-opened .control--select--list--item.element-type-title:hover:before, html.touch .modal-amoforms .control--select--list-opened .control--select--list--item.element-type-title:active:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  height: 1px;
+  left: 10px;
+  right: 10px;
+  background: #ddd
+}
+
+.modal-amoforms .element-type-title .control--select--list--item-inner {
+  background: #fff;
+  padding: 0 5px;
+  display: inline-block;
+  width: auto
+}
+
+.modal-amoforms .cf-controls-wrapper {
+  position: absolute;
+  top: 6px;
+  display: inline-block;
+  margin-left: 20px
+}
+
+.modal-amoforms .amoforms_checkbox_selection-field .control-checkbox__helper {
+  border-radius: 15px
+}
+
+.modal-amoforms .required-block-wrapper {
+  margin-left: 15px;
+  display: inline-block
+}
+
+.modal-amoforms .required-block-wrapper .required-text {
+  margin-left: 10px
+}
+
+.field-name-original-entity {
+  text-transform: capitalize
+}
+
+#amoforms_settings_add_tags_container {
+  margin-bottom: 2px
+}
+
+#amoforms_settings_add_tags_container > span > div:last-child {
+  top: -2px !important
+}
+
+.amoforms_dop_setting.amoforms_dop_setting-success_message {
+  margin-top: 2px
+}
+
+.amoforms_inner_modal-content p, .modal-wp-amoforms .amoforms_inner_modal-content p {
+  line-height: 18px;
+  margin-top: 5px
+}
+
+.amoforms_card-top-name__add-tags-label .multisuggest__list-item {
+  border: 1px solid #ddd;
+  padding: 1px 5px;
+  height: 20px
+}
+
+.amoforms_card-top-name__add-tags-label .multisuggest__list-item[data-id=add_tag] {
+  opacity: .4
+}
+
+.amoforms_card-top-name__add-tags-label .multisuggest__list-item.js-active {
+  border-color: #1c94d7
+}
+
+.amoforms_card-top-name__add-tags-label .multisuggest__list-item_input {
+  border-color: transparent;
+  height: 24px;
+  padding: 0
+}
+
+.fast-tags-suggest_amoforms {
+  margin-left: -3px !important;
+  max-width: 350px
+}
+
+.amoforms_settings__users-select {
+  margin: 0
+}
+
+.amoforms_settings__users-select .multisuggest__list-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  margin: 0
+}
+
+.amoforms_settings__users-select.users-select-wrapper_editing {
+  margin: 0;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0 5px
+}
+
+.amoforms_settings__users-select.users-select-wrapper_editing .multisuggest__list-item:not(.multisuggest__list-item_input) {
+  display: none
+}
+
+#amoforms_settings_add_tags_container .multiple-suggest__list li {
+  margin-right: 12px;
+  margin-bottom: 7px;
+  margin-left: 5px
+}
+
+#amoforms_settings_add_tags_container .suggest-manager-lib {
+  top: 0 !important;
+  padding-top: 1px;
+  padding-left: 4px
+}
+
+.modal-amoforms .amoforms-add-cf {
+  color: #1375ab;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px
+}
+
+.modal-amoforms .control--select--list--item__disabled {
+  color: #888
+}
+
+.modal-amoforms .amoforms-add-cf.amoforms-add-cf__hidden {
+  visibility: hidden
+}
+
+.amoforms-field-name-wrapper:after,
+.amoforms-row__in__edit > div > span,
+.amoforms_checkbox_toform input[type=checkbox], .modal-amoforms .control--select--list--item__hidden, .amoforms input[name=amoform-toggler],
+.amoforms__fields__container .amoforms__field__control_checkbox .amoforms__checkbox input,
+.amoforms__fields__container .amoforms__field__control_terms .amoforms__checkbox input,
+.amoforms__fields__container .amoforms__field__control_radiobutton .amoforms__radio input, .pika-single.is-hidden {
+  display: none;
+}
+
+
+.amoforms__field__control_checkbox-wrapper .control-checkbox__helper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 3;
+  background-color: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 24px;
+  height: 24px;
+}
+
+.modal-amoforms #cf_actions_wrapper {
+  clear: both
+}
+
+#amoforms-tip_copy-complete {
+  padding: 10px 20px;
+  z-index: 100
+}
+
+#amoforms-short-tip_copy-complete {
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 30
+}
+
+#amoforms-embed-code-div {
+  margin-top: 20px;
+  position: relative
+}
+
+#amoforms-embed-code-div > p {
+  margin-bottom: 10px
+}
+
+#amoforms-embed-code-div a {
+  border-bottom: 1px dotted #1375ab;
+  text-decoration: none
+}
+
+.amoforms__logo_wrapper {
+  position: relative;
+  z-index: 5;
+  margin-left: 190px
+}
+
+#amoforms-embed-code-text, #amoforms-short-code-text {
+  background: #f5f5f5;
+  color: #7c8084;
+  border: none;
+  outline: none;
+  font-size: calc(15px + var(--plus_number));
+  width: 100%;
+  min-width: 100%;
+  min-height: 120px;
+  overflow: hidden;
+  resize: none
+}
+
+#amoforms-short-code-text {
+  min-height: 50px
+}
+
+.amoforms_form_header_text {
+  display: inline-block;
+  border-right: 1px solid #ececec;
+  padding: 10px 10px 11px;
+  cursor: pointer
+}
+
+.amoforms-submit-button-wrapper-noedit > input {
+  background-image: url(/frontend/images/amoforms-white-pencil.png?8ac0dad13dd23a16d358fdf359de34454f3b352bd969e92281dbee0aff601d47);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 30px
+}
+
+.amoforms_checkbox_toform {
+  float: right;
+  width: 21px;
+  height: 16px;
+  margin-top: 8px;
+  margin-right: 35px;
+  cursor: pointer
+}
+
+.amoforms_checkbox_selection-wrapper {
+  min-height: 36px;
+  background-image: url(/frontend/images/interface/i/amoform_input_label_right.png?5b2231d28e0eab2f2f35897a5815a1669db8a4cb560035a0d447d27f1556aac4);
+  background-repeat: no-repeat;
+  background-position: right center
+}
+
+.field-name-original:after {
+  display: block;
+  position: absolute;
+  background-image: url(/frontend/images/interface/i/amoform_input_label_left.png?e7d15b98635c698b030401dc80f82f8e0afc7100385217fda181984134f5216d);
+  content: '';
+  width: 5px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 36px;
+  z-index: 23;
+  top: 0;
+  right: 0
+}
+
+.amoforms_checkbox_toform > span {
+  width: 100% !important;
+  display: block
+}
+
+.amoforms-textarea {
+  width: 195px
+}
+
+.modal-amoforms .amoforms_field_block-unselected .field-name-original {
+  color: #a6a8aa
+}
+
+.amoforoms-field-name_required {
+  color: red;
+  z-index: 6;
+  position: relative
+}
+
+.amoforms-input-multiselect, .amoforms-input-select {
+  margin: 0;
+  outline: none;
+  padding: 6px 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.amoforms-input-multiselect {
+  padding-right: 0 !important;
+  overflow-y: auto;
+}
+
+.amoforms-input-subtype {
+  margin-bottom: 9px
+}
+
+.amoforms-input__dropdownarrow {
+  height: 33px;
+  width: 30px;
+  background: #fcfcfc;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  right: 1px;
+  top: 1px;
+  border-radius: 3px
+}
+
+.amoforms-input__dropdownarrow:after, .amoforms-input__dropdownarrow:before {
+  position: absolute;
+  height: 0;
+  width: 0;
+  display: block;
+  content: '';
+  border: 2px solid transparent;
+  border-top: 2px solid #fcfcfc;
+  margin-left: 11px;
+  margin-top: 14px
+}
+
+.amoforms-input__dropdownarrow:before {
+  border: 5px solid transparent;
+  border-top: 5px solid #2c333b;
+  margin-left: 8px
+}
+
+.amoforms_field_options_in-form input[type=email], .amoforms_field_options_in-form input[type=number], .amoforms_field_options_in-form input[type=text], .amoforms_field_options_in-form select, .amoforms_field_options_in-form textarea {
+  width: 195px;
+  box-sizing: border-box;
+  border: 1px solid #d7d7d7;
+  outline: none
+}
+
+.amoforms_field_in-form_wrapper > input {
+  vertical-align: top
+}
+
+.amoforms-checkbox-wrapper {
+  line-height: 36px
+}
+
+.amoforms-checkbox-wrapper > label {
+  display: inline-block;
+  vertical-align: middle
+}
+
+.amoforms-field-name-wrapper {
+  width: 194px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top
+}
+
+.amoforms-field-name-wrapper:after {
+  display: block;
+  height: 30px;
+  width: 40px;
+  content: '';
+  position: absolute;
+  right: 25px;
+  top: 1px;
+  z-index: 4;
+  pointer-events: none;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjU2Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .56) 42%, #fff 75%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .56) 42%, #fff 75%)
+}
+
+.pika-single {
+  z-index: 1000;
+  display: block;
+  position: relative;
+  color: #333;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #e9e9e9;
+}
+
+.pika-single:after, .pika-single:before {
+  content: " ";
+  display: table
+}
+
+.pika-single:after {
+  clear: both
+}
+
+.modal-wp-amoforms .amoforms__tab-editor .amoforms__sidebar__item.ui-draggable-dragging, .pika-single.is-bound {
+  position: absolute
+}
+
+.pika-lendar {
+  float: left;
+  width: 220px;
+  margin: 5px;
+}
+
+.pika-title {
+  position: relative;
+  text-align: center
+}
+
+.pika-label {
+  display: inline-block;
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+  margin: 0;
+  padding: 3px;
+  font-size: calc(14px + var(--plus_number));
+  line-height: 26px;
+  background-color: #fff
+}
+
+.pika-title select {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  margin: 0;
+  left: 0;
+  top: 5px;
+  opacity: 0
+}
+
+.pika-next, .pika-prev {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 30px;
+  text-indent: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 35% 50%;
+  opacity: .5;
+  *position: absolute;
+  *top: 0
+}
+
+.pika-next:hover, .pika-prev:hover {
+  opacity: 1
+}
+
+.is-rtl .pika-next, .pika-prev {
+  float: left;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAQAAADCOPeRAAAAl0lEQVR4AWPACXIYbjLsZjDCJd3D8B8Md2KX7gRKQeBtbNJtQAkYLMCUbkKSnsHAiC5djyQ9C1O6Bkl6DqZ0BZL0PEzpUiTpBQxM6NJFSNKLMKXzkaSXYEpnI0kvY2BGlw5Gkl6BkEaA03DpVQwsmNJMmEJEW0HYkYS9STigCAc14cgiHN0EEwzBJEcw0RJM9gQzDsGsBwAmpJYaX/WbbAAAAABJRU5ErkJggg1e60f0af7f52d17ed3cbc86358eabbcf);
+  *right: 0
+}
+
+.is-rtl .pika-prev, .pika-next {
+  float: right;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAGoAAABqABOiPyKwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC+SURBVDiNtdVRCkFREMbx/72syFYsgyKlPCjlQSkLkCRJkh3IEqxAFjNezsNJd5p7+jg1r78658x8A9ADHsALGJoZJQVwByyrTSnw/gIMWJcA4wbAgFVboAK2DrIMgaRUwM5BFiGQIXsHmYdAhhwcZBYCCamBo4NMQyBDTg4yCYEMOTvIKAQS0gEuDjIIgQy5Oki/bbt2gVsD8KxRz1+vID2i9I0ojYTSyijDhDLOKIGCGmn8IFTlWJcXi7TaPgqSWoC7qw+6AAAAAElFTkSuQmCC9f24c0bfdb1f06d6cfc1edec27b1140e)
+}
+
+.pika-next.is-disabled, .pika-prev.is-disabled {
+  cursor: default;
+  opacity: .2
+}
+
+.amoforms_dop_setting-add_tags > span, .pika-select {
+  display: inline-block
+}
+
+.pika-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0
+}
+
+.pika-table td, .pika-table th {
+  width: 14.285714285714286%;
+  padding: 0
+}
+
+.pika-button, .pika-table th {
+  color: #999;
+  font-size: calc(8px + var(--plus_number));
+  line-height: 25px;
+  text-align: center
+}
+
+.pika-button {
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  padding: 5px;
+  color: #666;
+  font-size: calc(12px + var(--plus_number));
+  line-height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  font-weight: 400
+}
+
+.pika-week {
+  font-size: calc(10px + var(--plus_number));
+  color: #999
+}
+
+.is-today .pika-button {
+  color: #000;
+  font-weight: 700
+}
+
+.is-selected .pika-button {
+  color: #313942;
+  background: #fff
+}
+
+.is-disabled .pika-button {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+  opacity: .3
+}
+
+.amoform-input-pikaday {
+  padding-left: 32px !important;
+}
+
+.amoforms-tags-label {
+  border-radius: 3px;
+  padding: 3px 3px 3px 4px;
+  background: #fff;
+  box-sizing: border-box;
+  display: block;
+  height: 29px;
+  line-height: 24px
+}
+
+.pika-button:hover {
+  background: #eeeded !important
+}
+
+.amoforms_dop_setting-add_tags .fast-tags {
+  padding: 1px 5px 5px 11px !important
+}
+
+@media screen and (orientation: portrait) {
+  #amoforms_dop_settings_wrapper {
+    display: block;
+    width: 100%
+  }
+
+  .amoform-modal_sidebar-open {
+    width: auto
+  }
+}
+
+.welcome-amoforms-modal .modal-body {
+  width: 636px
+}
+
+.welcome-amoform-wrapper {
+  float: left;
+  width: 275px
+}
+
+.welcome-amoform__list__item {
+  margin-bottom: 20px;
+  width: 200px;
+  padding-left: 52px;
+  position: relative;
+  padding-top: 7px
+}
+
+.welcome-amoform__icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 0
+}
+
+.welcome-amoform__icon-code {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDMyIDMyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDxnIGlkPSJQYWdlLTEtQ29weSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9Imljb25zL2ljLWNvZGUiIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLTE0OCIgc3Ryb2tlPSIjOTI5ODlCIiBzdHJva2Utd2lkdGg9IjEuNSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgY3g9IjE2IiBjeT0iMTYiIHI9IjE0Ij48L2NpcmNsZT4KICAgICAgICAgICAgPHBhdGggZD0iTTEzLjkyLDE5LjgzMzMzMzMgTDEwLjI0LDE2IEwxMy45MiwxMi4xNjY2NjY3IEwxMi44LDExIEw4LDE2IEwxMi44LDIxIEwxMy45MiwxOS44MzMzMzMzIEwxMy45MiwxOS44MzMzMzMzIFogTTE4LjA4LDE5LjgzMzMzMzMgTDIxLjc2LDE2IEwxOC4wOCwxMi4xNjY2NjY3IEwxOS4yLDExIEwyNCwxNiBMMTkuMiwyMSBMMTguMDgsMTkuODMzMzMzMyBMMTguMDgsMTkuODMzMzMzMyBaIiBpZD0iY29kZSIgZmlsbD0iIzk4OUNBMSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)
+}
+
+.welcome-amoform__icon-lead {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDMyIDMyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDxnIGlkPSJQYWdlLTEtQ29weSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9Imljb25zL2ljLWxlYWQiIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiPgogICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLTE0OCIgc3Ryb2tlPSIjOTI5ODlCIiBzdHJva2Utd2lkdGg9IjEuNSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgY3g9IjE2IiBjeT0iMTYiIHI9IjE0Ij48L2NpcmNsZT4KICAgICAgICAgICAgPHBhdGggZD0iTTE2LjIsMjIuMyBMMTYuMiwyMC42IEMxOC4yLDIwLjMgMTkuMywxOS4xIDE5LjMsMTcuOSBDMTkuMywxNi41IDE4LjMsMTUuNiAxNi4zLDE1IEMxNC42LDE0LjQgMTMuOSwxNCAxMy45LDEzLjIgQzEzLjksMTIuNiAxNC41LDExLjggMTYsMTEuOCBDMTcuMywxMS44IDE4LjEsMTIuMiAxOC41LDEyLjMgTDE5LDExLjIgQzE4LjQsMTAuOSAxNy42LDEwLjcgMTYuNCwxMC42IEwxNi40LDkgTDE1LjIsOSBMMTUuMiwxMC42IEMxMy40LDEwLjggMTIuMiwxMS44IDEyLjIsMTMuMiBDMTIuMiwxNC42IDEzLjQsMTUuMyAxNS40LDE2IEMxNi45LDE2LjUgMTcuNiwxNyAxNy42LDE3LjkgQzE3LjYsMTguOCAxNi43LDE5LjUgMTUuMywxOS41IEMxNC4yLDE5LjUgMTMuMiwxOS4yIDEyLjUsMTguOCBMMTIsMTkuOSBDMTIuNywyMC4zIDEzLjksMjAuNiAxNSwyMC42IEwxNSwyMi4yIEwxNi4yLDIyLjIgTDE2LjIsMjIuMyBaIiBpZD0ibGVhZCIgZmlsbD0iIzkyOTg5QiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)
+}
+
+.welcome-amoform__icon-settings {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDMyIDMyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDxnIGlkPSJQYWdlLTEtQ29weSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9Imljb25zL2ljLXNldHRpbmdzIiBza2V0Y2g6dHlwZT0iTVNBcnRib2FyZEdyb3VwIj4KICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbC0xNDgiIHN0cm9rZT0iIzkyOTg5QiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiIGN4PSIxNiIgY3k9IjE2IiByPSIxNCI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMi42NjY2NjY3LDE1LjAyMjIyMjIgQzIyLjQ4ODg4ODksMTMuODY2NjY2NyAyMi4wNDQ0NDQ0LDEyLjg4ODg4ODkgMjEuNDIyMjIyMiwxMiBMMjIuNCwxMS4wMjIyMjIyIEwyMC45Nzc3Nzc4LDkuNiBMMjAsMTAuNTc3Nzc3OCBDMTkuMTExMTExMSw5Ljk1NTU1NTU2IDE4LjA0NDQ0NDQsOS41MTExMTExMSAxNi45Nzc3Nzc4LDkuMzMzMzMzMzMgTDE2Ljk3Nzc3NzgsOCBMMTUuMDIyMjIyMiw4IEwxNS4wMjIyMjIyLDkuMzMzMzMzMzMgQzEzLjg2NjY2NjcsOS41MTExMTExMSAxMi44ODg4ODg5LDkuOTU1NTU1NTYgMTIsMTAuNTc3Nzc3OCBMMTEuMDIyMjIyMiw5LjYgTDkuNiwxMS4wMjIyMjIyIEwxMC41Nzc3Nzc4LDEyIEM5Ljk1NTU1NTU2LDEyLjg4ODg4ODkgOS41MTExMTExMSwxMy45NTU1NTU2IDkuMzMzMzMzMzMsMTUuMDIyMjIyMiBMOCwxNS4wMjIyMjIyIEw4LDE2Ljk3Nzc3NzggTDkuMzMzMzMzMzMsMTYuOTc3Nzc3OCBDOS41MTExMTExMSwxOC4xMzMzMzMzIDkuOTU1NTU1NTYsMTkuMTExMTExMSAxMC41Nzc3Nzc4LDIwIEw5LjYsMjAuOTc3Nzc3OCBMMTEuMDIyMjIyMiwyMi40IEwxMiwyMS40MjIyMjIyIEMxMi44ODg4ODg5LDIyLjA0NDQ0NDQgMTMuOTU1NTU1NiwyMi40ODg4ODg5IDE1LjAyMjIyMjIsMjIuNjY2NjY2NyBMMTUuMDIyMjIyMiwyNCBMMTYuOTc3Nzc3OCwyNCBMMTYuOTc3Nzc3OCwyMi42NjY2NjY3IEMxOC4xMzMzMzMzLDIyLjQ4ODg4ODkgMTkuMTExMTExMSwyMi4wNDQ0NDQ0IDIwLDIxLjQyMjIyMjIgTDIwLjk3Nzc3NzgsMjIuNCBMMjIuNCwyMC45Nzc3Nzc4IEwyMS40MjIyMjIyLDIwIEMyMi4wNDQ0NDQ0LDE5LjExMTExMTEgMjIuNDg4ODg4OSwxOC4wNDQ0NDQ0IDIyLjY2NjY2NjcsMTYuOTc3Nzc3OCBMMjQsMTYuOTc3Nzc3OCBMMjQsMTUuMDIyMjIyMiBMMjIuNjY2NjY2NywxNS4wMjIyMjIyIEwyMi42NjY2NjY3LDE1LjAyMjIyMjIgWiBNMTYsMjEuMzMzMzMzMyBDMTMuMDY2NjY2NywyMS4zMzMzMzMzIDEwLjY2NjY2NjcsMTguOTMzMzMzMyAxMC42NjY2NjY3LDE2IEMxMC42NjY2NjY3LDEzLjA2NjY2NjcgMTMuMDY2NjY2NywxMC42NjY2NjY3IDE2LDEwLjY2NjY2NjcgQzE4LjkzMzMzMzMsMTAuNjY2NjY2NyAyMS4zMzMzMzMzLDEzLjA2NjY2NjcgMjEuMzMzMzMzMywxNiBDMjEuMzMzMzMzMywxOC45MzMzMzMzIDE4LjkzMzMzMzMsMjEuMzMzMzMzMyAxNiwyMS4zMzMzMzMzIEwxNiwyMS4zMzMzMzMzIFoiIGlkPSJzZXR0aW5ncyIgZmlsbD0iIzkyOTg5QiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)
+}
+
+.welcome-amoform__list__item__code {
+  position: relative
+}
+
+.welcome-amoform__list__item__code b {
+  opacity: 0;
+  position: absolute;
+  padding: 4px 5px 3px;
+  background: #22252c;
+  color: #fff;
+  border-radius: 3px;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: calc(13px + var(--plus_number));
+  -webkit-transition: opacity .1s, margin-bottom .1s;
+  transition: opacity .1s, margin-bottom .1s
+}
+
+.welcome-amoform__list__item__code.copied b {
+  margin-bottom: 7px;
+  opacity: 1
+}
+
+.welcome-amoform__list__item__code b:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  border-color: #22252c transparent transparent
+}
+
+.welcome-amoform__wireframe-wrapper {
+  width: 326px;
+  height: 450px;
+  float: right;
+  margin-right: -30px;
+  position: relative
+}
+
+.welcome-amoform__wireframe {
+  width: 326px;
+  height: 450px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjMyNnB4IiBoZWlnaHQ9IjQ1MHB4IiB2aWV3Qm94PSIwIDAgMzI2IDQ1MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4KICAgICAgICA8ZyBpZD0iMDIyLWZvcm0tY29weS0xMCIgc2tldGNoOnR5cGU9Ik1TQXJ0Ym9hcmRHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU2Ni4wMDAwMDAsIC0xOTIuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJtb2RhbCIgc2tldGNoOnR5cGU9Ik1TTGF5ZXJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTM3LjAwMDAwMCwgMTIwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImJyd3NyLXdpcmVmcmFtZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAuMDAwMDAwLCA3My4wMDAwMDApIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzI1LDQ0OCBMNS4wMDczOTgxNyw0NDggQzIuMjQxODg4NTMsNDQ4IDAsNDQ1LjM2OTA2NSAwLDQ0Mi4xMDk3NTcgTDAsNS44OTAyNDMwNSBDMCwyLjYzNzE1MTY0IDIuMjM3OTE5MDksMCA1LjAwNzM5ODE3LDAgTDMyNSwwIiBpZD0iQnJvd3Nlci1iYWNrZ3JvdW5kIiBzdHJva2U9IiNEM0Q0RDYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0iI0YzRjRGNSI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMjQuMjM2NzA4LDE5Ljc5MzkwOTkgQzIyMy4yNzQ3ODEsMTcuNjEwMjI1OCAyMjQuNDM0NTAyLDE1Ljg0IDIyNi44MjE1NDIsMTUuODQgTDI0Mi4zNjg4ODgsMTUuODQgQzI0NC43NTgzOCwxNS44NCAyNDcuMzUwMzA0LDE3LjY2Mzc3IDI0OC4xNTYzOTUsMTkuOTA4NzIxNiBMMjUxLjg2NjAyOSwzMC4yNCBMMjI4LjgzODI3OCwzMC4yNCBMMjI0LjIzNjcwOCwxOS43OTM5MDk5IFoiIGlkPSJOZXctVGFiIiBzdHJva2U9IiNFQUVBRUEiIHN0cm9rZS13aWR0aD0iMS40NCIgb3BhY2l0eT0iMC41OTUyMDc1NTYiIGZpbGw9IiNFQUVBRUEiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzI1LDQyLjE0ODkzNTYgTDIyNS4zMTMwMjcsNDIuMTQ4OTM2MiBMMjE4LjYxNzIxLDE2Ljg3OTAzNCBDMjE3LjkwNDQwNCwxNC4xODg5MTg2IDIxNS4zODcxNywxMiAyMTIuOTk3NDc0LDEyIEw3Ny43Mjc4ODQ4LDEyIEM3NS4zMjY2NzA2LDEyIDcyLjgyMjE0NzIsMTQuMTg0NDE3OSA3Mi4xMDgxNDkzLDE2Ljg3OTAzNCBMNjUuNDEyMzMxNSw0Mi4xNDg5MzYyIEwwLDQyLjE0ODkzNjIgTDAsNDQyLjAwNzUyNiBDMCw0NDUuMzE3MDc4IDIuNjg3ODgxMzcsNDQ4IDYuMDA2Mzk4MTUsNDQ4IEwzMjUsNDQ4IiBpZD0iVGFiLTItKy1TZWFyY2hiYXIiIHN0cm9rZT0iI0QzRDRENiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxlbGxpcHNlIGlkPSJFeHRlbmQiIHN0cm9rZT0iI0QzRDRENiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuNDk1MzM1ODIxIiBjeD0iNTEuMDkyODIzIiBjeT0iMTgiIHJ4PSI1LjAzNzMyMDU3IiByeT0iNS4wNCI+PC9lbGxpcHNlPgogICAgICAgICAgICAgICAgICAgIDxlbGxpcHNlIGlkPSJDbG9zZSIgc3Ryb2tlPSIjRDNENEQ2IiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC40OTUzMzU4MjEiIGN4PSIxNi41NTExOTYyIiBjeT0iMTgiIHJ4PSI1LjAzNzMyMDU3IiByeT0iNS4wNCI+PC9lbGxpcHNlPgogICAgICAgICAgICAgICAgICAgIDxlbGxpcHNlIGlkPSJNaW5pbWl6ZSIgc3Ryb2tlPSIjRDNENEQ2IiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC40OTUzMzU4MjEiIGN4PSIzMy44MjIwMDk2IiBjeT0iMTgiIHJ4PSI1LjAzNzMyMDU3IiByeT0iNS4wNCI+PC9lbGxpcHNlPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=)
+}
+
+.welcome-amoform__tab-caption {
+  position: absolute;
+  font-size: calc(12px + var(--plus_number));
+  color: #c9c9c9;
+  top: 19px;
+  left: 85px
+}
+
+.welcome-amoform__form {
+  position: absolute;
+  top: 69px;
+  left: 25px;
+  right: 0;
+  bottom: 30px;
+  background: #fff;
+  border: 2px solid #d3d4d6;
+  border-right: 0;
+  border-radius: 2px;
+  overflow: hidden
+}
+
+.welcome-amoform__form__caption {
+  margin-top: 27px;
+  font-size: calc(24px + var(--plus_number));
+  margin-left: 20px
+}
+
+.welcome-amoform__form__items {
+  padding: 10px 20px;
+  width: 300px
+}
+
+.welcome-amoform__form__items__item {
+  margin-bottom: 10px
+}
+
+.welcome-amoform__form__items__item span {
+  width: 100px;
+  display: inline-block
+}
+
+.welcome-amoform__form__items__item-textarea span {
+  vertical-align: top;
+  margin-top: 9px
+}
+
+.welcome-amoform__form__items__item input, .welcome-amoform__form__items__item textarea {
+  width: 200px;
+  display: inline-block
+}
+
+button.button-input.welcome-amoform__form__submit {
+  position: absolute !important;
+  bottom: 17px;
+  top: auto !important;
+  left: 19px
+}
+
+.welcome-amoform__locker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2
+}
+
+.welcome-amoform-wrapper .modal-body__actions {
+  position: absolute;
+  bottom: 30px
+}
+
+.amoforms__delete-form {
+  display: none;
+  font-size: 0
+}
+
+.amoforms__delete-form .button-cancel {
+  padding: 0 6px
+}
+
+.amoforms__delete-form .button-input-inner__text {
+  font-size: calc(15px + var(--plus_number));
+  left: 3px;
+  position: relative;
+  padding-left: 3px
+}
+
+.amoforms__delete-form .svg-common--trash-dims {
+  width: 12px;
+  height: 13px
+}
+
+.amoforms_inner_modal .modal-body {
+  width: 765px
+}
+
+.amoforms_inner_modal-content .amoforms_modal__header {
+  font-weight: 700;
+  margin: 15px 0 2px
+}
+
+.amoforms_inner_modal-content .amoforms_modal__bold_text {
+  font-weight: 700
+}
+
+.amoforms_inner_modal-content .js-navigate-link, .amoforms_inner_modal-content a.modal_link {
+  color: #1375ab
+}
+
+.amoforms_inner_modal-content .amoforms_modal_attention {
+  font-size: calc(12px + var(--plus_number));
+}
+
+.amoforms__text-unchecked {
+  color: #92989b
+}
+
+.amoforms__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 0
+}
+
+.amoforms__tabs {
+  min-height: 300px;
+  width: 100%
+}
+
+.amoforms__tab-editor {
+  display: none;
+  width: 100%;
+  padding-top: 17px
+}
+
+.amoforms__tab-editor-left {
+  width: 494px;
+  margin-left: 5px;
+  margin-right: 30px
+}
+
+.amoforms__tab-editor-right {
+  width: 216px
+}
+
+.amoforms__tab-editor-right .amoforms__sidebar {
+  margin-left: 10px
+}
+
+.amoforms__tab-editor .amoforms__sidebar__item {
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #d8d9db;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 208px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: move;
+  padding: 0 0 0 1px
+}
+
+.amoforms__tab-editor .amoforms__sidebar__item span {
+  font-size: 13px;
+  color: #2e3640;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 165px;
+  line-height: 2.1;
+  height: 25px
+}
+
+.amoforms__tab-editor .amoforms__sidebar__item .svg-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px
+}
+
+.amoforms__tab-preview {
+  display: none;
+  padding-top: 26px;
+  padding-left: 5px
+}
+
+.amoforms__toggler {
+  font-size: calc(15px + var(--plus_number));
+  width: 100%;
+  height: 29px;
+  list-style: none;
+  border-bottom: 1px solid #4c8bf7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding-top: 4px
+}
+
+.amoforms__toggler-item {
+  padding: 2px 5px
+}
+
+.amoforms__toggler-item:not(:last-child) {
+  margin-right: 32px
+}
+
+.amoforms__toggler-item label {
+  cursor: pointer;
+  color: #b5b8be
+}
+
+.amoforms #amoforms__editor:checked ~ .amoforms__header .amoforms__toggler-item-editor, .amoforms #amoforms__preview:checked ~ .amoforms__header .amoforms__toggler-item-preview, .amoforms #amoforms__settings:checked ~ .amoforms__header .amoforms__toggler-item-settings {
+  border-bottom: 3px solid #4c8bf7
+}
+
+.amoforms #amoforms__editor:checked ~ .amoforms__header .amoforms__toggler-item-editor label, .amoforms #amoforms__preview:checked ~ .amoforms__header .amoforms__toggler-item-preview label, .amoforms #amoforms__settings:checked ~ .amoforms__header .amoforms__toggler-item-settings label {
+  color: #2e3640
+}
+
+.amoforms #amoforms__settings:checked ~ .amoforms__delete-form {
+  display: block
+}
+
+.amoforms #amoforms__editor:checked ~ .amoforms__tabs .amoforms__tab-editor, .amoforms #amoforms__preview:checked ~ .amoforms__tabs .amoforms__tab-preview, .amoforms #amoforms__settings:checked ~ .amoforms__tabs .amoforms__tab-settings {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.amoforms__fast-tags-suggest {
+  max-width: 325px
+}
+
+.modal-body {
+  width: 801px;
+  min-height: 400px;
+  background-color: #f5f5f5;
+  padding: 26px 29px 36px 24px
+}
+
+.amoforms__header-buttons {
+  margin-top: -2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0
+}
+
+.amoforms__header-buttons .button-input {
+  display: block
+}
+
+.modal-list-amoforms_inner_modal .modal-body {
+  width: 765px
+}
+
+.amoforms__fields__container_editable .amoforms__field__control_birthday .text-input, .amoforms__fields__container_editable .amoforms__field__control_date .text-input, .amoforms__fields__container_editable .amoforms__field__control_header .text-input, .amoforms__fields__container_editable .amoforms__field__control_multitext .text-input, .amoforms__fields__container_editable .amoforms__field__control_numeric .text-input, .amoforms__fields__container_editable .amoforms__field__control_smart_address_input .text-input, .amoforms__fields__container_editable .amoforms__field__control_text .text-input, .amoforms__fields__container_editable .amoforms__field__control_url .text-input {
+  border-bottom: 1px solid #4c8bf7
+}
+
+.amoforms__field__control_birthday, .amoforms__field__control_date, .amoforms__field__control_multitext, .amoforms__field__control_numeric, .amoforms__field__control_smart_address_input, .amoforms__field__control_text, .amoforms__field__control_url,  .amoforms__field__control_file {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #d8d9db;
+  border-radius: 3px;
+  padding: 0 17px;
+  height: 53px;
+  max-width: none
+}
+
+.amoforms__field__control_file {
+  width: 100%;
+  border-style: dashed;
+  cursor: pointer;
+}
+
+.amoforms__field__file_input_label {
+  display: flex;
+}
+
+.amoforms__field__file_helper_text {
+  font-size: calc(17px + var(--plus_number));
+  letter-spacing: -0.2px;
+  color: rgba(152, 169, 181, 1);
+}
+
+.dz-filename {
+  display: flex;
+}
+
+.dz-filename span[data-dz-name] {
+  display: inline-block;
+  max-width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 3px;
+  font-size: calc(15px + var(--plus_number));
+  line-height: 15px;
+}
+
+.dz-filename span[data-dz-remove] {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(/forms/img/error.svg) no-repeat;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.amoforms__field__file_attach_text {
+  text-decoration: underline;
+}
+
+.amoforms__field__control_file .amoforms__field__file_icon {
+  width: 17px;
+  height: 17px;
+  background: url(/forms/img/field-file.svg) no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 2px;
+  fill: rgba(152, 169, 181, 1);
+}
+
+.amoforms__field__control_file.dz-drag-hover {
+  border: 2px dashed #d8d9db;
+}
+
+.amoforms__field__control.amoforms__field__control_smart_address {
+  background-color: transparent;
+}
+
+.amoforms__field__control_multiselect,
+.amoforms__field__control_smart_address select {
+  border: 1px solid #d8d9db;
+}
+
+.amoforms__field__control_multiselect.dropdown_opened {
+  width: 465px;
+  position: relative;
+}
+
+.amoforms__field__control_multiselect.dropdown_opened .checkboxes_dropdown__title_wrapper {
+  display: none;
+}
+
+.amoforms__field__control_multiselect select {
+  border: none;
+}
+
+.amoforms__field__control_select {
+  border: 1px solid #d8d9db;
+}
+
+.amoforms__field__control_select select {
+  border: transparent;
+}
+
+.amoforms__field__control_birthday .text-input, .amoforms__field__control_date .text-input, .amoforms__field__control_multitext .text-input, .amoforms__field__control_numeric .text-input, .amoforms__field__control_smart_address_input .text-input, .amoforms__field__control_text .text-input, .amoforms__field__control_url .text-input {
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  width: 100%;
+  height: auto;
+  padding: 2px 1px 0;
+  font-size: calc(15px + var(--plus_number));
+}
+
+.amoforms__fields__container .amoforms__field__control_checkbox {
+  min-height: 34px;
+  height: 34px;
+  background-color: transparent;
+}
+
+.amoforms__fields__container .amoforms__field__control_checkbox .amoforms__checkbox__helper {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #e8e8e8
+}
+
+.amoforms__fields__container .amoforms__field__control_checkbox .amoforms__checkbox input:checked ~ .amoforms__checkbox__helper {
+  background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJfeDIwMTRfX0l0ZW1fMV8iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCINCgkgeT0iMHB4IiB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMXB4IiB2aWV3Qm94PSIwIDAgMTIgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyIDExIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJjaGVjay5zdmciPg0KCTxnPg0KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzJFMzY0MCIgZD0iTTExLjQ3NiwwLjE1MWMtMC4zNzctMC4yOTYtMC45OTctMC4xMzktMS4zNTksMC4zMjRMNS4xNTMsNi41Mw0KCQkJQzUuMDc3LDYuNjI0LDQuODg0LDYuNjU3LDQuNzg1LDYuNTk1TDEuNzIzLDQuNjg4QzEuMjQsNC4zNDIsMC42MjQsNC4zNjYsMC4zNDksNC43NTNjLTAuMjY4LDAuMzc4LTAuMTgsMC45OTQsMC4yMDksMS40NjQNCgkJCWwzLjUwOSw0LjIzNEM0LjM2MSwxMC44MDUsNC43NDIsMTEsNS4xNCwxMWMwLjQ2NSwwLDAuODk1LTAuMjY2LDEuMTc3LTAuNzI4bDUuMjY0LTguNjE1QzExLjkxNiwxLjEwOSwxMS44NzEsMC40NjIsMTEuNDc2LDAuMTUxDQoJCQl6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=) no-repeat 4px 3px
+}
+
+.amoforms__fields__container .amoforms__field__control_checkbox-wrapper {
+   position: absolute;
+   top: 18px;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%)
+ }
+
+.amoforms__fields__container__inner_terms .amoforms__field__control_checkbox-wrapper,
+.amoforms__fields__container__inner_above .amoforms__field__control_checkbox-wrapper,
+.amoforms__fields__container__inner_inside .amoforms__field__control_checkbox-wrapper {
+  top: 11px;
+}
+
+.amoforms__fields__container .amoforms__field__control_radiobutton {
+  min-height: 36px;
+  background-color: transparent;
+}
+
+.amoforms__fields__container .amoforms__field__control_radiobutton .amoforms__radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 9px;
+  line-height: 1.2;
+  font-size: calc(18px + var(--plus_number));
+}
+
+.amoforms__fields__container .amoforms__field__control_radiobutton .amoforms__radio:last-child {
+  margin-bottom: 0
+}
+
+.amoforms__fields__container .amoforms__field__control_radiobutton .amoforms__radio__helper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e8e8e8;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+}
+
+.amoforms__fields__container .amoforms__field__control_radiobutton .amoforms__radio__icon {
+  margin-right: 11px
+}
+
+.amoforms__fields__container .amoforms__field__control_radiobutton .amoforms__radio input:checked ~ .amoforms__radio__helper:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2e3640;
+  top: 6px;
+  left: 6px
+}
+
+.amoforms__fields__container .amoforms__field__control_radio-wrapper {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.amoforms__fields__container .amoforms__field__control_streetaddress, .amoforms__fields__container .amoforms__field__control_textarea {
+  max-width: none;
+  border: 1px solid #d8d9db;
+}
+
+.amoforms__fields__container .amoforms__field__control_streetaddress .amoforms__textarea, .amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea {
+  width: 100%;
+  min-height: 90px;
+  max-width: none;
+  background-color: transparent;
+  padding: 16px;
+  border: transparent;
+  resize: none;
+  overflow: auto;
+  font-size: calc(18px + var(--plus_number));
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amoforms__fields__container .amoforms__field__control_select {
+  height: 32px
+}
+
+.amoforms__fields__container .amoforms__field__control_multiselect .amoforms-input-multiselect, .amoforms__fields__container .amoforms__field__control_multiselect .amoforms-input-select, .amoforms__fields__container .amoforms__field__control_select .amoforms-input-multiselect, .amoforms__fields__container .amoforms__field__control_select .amoforms-input-select, .amoforms__fields__container .amoforms__field__control_smart_address .amoforms-input-multiselect, .amoforms__fields__container .amoforms__field__control_smart_address .amoforms-input-select {
+  width: 100%;
+  max-width: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px 8px;
+  background-color: transparent;
+  margin: 0;
+}
+
+.amoforms__fields__container .amoforms__field__control_multiselect .amoforms-input-select,
+.amoforms__fields__container .amoforms__field__control_select .amoforms-input-select,
+.amoforms__fields__container .amoforms__field__control_smart_address .amoforms-input-select {
+  height: 100%;
+  min-height: 53px;
+  padding: 2px 16px;
+  color: #98a9b5 !important;
+  font-size: calc(18px + var(--plus_number));
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.amoforms__fields__container .amoforms__field__control_multiselect .amoforms-input-select option,
+.amoforms__fields__container .amoforms__field__control_select .amoforms-input-select option,
+.amoforms__fields__container .amoforms__field__control_smart_address .amoforms-input-select option {
+  color: #2e3640;
+  font-size: calc(18px + var(--plus_number));
+}
+
+.amoforms__fields__container .amoforms__field__control_smart_address label {
+  height: 53px;
+  display: block;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+
+.amoforms__field__control_smart_address label:after,
+.amoforms__field__control_select label:after {
+  content: '';
+  position: absolute;
+  top: -webkit-calc(50% - 5px);
+  top: calc(50% - 5px);
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid rgba(12, 12, 12, 0.4);
+  border-right: 1px solid rgba(12, 12, 12, 0.4);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 7px;
+  right: 12px;
+  z-index: 1;
+}
+
+
+.amoforms__fields__container .amoforms__field__control_smart_address_input {
+  margin-bottom: 9px;
+  background-color: #f9f9f9;
+}
+
+.amoforms__fields__container .amoforms__field__control_smart_address_input-country {
+  position: relative;
+  margin-bottom: 0
+}
+
+.amoforms__fields__container .amoforms__field__control_smart_address_input-country input {
+  background: 0 0;
+  border-bottom: transparent !important;
+  padding-top: 1px
+}
+
+.amoforms__fields__container .amoforms__field__control_smart_address_input-country:after {
+  content: '';
+  position: absolute;
+  top: -webkit-calc(50% - 5px);
+  top: calc(50% - 5px);
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid rgba(12, 12, 12, .4);
+  border-right: 1px solid rgba(12, 12, 12, .4);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 7px;
+  right: 12px;
+  z-index: 1
+}
+
+.amoforms__field__control_header, .amoforms__field__control_logotype {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  padding: 4px 0 0
+}
+
+.amoforms__field__control_header .amoforms--move--hidden-custom {
+  top: 7px
+}
+
+.amoforms__field__control_header .text-input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: calc(28px + var(--plus_number));
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  width: 100%;
+  height: auto;
+  margin-left: -1px;
+}
+
+.amoforms__fields__container .amoforms__field__control_paragraph .amoforms__textarea {
+  width: 100%;
+  height: 32px;
+  padding: 6px 0;
+  min-height: 32px;
+  border-color: transparent;
+  background-color: transparent;
+  margin-left: -1px
+}
+
+.amoforms__fields__container .amoforms__field__control_paragraph .amoforms--move--hidden-custom {
+  top: 9px !important
+}
+
+
+.amoforms__fields__container .amoforms__field__control_paragraph {
+  min-height: 34px;
+  background-color: transparent;
+}
+
+.amoforms__field__control_logotype {
+  background: transparent !important;
+  padding: 0
+}
+
+.amoforms__field__control_logotype .amoforms_logo_wrapper {
+  width: 100%;
+  font-size: 0;
+}
+
+.amoforms__field__control_logotype .amoforms_logo {
+  max-width: 440px
+}
+
+.amoforms__field__control_logotype .amoforms--move--hidden-custom {
+  top: -webkit-calc(50% - 7px);
+  top: calc(50% - 7px)
+}
+
+.amoforms__fields__container__inner_line .amoforms__field__control_line {
+  background-color: transparent;
+  min-height: 20px;
+  padding: 10px;
+}
+
+.amoforms__tab-editor-left * {
+  box-sizing: border-box
+}
+
+.amoforms__tab-editor-left .amoforms__css__btn {
+  display: inline-block;
+  cursor: pointer;
+  color: #b5b8be;
+  border-bottom: 1px solid #b5b8be;
+  padding-top: 1px
+}
+
+.amoforms__tab-editor-left .amoforms__css__textarea {
+  width: 100%;
+  max-height: 190px;
+  margin-top: 10px
+}
+
+.amoforms__fields__editor {
+  width: 100%;
+  padding: 14px 0 25px;
+  background-color: #fff;
+  border: 1px solid #d8d9db;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+
+
+#amoforms__fields__error-required,
+#amoforms__fields__error-typo {
+  padding: 0;
+  box-sizing: border-box;
+  /*height: 15px;*/
+  color: #FF6666;
+}
+
+.amoforms__fields__editor-withborders #amoforms__fields__error-required,
+.amoforms__fields__editor-withborders #amoforms__fields__error-typo {
+  padding: 0 38px;
+}
+
+.amoforms__fields__editor-withborders .amoforms--move--hidden {
+  left: -21px;
+  top: -webkit-calc(50% - 7px);
+  top: calc(50% - 7px)
+}
+
+.amoforms__fields__container_checkbox,
+.amoforms__fields__container_terms {
+  min-height: 42px !important;
+}
+
+.amoforms__fields__editor-withborders .amoforms__fields__container__inner_line .amoforms--move--hidden {
+  left: 6px;
+  top: -webkit-calc(50% - 8px);
+  top: calc(50% - 8px)
+}
+
+.amoforms__fields__editor-withborders .amoforms__fields__container_radiobutton .amoforms--move--hidden {
+  top: 3px
+}
+
+.amoforms__fields__editor-withborders .amoforms__fields__container_streetaddress .amoforms--move--hidden {
+  top: 4px
+}
+
+.amoforms__fields__editor-withborders .amoforms__field__name-input {
+  max-width: 110px
+}
+
+.amoforms__fields__editor-withborders .amoforms__fields__container__inner_above .amoforms__field__name-input, .amoforms__fields__editor-withborders .amoforms__fields__container__inner_inside .amoforms__field__name-input {
+  max-width: 430px
+}
+
+.amoforms__fields__editor-withborders .amoforms__fields__container__inner_above .amoforms__field__name_checkbox .amoforms__field__name-input, .amoforms__fields__editor-withborders .amoforms__fields__container__inner_inside .amoforms__field__name_checkbox .amoforms__field__name-input {
+  max-width: 400px !important
+}
+
+#amofroms_main_wrapper.amoforms__fields__editor-withoutborders {
+  width: -webkit-calc(100% - 27px);
+  width: calc(100% - 27px);
+  margin-left: 27px;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0;
+}
+
+.amoforms__fields__editor-withoutborders .amoforms--move--hidden {
+  left: -21px;
+  top: -webkit-calc(50% - 7px);
+  top: calc(50% - 7px)
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container_radiobutton .amoforms--move--hidden {
+  top: 3px
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container_streetaddress .amoforms--move--hidden {
+  top: 4px
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__submit_editable {
+  padding-right: 5px;
+  width: 502px;
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__submit_editable .amoforms__submit-button__wrapper {
+  margin-left: 0 !important
+}
+/*
+.amoforms__fields__editor-withoutborders .amoforms__fields__container__inner_above .amoforms__field__action_checkbox, .amoforms__fields__editor-withoutborders .amoforms__fields__container__inner_inside .amoforms__field__action_checkbox {
+  right: -456px !important
+}*/
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container {
+  max-width: 496px;
+  margin-left: -1px;
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container .amoforms__fields__container__inner {
+  margin-right: -2px;
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container_line {
+  padding: 11px 0 !important;
+  box-sizing: content-box;
+  width: 494px;
+  margin-left: -1px;
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container_line .amoforms__fields__container__inner_line {
+  /*padding-left: 27px*/
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container_line .amoforms__fields__container__inner_line .amoforms--move--hidden-custom {
+  left: 6px;
+  top: 4px
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container__inner_above .amoforms__field__name-input, .amoforms__fields__editor-withoutborders .amoforms__fields__container__inner_inside .amoforms__field__name-input {
+  max-width: 460px
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__fields__container__inner_above .amoforms__field__name_checkbox .amoforms__field__name-input, .amoforms__fields__editor-withoutborders .amoforms__fields__container__inner_inside .amoforms__field__name_checkbox .amoforms__field__name-input {
+  max-width: 430px !important
+}
+
+.amoforms__fields__container {
+  width: 100%;
+  position: relative;
+  padding: 6px 0;
+  border: 1px solid transparent;
+  min-height: 44px;
+  /*margin-top: -1px;*/
+  box-sizing: border-box;
+}
+
+.amoforms__fields__container * {
+  box-sizing: border-box
+}
+
+.amoforms__fields__container .amoforms__textarea_paragraph {
+  margin: 0;
+  width: 100%;
+  padding: 6px 0;
+  min-height: 33px;
+  font-size: calc(18px + var(--plus_number));
+  line-height: normal;
+  height: auto;
+  white-space: pre-wrap;
+}
+
+.amoforms__fields__container_line {
+  min-height: 0;
+  padding: 6px 27px !important;
+}
+
+
+.amoforms__fields__editor-withborders .amoforms__fields__container_line {
+  padding: 6px 29px 6px 27px !important;
+}
+
+.amoforms__fields__container_paragraph {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 32px !important
+}
+
+.amoforms__fields__container .amoforms__field__required {
+  color: red;
+  display: inline-block;
+  font-size: calc(15px + var(--plus_number));
+  line-height: 1;
+}
+
+.amoforms__fields__container_header .amoforms__field__action_header {
+  top: 2px
+}
+
+.amoforms__fields__container_logotype {
+  min-height: 34px
+}
+
+.amoforms__fields__container:not(.amoforms__fields__container_logotype) .amoforms__field__settings {
+  height: 20px
+}
+
+.amoforms__fields__container .amoforms--move--hidden {
+  display: none;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  fill: #939393
+}
+
+.amoforms__fields__container:hover .amoforms__fields__container__handler {
+  visibility: visible
+}
+
+.amoforms__fields__container:hover .amoforms__fields__container__handler .svg-icon {
+  display: none
+}
+
+.amoforms__fields__container:hover .amoforms--move--hidden {
+  display: block
+}
+
+.amoforms__fields__container:hover .amoforms__fields__container__inner .amoforms__field__control .amoforms__field__action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.amoforms__fields__container.ui-sortable-helper {
+  background-color: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .13);
+  border: 1px solid #fff
+}
+
+.amoforms__fields__container .amoforms__field__settings {
+  display: none;
+  margin-top: 10px
+}
+
+.amoforms__fields__container .amoforms__field__settings__modal {
+  cursor: default
+}
+
+.amoforms__fields__container .amoforms__field__settings__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+  margin-bottom: 14px
+}
+
+.amoforms__fields__container .amoforms__field__settings__row .amoforms__logo_upload label {
+  font-size: calc(11px + var(--plus_number));
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.amoforms__fields__container .amoforms__field__settings__row .amoforms__logo_upload label svg.svg-icon {
+  width: 27px;
+  height: 27px
+}
+
+.amoforms__fields__container .amoforms__field__settings__row:last-child {
+  margin-bottom: 0
+}
+
+.amoforms__fields__container .amoforms__field__settings__row-logotype {
+  margin-bottom: 10px
+}
+
+.amoforms__fields__container .amoforms__field__settings__position *, .amoforms__fields__container .amoforms__field__settings__required * {
+  box-sizing: content-box
+}
+
+.amoforms__fields__container .amoforms__field__settings__required .control-checkbox__text {
+  margin-top: 1px
+}
+
+.amoforms__fields__container .amoforms__field__settings__position {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 20px;
+  margin-top: 0
+}
+
+.amoforms__fields__container .amoforms__field__settings__position:last-child {
+  margin-right: 0
+}
+
+.amoforms__fields__container .amoforms__logo_upload {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 7px 0 3px;
+  border: 1px solid #d8d9db;
+  border-radius: 3px;
+  background-color: #fafafa;
+  cursor: pointer;
+  font-size: calc(13px + var(--plus_number));
+  vertical-align: top;
+  height: 30px;
+  color: #2e3640
+}
+
+.amoforms__fields__container .amoforms__logo_upload label {
+  cursor: pointer
+}
+
+.amoforms__fields__container_editable {
+  border: 1px dashed #dcdddf
+}
+
+.amoforms__fields__container_editable .amoforms--move--hidden {
+  display: block;
+  cursor: move
+}
+
+.amoforms__fields__container_editable:hover {
+  cursor: default
+}
+
+.amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__control:before, .amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__name:before, .amoforms__fields__container_editable:hover .amoforms__fields__container__handler, .amoforms__fields__container_editable:hover .amoforms__fields__container__inner .amoforms__field__control .amoforms__field__action {
+  display: none
+}
+
+.amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__name {
+  border-bottom: 1px solid #4c8bf7
+}
+
+.amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__name-input {
+  height: auto;
+  padding: 0
+}
+
+.amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__submit-button {
+  cursor: text
+}
+
+.amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__control_paragraph .amoforms__textarea, .amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__control_streetaddress .amoforms__textarea, .amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__control_textarea .amoforms__textarea {
+  border: 1px solid #4c8bf7
+}
+
+.amoforms__fields__container_editable .amoforms__fields__container__inner .amoforms__field__control .amoforms__field__action {
+  display: none
+}
+
+.amoforms__fields__container__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.amoforms__fields__container__inner_smart_address {
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  -ms-grid-row-align: baseline;
+  align-items: baseline
+}
+
+.amoforms__fields__container__inner_multiselect, .amoforms__fields__container__inner_radiobutton, .amoforms__fields__container__inner_streetaddress, .amoforms__fields__container__inner_textarea {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.amoforms__fields__container__inner .amoforms__field__line {
+  width: 100%;
+  height: 1px;
+  background-color: #dbdedf
+}
+
+.amoforms__fields__container__inner .amoforms__field__calendar {
+  position: absolute;
+  left: 17px;
+  top: 15px;
+}
+
+.amoforms__fields__container__inner .amoforms__field__calendar .svg-card-calendar-dims {
+  width: 22px;
+  height: 22px;
+}
+
+.amoforms__fields__container__inner_above, .amoforms__fields__container__inner_inside {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-items: stretch;
+  position: relative;
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__name,
+.amoforms__fields__container__inner_inside .amoforms__field__name,
+.amoforms__fields__container__inner_terms .amoforms__field__name {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 3px; /*проверка отступов*/
+  margin-top: 0;
+  padding-top: 0
+}
+
+.amoforms__fields__container__inner_terms .amoforms__field__name {
+  margin-bottom: 0;
+  padding-top: 12px;
+  margin-left: 36px;
+}
+
+.amoforms__field__name label {
+  line-height: normal;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 120px;
+  padding-right: 2px;
+}
+
+
+.amoforms__fields__container__inner_above .amoforms__field__name label,
+.amoforms__fields__container__inner_inside .amoforms__field__name label {
+  max-width: none;
+}
+
+
+  .amoforms__field__required-inside {
+    color: red;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    line-height: 30px;
+    display: block;
+    font-size: calc(22px + var(--plus_number));
+  }
+
+
+.amoforms__fields__editor-withoutborders .amoforms__field__name label {
+  margin-left: -1px;
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__name_checkbox,
+.amoforms__fields__container__inner_inside .amoforms__field__name_checkbox,
+.amoforms__fields__container__inner_above .amoforms__field__name_terms,
+.amoforms__fields__container__inner_inside .amoforms__field__name_terms {
+  margin-bottom: 0;
+  padding-top: 6px;
+  margin-left: 36px
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__name_radiobutton, .amoforms__fields__container__inner_inside .amoforms__field__name_radiobutton {
+  margin-bottom: 13px;
+  margin-top: 4px;
+  margin-left: -2px;
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__name-input, .amoforms__fields__container__inner_inside .amoforms__field__name-input {
+  width: auto;
+  margin-left: -1px
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__name_radiobutton .amoforms--move--hidden, .amoforms__fields__container__inner_inside .amoforms__field__name_radiobutton .amoforms--move--hidden {
+  top: -webkit-calc(50% - 8px);
+  top: calc(50% - 8px)
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__name_checkbox .amoforms--move--hidden, .amoforms__fields__container__inner_inside .amoforms__field__name_checkbox .amoforms--move--hidden {
+  top: 9px !important;
+  left: -51px
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__name_multitext .amoforms--move--hidden, .amoforms__fields__container__inner_above .amoforms__field__name_streetaddress .amoforms--move--hidden, .amoforms__fields__container__inner_inside .amoforms__field__name_multitext .amoforms--move--hidden, .amoforms__fields__container__inner_inside .amoforms__field__name_streetaddress .amoforms--move--hidden {
+  top: -webkit-calc(50% - 8px);
+  top: calc(50% - 8px)
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__control, .amoforms__fields__container__inner_inside .amoforms__field__control,
+.amoforms__fields__container__inner .amoforms__field__control_terms {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  max-width: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__control .amoforms-input-multiselect, .amoforms__fields__container__inner_above .amoforms__field__control .amoforms-input-select, .amoforms__fields__container__inner_above .amoforms__field__control_smart_address, .amoforms__fields__container__inner_above .amoforms__field__control_smart_address_input, .amoforms__fields__container__inner_above .amoforms__field__control_textarea .amoforms__textarea, .amoforms__fields__container__inner_inside .amoforms__field__control .amoforms-input-multiselect, .amoforms__fields__container__inner_inside .amoforms__field__control .amoforms-input-select, .amoforms__fields__container__inner_inside .amoforms__field__control_smart_address, .amoforms__fields__container__inner_inside .amoforms__field__control_smart_address_input, .amoforms__fields__container__inner_inside .amoforms__field__control_textarea .amoforms__textarea {
+  max-width: none;
+}
+
+.amoforms__field__control_select + .amoforms__field__required-inside, .amoforms__field__control_multiselect + .amoforms__field__required-inside {
+	right: 30px;
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__control_checkbox,
+.amoforms__fields__container__inner_inside .amoforms__field__control_checkbox,
+.amoforms__fields__container__inner .amoforms__field__control_terms {
+  min-height: 20px !important;
+  margin-top: 6px;
+  align-items: flex-end;
+  display: flex;
+}
+
+.amoforms__fields__container__inner_above, .amoforms__fields__container__inner_above.amoforms__fields__container__inner_radiobutton, .amoforms__fields__container__inner_inside.amoforms__fields__container__inner_radiobutton {
+  margin-top: -3px;
+}
+
+.amoforms__fields__container__inner_above.amoforms__fields__container__inner_radiobutton, .amoforms__fields__container__inner_inside.amoforms__fields__container__inner_radiobutton {
+  margin-top: -5px;
+}
+
+.amoforms__fields__container__inner_above.amoforms__fields__container__inner_checkbox,.amoforms__fields__container__inner_inside.amoforms__fields__container__inner_checkbox,
+.amoforms__fields__container__inner_above.amoforms__fields__container__inner_terms,.amoforms__fields__container__inner_inside.amoforms__fields__container__inner_terms,
+.amoforms__fields__container__inner.amoforms__fields__container__inner_terms {
+  /*padding-top: 2px;*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  height: 36px;
+}
+
+.amoforms__field_terms-link label {
+  cursor: pointer;
+}
+
+.amoforms__fields__container__inner_above .amoforms--move--hidden, .amoforms__fields__container__inner_inside .amoforms--move--hidden {
+  top: -webkit-calc(50% - 8px) !important;
+  top: calc(50% - 8px) !important
+}
+
+.amoforms__fields__container__inner_inside:not(.amoforms__fields__container__inner_line):not(.amoforms__fields__container__inner_paragraph):not(.amoforms__fields__container__inner_checkbox):not(.amoforms__fields__container__inner_logotype):not(.amoforms__fields__container__inner_header):not(.amoforms__fields__container__inner_radiobutton) .amoforms--move--hidden {
+  top: 9px !important
+}
+
+.amoforms__fields__container__inner_inside:not(.amoforms__fields__container__inner_checkbox):not(.amoforms__fields__container__inner_radiobutton):not(.amoforms__fields__container__inner_terms) .amoforms__field__name {
+  height: 0;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  border-bottom: transparent
+}
+
+.amoforms__fields__container__inner_inside:not(.amoforms__fields__container__inner_terms) {
+
+}
+
+.amoforms__fields__container__inner_inside:not(.amoforms__fields__container__inner_checkbox):not(.amoforms__fields__container__inner_radiobutton) .amoforms__field__name-input {
+  display: none
+}
+
+.amoforms__fields__container__inner_inside.amoforms__fields__container__inner_checkbox {
+  margin-top: 0;
+  height: 28px;
+}
+
+.amoforms__field__name {
+  margin-right: 12px;
+  width: 120px;
+  /*padding-top: 2px;*/
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+}
+
+.amoforms__field__name_terms {
+  width: 100%;
+  margin-left: 29px;
+}
+
+.amoforms__field__name_terms label {
+  max-width: none;
+}
+
+.amoforms__field__name_streetaddress, .amoforms__field__name_textarea {
+  margin-top: 4px
+}
+
+.amoforms__field__name_multitext, .amoforms__field__name_text {
+  /*padding-top: 2px*/
+}
+
+.amoforms__field__name_radiobutton {
+  padding-top: 0;
+}
+
+.amoforms__field__name-input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: auto;
+  text-overflow: ellipsis;
+  width: 100%;
+  border-radius: 0;
+  max-width: 114px
+}
+
+.amoforms__field__control {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.amoforms__fields__container__inner_header .amoforms__field__control_header {
+  background-color: transparent;
+}
+
+.amoforms__field__control_multiselect select {
+  font-size: calc(15px + var(--plus_number));
+}
+
+.amoforms__field__control .amoforms__field__action {
+  background-color: #fff;
+  padding: 1px 6px;
+  border-radius: 3px;
+  position: absolute;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  top: 5px;
+  right: 10px;
+  z-index: 6
+}
+
+.amoforms__field__control .amoforms__field__action_header {
+  right: 10px;
+  top: 4px
+}
+
+.amoforms__field__control .amoforms__field__action_line {
+  top: -8px
+}
+
+.amoforms__field__control .amoforms__field__action__edit {
+  margin-right: 10px
+}
+
+.amoforms__field__control .amoforms__field__action__edit .icon-pencil {
+  opacity: .7
+}
+
+.amoforms__field__control .amoforms__field__action_radiobutton {
+  right: 10px;
+  top: 0
+}
+
+.amoforms__field__control .amoforms__field__action_select {
+  right: 10px;
+  top: 6px
+}
+
+.amoforms__field__control .amoforms__field__action_checkbox {
+  right: 10px;
+  top: 7px
+}
+
+.amoforms__field__control .amoforms__field__action_multiselect {
+  right: 10px;
+  top: 5px
+}
+
+.amoforms__field__control .amoforms__field__action_paragraph {
+  right: 10px;
+  top: 6px
+}
+
+.amoforms__field__control .amoforms__field__action_logotype {
+  top: 6px
+}
+
+.amoforms__field__control .amoforms__field__action_smart_address, .amoforms__field__control .amoforms__field__action_streetaddress {
+  top: 5px
+}
+
+.amoforms__field__control .amoforms__field__action__delete, .amoforms__field__control .amoforms__field__action__edit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #b5b8be
+}
+
+.amoforms__field__control .amoforms__field__action__delete__text, .amoforms__field__control .amoforms__field__action__edit__text {
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: calc(13px + var(--plus_number));
+}
+
+.amoforms__field__control .amoforms__field__action__delete:hover, .amoforms__field__control .amoforms__field__action__edit:hover {
+  cursor: pointer;
+  color: #2e3640
+}
+
+.amoforms__field__control .amoforms__field__action__delete .svg-common--trash-dims, .amoforms__field__control .amoforms__field__action__edit .svg-common--trash-dims {
+  width: 12px;
+  height: 14px;
+  position: relative;
+  top: -1px
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__field__action_header {
+  right: 10px
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__field__action_radiobutton {
+  right: 10px !important
+}
+
+.amoforms__fields__editor-withoutborders .amoforms__field__action_line {
+  right: 10px
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__action_checkbox, .amoforms__fields__container__inner_inside .amoforms__field__action_checkbox {
+  top: 0 !important;
+  right: -425px
+}
+
+.amoforms__fields__container__inner_above .amoforms__field__action, .amoforms__fields__container__inner_above .amoforms__field__action_radiobutton, .amoforms__fields__container__inner_above .amoforms__field__action_streetaddress, .amoforms__fields__container__inner_inside .amoforms__field__action_radiobutton {
+  top: -25px
+}
+
+.amoforms__fields__submit {
+  padding: 6px 0;
+  border: 1px solid transparent;
+  margin-top: -1px
+}
+
+.amoforms__fields__submit .amoforms__submit-button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: calc(16px + var(--plus_number));
+  font-weight: 500;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 405px;
+  justify-content: center;
+  height: 52px;
+  padding: 0 33px;
+  border: 0;
+}
+
+.amoforms__fields__submit .amoforms__submit-button__wrapper {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.amoforms__fields__submit .amoforms__submit-button__wrapper .amoforms__submit-button {
+  font-size: calc(14px + var(--plus_number));
+  font-weight: 700;
+  border: transparent;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  margin-right: 5px;
+  height: auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  max-width: 405px;
+  cursor: pointer;
+}
+
+.amoforms__fields__submit .amoforms__submit-button__wrapper .icon-white-pencil {
+  zoom: 1.5;
+  cursor: pointer;
+  margin-top: 2px
+}
+
+.amoforms__fields__submit_editable {
+  border: 1px dashed #dcdddf
+}
+
+.amoforms__fields__submit_editable .amoforms__submit-button__wrapper .amoforms__submit-button {
+  border-bottom: 1px solid #4c8bf7;
+  border-radius: 0
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings {
+  display: none;
+  margin-top: 15px
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__btns {
+  margin-bottom: 5px
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__btn[data-type=submit_background], .amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__btn[data-type=submit_color] {
+  width: auto;
+  margin-bottom: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__btn[data-type=submit_color] {
+  margin-right: 0
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__btn[data-type=submit_background] .color, .amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__btn[data-type=submit_color] .color {
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d8d9db;
+  border-radius: 1px
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__btn[data-type=submit_background] {
+  margin-right: 20px
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__position {
+  margin-right: 20px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: content-box
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__position * {
+  box-sizing: content-box
+}
+
+.amoforms__fields__submit .amoforms__submit-button__settings .amoforms__submit-button__position .control-radio-label-text {
+  margin-top: 0
+}
+
+.amoforms__fields__settings {
+  margin-bottom: 10px;
+  margin-top: 2px;
+  position: relative
+}
+
+.amoforms__fields__settings__btn {
+  padding: 0 7px;
+  border: 1px solid #d8d9db;
+  border-radius: 3px;
+  background-color: #fafafa;
+  color: #2e3640;
+  cursor: pointer;
+  font-size: calc(13px + var(--plus_number));
+  vertical-align: top;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  height: 30px
+}
+
+.amoforms__fields__settings__btn[data-type=form-css], .amoforms__fields__settings__btn[data-type=name-position], .amoforms__fields__settings__btn[data-type=themes] {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.amoforms__fields__settings__btn[data-type=form-css] .svg-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px
+}
+
+.amoforms__fields__settings__btn[data-type=themes] .svg-icon {
+  width: 15px;
+  height: 12px;
+  margin-right: 8px;
+  margin-top: 0
+}
+
+.amoforms__fields__settings__btn[data-type=name-position] span:first-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  border-right: 1px solid #d8d9db
+}
+
+.amoforms__fields__settings__btn[data-type=name-position] span:first-child:after {
+  background-color: #fff;
+  box-sizing: border-box;
+  content: '';
+  width: 15px;
+  height: 16px;
+  border: 1px solid #d8d9db;
+  border-right: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  margin-top: 2px;
+  margin-left: 7px
+}
+
+.amoforms__fields__settings__btn[data-type=font-color], .amoforms__fields__settings__btn[data-type=font] {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.amoforms__fields__settings__btn[data-type=font] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 4px
+}
+
+.amoforms__fields__settings__btn[data-type=font] .svg-icon {
+  width: 22px;
+  height: 22px
+}
+
+.amoforms__fields__settings__btn[data-type=font-color] {
+  margin-right: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.amoforms__fields__settings__btn[data-type=background-color] span:not(.color), .amoforms__fields__settings__btn[data-type=font-color] span:not(.color) {
+  margin-right: 6px
+}
+
+.amoforms__fields__settings__btn[data-type=font-color] .color {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d8d9db;
+  border-radius: 1px
+}
+
+.amoforms__fields__settings__btn[data-type=background-color], .amoforms__fields__settings__btn[data-type=form-paddings] {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.amoforms__fields__settings__btn[data-type=form-paddings] .svg-icon {
+  margin-right: 6px;
+  width: 15px;
+  height: 12px
+}
+
+.amoforms__fields__settings__btn[data-type=background-color] {
+  margin-right: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.amoforms__fields__settings__btn[data-type=background-color] .color {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d8d9db;
+  border-radius: 1px
+}
+
+.amoforms__fields__settings__btn[data-type=background-image] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 4px
+}
+
+.amoforms__fields__settings__btn[data-type=background-image] label {
+  height: 27px;
+  cursor: pointer
+}
+
+.amoforms__fields__settings__btn[data-type=background-image] .svg-icon {
+  width: 27px;
+  height: 27px
+}
+
+.amoforms__fields__settings__btn[data-type=background-image], .amoforms__fields__settings__btn[data-type=field-form] {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.amoforms__fields__settings__btn[data-type=field-form] i {
+  margin-top: 1px;
+  margin-right: 7px;
+  width: 16px;
+  height: 19px
+}
+
+.amoforms__fields__settings__btn[data-type=field-form] i:after, .amoforms__fields__settings__btn[data-type=field-form] i:before {
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  width: 16px;
+  height: 8px;
+  border: .8px solid #2e3640;
+  background-color: #fff;
+  margin-bottom: 3px
+}
+
+.amoforms__fields__settings__btn[data-type=field-form] i:after {
+  margin-bottom: 0;
+  border-radius: 4px
+}
+
+.amoforms__tab-editor-right * {
+  box-sizing: border-box
+}
+
+.amoforms__tab-editor-right .amoforms__sidebar__items {
+  display: none;
+  padding-bottom: 5px
+}
+
+.amoforms__tab-editor-right .amoforms__sidebar__wrapper {
+  border-bottom: 1px solid #d8d9db;
+  margin-bottom: 12px
+}
+
+.amoforms__tab-editor-right .amoforms__sidebar__wrapper:last-child {
+  border-bottom: none;
+  margin-bottom: 0
+}
+
+.amoforms__tab-editor-right .amoforms__sidebar__header {
+  cursor: pointer;
+  color: #676e79;
+  font-family: 'PT Sans Caption';
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+  font-size: calc(12px + var(--plus_number));
+  line-height: 15px
+}
+
+.ui-sortable-placeholder {
+  box-sizing: border-box;
+  display: block;
+  border: 1px dashed #dbdedf;
+  visibility: visible;
+  border-radius: 3px;
+  width: 100%;
+  min-height: 54px
+}
+
+.amoforms__site_install {
+  padding: 10px 20px 20px;
+  background-color: #fff;
+  border: 1px solid #d8d9db;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .1)
+}
+
+.amoforms__code {
+  position: relative;
+  font-size: calc(14px + var(--plus_number));
+  border-left: solid 5px #4c8bf7;
+  background-color: #f5f5f5;
+  padding: 12px 11px;
+  margin-left: 1px;
+  margin-top: 7px
+}
+
+.amoforms__code-success, .amoforms__code-success-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.amoforms__code-success {
+  background-color: rgba(255, 255, 255, .9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  height: 100%
+}
+
+.amoforms__code-success.hidden {
+  opacity: 0;
+  visibility: visible;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease
+}
+
+.amoforms__code-success-inner {
+  margin: 0 auto;
+  height: 24px;
+  text-align: center;
+  font-size: calc(16px + var(--plus_number));
+}
+
+.amoforms__code-success-inner svg {
+  width: 42px;
+  height: 42px;
+  padding-right: 10px
+}
+
+.amoforms__wp_form_code {
+  margin-bottom: 7px
+}
+
+.amoforms__wp_link {
+  padding: 14px 14px 7px
+}
+
+.amoforms__install_text span, .amoforms__wp_link span {
+  color: #008cfa;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #008cfa;
+  display: inline-block
+}
+
+.amoforms__install_text {
+  padding: 7px 0
+}
+
+.amoforms__install_header {
+  padding: 5px 0 6px
+}
+
+.amoforms.colorpicker {
+  width: 224px;
+  height: 315px;
+  font-family: "PT Sans";
+  display: none;
+  background-color: #fafafa;
+  box-shadow: 2.5px 4.33px 9.4px .6px rgba(0, 0, 1, .2);
+  border-radius: 3px
+}
+
+.amoforms.colorpicker:before, .amoforms_button .amoforms__settings-modal:before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  margin-left: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 7px;
+  border-color: transparent transparent #fafafa
+}
+
+.amoforms .colorpicker_transparent_wrapper {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 14px
+}
+
+.amoforms .colorpicker_transparent_wrapper .amoforms__checkbox {
+  position: relative
+}
+
+.amoforms .colorpicker_transparent_wrapper .amoforms__checkbox input {
+  opacity: 0;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 0;
+  right: 0
+}
+
+.amoforms .colorpicker_transparent_wrapper .amoforms__checkbox input + b {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #bcbec4;
+  background-color: #fff;
+  border-radius: 2px
+}
+
+.amoforms .colorpicker_transparent_wrapper .amoforms__checkbox input:checked + b:before {
+  content: '\2713';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: -2px;
+  left: 3px;
+  font-weight: 700;
+  line-height: initial
+}
+
+.amoforms .colorpicker_transparent_wrapper .amoforms_colorpicker_transparent_bg_text {
+  position: relative;
+  top: -4px;
+  left: 4px
+}
+
+.amoforms .colorpicker_inner {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0
+}
+
+.amoforms.colorpicker input[type=text] {
+  background-color: transparent;
+  position: absolute;
+  font-size: calc(13px + var(--plus_number));
+  color: #2a3640;
+  top: -7px;
+  right: -6px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: none
+}
+
+.amoforms .colorpicker_color {
+  width: 150px;
+  height: 150px;
+  left: 54px;
+  top: 0;
+  position: absolute;
+  background: red;
+  overflow: hidden;
+  cursor: crosshair
+}
+
+.amoforms .colorpicker_color div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(data:image/png;base64,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);
+  background-size: cover
+}
+
+.amoforms .colorpicker_color div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  overflow: hidden;
+  background: url(data:image/gif;base64,R0lGODlhCwALAJECAAAAAP///////wAAACH5BAEAAAIALAAAAAALAAsAAAIflINoG+AeGFgGxEaXxVns2X2dh4CZJXBadDxQlihGAQA7);
+  margin: -5px 0 0 -5px
+}
+
+.amoforms .colorpicker_hue {
+  position: absolute;
+  top: 1px;
+  left: 14px;
+  width: 20px;
+  height: 150px;
+  border-radius: 2px;
+  cursor: n-resize;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAACWCAYAAAA42GOaAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wMDhA1JuAdCP0AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAABmUlEQVRo3t3ZUXKEIBAE0AYnqSCp5P5nyznQ2gQlH44XsPtjCg/wappFl9b08/U9bAw8vXpKSH/5c9hJIDnBgBXAcwTQIVWBFLCXx4mB1DCTFACJIMY9SQykKpACIBPIeceJgVQFUgAsBHLccWIgVYGU6xZ6/qi+49BI5ZETH9cv/XiXdNhGzwER0hTITu8SjxMDaQpkp58mHicG0hTITv/reJzJEPp8MiHCHYXnRE4CyQDstQAnsWVzBgyFz2OCugMTFC8VUgTbXlB3PE4MhO9MviY0soZB+M7kk9BIDTOJBOGLl68JjaxhEL54+ZrQyKpA3juH5A4D+MZjwKZA+Nrkk9BICzOJBOG7l68JjWxhEL57+SQ00sJMsgsOOdgUSAszyQ7BZ4hNgbQwk/Ddy97QcRJIRoYJmkokpCoQQfG64sRAqgIRFK8rTgykKhBB8briTIbQL7onROgPInGQqkCWF7AcxA3YARN0JiVCl+sJEfolTBykKRDB9yoTNJU5EbqqxEGaAuGLl8eJgTQBsv0alvG8NB0p4x/sttxDWgMgrQAAAABJRU5ErkJggg==)
+}
+
+.amoforms .colorpicker_hue div {
+  position: absolute;
+  width: 35px;
+  height: 9px;
+  overflow: hidden;
+  background: url(data:image/gif;base64,R0lGODlhIwAJAJEAADk5OVtbW////wAAACH5BAEAAAIALAAAAAAjAAkAAAInTISpy50WwHG0imiAtFxF+W2dFWaaODYheE6pU37uC2vZTNdQ3hkFADs=) left top;
+  margin: -4px 0 0;
+  left: -9px
+}
+
+.amoforms.colorpicker input[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  -o-appearance: checkbox;
+  -ms-appearance: checkbox;
+  appearance: checkbox
+}
+
+.amoforms .colorpicker_hex {
+  position: absolute;
+  width: 61px;
+  height: 20px;
+  left: 9px;
+  top: 232px
+}
+
+.amoforms .colorpicker_hex input {
+  right: -29px;
+  width: 78px;
+  top: -9px;
+  text-align: left;
+  padding: 0 10px
+}
+
+.amoforms .colorpicker_field {
+  height: 20px;
+  width: 60px;
+  background-position: top;
+  position: absolute
+}
+
+.amoforms .colorpicker_field label, .amoforms .colorpicker_hex label {
+  color: #676e79;
+  font-size: calc(12px + var(--plus_number));
+  text-shadow: none;
+  display: block;
+  margin-left: 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: text
+}
+
+.amoforms .colorpicker_hex label {
+  font-size: calc(13px + var(--plus_number));
+}
+
+.amoforms .colorpicker_rgb_r {
+  top: 183px;
+  left: 10px
+}
+
+.amoforms .colorpicker_rgb_g {
+  top: 183px;
+  left: 79px
+}
+
+.amoforms .colorpicker_rgb_b {
+  top: 183px;
+  left: 148px
+}
+
+.amoforms .colorpicker_current_color, .amoforms .colorpicker_field span, .amoforms .colorpicker_hsb_b, .amoforms .colorpicker_hsb_h, .amoforms .colorpicker_hsb_s, .amoforms .colorpicker_new_color, .amoforms .colorpicker_submit {
+  display: none
+}
+
+.amoforms_button * {
+  box-sizing: border-box
+}
+
+.amoforms_button ol, .amoforms_button ul {
+  list-style: none
+}
+
+.amoforms_button .amoforms__settings-modal {
+  padding: 20px 19px 15px;
+  background-color: #fafafa;
+  box-shadow: 2.5px 4.33px 9.4px .6px rgba(0, 0, 1, .2);
+  border-radius: 3px;
+  position: relative
+}
+
+.amoforms_button .amoforms__settings-modal .amoforms__setting-modal-field-form__btn, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-name-position__btn {
+  padding-top: 60px;
+  width: 62px;
+  position: relative;
+  text-align: center;
+  color: #2a3640;
+  cursor: pointer
+}
+
+.amoforms_button .amoforms__settings-modal .amoforms__setting-modal-field-form__btn:first-child, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn:first-child, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-name-position__btn:first-child {
+  margin-right: 20px
+}
+
+.amoforms_button .amoforms__settings-modal .amoforms__setting-modal-field-form__btn:before, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn:before, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-name-position__btn:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #e2e3e7;
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute
+}
+
+.amoforms__setting-modal-font .amoforms__settings-modal .amoforms__settings-modal__font-family li.selected, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-field-form__btn.selected, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn.selected, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-name-position__btn.selected {
+  color: #2e9fe3
+}
+
+.amoforms_button .amoforms__settings-modal .amoforms__setting-modal-field-form__btn.selected:before, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn.selected:before, .amoforms_button .amoforms__settings-modal .amoforms__setting-modal-name-position__btn.selected:before {
+  border-color: #2e9fe3
+}
+
+.amoforms__setting-modal-field-form {
+  width: 202px
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal {
+  padding: 20px 9px 15px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn {
+  width: 100%;
+  padding-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn .field-form__btn-icon {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #e2e3e7;
+  border-radius: 3px;
+  background-color: #fff
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn .field-form__name {
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  padding-top: 5px
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn .svg-icon {
+  fill: none;
+  position: absolute;
+  stroke: #eee
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn .svg-icon.svg-common--amoforms--curve-line-dims {
+  width: 42px;
+  height: 42px;
+  left: 17px;
+  bottom: 2px
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn .svg-icon.svg-common--amoforms--straight-line-dims {
+  width: 58px;
+  height: 58px;
+  top: 3px;
+  left: 18px
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn:after, .amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn:before, .amoforms__setting-modal-form-paddings .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn:before {
+  display: none
+}
+
+.amoforms__setting-modal-field-form .amoforms__settings-modal .amoforms__setting-modal-field-form__btn.selected .field-form__btn-icon, .amoforms__setting-modal-form-paddings .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn.selected .form-paddings__btn-icon:before {
+  border-color: #2e9fe3
+}
+
+.amoforms__setting-modal-name-position {
+  width: 264px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn {
+  margin-right: 20px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn:last-child {
+  margin-right: 0
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn b:before {
+  content: "Text";
+  font-size: calc(12px + var(--plus_number));
+  position: absolute;
+  color: #2a3640
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn b:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #e2e3e7;
+  border-right: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn[data-type=left] b:before {
+  top: 17px;
+  left: 9px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn[data-type=left] b:after {
+  width: 25px;
+  height: 20px;
+  top: 16px;
+  right: 1px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn[data-type=top] b:before {
+  top: 2px;
+  left: 16px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn[data-type=top] b:after {
+  width: 46px;
+  height: 20px;
+  top: 20px;
+  right: 1px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn[data-type=inside] b:before {
+  top: 17px;
+  left: 21px
+}
+
+.amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn[data-type=inside] b:after {
+  width: 46px;
+  height: 20px;
+  top: 15px;
+  right: 1px
+}
+
+.amoforms__setting-modal-font {
+  width: 180px
+}
+
+.amoforms__setting-modal-font .amoforms__settings-modal {
+  padding: 0
+}
+
+.amoforms__setting-modal-font .amoforms__settings-modal .amoforms__settings-modal__font-family {
+  padding: 6px 0;
+  font-size: calc(15px + var(--plus_number));
+}
+
+.amoforms__setting-modal-font .amoforms__settings-modal .amoforms__settings-modal__font-family li {
+  cursor: pointer;
+  padding: 6px 17px
+}
+
+.amoforms__setting-modal-font .amoforms__settings-modal .amoforms__settings-modal__font-family li:hover {
+  color: #fff;
+  background-color: #2e9fe3
+}
+
+.amoforms__setting-modal-form-paddings {
+  width: 214px
+}
+
+.amoforms__setting-modal-form-paddings .amoforms__settings-modal {
+  padding: 20px 9px 15px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex
+}
+
+.amoforms__setting-modal-form-paddings .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn {
+  width: 100%;
+  padding-top: 10px;
+  display: inline-block
+}
+
+.amoforms__setting-modal-form-paddings .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn .svg-icon {
+  width: 47px;
+  height: 42px;
+  fill: #fff;
+  position: relative
+}
+
+.amoforms__setting-modal-form-paddings .amoforms__settings-modal .amoforms__setting-modal-form-paddings__btn:first-child {
+  margin-right: 0
+}
+
+.amoforms__setting-modal-form-paddings .amoforms__settings-modal .form-paddings__btn-icon {
+  display: inline-block
+}
+
+.amoforms__setting-modal-form-paddings .amoforms__settings-modal .form-paddings__btn-icon:before {
+  content: "";
+  top: 1px;
+  left: 17px;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #e2e3e7;
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute
+}
+
+.amoforms__setting-modal-form-paddings .amoforms__settings-modal .form-paddings__name {
+  width: auto;
+  display: inline-block;
+  text-align: center
+}
+
+.amoforms__setting-modal-themes {
+  width: 678px
+}
+
+.amoforms__setting-modal-themes .amoforms__settings-modal:before {
+  left: 50px
+}
+
+.amoforms__setting-modal-themes .amoforms__settings-modal__themes__wrapper {
+  font-size: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.amoforms__setting-modal-themes .amoforms__settings-modal__themes__wrapper li {
+  width: 200px;
+  height: 220px;
+  padding: 3px;
+  border: 1px solid #d0d2d9;
+  border-radius: 3px;
+  cursor: pointer
+}
+
+.amoforms__setting-modal-themes .amoforms__settings-modal__themes__wrapper li:hover {
+  border-color: #2e9fe3
+}
+
+.amoforms__setting-modal-themes .amoforms__settings-modal__themes__wrapper li img {
+  width: 192px;
+  height: 212px
+}
+
+.amoforms__setting-modal-themes .amoforms__settings-modal__themes__wrapper li:nth-child(n+4) {
+  margin-top: 20px
+}
+
+.amoforms__setting-modal-background-color, .amoforms__setting-modal-submit_background {
+  width: 224px;
+  height: 315px
+}
+
+.amoforms__setting-modal-font-color, .amoforms__setting-modal-submit_color {
+  width: 224px;
+  height: 295px
+}
+
+.amoforms__setting-modal-font-color .colorpicker, .amoforms__setting-modal-submit_color .colorpicker {
+  height: 100%
+}
+
+.amoforms__setting-modal-font-color .colorpicker_transparent_wrapper, .amoforms__setting-modal-submit_color .colorpicker_transparent_wrapper {
+  display: none
+}
+
+.amoforms__setting-modal-font-color .colorpicker_inner, .amoforms__setting-modal-submit_color .colorpicker_inner {
+  top: 25px
+}
+
+/* Disabled state */
+.control-checkbox input:disabled ~ .control-checkbox__helper {
+  background: #f1f1f1;
+}
+.control-checkbox input:checked:disabled ~ .control-checkbox__helper {
+  background-color: #f1f1f1;
+}
+.control-checkbox.control-checkbox-dash input ~ .control-checkbox__helper {
+  background: #fff;
+}
+.control-checkbox.control-checkbox-dash input ~ .control-checkbox__helper:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  top: 8px;
+  bottom: 8px;
+  background: #2e3640;
+}
+
+.amoforms__fields__container_paragraph {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 32px !important;
+}
+
+
+.js-hs-scroller {
+  overflow-x: scroll !important;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+html.scrollbar-width-0 .js-hs-scroller::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.custom-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollbar-tester::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 0;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #eaeaea;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #cdcdcd;
+}
+
+.hs-wrapper,
+.hand-cursor {
+  cursor: url(/frontend/images/interface/i/openhand.cur), move;
+}
+
+.hand-cursor-dragging {
+  cursor: url(/frontend/images/interface/i/closedhand.cur), move;
+}
+
+.js-hs-prevent,
+.hs-wrapper_no-hand {
+  cursor: auto;
+}
+
+.hs-wrapper {
+  position: relative;
+
+  &_hide-boundary {
+    &:after,
+    &:before {
+      display: none !important;
+    }
+  }
+
+  &:not(.hs__wrapper_no-boundary) {
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      width: 1px;
+      top: 0;
+      bottom: 0;
+      background: #d6d8dc;
+      position: absolute;
+      z-index: 90;
+    }
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  &.hs-at-start:before {
+    display: none;
+  }
+
+  &.hs-at-end:after {
+    display: none;
+  }
+}
+
+.hs__pane {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 16px;
+  z-index: 90;
+  cursor: default;
+  opacity: 0;
+  transition: all 100ms cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    background: #E4E4E4;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color: inherit;
+    border-radius: 10px;
+    z-index: -2;
+  }
+
+  &.hs__pane_hidden {
+    visibility: hidden;
+  }
+
+  > .hs__bar {
+    position: absolute !important;
+    z-index: 1;
+    background: #999;
+    z-index: 3;
+    border-radius: 5px;
+    bottom: 0;
+    height: 50%;
+  }
+
+  &.active, &.flashed {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+  }
+
+  &:before, > .hs__bar {
+    transition: height 100ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
+
+.hs-wrapper:hover > .hs__pane {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+}
+
+.hs-wrapper > .hs__pane {
+  &.active, &:hover {
+    opacity: 0.99 !important;
+  }
+}
+
+.js-hs-selectable.hs-wrapper:hover > .hs__pane {
+  opacity: 0.99 !important;
+}
+
+
+.list__body-right__top {
+  user-select: none;
+}
+
+.block-selection-prepended {
+  user-select: none !important;
+}
+
+.block-selectable {
+  cursor: text;
+  display: inline-block;
+  user-select: text;
+  line-height: 1em;
+}
+
+html.touch .content-touch-selectable {
+  div, span, button, a, li {
+    -webkit-touch-callout: default;
+    -moz-tap-highlight-color: initial;
+    -webkit-tap-highlight-color: initial;
+    user-select: text;
+  }
+}
+
+/* Checkbox-dropdown */
+
+.checkboxes_dropdown {
+  position: relative;
+  line-height: 1
+}
+
+.dropdown_opened {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.checkboxes_dropdown__title_wrapper {
+  height: 51px;
+  position: relative;
+  color: #313942;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  padding: 9px 16px;
+}
+
+.checkboxes_dropdown__title-selected {
+  font-size: calc(18px + var(--plus_number));
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  width: 93%;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px);
+  text-overflow: ellipsis
+}
+
+.checkboxes_dropdown__title-selected[data-title-before]:before {
+  content: attr(data-title-before);
+  white-space: pre
+}
+
+.inline_values .checkboxes_dropdown__title {
+  display: inline-block;
+  overflow: hidden;
+  max-height: 57px;
+  line-height: 1.3
+}
+
+.Mac .checkboxes_dropdown__title_wrapper {
+  padding-top: 10px;
+  padding-bottom: 11px
+}
+
+.checkboxes_dropdown .checkboxes_dropdown__checkbox_master {
+  position: absolute;
+  top: 8px;
+  left: 8px
+}
+
+.checkboxes_dropdown_icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 10px;
+}
+
+.checkboxes_dropdown_icon.icon-up-arrow:after,.checkboxes_dropdown_icon:after {
+  content: '';
+  position: absolute;
+  top: -webkit-calc(50% - 5px);
+  top: calc(50% - 5px);
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 7px;
+  right: 12px;
+  z-index: 1;
+}
+
+.checkboxes_dropdown_icon.icon-up-arrow:after {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  top: 50%
+}
+
+.checkboxes_dropdown__list {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #d8d9db;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  font-size: calc(15px + var(--plus_number));
+  color: #313942;
+  display: none;
+  height: auto;
+  box-sizing: border-box;
+  margin-left: -1px;
+  margin-right: -1px;
+  padding-bottom: 15px;
+}
+
+.checkboxes_dropdown__statuses .checkboxes_dropdown__list {
+  max-height: 355px
+}
+
+.checkboxes_dropdown__item {
+  margin: 0;
+  padding: 0
+}
+
+.control-checkbox.checkboxes_dropdown__label {
+  display: block;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 13px 0 0 13px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 0
+}
+
+html.no-touch .checkboxes_dropdown__label:hover,html.touch .checkboxes_dropdown__label:active {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTQ5RUNEMjEyMDY3MTFFMzlENjhCQkZEODc5M0QzOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTQ5RUNEMjIyMDY3MTFFMzlENjhCQkZEODc5M0QzOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5NDlFQ0QxRjIwNjcxMUUzOUQ2OEJCRkQ4NzkzRDM5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5NDlFQ0QyMDIwNjcxMUUzOUQ2OEJCRkQ4NzkzRDM5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmGtzdkAAAAQSURBVHjaYv7w4aMXQIABAAjQAx8gqcVGAAAAAElFTkSuQmCC)
+}
+
+.checkboxes_dropdown .checkboxes_dropdown__checkboxes {
+  margin-right: 2px
+}
+
+.checkboxes_dropdown.expanded .checkboxes_dropdown__list {
+  top: 100%;
+  bottom: auto
+}
+
+.checkboxes_dropdown.expanded.inline_values .checkboxes_dropdown__list {
+  top: 0;
+  bottom: auto
+}
+
+.checkboxes_dropdown.expanded .checkboxes_dropdown__list.checkboxes_dropdown__expanded-to-top {
+  top: auto;
+  bottom: 100%;
+  border-radius: 3px 3px 0 0;
+  border-top: 1px solid #dadadb;
+  border-bottom: none
+}
+
+.checkboxes_dropdown__label_title {
+  vertical-align: middle;
+  font-size: calc(15px + var(--plus_number));
+}
+
+.checkboxes_dropdown__label_title_divider_after:after,.checkboxes_dropdown__label_title_divider_before:before {
+  font-size: calc(14px + var(--plus_number));
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #999;
+  padding: 16px
+}
+
+.checkboxes_dropdown__label_title_divider_before:before {
+  content: attr(data-title-before)
+}
+
+.checkboxes_dropdown__label_title_divider_after:after {
+  content: attr(data-title-after)
+}
+
+.checkboxes_dropdown__label_title-not_active {
+  opacity: .5
+}
+
+.checkboxes_dropdown__label_title-not_active {
+  opacity: .5
+}
+
+.control-checkbox {
+  margin: 0 5px 0 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 0
+}
+
+.control-checkbox,.control-checkbox__body {
+  display: inline-block
+}
+
+html.touch .control-checkbox :not(input) {
+  pointer-events: none
+}
+
+.control-checkbox input {
+  position: absolute;
+  opacity: 0;
+  z-index: 4;
+  width: 24px;
+  height: 24px
+}
+
+.control-checkbox__helper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 3;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.control-checkbox__text {
+  line-height: 18px;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: calc(18px + var(--plus_number));
+  margin: 2px 0 0 15px;
+  width: calc(100% - 60px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.control-checkbox-with-label,.firefox .control-checkbox+.control-checkbox__label {
+  vertical-align: top
+}
+
+.control-checkbox+.control-checkbox__label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer
+}
+
+.control-checkbox input:disabled~.control-checkbox__helper {
+  background: #f1f1f1
+}
+
+.control-checkbox input:checked~.control-checkbox__helper {
+  background: #f9f9f9 url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJfeDIwMTRfX0l0ZW1fMV8iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCINCgkgeT0iMHB4IiB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMXB4IiB2aWV3Qm94PSIwIDAgMTIgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyIDExIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJjaGVjay5zdmciPg0KCTxnPg0KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzJFMzY0MCIgZD0iTTExLjQ3NiwwLjE1MWMtMC4zNzctMC4yOTYtMC45OTctMC4xMzktMS4zNTksMC4zMjRMNS4xNTMsNi41Mw0KCQkJQzUuMDc3LDYuNjI0LDQuODg0LDYuNjU3LDQuNzg1LDYuNTk1TDEuNzIzLDQuNjg4QzEuMjQsNC4zNDIsMC42MjQsNC4zNjYsMC4zNDksNC43NTNjLTAuMjY4LDAuMzc4LTAuMTgsMC45OTQsMC4yMDksMS40NjQNCgkJCWwzLjUwOSw0LjIzNEM0LjM2MSwxMC44MDUsNC43NDIsMTEsNS4xNCwxMWMwLjQ2NSwwLDAuODk1LTAuMjY2LDEuMTc3LTAuNzI4bDUuMjY0LTguNjE1QzExLjkxNiwxLjEwOSwxMS44NzEsMC40NjIsMTEuNDc2LDAuMTUxDQoJCQl6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=) no-repeat 6px 6px;
+  background-size: 12px;
+}
+
+.control-checkbox input:checked:disabled~.control-checkbox__helper {
+  background-color: #f1f1f1
+}
+
+.control-checkbox.control-checkbox-dash input~.control-checkbox__helper {
+  background: #fff
+}
+
+.control-checkbox.control-checkbox-dash input~.control-checkbox__helper:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  top: 8px;
+  bottom: 8px;
+  background: #2e3640
+}
+
+
+/* redesign */
+.amoforms__fields__container__inner {
+  margin: 4px 0 4px 0;
+}
+
+.amoforms__fields__container__inner_above {
+  margin: 0px 0 2px 0;
+}
+
+.amoforms__field__name {
+  font-size: calc(18px + var(--plus_number));
+  width: 138px;
+}
+.amoforms__field__control {
+  min-height: 53px;
+  background-color: rgb(249, 249, 249);
+}
+
+.amoforms__field__control.amoforms__field__error,
+.amoforms__field__control_smart_address.amoforms__field__error .amoforms-input-select,
+.amoforms__field__control.amoforms__field__error .amoforms__field__control_smart_address_input  {
+  border-color: #FF6666;
+  border-right: 6px solid #FF6666;
+}
+
+.amoforms__field__control_radiobutton.amoforms__field__error,
+.amoforms__field__control_smart_address.amoforms__field__error,
+.amoforms__field__control_terms.amoforms__field__error,
+.amoforms__field__control_checkbox.amoforms__field__error {
+  border: none;
+}
+
+.amoforms__field__control.amoforms__field__error span.control-checkbox__helper,
+.amoforms__field__control.amoforms__field__error .amoforms__radio__helper {
+  border-color: #FF6666;
+}
+
+.amoforms__field__control .amoforms__field__error_message {
+  display: block;
+  position: absolute;
+  text-align: right;
+  bottom: 3px;
+  right: 4px;
+  width: 95%;
+  height: 11px;
+  color: red;
+  font-size: calc(11px + var(--plus_number));
+  line-height: 11px;
+}
+
+.amoforms__field__control.amoforms__field__control_checkbox .amoforms__field__error_message,
+.amoforms__field__control.amoforms__field__control_terms .amoforms__field__error_message {
+  top: 26px;
+  text-align: right;
+  width: 400px;
+  right: -423px;
+}
+body.MobileDevice .amoforms__field__control.amoforms__field__control_checkbox .amoforms__field__error_message,
+body.MobileDevice .amoforms__field__control.amoforms__field__control_terms .amoforms__field__error_message{
+  right: -338px;
+  top: 30px;
+}
+
+.amoforms__fields__container__inner_radiobutton .amoforms__field__control .amoforms__field__error_message {
+  bottom: -10px;
+  right: 10px;
+}
+
+.amoforms__field__control.amoforms__field__control_smart_address .amoforms__field__error_message {
+  right: 10px;
+}
+
+.amoforms__fields__container__inner_above  .amoforms__field__name:not(.amoforms__field__name amoforms__field__name_terms) label {
+  margin-bottom: 7px;
+}
+.amoforms__field__control_birthday .text-input, .amoforms__field__control_date .text-input, .amoforms__field__control_multitext .text-input, .amoforms__field__control_numeric .text-input, .amoforms__field__control_smart_address_input .text-input, .amoforms__field__control_text .text-input, .amoforms__field__control_url .text-input {
+  font-size: calc(18px + var(--plus_number));
+}
+.amoforms__fields__submit {
+  padding: 18px 0;
+  font-weight: 500px;
+}
+.amoforms__fields__editor-withborders .amoforms__fields__container{
+  padding: 5px 37px 5px 37px;
+  box-sizing: border-box;
+}
+.amoforms__fields__editor-withborders .amoforms__fields__submit{
+  padding: 18px 37px;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  25%, 75% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.amoforms__submit_button_shake {
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+  animation-name: shake;
+}
+.amoforms__field__file_hidden_input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+
+/* Для формы в модальном окне*/
+#amoforms_overlay{
+  -webkit-appearance: none;
+  pointer-events: none;
+}
+#amoforms_overlay .amoforms_iframe{
+  pointer-events: none;
+}
+
+
+/* body.MobileDevice */
+body.MobileDevice #amoforms-embed-code-text,
+body.MobileDevice #amoforms-short-code-text {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .pika-label {
+  font-size: calc(14px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .pika-button,
+body.MobileDevice .pika-table th {
+  font-size: calc(8px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .pika-button {
+  font-size: calc(12px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .pika-week {
+  font-size: calc(10px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .welcome-amoform__list__item__code b {
+  font-size: calc(13px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .welcome-amoform__tab-caption {
+  font-size: calc(12px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .welcome-amoform__form__caption {
+  font-size: calc(24px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__delete-form .button-input-inner__text {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms_inner_modal-content .amoforms_modal_attention {
+  font-size: calc(12px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__tab-editor .amoforms__sidebar__item span {
+  font-size: calc(13px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__toggler {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__field__file_helper_text {
+  font-size: calc(17px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .dz-filename span[data-dz-name] {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__field__control_birthday .text-input,
+body.MobileDevice .amoforms__field__control_date .text-input,
+body.MobileDevice .amoforms__field__control_multitext .text-input,
+body.MobileDevice .amoforms__field__control_numeric .text-input,
+body.MobileDevice .amoforms__field__control_smart_address_input .text-input,
+body.MobileDevice .amoforms__field__control_text .text-input,
+body.MobileDevice .amoforms__field__control_url .text-input {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_radiobutton .amoforms__radio {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_streetaddress .amoforms__textarea,
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_textarea .amoforms__textarea {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_multiselect .amoforms-input-select,
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_select .amoforms-input-select,
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_smart_address .amoforms-input-select {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_multiselect .amoforms-input-select option,
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_select .amoforms-input-select option,
+body.MobileDevice .amoforms__fields__container .amoforms__field__control_smart_address .amoforms-input-select option {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__field__control_header .text-input {
+  font-size: calc(28px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__textarea_paragraph {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__field__required {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__field__settings__row .amoforms__logo_upload label {
+  font-size: calc(11px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__container .amoforms__logo_upload {
+  font-size: calc(13px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__field__required-inside {
+  font-size: calc(22px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__field__control_multiselect select {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__field__control .amoforms__field__action__delete__text,
+body.MobileDevice .amoforms__field__control .amoforms__field__action__edit__text {
+  font-size: calc(13px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__submit .amoforms__submit-button {
+  font-size: calc(16px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__submit .amoforms__submit-button__wrapper .amoforms__submit-button {
+  font-size: calc(14px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__fields__settings__btn {
+  font-size: calc(13px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__tab-editor-right .amoforms__sidebar__header {
+  font-size: calc(12px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__code {
+  font-size: calc(14px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__code-success-inner {
+  font-size: calc(16px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms.colorpicker input[type=text] {
+  font-size: calc(13px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms .colorpicker_field label,
+body.MobileDevice .amoforms .colorpicker_hex label {
+  font-size: calc(12px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms .colorpicker_hex label {
+  font-size: calc(13px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__setting-modal-name-position .amoforms__settings-modal .amoforms__setting-modal-name-position__btn b:before {
+  font-size: calc(12px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__setting-modal-font .amoforms__settings-modal .amoforms__settings-modal__font-family {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .checkboxes_dropdown__title-selected {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .checkboxes_dropdown__list {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .checkboxes_dropdown__label_title {
+  font-size: calc(15px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .checkboxes_dropdown__label_title_divider_after:after,
+body.MobileDevice .checkboxes_dropdown__label_title_divider_before:before {
+  font-size: calc(14px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .control-checkbox__text {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+  width: calc(100% - 100px);
+}
+body.MobileDevice .amoforms__field__name {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}
+body.MobileDevice.amoforms__field__control .amoforms__field__error_message {
+  font-size: calc(11px + var(--plus_mobile_font_size));
+}
+body.MobileDevice .amoforms__field__control_birthday .text-input,
+body.MobileDevice .amoforms__field__control_date .text-input,
+body.MobileDevice .amoforms__field__control_multitext .text-input,
+body.MobileDevice .amoforms__field__control_numeric .text-input,
+body.MobileDevice .amoforms__field__control_smart_address_input .text-input,
+body.MobileDevice .amoforms__field__control_text .text-input,
+body.MobileDevice .amoforms__field__control_url .text-input {
+  font-size: calc(18px + var(--plus_mobile_font_size));
+}

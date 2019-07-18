@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Курсы frontend в Киеве: обучение HTML,CSS, JavaScript - Mobios School</title>
+  <meta name="description" content="Обучение Front-End: HTML/CSS + JS в Киеве за 3,5 месяца по доступной цене в удобное для Вас время. Также занятия по верстке ведут опытные специалисты"/>
+  <meta name="keywords" content="front end курсы киев, front end разработка курсы в киеве, курсы разработки сайта в киеве, курсы по разработке сайта киев, курсы html киев, курсы front end киев"/>
+  <meta property="og:image" content="images/mobios.png">
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/kyiv.frontend-main.min.css">
+
+  <style>
+    #preloader {
+      display: none;
+
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      background: #141414;
+    }
+    #preloader #loader {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    #preloader #circles {
+      height: 100px;
+      width: 100px;
+      border-bottom: 3px solid #535353;
+      border-radius: 50%;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    #preloader #circles:before {
+      border-top: 3px solid #ffffff;
+      height: 90px;
+      width: 90px;
+      margin: 5px;
+      border-radius: 50%;
+      display: inline-block;
+      content: "";
+      -webkit-animation: spin 4s linear infinite;
+      animation: spin 4s linear infinite;
+    }
+    #preloader #circles:after {
+      border-left: 3px solid #353535;
+      height: 80px;
+      width: 80px;
+      margin: 15px 10px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      content: "";
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes circle {
+      0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+      40% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+      }
+      100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+      }
+    }
+    @keyframes circle {
+      0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+      40% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+      }
+      100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+  <!-- Google Tag Manager
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MQV3H6Q');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript)
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQV3H6Q"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="preloader">
+  <div id="loader">
+    <div id="circles"></div>
+  </div>
+</div>
+
+<!--HEADER-->
+<section id="courses-header" class="portal-header">
+  <div class="portal-header-container">
+    <div class="portal-header-logo-wrapper">
+      <a class="portal-header-link portal-template-over-particles" href="http://mobios.school/">
+        <img src="images/mobios-logo.svg" alt="" class="portal-header-logo">
+      </a>
+    </div>
+    <div class="portal-header-menu-wrapper">
+      <ul class="portal-header-menu portal-template-over-particles">
+        <li class="portal-header-menu-item">
+          <a href="#" class="portal-header-menu-link courses-link">Курсы</a>
+          <ul class="city-selection-list">
+            <li class="city-selection-item"><a href="/courses-odessa" class="city-selection-link square">Одесса</a></li>
+            <li class="city-selection-item"><a href="/courses-kyiv" class="city-selection-link">Киев</a></li>
+            <li class="city-selection-item"><a href="/courses-online" class="city-selection-link">Онлайн</a></li>
+          </ul>
+        </li>
+        <li class="portal-header-menu-item"><a href="/blog" class="portal-header-menu-link">Блог</a></li>
+        <li class="portal-header-menu-item"><a href="/kak-prohodiat-kursi" class="portal-header-menu-link">Как проходят
+          занятия</a></li>
+        <li class="portal-header-menu-item"><a href="/about-school" class="portal-header-menu-link">О школе</a></li>
+        <li class="portal-header-menu-item"><a href="/contacts" class="portal-header-menu-link">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="portal-header-contacts-wraper">
+      <div class="portal-header-phone-wraper">
+        <p class="portal-header-contacts-item"><a class="portal-template-over-particles" href="tel:+380637122713">+38
+          (063) 712-27-13</a></p>
+        <p class="portal-header-contacts-item"><a class="portal-template-over-particles" href="tel:+380950977891">+38
+          (095) 097-78-91</a></p>
+      </div>
+      <div class="portal-header-mobile-menu-wrapper portal-template-over-particles">
+        <div class="portal-header-mobile-menu-hamburger">
+          <span class="portal-header-mobile-menu-hamburger-line"></span>
+          <span class="portal-header-mobile-menu-hamburger-line"></span>
+          <span class="portal-header-mobile-menu-hamburger-line"></span>
+        </div>
+      </div>
+      <!--JS, который управляет мобильным меню, находится в js-файле конкретного лендинга, с пометкой "Header-mobile-menu"-->
+      <div class="portal-header-mobile-menu-dropdown portal-template-over-particles">
+        <ul class="portal-header-mobile-menu">
+          <li class="portal-header-mobile-menu-item"><a href="/courses-odessa" class="portal-header-mobile-menu-link">Курсы
+            Одесса</a></li>
+          <li class="portal-header-mobile-menu-item"><a href="/courses-kyiv" class="portal-header-mobile-menu-link">Курсы
+            Киев</a></li>
+          <li class="portal-header-mobile-menu-item"><a href="/courses-online" class="portal-header-mobile-menu-link">Курсы
+            онлайн</a></li>
+          <li class="portal-header-mobile-menu-item"><a href="/blog" class="portal-header-mobile-menu-link">Блог</a>
+          </li>
+          <li class="portal-header-mobile-menu-item">
+            <a href="/kak-prohodiat-kursi" class="portal-header-mobile-menu-link">Как проходят занятия</a></li>
+          <li class="portal-header-mobile-menu-item"><a href="/about-school" class="portal-header-mobile-menu-link">О
+            школе</a></li>
+          <li class="portal-header-mobile-menu-item">
+            <a href="/contacts" class="portal-header-mobile-menu-link">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!--HEADER_END--><!--<div id="particles-js">-->
+<!--    <canvas class="particles-js-canvas-el" width="1903" height="553" style="width: 100%; height: 100%;"></canvas>-->
+<!--</div>-->
+<main>
+  <div class="section home relative">
+    <div class="general">
+      <div class="course-wrapper">
+        <p class="text-1 relative wow fadeInUp animated" data-wow-duration=".4s" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+          11 сентября <span class="relative year">2018</span></p>
+        <div class="typed-wrap relative wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">
+          <h1 class="text-2">Курсы FRONT-END<br>в Киеве</h1>
+        </div>
+        <div class="red-block wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s">
+          <h1 class="title-general">Обучение HTML, CSS, Javascript, jQuery</h1>
+          <div class="pricing">
+            <span class="relative main-price">3 800 грн/мес</span>
+            <span class="relative line-through-price">4 000 грн/мес</span>
+          </div>
+          <p class="text-3 relative wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.5s">от А до Я
+            <span class="relative">за 3,5 месяца</span></p>
+        </div>
+      </div>
+
+      <div class="white-block wow fadeIn" data-wow-duration=".4s" data-wow-delay="0.6s">
+        <div class="btn-form">
+          <a href="javascript:void(0);" class="portal-template-open-popup" data-index="5">Записаться на консультацию
+            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 209 8.7" style="enable-background:new 0 0 209 8.7;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                              fill: none;
+                              stroke-width: 2;
+                              stroke-miterlimit: 10;
+                            }
+                        </style>
+                            <path class="st0" d="M0,4.1c3.7,0,7.3,2,11,2s7.3-2,11-2s7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2
+                            s7.3-2,11-2c3.7,0,7.3,2,11,2c3.7,0,7.3-2,11-2c3.7,0,7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2
+                             s7.3-2,11-2s7.3,2,11,2s7.3-2,11-2s7.3,2,11,2"/>
+                        </svg>
+          </a>
+        </div>
+        <div class="btn-info">
+          <a href="#block-prog" data-index="1">Узнать о курсе
+            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 125 6.3" style="enable-background:new 0 0 125 6.3;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                              fill: none;
+                              stroke-width: 2;
+                              stroke-miterlimit: 10;
+                            }
+                        </style>
+                            <path class="st0" d="M0,2.5c3.9,0,3.9,2,7.8,2c3.9,0,3.9-2,7.8-2c3.9,0,3.9,2,7.8,2c3.9,0,3.9-2,7.8-2c3.9,0,3.9,2,7.8,2
+                               c3.9,0,3.9-2,7.8-2c3.9,0,3.9,2,7.8,2c3.9,0,3.9-2,7.8-2c3.9,0,3.9,2,7.8,2c3.9,0,3.9-2,7.8-2c3.9,0,3.9,2,7.8,2c3.9,0,3.9-2,7.8-2
+                               c3.9,0,3.9,2,7.8,2c3.9,0,3.9-2,7.8-2c3.9,0,3.9,2,7.8,2c3.9,0,3.9-2,7.8-2"/>
+                        </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section about-us container">
+    <div class="left type-menu relative"></div>
+    <div class="icon wave-fly relative">
+      <p class="number wow fadeInUp z-index relative" data-wow-duration=".4s"><span class="relative">01</span></p>
+      <h3 class="title-icon wow fadeInUp z-index relative" data-wow-duration=".4s" data-wow-delay="0.2s">О нас в
+        цифрах</h3>
+      <div class="text-block">
+        <div class="description">
+          <div class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">
+            <img src="images/icon-1.png" alt="icon">
+          </div>
+          <p class="title-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s">2013</p>
+          <p class="text-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s">год основания школы</p>
+        </div>
+        <div class="description">
+          <div class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration=".4s">
+            <img src="images/icon-2.png" alt="icon">
+          </div>
+          <p class="title-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">ТОП 10</p>
+          <p class="text-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">в рейтинге IT школ
+            Украины</p>
+        </div>
+        <div class="description">
+          <div class="wow fadeInUp" data-wow-delay="0.7s" data-wow-duration=".4s">
+            <img src="images/icon-3.png" alt="icon">
+          </div>
+          <p class="title-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.8s">Более 150</p>
+          <p class="text-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.8s">выпускников в год</p>
+        </div>
+        <div class="description">
+          <div class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.9s">
+            <img src="images/icon-4.png" alt="icon">
+          </div>
+          <p class="title-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1s">Более 150</p>
+          <p class="text-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1s">страниц учебных
+            материалов</p>
+        </div>
+        <div class="description">
+          <div class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1.1s">
+            <img src="images/icon-5.png" alt="icon">
+          </div>
+          <p class="title-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1.2s">Более 4</p>
+          <p class="text-description wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1.2s">проектов в
+            портфолио</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+
+        <div class="table-place">
+          <h3 class="table-price ">Дорогие студенты, записывайтесь, пожалуйста, заранее! Количество мест ограничено!
+            <b class="red-text">осталось 3 места</b></h3>
+          <table class="table-price">
+            <thead>
+            <tr class="table-row-tw">
+              <th><p>Стоимость</p></th>
+              <th><p>с 20 апреля до 20 мая </p></th>
+              <th><p>с 20 мая до 20 июня</p></th>
+              <th><p>с 20 июня до 15 августа</p></th>
+              <th><p>с 15 августа до 2 сентября </p></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row-tw">
+              <td><p class="main-price">ЦЕНА ЗА МЕСЯЦ </p></td>
+              <td><p class="main-price  line-through">3 200 грн</p></td>
+              <td><p class="main-price line-through">3 400 грн</p></td>
+              <td><p class="main-price line-through ">3 600 грн</p></td>
+              <td><p class="main-price red-text">3 800 грн</p></td>
+            </tr>
+            <tr class="table-row-tw full-course-row">
+              <td colspan="5">
+                <p class="full-course-price">РАСЧЕТ СТОИМОСТИ ОПЛАТЫ ЗА КУРС:</p>
+              </td>
+            </tr>
+            <tr class="table-row-tw  ">
+            </tr>
+            <tr class="first-row">
+              <td><p class="ti-title">При оплате за полный курс <span class="red-text">-10%</span></p></td>
+              <td><p class="ti-price line-through">8 650 грн</p></td>
+              <td><p class="ti-price line-through"> 9 180грн</p></td>
+              <td><p class="ti-price  line-through ">9 750грн</p></td>
+              <td><p class="ti-price red-text">10 250 грн</p></td>
+            </tr>
+            <tr class="table-row-tw  ">
+            <tr class="table-row-tw">
+              <td><p class="economy">Экономия</p></td>
+              <td><p class="economy line-through">900 грн</p></td>
+              <td><p class="economy line-through">1020 грн</p></td>
+              <td><p class="economy  line-through ">1 080 грн</p></td>
+              <td><p class="economy red-text">1 150 грн</p></td>
+            </tr>
+            <tr class="table-row-tw  ">
+            <tr class="table-row-tw">
+              <td><p class="ti-title">При оплате за 2 мес <span class="red-text">-8%</span></p></td>
+              <td><p class="ti-price line-through">8 850 грн</p></td>
+              <td><p class="ti-price line-through">9 400 грн</p></td>
+              <td><p class="ti-price  line-through">9 950 грн</p></td>
+              <td><p class="ti-price red-text ">10 500 грн</p></td>
+            </tr>
+            <tr class="table-row-tw  ">
+              <td><p class="economy">Экономия</p></td>
+              <td><p class="economy line-through ">750 грн</p></td>
+              <td><p class="economy line-through">800 грн</p></td>
+              <td><p class="economy line-through">850 грн</p></td>
+              <td><p class="economy red-text">920 грн</p></td>
+            </tr>
+            <tr class="table-row-tw  ">
+              <td><p class="ti-title">При оплате за 1 мес <span class="red-text">0%</span></p></td>
+              <td><p class="ti-price line-through "> 9 600 грн</p></td>
+              <td><p class="ti-price line-through ">10 200 грн</p></td>
+              <td><p class="ti-price line-through ">10 800грн</p></td>
+              <td><p class="ti-price red-text">11 400грн</p></td>
+            </tr>
+            <tr class="table-row-tw  ">
+              <td><p class="economy">Экономия</p></td>
+              <td><p class="economy  line-through">0 грн</p></td>
+              <td><p class="economy line-through">0 грн</p></td>
+              <td><p class="economy line-through">0 грн</p></td>
+              <td><p class="economy red-text">0 грн</p></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section students">
+    <div class="video wave-fly relative ">
+      <div class="container">
+        <p class="number wow fadeInUp z-index relative" data-wow-duration=".4s"><span class="relative">02</span></p>
+        <h3 class="title-students wow fadeInUp z-index relative" data-wow-duration=".4s" data-wow-delay="0.2s">Наша
+          ценность - наши ученики и клиенты</h3>
+        <div class="reviews-wrap">
+          <div class="video-review  relative wow fadeInUp z-index" data-wow-duration=".4s" data-wow-delay="0.3s" data-gif="images/student-1.png">
+            <div class="video-wrapper">
+              <a class="video-link" href="javascript:void(0);" data-href="https://www.youtube.com/embed/GZ5eDyqzzu4" rel="nofollow">
+                <img class="gif" src="" alt="gif">
+                <img src="images/student-1.png" alt="video-preview-2" class="student-img" title="video-preview-2">
+              </a>
+              <img class="play-btn" src="images/play-button.png" alt="button">
+            </div>
+          </div>
+          <div class="video-review  relative wow fadeInUp z-index" data-wow-duration=".4s" data-wow-delay="0.4s" data-gif="images/student-2.png">
+            <div class="video-wrapper">
+              <a class="video-link" href="javascript:void(0);" data-href="https://www.youtube.com/embed/-kzA3JngxIs" rel="nofollow">
+                <img class="gif" src="" alt="gif">
+                <img src="images/student-2.png" alt="video-preview-1" class="student-img" title="video-preview-1">
+              </a>
+              <img class="play-btn" src="images/play-button.png" alt="button">
+            </div>
+          </div>
+          <div class="video-review video-review-3 relative wow fadeInUp z-index" data-wow-duration=".4s" data-wow-delay="0.5s" data-gif="images/student-3.png">
+            <div class="video-wrapper">
+              <a class="video-link" href="javascript:void(0);" data-href="https://www.youtube.com/embed/H6Vk37lrWMY" rel="nofollow">
+                <img class="gif" src="" alt="gif">
+                <img src="images/student-3.png" alt="video-preview-4" class="student-img" title="video-preview-4">
+              </a>
+              <img class="play-btn" src="images/play-button.png" alt="button">
+            </div>
+          </div>
+          <div class="video-review  relative wow fadeInUp z-index" data-wow-duration=".4s" data-wow-delay="0.6s" data-gif="images/student-4.png">
+            <div class="video-wrapper">
+              <a class="video-link" href="javascript:void(0);" data-href="https://www.youtube.com/embed/ReSLQ9fJOL8" rel="nofollow">
+                <img class="gif" src="" alt="gif">
+                <img src="images/student-4.png" alt="video-preview-3" class="student-img" title="video-preview-3">
+              </a>
+              <img class="play-btn" src="images/play-button.png" alt="button">
+            </div>
+          </div>
+          <div class="video-review  relative wow fadeInUp z-index" data-wow-duration=".4s" data-wow-delay="0.7s" data-gif="images/Sveta.gif">
+            <div class="video-wrapper">
+              <a class="video-link" href="javascript:void(0);" data-href="https://www.youtube.com/embed/05RwPYVwhu4" rel="nofollow">
+                <img class="gif" src="" alt="gif">
+                <img src="images/student-5.png" alt="video-preview-5" class="student-img" title="video-preview-5">
+              </a>
+              <img class="play-btn" src="images/play-button.png" alt="button">
+            </div>
+          </div>
+          <div class="info-text  z-index relative">
+            <p class="info-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.8s">
+              Более <span class="red-number">70%</span> <span class="bold">наших студентов</span>
+              <br> стали <span class="red-bg relative">успешными frontend разработчиками</span>
+            </p>
+            <p class="info-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.9s">
+              Когда нас спрашивают о наших результатах, мы не рассказываем о себе.
+              <br>Ключевой показатель успеха для нас - это успехи наших учеников.
+            </p>
+            <a class="relative info-3 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1s" href="https://www.youtube.com/playlist?list=PL7UwOX2KwcIRQQ-Ve0Qgl8CVs6QYA3BDf" rel="nofollow">
+              Вдохновиться историями успеха
+              <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 286 9" style="enable-background:new 0 0 286 9;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                          fill: none;
+                          stroke-width: 2;
+                          stroke-miterlimit: 10;
+                        }
+                    </style>
+                                <path class="st0" d="M0,3.8c4.1,0,8.3,2,12.4,2s8.3-2,12.4-2s8.3,2,12.4,2s8.3-2,12.4-2s8.3,2,12.4,2s8.3-2,12.4-2s8.3,2,12.4,2
+                        s8.3-2,12.4-2s8.3,2,12.4,2s8.3-2,12.4-2c4.1,0,8.3,2,12.4,2s8.3-2,12.4-2s8.3,2,12.4,2s8.3-2,12.4-2s8.3,2,12.4,2s8.3-2,12.4-2
+                        s8.3,2,12.4,2s8.3-2,12.4-2s8.3,2,12.4,2c4.1,0,8.3-2,12.4-2s8.3,2,12.4,2s8.3-2,12.4-2s8.3,2,12.4,2"/>
+                    </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section mobios container">
+    <div class="left type-menu relative"></div>
+    <div class="course relative">
+      <p class="number wow fadeInUp z-index relative" data-wow-duration=".4s"><span class="relative">03</span></p>
+      <h3 class="title-course wow fadeInUp z-index relative" data-wow-duration=".4s" data-wow-delay="0.2s">Что входит в
+        курс</h3>
+      <div class="gray-block">
+
+        <div class="what-include">
+          <div class="relative step line-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">
+            <img class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s" src="images/img1.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">65<span>часов</span></p>
+              <p class="text-step">интенсивных <br> практических занятий</p>
+            </div>
+          </div>
+          <div class="relative step line-1 wow fadeInUp" data-wow-delay="0.4s">
+            <img class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s" src="images/img2.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">150+<span>страниц</span></p>
+              <p class="text-step">лекционных <br> материалов и заданий</p>
+            </div>
+          </div>
+          <div class="relative step line-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.5s">
+            <img class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.5s" src="images/img3.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">26+</p>
+              <p class="text-step">видеоматериалов, <br> лекций, стратегий</p>
+            </div>
+          </div>
+          <div class="relative step line-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">
+            <img class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s" src="images/img4.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">12+<span>лет</span></p>
+              <p class="text-step">опыта работы в студии <br> преподавателей</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="base wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1.2s">
+          <p class="base-1 relative">База знаний MOBIOS</p>
+          <p class="base-2">Большой <span>практический опыт и пошаговое руководство</span>
+            <br>к успешной карьере FRONT-END разработчика</p>
+        </div>
+
+        <div class="what-include">
+          <div class="relative step line-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.7s">
+            <img class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.7s" src="images/img5.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">12 <span>компов</span></p>
+              <p class="text-step">для практики <br> в режиме разработчика</p>
+            </div>
+          </div>
+          <div class="relative step line-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.8s">
+            <img class="wow fadeInUp" data-wow-delay="0.8s" data-wow-duration=".4s" src="images/img6.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">3-4 <span>проекта</span></p>
+              <p class="text-step">проработаных <br> для вашего портфолио</p>
+            </div>
+          </div>
+          <div class="relative step line-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.9s">
+            <img class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.9s" src="images/img7.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">50 <span>кг</span></p>
+              <p class="text-step">кофе, чая <br> и печенек</p>
+            </div>
+          </div>
+          <div class="relative step line-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1s">
+            <img class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1s" src="images/img8.png" alt="image">
+            <div class="text-course">
+              <p class="title-step">15 +</p>
+              <p class="text-step">инструментов <br> ускоряющих работу</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="plus center  wow fadeInUp" data-wow-duration=".4s" data-wow-delay="1.2s">
+        <p class="relative"><span>+ After Party</span> открытый выпускной</p>
+      </div>
+    </div>
+  </div>
+  <div class="section program" id="block-prog">
+    <div class="program-course">
+      <div class="container">
+        <div class="top-program">
+          <p class="number wow fadeInUp z-index relative"><span class="relative">04</span></p>
+          <h3 class="title-program wow fadeInUp z-index relative" data-wow-duration=".4s" data-wow-delay="0.3s">
+            Программа курса</h3>
+        </div>
+        <div class="program-bottom relative z-index">
+          <div class="empty wow fadeIn" data-wow-duration=".4s" data-wow-delay="0.5s">
+            <p class="soon">уже совсем <span>скоро</span></p>
+            <p class="one-step">ваш успех всего в одном шаге</p>
+          </div>
+          <div class="choice">
+            <ul>
+              <li data-tab="list-1" data-parent="list" class="active wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">
+                <span class="relative"></span>
+                <div class="mask-day active">
+                  <p class="relative">65 часов</p>
+                  <p class="text-day">26 уроков</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="program-list active scroll-item wow fadeInRight" data-parent="list" data-tabs="list-1">
+            <div class="row js-masonry">
+              <div class="item-masonry columns">
+                <div class="grey">
+                  <div class="block-num">
+                    <span class="block-num-span-1">1</span><span class="block-num-span-2">Блок</span></div>
+                  <div class="block-content">
+                    <p class="block-title">Введение в HTML5, CCS</p>
+                    <ul>
+                      <li>понятие «тегов»</li>
+                      <li>структура кода</li>
+                      <li>основные HTML элементы</li>
+                      <li>знакомство с каскадными таблицами стилей;</li>
+                      <li>селекторы, псевдоэлементы;</li>
+                      <li>способы подключения css;</li>
+                      <li>блочные и строчные элементы</li>
+                      <li>подключение собственных шрифтов;</li>
+                      <li>основные свойства шрифтов</li>
+                      <li>основы работы с Photoshop / Avocode;</li>
+                      <li>понятие «блочной верстки»;</li>
+                      <li>верстка из PSD - макета;</li>
+                      <li>позиционирование;</li>
+                      <li>подключение внешних ресурсов.</li>
+                    </ul>
+                  </div>
+                  <div class="block-bottom-content">
+                    <span class="practice">7 уроков</span><span class="theory"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-masonry columns">
+                <div class="grey">
+                  <div class="block-num">
+                    <span class="block-num-span-1">2</span><span class="block-num-span-2">Блок</span></div>
+                  <div class="block-content">
+                    <p class="block-title">Flexbox, Адаптивная верстка, фреймоврк Bootstrap 4</p>
+                    <ul>
+                      <li>медиа-запросы;</li>
+                      <li>адаптация-Responsive design;</li>
+                      <li>верстка макета под планшеты и телефоны;</li>
+                      <li>вендорные префиксы</li>
+                      <li>понятие «фреймворка» и специфика работы с ним;</li>
+                      <li>установка Bootstrap;</li>
+                      <li>CSS-компоненты;</li>
+                      <li>JS-компоненты;</li>
+                      <li>верстка примера.</li>
+                    </ul>
+                  </div>
+                  <div class="block-bottom-content">
+                    <span class="practice">6 уроков</span><span class="theory"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-masonry columns">
+                <div class="grey">
+                  <div class="block-num">
+                    <span class="block-num-span-1">3</span><span class="block-num-span-2">Блок</span></div>
+                  <div class="block-content">
+                    <p class="block-title">РАБОТА С WORDPRESS, базы данных, хостинг</p>
+                    <ul>
+                      <li>понятие хостинга;</li>
+                      <li>личный кабинет в панели управления хостингом;</li>
+                      <li>работа с доменами и базами данных.</li>
+                      <li>понятие CMS;</li>
+                      <li>установка Open Server;</li>
+                      <li>установка Wordpress на локальный сервер;</li>
+                      <li>основы работы с базой данных, phpMyAdmin.</li>
+                      <li>знакомство с admin-панелью;</li>
+                      <li>создание и редактирование страниц;</li>
+                      <li>создание пунктов меню;</li>
+                      <li>выбор и установка темы.</li>
+                    </ul>
+                  </div>
+                  <div class="block-bottom-content">
+                    <span class="practice">5 уроков</span><span class="theory"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-masonry columns">
+                <div class="grey">
+                  <div class="block-num">
+                    <span class="block-num-span-1">4</span><span class="block-num-span-2">Блок</span></div>
+                  <div class="block-content">
+                    <p class="block-title">ВВЕДЕНИЕ В ПРОГРАММИРОВАНИЕ, Основы JavaScript </p>
+                    <ul>
+                      <li>языки программирования, их виды и назначение</li>
+                      <li>алгоритмы в программировании;</li>
+                      <li>простейшие программы;</li>
+                      <li>введение в JavaScript;</li>
+                      <li>синтаксические и семантические составляющие языка;</li>
+                      <li>переменные и функции в JS;</li>
+                      <li>особенности работы языка в браузере, DOM.</li>
+                    </ul>
+                  </div>
+                  <div class="block-bottom-content">
+                    <span class="practice">4 урока</span><span class="theory"> <span class="br"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-masonry columns">
+                <div class="grey">
+                  <div class="block-num">
+                    <span class="block-num-span-1">6</span><span class="block-num-span-2">Блок</span></div>
+                  <div class="block-content">
+                    <p class="block-title">ПОДГОТОВКА ДИПЛОМНОЙ РАБОТЫ</p>
+                    <ul>
+                      <li>интеграция jQuery в дипломный проект;</li>
+                      <li>работа с мобильным меню проекта;</li>
+                      <li>подготовка проекта;</li>
+                      <li>тестирование проекта.</li>
+                    </ul>
+                    <br>
+                    <br>
+                  </div>
+                  <div class="block-bottom-content">
+                    <span class="practice"> 2 урока </span><span class="theory"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-masonry columns">
+                <div class="grey">
+                  <div class="block-num">
+                    <span class="block-num-span-1">5</span><span class="block-num-span-2">Блок</span></div>
+                  <div class="block-content">
+                    <p class="block-title">Знакомство с jQuery. Основные функции библиотеки</p>
+                    <ul>
+                      <li>Функция $();</li>
+                      <li>Отбор елементов по id и классу, тегам;</li>
+                      <li>Работа с атрибутами;</li>
+                      <li>Манипулирование классами;</li>
+                      <li>Обработчики событий</li>
+                    </ul>
+                  </div>
+                  <div class="block-bottom-content">
+                    <span class="practice">2 урока</span><span class="theory"> <span class="br"></span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section price relative">
+    <div class="container">
+      <div class="relative z-index websafari-price">
+        <p class="number wow fadeInUp" data-wow-duration=".4s"><span class="relative">05</span></p>
+        <h3 class="title-price wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.2s">Стоимость курса</h3>
+        <div class="websafari-price-inner">
+          <div class="price-list  wow fadeInRight clearfix" data-wow-duration=".4s" data-wow-delay="0.4s">
+            <div class="top-list relative">
+              <div class="price-list-title">
+                <p class="place">Осталось <span>3 места</span></p>
+                <p class="name-course">Standart</p>
+              </div>
+              <div class="course-info">
+                <div class="course-info-content">
+                  <p class="course-start">старт <span>11 сентября</span></p>
+                  <p class="old-price">3 900 грн</p>
+                  <p class="new-price">3 800 <span>грн/мес</span></p>
+                  <p class="before-increase">до 02 августа </p>
+                </div>
+                <div class="course-info-conditions">
+                  <ul>
+                    <li>при оплате за весь курс - 10% от общей стоимости;</li>
+                    <li>при оплате за 2 мес -5%;</li>
+                    <li>приводишь друга -5% от общей стоимости;</li>
+                    <li>запись на 2 курса -10%</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="up">
+              <div class="increase">
+                <p>повышение через:</p>
+              </div>
+              <div class="timer-class">
+                <div id="time-wrapper-1">
+                			<span class="time-wrapper-item">
+                				<span id="clock-a-1" class="timer-item"></span>
+                				<span>дней</span>
+                			</span>
+                  <span class="time-wrapper-item">
+                				<span id="clock-b-1" class="timer-item"></span>
+                			</span>
+                  <span class="time-wrapper-item">
+                				<span id="clock-c-1" class="timer-item"></span>
+                			</span>
+                  <span class="time-wrapper-item">
+                				<span id="clock-d-1" class="timer-item"></span>
+                			</span>
+                </div>
+              </div>
+            </div>
+            <ul class="bg-price scroll-item">
+              <li class="true">Личное пространство в офисе студии: компьютер разработчика</li>
+              <li class="true">Работа и обучение в группе с 10-12 человек под руководством преподавателей</li>
+              <li class="true">Проверка ваших практических работ руководителем курса с пн - пт</li>
+              <li class="true">Доступ ко всем записям по обучению по программе курса</li>
+              <li class="true">Методические материалы в удобном для изучения виде</li>
+              <li class="true">Возможность личных знакомств</li>
+              <li class="true">Кофе-брейки</li>
+              <li class="true">Доступ к закрытому чату группы</li>
+              <li class="true">Подарки от студии</li>
+              <li class="false">Доступ ко ВСЕМ видеоматериалам курса</li>
+              <li class="false">Личная консультация и индивидуальная проработка работ от Art-директора студии</li>
+            </ul>
+            <div class="btn-price portal-template-open-popup">
+              <a href="javascript:void(0);">Стать участником
+                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 152 8.2" style="enable-background:new 0 0 152 8.2;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                              fill: #FFFFFF;
+                            }
+                            .st1 {
+                              fill: none;
+                              stroke: #E53935;
+                              stroke-width: 2;
+                              stroke-miterlimit: 10;
+                            }
+                        </style>
+                                    <line class="st0" x1="0" y1="4.7" x2="152" y2="4.7"/>
+                                    <path class="st1" d="M0,3.7c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2
+                                c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2s4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2
+                                c4,0,4,2,8,2"/>
+                        </svg>
+              </a>
+            </div>
+          </div>
+          <div class="price-list  wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.5s">
+            <div class="top-list relative">
+              <div class="price-list-title">
+                <p class="place">Осталось <span>0 мест</span></p>
+                <p class="name-course">VIP</p>
+              </div>
+              <div class="course-info">
+                <div class="course-info-content">
+                  <p class="course-start">старт <span>11 сентября</span></p>
+                  <p class="old-price">4 500 грн</p>
+                  <p class="new-price">4 000 <span>грн/мес</span></p>
+                  <p class="before-increase">до 15 августа</p>
+                </div>
+                <div class="course-info-conditions">
+                  <ul>
+                    <li>при оплате за весь курс - 10% от общей стоимости;</li>
+                    <li>при оплате за 2 мес -5%;</li>
+                    <li>приводишь друга -5% от общей стоимости;</li>
+                    <li>запись на 2 курса -10%</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="up">
+              <div class="increase">
+                <p>повышение через:</p>
+              </div>
+              <div class="timer-class">
+                <div id="time-wrapper">
+                			<span class="time-wrapper-item">
+                				<span id="clock-a" class="timer-item"></span>
+                				<span>дней</span>
+                			</span>
+                  <span class="time-wrapper-item">
+                				<span id="clock-b" class="timer-item"></span>
+                			</span>
+                  <span class="time-wrapper-item">
+                				<span id="clock-c" class="timer-item"></span>
+                			</span>
+                  <span class="time-wrapper-item">
+                				<span id="clock-d" class="timer-item"></span>
+                			</span>
+                </div>
+              </div>
+            </div>
+            <ul class="bg-price scroll-item">
+              <li class="true">Личное пространство в офисе студии: компьютер разработчика</li>
+              <li class="true">Работа и обучение в группе с 10-12 человек под руководством преподавателей</li>
+              <li class="true">Проверка ваших практических работ руководителем курса с пн - пт</li>
+              <li class="true">Доступ ко всем записям по обучению по программе курса</li>
+              <li class="true">Методические материалы в удобном для изучения виде</li>
+              <li class="true">Возможность личных знакомств</li>
+              <li class="true">Кофе-брейки</li>
+              <li class="true">Доступ к закрытому чату группы</li>
+              <li class="true">Подарки от студии</li>
+              <li class="true">Доступ ко ВСЕМ видеоматериалам курса</li>
+              <li class="true">Личная консультация и индивидуальная проработка работ от Art-директора студии</li>
+            </ul>
+            <div class="btn-price portal-template-open-popup">
+              <a href="javascript:void(0);">Стать участником
+                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 152 8.2" style="enable-background:new 0 0 152 8.2;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                              fill: #FFFFFF;
+                            }
+                            .st1 {
+                              fill: none;
+                              stroke: #E53935;
+                              stroke-width: 2;
+                              stroke-miterlimit: 10;
+                            }
+                        </style>
+                                    <line class="st0" x1="0" y1="4.7" x2="152" y2="4.7"/>
+                                    <path class="st1" d="M0,3.7c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2
+                                c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2s4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2c4,0,4,2,8,2c4,0,4-2,8-2
+                                c4,0,4,2,8,2"/>
+                        </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section for">
+    <div class="container">
+      <div class="all-for wave-fly relative">
+        <p class="number wow fadeInUp z-index relative" data-wow-duration=".4s"><span class="relative">06</span></p>
+        <h3 class="title-for wow fadeInUp z-index relative" data-wow-duration=".4s" data-wow-delay="0.1s">Что
+          получите</h3>
+        <div class="gray-for-1 z-index relative">
+          <p class="for-whom wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.2s">Результат</p>
+          <div class="gray-for-wrap">
+            <div class="box">
+              <p class="num wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">1</p>
+              <p class="for-description-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">
+                навык <br>
+                создания</p>
+              <p class="for-description-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">
+                Верстки любых типов сайтов;<br>
+                Любые интерфейсы;<br>
+                Прототипы;<br>
+                Веб-сервисы.</p>
+            </div>
+            <div class="box">
+              <p class="num wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s">2</p>
+              <p class="for-description-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s">
+                мастерство <br>
+                владения</p>
+              <p class="for-description-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s">
+                Профессинальными программами;<br>
+                Работа с хостингом;<br>
+                СSS3/HTML5/JS;<br>
+                Прототипированием;<br>
+                SEO-оптимизацией сайтов.</p>
+            </div>
+            <div class="box">
+              <p class="num wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.5s">3</p>
+              <p class="for-description-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.5s">
+                3-5 работ <br>
+                в портфолио</p>
+              <p class="for-description-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.5s">
+                Верстка лендинга;<br>
+                Адаптивкая верстка;<br>
+                CSS-фреймворки Twitter Bootstrap;<br>
+
+              </p>
+            </div>
+            <div class="box">
+              <p class="num wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">4</p>
+              <p class="for-description-1 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">
+                По окончанию <br>
+                курса</p>
+              <p class="for-description-2 wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">
+                Вы получите востребованную профессию
+                Front-end разработчика (верстальщика)
+                сайтов и интерфесов; <br>
+                сможете работать в офисе или
+                фрилансером в любой точке мира.
+              </p>
+            </div>
+          </div>
+          <div class="laptop relative wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <section class="news">
+    <div class="container">
+      <p class="number wow fadeInUp z-index relative" data-wow-duration=".4s"><span class="relative">07</span></p>
+      <h3 class="title-review wow fadeInUp z-index relative" data-wow-duration=".4s" data-wow-delay="0.2s">Новости</h3>
+      <div class="news__wrap">
+        <div class="news__item">
+          <div class="news__poster">
+            <a href="//mobios.school/blog/frontend-gde-nayti-rabotu-i-chto-nuzhno-znat">
+              <img src="images/iStock-478635048.jpg" alt="">
+            </a>
+          </div>
+          <a class="news__name" href="//mobios.school/blog/frontend-gde-nayti-rabotu-i-chto-nuzhno-znat">Как стать
+            фронтендщиком</a>
+          <p class="news__txt">
+            Начинать никогда не поздно, вот только лучше, если получать необходимые знания вы начнете на каком-то там
+            первом курсе университета. Давайте еще предположим, что к этому времени у вас уже будет базовое понимание
+            того, с чем и как придется работать.
+          </p>
+          <a class="news__link" href="//mobios.school/blog/kak-stat-frontendshikom">Читать далее</a>
+        </div>
+        <div class="news__item">
+          <div class="news__poster">
+            <a href="//mobios.school/blog/s-chego-nachat-uchitsya-programmirovat">
+              <img src="images/pimgpsh_fullsize_distr.jpg" alt="">
+            </a>
+          </div>
+          <a class="news__name" href="//mobios.school/blog/s-chego-nachat-uchitsya-programmirovat">Как создать сайт
+            самостоятельно</a>
+          <p class="news__txt">
+            Имеет значение еще и то, как именно вы создаете сайт. Например, на то, чтобы сгенерировать ресурс с помощью
+            Wordpress – очень легко. Но если вы хотите создавать действительно уникальный и сложный ресурс, придется
+            заморочиться.
+          </p>
+          <a class="news__link" href="//mobios.school/blog/kak-sozdat-sayt-samostoyatelno-potrativ-pri-etom-minimum-vremeni">Читать
+            далее</a>
+        </div>
+        <div class="news__item">
+          <div class="news__poster">
+            <a href="//mobios.school/blog/dlya-tekh-kto-boitsya-veb-dizayn-s-pervykh-shagov">
+              <img src="images/foto.jpg" alt="">
+            </a>
+          </div>
+          <a class="news__name" href="//mobios.school/blog/dlya-tekh-kto-boitsya-veb-dizayn-s-pervykh-shagov">Реально ли
+            самостоятельно научиться верстать сайты?</a>
+          <p class="news__txt">
+            Многие предполагают, что для овладения данной профессией достаточно всего лишь досконально изучить язык
+            программирования.Выучить язык JavaScript - этого слишком мало для того, чтобы стать востребованным
+            специалистом.
+          </p>
+          <a class="news__link" href="//mobios.school/blog/realno-li-samostoyatelno-nauchitsya-verstat-sayty">Читать
+            далее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tabs__wrap">
+    <div class="container">
+      <p class="tabs__txt">Часто задаваемые вопросы</p>
+      <div class="tabs">
+        <ul class="tabs__caption">
+          <li class="active tabs__link">Что мне нужно для обучения?</li>
+          <li class="tabs__link">Если я пропустил несколько занятий, что тогда?</li>
+          <li class="tabs__link">Что нужно, чтобы получить диплом об окончании?</li>
+          <li class="tabs__link">Могу ли я платить помесячно, есть ли скидки или акции?</li>
+        </ul>
+
+        <div class="tabs__content__wrap">
+          <div class="tabs__content active">
+            <p>
+              Мы вам предоставляем все! А именно – удобное рабочее место, методические материалы, связь с преподавателем
+              и
+              даже кофе и печеньки во време кофе брейка :) ) Основными требованиями к нашим абитуриентам является
+              огромное
+              желание постигать новые знания для совершенствования с каждым днем своих скилов, стремление добиваться
+              результатов
+              и готовность не останавливаться на достигнутом. Также для курса требуется наличие трех часов свободного
+              времени каждый
+              день. Нам нужны амбициозные, целеустремленные студенты, умеющие ставить цели и двигаться на встречу своей
+              мечте — стать
+              мега крутым специалистом в своей IT области.
+            </p>
+          </div>
+
+          <div class="tabs__content">
+            <p>
+              Вы всегда на связи с преподавателем и он может вам выслать ДЗ на почту и плюс у вас есть 2 ак.часа на
+              отработку после окончания курса
+            </p>
+          </div>
+
+          <div class="tabs__content">
+            <p>
+              После завершения всего курса, студенты получат фирменный сертификат об окончании курсов. Но для этого
+              нужно сдать основное ДЗ и дипломный проект вовремя – дедлайн превыше всего!!!
+            </p>
+          </div>
+
+          <div class="tabs__content">
+            <p>
+              Мы любим что бы наши студенты хотели учиться, по-этому вы можете платить помесячно) Но если у вас есть
+              возможность оплаты за весь курс то вы экономите от 10 до 20%. Так что мы рекомендуем экономить бюджет на
+              20% и оплачивать всю стоимость сразу при брони. Кроме того: Каждый выпускник получает скидку на любой
+              другой курс нашей школы.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <div class="section review">
+    <div class="student-review wave-fly">
+      <div class="container">
+        <p class="number wow fadeInUp z-index relative" data-wow-duration=".4s"><span class="relative">08</span></p>
+        <h3 class="title-review wow fadeInUp z-index relative" data-wow-duration=".4s" data-wow-delay="0.2s">Наши
+          студенты</h3>
+        <div class="review__wrap">
+          <div class="review-block-1 relative wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.3s">
+            <img src="images/stud-1.jpg" alt="photo">
+            <div>
+              <p class="student-name">Евгения</p>
+              <p class="course-over">Выпускница курса FRONT-END разработки</p>
+              <p class="href"><a href="https://vk.com/id209875555" rel="nofollow">https://vk.com/id209875555</a></p>
+            </div>
+            <p class="student-description">
+              То, над чем я трудилась все время - это над собственным проектом, и не зря. Курс вдохновляющий,
+              практический, теплый и веселый, хоть и много знаний сразу!
+            </p>
+          </div>
+          <div class="review-block-2 relative wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.4s">
+            <img src="images/stud-2.jpg" alt="photo">
+            <div>
+              <p class="student-name">Виталий</p>
+              <p class="course-over">Выпускник курса FRONT-END разработки</p>
+              <p class="href"><a href="https://vk.com/id300168117" rel="nofollow">https://vk.com/id300168117 </a></p>
+            </div>
+            <p class="student-description">
+              Все было круто! Уже в процессе обучения начинал просматривать варианты работы! Сейчас работаю в студии.
+              Так что ни разу не жалею) Все очень интересно, легко и доступно, описан процесс создания проекта от начала
+              и до полной сдачи!
+            </p>
+          </div>
+          <div class="review-block-2 relative wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.5s">
+            <img src="images/stud-4.jpg" alt="photo">
+            <div>
+              <p class="student-name">Дмитрий</p>
+              <p class="course-over">Выпускник курса FRONT-END разработки</p>
+              <p class="href"><a href="https://vk.com/id9254008" rel="nofollow">https://vk.com/id9254008</a></p>
+            </div>
+            <p class="student-description">Многому научился за короткий промежуток времени на курсе фронтенд.
+              Ушло бы намного больше времени, если бы я начал самостоятельно копаться в этом.
+              Сначала были сложности и не все было ясно, но потом мне помогли. В целом все отлично. Спасибо за курс!</p>
+          </div>
+          <div class="review-block-1 relative wow fadeInRight" data-wow-duration=".4s" data-wow-delay="0.6s">
+            <img src="images/stud-3.png" alt="photo">
+            <div>
+              <p class="student-name">Марина</p>
+              <p class="course-over">Выпускница курса FRONT-END разработки</p>
+              <p class="href"><a href="https://vk.com/id137340777" rel="nofollow">https://vk.com/id137340777</a></p>
+            </div>
+            <p class="student-description">Очень долго искала курсы front-end разработчиков. Мой выбор пал на студию
+              «Mobios».
+              И не пожалела: качественно подобранная программа курсов с профессиональными преподавателями дают отличный
+              старт в IT-сфере.
+              К тому же данная студия ведет курсы не в одном направлении, поэтому можно попробовать себя в разных
+              сферах.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section last relative wave-fly">
+    <div class="bg-last wow fadeInUp" data-wow-duration=".4s">
+      <div class="container last__inner">
+        <div class="left-block">
+          <p class="title-left">Спешите</p>
+          <p class="text-left-1">мест с каждым днем</p>
+          <p class="text-left-2"> становится все меньше</p>
+        </div>
+        <div class="right-block">
+          <div>
+            <p class="title-last wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.2s">Стоимость курса
+              повышается</p>
+            <p class="text-last wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">каждых <span>30 дней</span>
+              на 200 грн</p>
+          </div>
+          <div>
+            <p class="rise wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s"><span class="red-span">Следующее повышение через:</span>
+            </p>
+          </div>
+          <div class="center wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.5s">
+            <ul class="countdown">
+              <li>
+                <span class="days">19</span>
+                <p class="days_ref">дней</p>
+              </li>
+              <li>
+                <span class="hours">21</span>
+                <p class="hours_ref">часов</p>
+              </li>
+              <li>
+                <span class="minutes">02</span>
+                <p class="minutes_ref">минут</p>
+              </li>
+              <li>
+                <span class="seconds">58</span>
+                <p class="seconds_ref">секунд</p>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-last wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">
+            <a class="go portal-template-open-popup" href="javascript:void(0);">Забронировать место
+              <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 209 8.7" style="enable-background:new 0 0 209 8.7;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                              fill: none;
+                              stroke-width: 2;
+                              stroke-miterlimit: 10;
+                            }
+                        </style>
+                                <path class="st0" d="M0,4.1c3.7,0,7.3,2,11,2s7.3-2,11-2s7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2
+                            s7.3-2,11-2c3.7,0,7.3,2,11,2c3.7,0,7.3-2,11-2c3.7,0,7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2c3.7,0,7.3-2,11-2s7.3,2,11,2
+                             s7.3-2,11-2s7.3,2,11,2s7.3-2,11-2s7.3,2,11,2"/>
+                        </svg>
+            </a>
+            <!--                        <a class="get" href="#consultation">Получить консультацию-->
+            <!--                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+            <!--                                 viewBox="0 0 212.9 12.3" style="enable-background:new 0 0 212.9 12.3;" xml:space="preserve">-->
+            <!--                        <style type="text/css">-->
+            <!--                            .st0{fill:none;stroke-width:2;stroke-miterlimit:10;}-->
+            <!--                        </style>-->
+            <!--                                <path class="st0" d="M0,5.2c5.9,0,5.9,2,11.8,2c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2-->
+            <!--                            c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2-->
+            <!--                            c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2c5.9,0,5.9-2,11.8-2c5.9,0,5.9,2,11.8,2-->
+            <!--                            c5.9,0,5.9-2,11.8-2"/>-->
+            <!--                        </svg>-->
+            <!--                        </a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--SECTION-FOOTER-->
+<section id="courses-footer" class="portal-template">
+  <div class="portal-template-wrapper">
+    <div class="portal-template-container">
+      <div class="portal-template-col">
+        <div class="portal-template-img-wrapper">
+          <a href="/" class="portal-template-logo-link portal-template-over-particles">
+            <img src="images/courses-logo-footer.png" alt="" class="portal-template-img">
+          </a>
+        </div>
+        <div class="portal-template-modal-wrapper">
+          <a class="portal-template-modal portal-template-open-popup portal-template-over-particles">Оставить заявку</a>
+        </div>
+      </div>
+      <div class="portal-template-col">
+        <div class="portal-template-footer-menu">
+          <h5 class="portal-template-heading">О компании</h5>
+          <ul class="portal-template-menu-list portal-template-over-particles">
+            <li class="portal-template-menu-item"><a href="/blog" class="portal-template-link">Блог</a></li>
+            <li class="portal-template-menu-item"><a href="/kak-prohodiat-kursi" class="portal-template-link">Как
+              проходят занятия</a></li>
+            <li class="portal-template-menu-item"><a href="/about-school" class="portal-template-link">О школе</a></li>
+            <li class="portal-template-menu-item"><a href="/contacts" class="portal-template-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="portal-template-col">
+        <div class="portal-template-footer-menu right-lg">
+          <h5 class="portal-template-heading">КУРСЫ В КИЕВЕ</h5>
+          <ul class="portal-template-menu-list portal-template-over-particles">
+            <li class="portal-template-menu-item"><a href="/kyiv/ui-ux.php" class="portal-template-link ux-link">UX/UI
+              Web-Design</a></li>
+            <li class="portal-template-menu-item"><a href="/kyiv/motion.php" class="portal-template-link motion-link">Motion
+              Design</a></li>
+            <li class="portal-template-menu-item">
+              <a href="/kyiv/design-interior.php" class="portal-template-link interior-link">Дизайн интерьера</a></li>
+            <li class="portal-template-menu-item">
+              <a href="/kyiv/frontend.php" class="portal-template-link frontend-link">Front-End разработка</a></li>
+            <!--<li class="portal-template-menu-item"><a href="#" class="portal-template-link backend-link">Back-End разработка</a></li>
+            <li class="portal-template-menu-item"><a href="#" class="portal-template-link seo-link">SEO&PPC</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="portal-template-col">
+        <div class="portal-template-footer-menu">
+          <h5 class="portal-template-heading">КУРСЫ В ОДЕССЕ</h5>
+          <ul class="portal-template-menu-list portal-template-over-particles">
+            <li class="portal-template-menu-item"><a href="/odessa/ui-ux.php" class="portal-template-link ux-link">UX/UI
+              Web-Design</a></li>
+            <li class="portal-template-menu-item"><a href="/odessa/motion.php" class="portal-template-link motion-link">Motion
+              Design</a></li>
+            <li class="portal-template-menu-item">
+              <a href="/odessa/design-interior.php" class="portal-template-link interior-link">Дизайн интерьера</a></li>
+            <li class="portal-template-menu-item">
+              <a href="/odessa/frontend.php" class="portal-template-link frontend-link">Front-End разработка</a></li>
+            <!--<li class="portal-template-menu-item"><a href="#" class="portal-template-link backend-link">Back-End разработка</a></li>
+              <li class="portal-template-menu-item"><a href="#" class="portal-template-link seo-link">SEO&PPC</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="portal-template-col">
+        <div class="portal-template-footer-menu right-lg">
+          <h5 class="portal-template-heading">КУРСЫ ОНЛАЙН</h5>
+          <ul class="portal-template-menu-list portal-template-over-particles">
+            <li class="portal-template-menu-item">
+              <a href="//mobios.school/courses/ui-ux-design" class="portal-template-link ux-link">UX/UI Web-Design</a>
+            </li>
+            <li class="portal-template-menu-item">
+              <a href="//mobios.school/courses/motion-design" class="portal-template-link motion-link">Motion Design</a>
+            </li>
+            <!-- 							<li class="portal-template-menu-item"><a href="#" class="portal-template-link interior-link">Дизайн интерьера</a></li> -->
+            <li class="portal-template-menu-item">
+              <a href="//mobios.school/courses/frontend-jquery-cms" class="portal-template-link frontend-link">Front-End
+                разработка</a></li>
+            <!--<li class="portal-template-menu-item"><a href="#" class="portal-template-link backend-link">Back-End разработка</a></li>
+              <li class="portal-template-menu-item"><a href="#" class="portal-template-link seo-link">SEO&PPC</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="portal-template-col">
+        <div class="portal-template-footer-menu">
+          <h5 class="portal-template-heading">Контакты "MOBIOS"</h5>
+          <ul class="portal-template-menu-list portal-template-over-particles">
+            <li class="portal-template-menu-item portal-template-phone">
+              <a href="tel:+38 (063) 712-27-13" class="portal-template-link">+38 (063) 712-27-13</a></li>
+            <li class="portal-template-menu-item portal-template-phone">
+              <a href="tel:+38 (095) 097-78-91" class="portal-template-link">+38 (095) 097-78-91</a></li>
+            <li class="portal-template-menu-item portal-template-mail">
+              <a href="mailto:msstudiopr@gmail.com" class="portal-template-link">msstudiopr@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="portal-template-horizontal-separator"></div>
+    <div class="portal-template-container">
+      <div class="portal-template-col-6">
+        <p class="portal-template-copyright">
+          <a href="https://msstudio.com.ua/" class="portal-template-mobios-link portal-template-over-particles">© Mobios
+            2013‐2018</a> / Все права защищены</p>
+      </div>
+      <div class="portal-template-col-6">
+        <div class="portal-template-social-wrapper">
+          <a href="//www.facebook.com/schoolmobios/" target="_blank" class="portal-template-social-item portal-template-over-particles">
+            <img src="images/footer-icon-fb.png" alt="">
+          </a>
+          <a href="//www.instagram.com/mobioschool/" target="_blank" class="portal-template-social-item portal-template-over-particles">
+            <img src="images/footer-icon-instagram.png" alt="">
+          </a>
+          <a href="//vk.com/mobios_school" target="_blank" class="portal-template-social-item portal-template-over-particles">
+            <img src="images/footer-icon-vk.png" alt="">
+          </a>
+          <a href="//t.me/mobioschool" target="_blank" class="portal-template-social-item portal-template-over-particles">
+            <img src="images/tg.png" alt="" width="16px">
+          </a>
+          <a href="//twitter.com/mobios_school" target="_blank" class="portal-template-social-item portal-template-over-particles">
+            <img src="images/tw.png" alt="" width="16px">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--SECTION-FOOTER-END -->
+
+<!--MODAL-#1-->
+<div class="overlay">
+  <div id="modal-window">
+    <div id="request-close-btn" class="close-custom"></div>
+    <div class="modal-window-container">
+      <div class="modal-window-left" id="lazy-cat"></div>
+      <div class="modal-window-right">
+        <!--					<form class="modal-window-custom-form modal-window-callback" id="callback">-->
+        <!--						<div class="success">-->
+        <!--							<p class="success-text">Спасибо за заявку!<br>Наши менеджеры свяжутся с вами в ближайшее время.</p>-->
+        <!--						</div>-->
+        <!--						<input type="hidden" name="project_name" value="Mobios School (landing page)">-->
+        <!--						<input type="hidden" name="admin_email" value="msstudiopr@gmail.com">-->
+        <!--						<input class="form-subject" type="hidden" name="form_subject" value="">-->
+        <!---->
+        <!--                        <h5 class="modal-window-recall">Оставить заявку</h5>-->
+        <!---->
+        <!--						<label>-->
+        <!--							<input type="text" name="Имя" required placeholder="Ваше имя">-->
+        <!--						</label>-->
+        <!--						<label>-->
+        <!--							<input class="phone_us" type="text" name="Телефон" required placeholder="Ваше телефон">-->
+        <!--						</label>-->
+        <!--						<label>-->
+        <!--							<input type="text" name="Компания" placeholder="Ваша компания">-->
+        <!--						</label>-->
+        <!--						<label>-->
+        <!--							<input type="email" name="E-mail" required placeholder="Ваш E-mail">-->
+        <!--						</label>-->
+        <!--						<select name="Город" id="city-selection" class="form-selection" required>-->
+        <!--							<option disabled selected>Выбрать город:</option>-->
+        <!--							<option>Одесса</option>-->
+        <!--							<option>Киев</option>-->
+        <!--							<option>Онлайн</option>-->
+        <!--						</select>-->
+        <!--						<select name="Курс" id="course-selection" class="form-selection" required>-->
+        <!--							<option disabled selected>Выбрать курс:</option>-->
+        <!--							<option>UX/UI Web-Design + Mobile Design</option>-->
+        <!--							<option>Motion design</option>-->
+        <!--							<option>Front-End</option>-->
+        <!--							<option>Дизайн интерьера</option>-->
+        <!--						</select>-->
+        <!--						<div class="modal-window-btn-wrapper">-->
+        <!--							<button class="modal-window-btn-connect">Отправить</button>-->
+        <!--						</div>-->
+        <!--					</form>-->
+        <script>var amo_forms_params = {
+          "id": 291505,
+          "hash": "efed86a96081aecb1d8138c8c13065dc",
+          "locale": "ru"
+        };</script>
+        <script id="amoforms_script" async="async" charset="utf-8" src="js/amoforms.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<!--MODAL-#1-END-->
+<script>
+  window.onload = function () {
+    // var locationHref = (location.href);
+    // switch(locationHref) {
+    // 	case 'http://mobios.school/courses_odessa/ui-ux.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Web-Design (Одесса)');
+    // 		$('.ux-link').attr('href', 'http://mobios.school/courses_odessa/ui-ux.php');
+    // 		$('.motion-link').attr('href', 'http://mobios.school/courses_odessa/motion.php');
+    // 		$('.interior-link').attr('href', 'http://mobios.school/courses_odessa/design-interior.php');
+    // 		$('.frontend-link').attr('href', 'http://mobios.school/courses_odessa/frontend.php');
+    // 		break;
+    // 	case 'http://mobios.school/courses_kyiv/ui-ux.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Web-Design (Киев)');
+    // 		$('.ux-link').attr('href', 'http://mobios.school/courses_kyiv/ui-ux.php');
+    // 		$('.motion-link').attr('href', 'http://mobios.school/courses_kyiv/motion.php');
+    // 		$('.interior-link').attr('href', 'http://mobios.school/courses_kyiv/design-interior.php');
+    // 		$('.frontend-link').attr('href', 'http://mobios.school/courses_kyiv/frontend.php');
+    // 		break;
+    // 	case 'http://mobios.school/ui-ux.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Web-Design (Онлайн)');
+    // 		break;
+    // 	case 'http://mobios.school/courses_odessa/motion.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Motion Design (Одесса)');
+    // 		$('.ux-link').attr('href', 'http://mobios.school/courses_odessa/ui-ux.php');
+    // 		$('.motion-link').attr('href', 'http://mobios.school/courses_odessa/motion.php');
+    // 		$('.interior-link').attr('href', 'http://mobios.school/courses_odessa/design-interior.php');
+    // 		$('.frontend-link').attr('href', 'http://mobios.school/courses_odessa/frontend.php');
+    // 		break;
+    // 	case 'http://mobios.school/courses_kyiv/motion.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Motion Design (Киев)');
+    // 		$('.form-subject').attr('value', 'Отправлено с Web-Design (Киев)');
+    // 		$('.ux-link').attr('href', 'http://mobios.school/courses_kyiv/ui-ux.php');
+    // 		$('.motion-link').attr('href', 'http://mobios.school/courses_kyiv/motion.php');
+    // 		$('.interior-link').attr('href', 'http://mobios.school/courses_kyiv/design-interior.php');
+    // 		$('.frontend-link').attr('href', 'http://mobios.school/courses_kyiv/frontend.php');
+    // 		break;
+    // 	case 'http://mobios.school/motion.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Motion Design (Онлайн)');
+    // 		break;
+    // 	case 'http://mobios.school/courses_odessa/design-interior.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Дизайн интерьеров (Одесса)');
+    // 		$('.ux-link').attr('href', 'http://mobios.school/courses_odessa/ui-ux.php');
+    // 		$('.motion-link').attr('href', 'http://mobios.school/courses_odessa/motion.php');
+    // 		$('.interior-link').attr('href', 'http://mobios.school/courses_odessa/design-interior.php');
+    // 		$('.frontend-link').attr('href', 'http://mobios.school/courses_odessa/frontend.php');
+    // 		break;
+    // 	case 'http://mobios.school/courses_kyiv/design-interior.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Дизайн интерьеров (Киев)');
+    // 		$('.form-subject').attr('value', 'Отправлено с Web-Design (Киев)');
+    // 		$('.ux-link').attr('href', 'http://mobios.school/courses_kyiv/ui-ux.php');
+    // 		$('.motion-link').attr('href', 'http://mobios.school/courses_kyiv/motion.php');
+    // 		$('.interior-link').attr('href', 'http://mobios.school/courses_kyiv/design-interior.php');
+    // 		$('.frontend-link').attr('href', 'http://mobios.school/courses_kyiv/frontend.php');
+    // 		break;
+    // 	case 'http://mobios.school/design-interior.php':
+    // 		$('.form-subject').attr('value', 'Отправлено с Дизайн интерьеров (Онлайн)');
+    // 		break;
+    // 	default:
+    // 		console.log('oke');
+    // }
+
+    //Email-AJAX
+    // $(".modal-window-callback").submit(function() {
+    // 	var th = $(this);
+    // 	$.ajax({
+    // 		type: "POST",
+    // 		url: "/mail.php",
+    // 		data: th.serialize()
+    // 	}).done(function(data) {
+    // 		console.log(data);
+    // 		$('.success').addClass('visible-suc transition-ease');
+    // 		setTimeout(function() {
+    // 		// Done Functions
+    // 		th.trigger("reset");
+    // 		$('.success').removeClass('visible-suc transition-ease');
+    // 		}, 3000);
+    // 	});
+    // 	return false;
+    // });
+
+    if (window.innerWidth >= 992) {
+      if (Boolean(document.getElementById('lazy-cat'))) {
+        document.getElementById('lazy-cat').innerHTML = '<img class="cat_first" src="images/cat3.gif" alt="Cat Gif">';
+      }
+    }
+
+    //Модалка подать заявку
+    var modal = $('#modal-window');
+    $('.portal-template-open-popup').click(function () {
+      if (modal.not(':visible')) {
+        modal.fadeIn();
+        $('.overlay').addClass('overlay-active');
+        $('html, body').css('overflow-y', 'hidden')
+      }
+      else {
+        modal.fadeOut();
+        $('html, body').css('overflow-y', 'visible')
+      }
+    });
+    $('#request-close-btn').click(function () {
+      modal.fadeOut();
+      $('.overlay').removeClass('overlay-active');
+      $('html, body').css('overflow-y', 'visible')
+    });
+    $('.overlay').on('mouseup', function (event) {
+      if (!$('.portal-template-open-popup').is(event.target) &&
+        $('.portal-template-open-popup').has(event.target).length === 0 && !$('#modal-window').is(event.target)
+        && modal.has(event.target).length === 0) {
+        modal.fadeOut();
+        $('.overlay').removeClass('overlay-active');
+        $('html, body').css('overflow-y', 'visible')
+      }
+    });
+
+    //Dropdown при нведении на курсы
+    $('.courses-link').hover(function () {
+      $('.city-selection-list').addClass('visible-list');
+    }, function () {
+      $('.city-selection-list').removeClass('visible-list');
+    });
+    $('.city-selection-list').hover(function () {
+      $('.city-selection-list').addClass('visible-list');
+    }, function () {
+      $('.city-selection-list').removeClass('visible-list');
+    });
+  };
+</script>
+
+<link rel="stylesheet" href="css/templates.css"><!--modal-1-->
+<div class="modalIntensive modalEconomy">
+  <div class="leftBlock">
+    <p><a>К оплате:</a><br><span>9 100<span>грн</span></span></p>
+  </div>
+  <div class="rightBlock">
+    <div class="btnClose"></div>
+    <p>Запись на курс</p>
+    <form id="modalEconomy">
+      <input type="text" name="feedbackName" placeholder="Имя" required="">
+      <input type="text" name="feedbackLastName" placeholder="Фамилия" required=""><br>
+      <input type="text" name="feedbackPhone" placeholder="Телефон" required="">
+      <input type="email" name="feedbackEmail" placeholder="Email" required=""><br>
+      <button id="modalSubmit" type="submit" form="modal" value="Записаться">Записаться</button>
+      <br>
+      <input id="iAgree" type="checkbox" checked="" required="">
+      <label for="iAgree">Я соглашаюсь с условиями <a>договора-оферты</a> и <a>политикой конфиденциальности</a>.</label>
+      <input type="hidden" name="modalIntensive">
+    </form>
+  </div>
+</div>
+<!--modal-1-->
+<!--modal-2-->
+<div class="modalIntensive modalStudent">
+  <div class="leftBlock">
+    <p><a>К оплате:</a><br><span>13 100<span>грн</span></span></p>
+  </div>
+  <div class="rightBlock">
+    <div class="btnClose"></div>
+    <p>Запись на курс</p>
+    <form id="modalStudent">
+      <input type="text" name="feedbackName" placeholder="Имя" required="">
+      <input type="text" name="feedbackLastName" placeholder="Фамилия" required=""><br>
+      <input type="text" name="feedbackPhone" placeholder="Телефон" required="">
+      <input type="email" name="feedbackEmail" placeholder="Email" required=""><br>
+      <button id="modalSubmit" type="submit" form="modal" value="Записаться">Записаться</button>
+      <br>
+      <input id="iAgree" type="checkbox" checked="" required="">
+      <label for="iAgree">Я соглашаюсь с условиями <a>договора-оферты</a> и <a>политикой конфиденциальности</a>.</label>
+      <input type="hidden" name="modalIntensive">
+    </form>
+  </div>
+</div>
+<!--modal-2-->
+<!--modal-3-->
+<div class="modalIntensive modalStandart">
+  <div class="leftBlock">
+    <p><a>К оплате:</a><br><span>16 100<span>грн</span></span></p>
+  </div>
+  <div class="rightBlock">
+    <div class="btnClose"></div>
+    <p>Запись на курс</p>
+    <form id="modalStandart">
+      <input type="text" name="feedbackName" placeholder="Имя" required="">
+      <input type="text" name="feedbackLastName" placeholder="Фамилия" required=""><br>
+      <input type="text" name="feedbackPhone" placeholder="Телефон" required="">
+      <input type="email" name="feedbackEmail" placeholder="Email" required=""><br>
+      <button id="modalSubmit" type="submit" form="modal" value="Записаться">Записаться</button>
+      <br>
+      <input id="iAgree" type="checkbox" checked="" required="">
+      <label for="iAgree">Я соглашаюсь с условиями <a>договора-оферты</a> и <a>политикой конфиденциальности</a>.</label>
+      <input type="hidden" name="modalIntensive">
+    </form>
+  </div>
+</div>
+<!--modal-3-->
+<!--modal-4-->
+<div class="modalIntensive modalVIP">
+  <div class="leftBlock">
+    <p><a>К оплате:</a><br><span>19 100<span>грн</span></span></p>
+  </div>
+  <div class="rightBlock">
+    <div class="btnClose"></div>
+    <p>Запись на курс</p>
+    <form id="modalVIP">
+      <input type="text" name="feedbackName" placeholder="Имя" required="">
+      <input type="text" name="feedbackLastName" placeholder="Фамилия" required=""><br>
+      <input type="text" name="feedbackPhone" placeholder="Телефон" required="">
+      <input type="email" name="feedbackEmail" placeholder="Email" required=""><br>
+      <button id="modalSubmit" type="submit" form="modal" value="Записаться">Записаться</button>
+      <br>
+      <input id="iAgree" type="checkbox" checked="" required="">
+      <label for="iAgree">Я соглашаюсь с условиями <a>договора-оферты</a> и <a>политикой конфиденциальности</a>.</label>
+      <input type="hidden" name="modalIntensive">
+    </form>
+  </div>
+</div>
+<!--modal-4-->
+<div class="modal-2">
+  <div class="wrap-modal relative">
+    <span class="close-modal"><img src="images/delete.png" alt="icon"></span>
+    <p>Свяжитесь с нами</p>
+    <form id="modal-2">
+
+      <input type="hidden" name="project_name" value="Front">
+      <!--            <input type="hidden" name="admin_email" value="mobios.dev@gmail.com">-->
+      <input type="hidden" name="admin_email" value="msstudiopr@gmail.com">
+      <input class="form-subject" type="hidden" name="form_subject" value="Заявка на курсы Front-End Одесса">
+
+
+      <input class="numberInput" type="text" name="Name" placeholder="Имя" required="">
+      <input class="phone_us" type="text" name="Phone" placeholder="Телефон" required="">
+      <input type="email" name="Mail" placeholder="Email" required="">
+      <input type="hidden" id="course" name="course" value="">
+      <div class="btn">
+        <button id="submit" type="submit" value="Записаться">Записаться</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="overlay"></div>
+<div class="reveal-overlay">
+  <div class="reveal tiny" id="videoModal" data-reveal="zlcowo-reveal" role="dialog" aria-hidden="true" data-yeti-box="videoModal" data-resize="videoModal">
+    <div id="video-container"></div>
+    <button id="video-close-btn" class="close-button" data-close="" aria-label="Close modal" type="button">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+</div>
+<!--<link rel="stylesheet" href="css/animate.css">-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+<!--<script src="../courses-app/frontend-new/js/jquery.downCount.js"></script>-->
+<!--<script src="../courses-app/frontend-new/js/jquery.countdown.min.js"></script>-->
+<!--<script src="../courses-app/frontend-new/js/wow.min.js"></script>-->
+<!--<script src="../courses-app/frontend-new/js/particles.min.js"></script>-->
+<!--<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
+<script src="js/scripts.min.js"></script>
+<script>
+  //Header-mobile-menu
+  var toggleMenu = $('.portal-header-mobile-menu-dropdown');
+  $('.portal-header-mobile-menu-wrapper').click(function () {
+    toggleMenu.slideToggle(300);
+  });
+
+  $('body, html').on('mouseup', function (event) {
+    var portalHeaderMobileMenuWrapper = $('.portal-header-mobile-menu-wrapper');
+
+    if (!toggleMenu.is(event.target) && toggleMenu.has(event.target).length === 0 && !portalHeaderMobileMenuWrapper.is(event.target) && portalHeaderMobileMenuWrapper.has(event.target).length === 0) {
+      toggleMenu.slideUp(300);
+    }
+  });
+  //Phone-mask
+  $('.phone_us').mask('+380 (99) 999-99-99');
+</script>
+</body>
+</html>

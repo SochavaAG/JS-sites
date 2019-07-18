@@ -1,0 +1,873 @@
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.dashboard-sidebar {
+  max-width: 290px;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  float: left; }
+
+.dashboard-sidebar__list {
+  /*height: 100vh;*/
+  /*padding-top: 100px;*/
+}
+  .dashboard-sidebar__list > li {
+    background: #fff;
+    width: 100%;
+    min-height: 78px;
+    border-bottom: 1px solid #D4DEDD;
+    position: relative; }
+
+.dashboard-sidebar__link {
+  color: #252525;
+  font-size: 16px;
+  font-family: 'GeometriaBold';
+  line-height: 78px;
+  padding-left: 25px;
+  position: relative;
+  margin-left: 35px;
+  z-index: 1;
+  display: block; }
+  .dashboard-sidebar__link:before {
+    content: '';
+    background: url(../img/iconPAT.png) no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -13px;
+    width: 20px;
+    height: 23px;
+    z-index: 1; }
+  .dashboard-sidebar__link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -20px;
+    background: #6dbfd6;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%; }
+  .active .dashboard-sidebar__link:after {
+    background: #f26c77; }
+
+.dashboard-sidebar__link--courses:before {
+  background-position: 0px 0px; }
+
+.dashboard-sidebar__link--lessons:before {
+  background-position: 0px -26px; }
+
+.dashboard-sidebar__link--mail:before {
+  background-position: 0px -48px; }
+
+.dashboard-sidebar__link--users:before {
+  background-position: 0px -72px; }
+
+/*.hamburger {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*color: #f97b88;*/
+  /*cursor: pointer;*/
+  /*z-index: 11;*/
+  /*display: none; }*/
+
+.VueTables--Client .row {
+  display: none; }
+
+.VueTables__sortable {
+  position: relative;
+  cursor: pointer; }
+
+.VueTables__sort-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  height: 13px; }
+
+.VueTables__heading {
+  line-height: 39px; }
+
+.filter {
+  color: #252525;
+  font-size: 15px;
+  font-family: "GeometriaBold";
+  display: block;
+  padding-bottom: 22px;
+  margin-top: 28px; }
+
+.table {
+  border: 1px solid #e8eded;
+  background: #fff;
+  clear: both;
+  overflow: auto; }
+
+.table th:first-child {
+  padding: 0 15px; }
+
+.table th {
+  text-align: center;
+  color: #313131;
+  font-size: 13px;
+  font-family: "GeometriaBold";
+  border: 1px solid #e8eded;
+  border-bottom: 2px solid #d6ecec;
+  padding: 0 30px;
+  height: 40px;
+  white-space: nowrap; }
+
+.table td {
+  border: 1px solid #e8eded;
+  padding: 4px 10px !important;
+  margin: 0px;
+  vertical-align: middle;
+  position: relative; }
+
+.table__text {
+  margin: 0px;
+  font-size: 12px;
+  color: #000;
+  font-family: "GeometriaRegular"; }
+  .table__text--lightblue {
+    color: #05b5d0;
+    font-family: "GeometriaLight"; }
+    .active .table__text--lightblue {
+      color: #808080; }
+  .table__text--red {
+    color: #f26c77; }
+
+.table__date {
+  color: #777;
+  font-family: 'GeometriaLight'; }
+
+.table .date {
+  text-align: center; }
+  .table .date .table__text {
+    color: #777;
+    font-family: 'GeometriaLight'; }
+
+.table__checkbox {
+  border: 1px solid #d4dedd;
+  border-radius: 3px;
+  background-color: #fff;
+  display: block;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  position: absolute;
+  top: 6px;
+  left: 24px; }
+
+.table__checkbox + label:before {
+  border: 1px solid #d4dedd;
+  border-radius: 3px;
+  background-color: #fff;
+  display: block;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  position: absolute;
+  top: 6px;
+  left: 10px; }
+
+.table__checkbox:checked + label:before {
+  top: 4px;
+  left: 7px;
+  width: 9px;
+  height: 17px;
+  border-right-color: #0bcbe9;
+  border-bottom-color: #0bcbe9;
+  background: transparent; }
+
+.table__select {
+  width: 50px;
+  height: 20px;
+  padding: 0 0 0 13px;
+  font-size: 12px;
+  color: #313131;
+  font-family: "GeometriaLight";
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 12px;
+  margin: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background: #ffffff url("../img/strSelect.png") 90% center no-repeat !important;
+  border: 1px solid #f2f2f2;
+  display: block; }
+
+.table__edit-link {
+  background: #689f38 url(../img/iconEdit.png) center center no-repeat;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; }
+  .table__edit-link:hover {
+    opacity: .8; }
+
+.table .del {
+  text-align: center; }
+
+.table__delete_btn {
+  color: #ff1a1a;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  display: block; }
+  .table__delete_btn:hover {
+    opacity: .8; }
+
+.vue_table_wrapper {
+  display: block;
+  text-align: center; }
+
+.table tr {
+  transition: background 0.3s ease-out; }
+
+.activate {
+  text-align: center; }
+
+.table tr.active {
+  background: #c9f4fa;
+  border-left: 2px solid #4cdaef; }
+
+.material-btn {
+  color: #fff;
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 37px;
+  border-radius: 5px;
+  width: 185px;
+  height: 37px;
+  display: block;
+  font-family: 'GeometriaBold';
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border: 0; }
+  .material-btn--green {
+    background: #689f38; }
+  .material-btn--yellow {
+    background: #ffca28; }
+  .material-btn--red {
+    background: #f26c77; }
+  .material-btn--lightblue {
+    background: #0bcbe9; }
+  .material-btn:focus {
+    opacity: .9; }
+
+.btn-delete {
+  background: #f26c77; }
+  .btn-delete span:before {
+    background-position: -63px 0; }
+
+.btn-edit {
+  background: #0bcbe9; }
+  .btn-edit span:before {
+    background-position: -18px 0; }
+
+.btn-create {
+  background: #689f38; }
+  .btn-create span:before {
+    background-position: 0 0; }
+
+.btn-activate {
+  background: #ffca28; }
+  .btn-activate span:before {
+    background-position: -79px 2px; }
+
+.material-btn:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
+.action-buttons {
+  display: inline-block;
+  float: right;
+  margin: 0; }
+  .action-buttons > li {
+    padding-left: 16px;
+    display: inline-block; }
+
+.btn-label {
+  position: relative; }
+  .btn-label:before {
+    content: '';
+    background: url(../img/iconButton.png) 0 0 no-repeat;
+    position: absolute;
+    height: 20px;
+    width: 17px;
+    left: -20px;
+    top: -4px; }
+
+select {
+  display: block;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dfe4db;
+  width: 90%;
+  padding: 0px 10px;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 0 0 15px 0; }
+  select .select {
+    width: 173px;
+    height: 37px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #777;
+    font-size: 12px;
+    font-family: 'GeometriaLight';
+    border: 0.5px solid #d4dedd;
+    margin-left: 20px; }
+
+.go-back-link {
+  color: #777;
+  font-size: 14px;
+  font-family: 'GeometriaLight' !important;
+  margin-top: 35px;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  line-height: 20px;
+  transition: all .3s ease; }
+  .go-back-link:before {
+    content: '';
+    position: absolute;
+    background: url("../img/pagin.png") no-repeat;
+    top: -2px;
+    left: -4px;
+    width: 20px;
+    height: 20px;
+    transition: all .2s ease; }
+  .go-back-link:hover {
+    opacity: .8; }
+  .go-back-link:hover:before {
+    left: -8px;
+    opacity: .8; }
+
+.form-title {
+  color: #1b8999;
+  font-size: 20px;
+  font-family: 'GeometriaMedium';
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  line-height: 1; }
+
+.form-right {
+  width: 40%;
+  float: left;
+  padding-left: 20px; }
+
+.form-left {
+  width: 60%;
+  float: left;
+  padding-right: 20px; }
+
+.fields-group {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #9bcbd2; }
+
+.fields-group .selectinput {
+  height: 46px;
+  border: 1px solid #D4DEDD;
+  border-radius: 5px;
+  float: right;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: block;
+  color: #252525;
+  font-size: 14px; }
+
+.fields-group input[type="text"],
+.fields-group input[type="date"],
+.fields-group input[type="password"],
+.fields-group .selectinput,
+.fields-group textarea,
+.mce-tinymce {
+  height: 46px;
+  border: 1px solid #D4DEDD;
+  border-radius: 5px;
+  float: right;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px; }
+  .fields-group input[type="text"]:focus,
+  .fields-group input[type="date"]:focus,
+  .fields-group input[type="password"]:focus,
+  .fields-group .selectinput:focus,
+  .fields-group textarea:focus,
+  .mce-tinymce:focus {
+    outline: -webkit-focus-ring-color auto 5px !important;
+    border-bottom: 1px solid #D4DEDD !important; }
+
+.fields-group textarea {
+  resize: none;
+  height: 180px; }
+
+.fields-group p {
+  display: inline-block;
+  font-family: "GeometriaBold"; }
+
+
+.form-left input[type="text"],
+.form-left .selectinput,
+.form-left textarea {
+  width: 75%; }
+
+.form-right input[type="text"],
+.fields-group input[type="date"],
+.form-right .selectinput,
+.form-right textarea {
+  width: 170px; }
+
+.form-right .bigger-input {
+  width: 100% !important; }
+
+.form-group {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  clear: both; }
+  .form-group p {
+    vertical-align: top; }
+
+*[class^="sprite-"] {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 15px;
+  clear: both; }
+  *[class^="sprite-"]:before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../img/iconAdmin.png) no-repeat; }
+
+
+.form-group label {
+  font: 1.6rem "GeometriaBold";
+  color: #000;
+  display: block;
+  padding: 0 0 4px; }
+
+.form-group input,
+.form-group select {
+  float: none !important; }
+
+.form-group select {
+  height: 46px;
+  border: 1px solid #D4DEDD;
+  border-radius: 5px;
+  float: right;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  display: block; }
+
+.seo {
+  padding: 15px 0;
+  border-top: 1px solid #d4dedd;
+  margin-top: 20px; }
+
+.seo .form-group input,
+.seo .form-group textarea {
+  width: 350px; }
+
+.slide-checkbox + label {
+  border-radius: 9px;
+  background-color: #e6e6e6;
+  width: 54px;
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block; }
+
+.slide-checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  transition: all 0.3s ease-out;
+  border: 0;
+  margin-top: 0; }
+
+.slide-checkbox:checked + label {
+  background-color: #ffca28; }
+
+.slide-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  /* right: 0; */
+  left: 35px;
+  /* background: #000; */
+  width: 8px;
+  height: 12px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #ffca28;
+  border-bottom: 2px solid #ffca28;
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  transform-origin: 100% 100%; }
+
+.slide-checkbox:checked + label:before {
+  left: 34px;
+  transition: all 0.3s ease-out;
+  top: 0;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg); }
+
+.activate-checkbox-wrapper {
+  display: inline-block;
+  padding: 10px 15px;
+  box-sizing: border-box; }
+
+.upload-label {
+  width: 170px;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 6px; }
+
+.upload-label:after {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 22px;
+  top: -2px;
+  /*top: 8px;*/
+  bottom: 0;
+  margin: auto;
+  background: url(../img/download_icon.png) no-repeat; }
+.new span {
+  position: relative;
+  bottom: 9px;
+}
+.save-btn-holder {
+  padding: 25px 0;
+  text-align: right; }
+
+.image-examples {
+  min-width: 100%; }
+  .image-examples .imageable {
+    float: right; }
+
+.image-examples .image-box {
+  background: #f5f5f5;
+  margin-top: 20px;
+  margin-left: -25px;
+  max-height: 200px;
+  overflow: auto;
+  padding: 3px;
+  border: 2px solid #f0f0f0; }
+  .image-examples .image-box .thumb {
+    width: 29%;
+    float: left;
+    margin: 10px 2%; }
+  .image-examples .image-box .imageable__image-container {
+    width: 100%; }
+
+@media screen and (max-width: 1600px) {
+  .fields-group input[type="text"],
+  .fields-group input[type="date"],
+  .fields-group .selectinput,
+  .fields-group textarea {
+    width: 100%; }
+  .mce-tinymce {
+    width: 100% !important;
+    margin-top: 0 !important; }
+  *[class^="sprite-"]:before {
+    top: 8px; }
+  .fields-group p {
+    padding-left: 20px; } }
+
+.sprite-1:before {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -5px; }
+
+.sprite-2:before {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -5px; }
+
+.sprite-3:before {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -240px; }
+
+.sprite-4:before {
+  width: 15px;
+  height: 14px;
+  background-position: -5px -266px; }
+
+.sprite-5:before {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -290px; }
+
+.sprite-6:before {
+  width: 17px;
+  height: 17px;
+  background-position: -5px -316px; }
+
+.sprite-7:before {
+  width: 15px;
+  height: 19px;
+  background-position: -5px -343px; }
+
+.sprite-8:before {
+  width: 17px;
+  height: 17px;
+  background-position: -5px -372px; }
+
+.sprite-9:before {
+  width: 17px;
+  height: 17px;
+  background-position: -5px -316px; }
+
+.sprite-10:before {
+  width: 12px;
+  height: 17px;
+  background-position: -5px -31px; }
+
+.sprite-11:before {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -58px; }
+
+.sprite-12:before {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -84px; }
+
+.sprite-13:before {
+  width: 17px;
+  height: 17px;
+  background-position: -5px -110px; }
+
+.sprite-14:before {
+  width: 14px;
+  height: 13px;
+  background-position: -5px -137px; }
+
+.sprite-15:before {
+  width: 13px;
+  height: 17px;
+  background-position: -5px -160px; }
+
+.sprite-16:before {
+  width: 14px;
+  height: 17px;
+  background-position: -5px -187px; }
+
+#imageable input[type="file"] {
+  display: none; }
+
+.is-thumb {
+  display: none; }
+
+.thumb {
+  float: left;
+  margin: 10px;
+  position: relative; }
+
+.imageable__image-container {
+  /*width: 140px;*/
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: right; }
+  .imageable__image-container img {
+    max-width: 100%; }
+
+.imageable__remove-btn {
+  position: absolute;
+  font-size: 16px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  color: #f26c77; }
+  .imageable__remove-btn:hover {
+    opacity: .9; }
+  .imageable__remove-btn.disabled {
+    display: none; }
+
+.paginationL {
+  text-align: center;
+  margin: 20px 0px; }
+  .paginationL li {
+    display: inline-block;
+    vertical-align: middle; }
+
+.paginationL li a,
+.paginationL li span {
+  color: #888;
+  font-size: 14px;
+  font-family: 'GeometriaLight';
+  padding: 0px 5px; }
+
+.paginationL .next,
+.paginationL .prev {
+  background: url(../img/pagin.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  top: 1px; }
+
+.paginationL li.active span {
+  color: #f2717b; }
+
+.paginationL .next {
+  transform: rotate(180deg); }
+
+.LessonsSchedule__container {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.LessonsSchedule__heading {
+  padding: 20px 0;
+  color: #1b8999; }
+
+.LessonsSchedule__lesson-title {
+  margin-left: 20px; }
+
+input.LessonsSchedule__lesson-date {
+  float: left !important;
+  height: 46px;
+  border: 1px solid #D4DEDD;
+  border-radius: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  width: 200px; }
+
+.LessonsSchedule__order-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #1b8999;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+  margin-top: 7px; }
+
+.LessonsSchedule_days {
+  display: block; }
+
+.LessonsSchedule__day-checkbox {
+  padding: 0 25px 10px 5px;
+  font-size: 16px;
+  display: inline-block; }
+  .LessonsSchedule__day-checkbox input[type="checkbox"] {
+    position: static;
+    visibility: visible; }
+
+.LessonsSchedule__calc-btn {
+  background-color: #1b8999;
+  color: #fff;
+  font-size: 16px;
+  font-family: "GeometriaBold";
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border: 0;
+  transition: all 0.3s ease-out;
+  margin-left: 20px;
+  position: relative;
+  top: 15px; }
+  .LessonsSchedule__calc-btn:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
+.LessonsSchedule__days-wrap {
+  padding-bottom: 40px; }
+
+.LessonsSchedule__show-days {
+  color: #f26c77;
+  cursor: pointer;
+  margin: 20px 0 20px;
+  display: inline-block; }
+
+.LessonsSchedule__add-to-group {
+  color: #00AA00;
+  font-size: 14px; }
+
+.LessonsSchedule__remove-from-group {
+  color: indianred;
+  font-size: 14px; }
+
+.LessonsSchedule__student-name {
+  font-size: 14px; }
+
+.LessonsSchedule__students-list {
+  width: 50%;
+  float: left; }
+
+.LessonsSchedule__group-students {
+  width: 200px;
+  float: left; }
+
+.PAT {
+  background: #ebebeb; }
+
+.main-content {
+  background: #f5f5f5;
+  float: left;
+  width: 84%;
+  min-height: 650px;
+  padding: 20px 15px;
+  box-sizing: border-box; }
+
+b {
+  font-family: "GeometriaBold" !important; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both; }
+
+/*# sourceMappingURL=app.css.map */
+
+/*# sourceMappingURL=app.css.map */

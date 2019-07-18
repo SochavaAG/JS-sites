@@ -1,0 +1,64 @@
+body, html {
+  margin: 0;
+}
+.amoforms__fields__editor-withborders .amoforms__fields__submit {
+    padding: 5px 37px;
+}
+#amoforms_iframe_291505 {
+  margin: 0 !important;
+}
+.amoforms__field__control .amoforms__field__error_message {
+    bottom: -13px;
+    right: 1px;
+}
+#amofroms_main_wrapper {
+  padding: 0 !important;
+  margin: auto;
+ box-shadow: none;
+}
+#amofroms_main_wrapper ~ div {
+    display: none !important;
+}
+.amoforms-footer-copyright {
+    display: none !important;
+}
+#amofroms_main_wrapper {
+    padding: 0px 3px 27px 0;
+}
+.amoforms__fields__editor-withborders .amoforms__fields__container_line {
+  margin-top: -25px !important;
+  margin-bottom: -15px !important
+}
+.amoforms__field__control {
+    min-height: 0!important;
+}
+.amoforms__field__control_birthday, .amoforms__field__control_date, .amoforms__field__control_multitext, .amoforms__field__control_numeric, .amoforms__field__control_smart_address_input, .amoforms__field__control_text, .amoforms__field__control_url, .amoforms__field__control_file {
+    height: 47px;
+}
+ @media screen and (max-width: 991px) {
+.amoforms__fields__editor-withborders .amoforms__fields__container {
+  padding: 8px 15px !important;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+  .amoforms__field__control_header .text-input {
+    font-size: 20px;
+    }
+    .amoforms__field__control_birthday, .amoforms__field__control_date, .amoforms__field__control_multitext, .amoforms__field__control_numeric, .amoforms__field__control_smart_address_input, .amoforms__field__control_text, .amoforms__field__control_url, .amoforms__field__control_file {
+    height: 35px;
+    }
+    .amoforms__field__control_birthday .text-input, .amoforms__field__control_date .text-input, .amoforms__field__control_multitext .text-input, .amoforms__field__control_numeric .text-input, .amoforms__field__control_smart_address_input .text-input, .amoforms__field__control_text .text-input, .amoforms__field__control_url .text-input {
+    font-size: 15px;
+    }
+    .amoforms__field__required-inside {
+    top: 7px;
+    }
+    #modal-window {
+    height: 415px;
+    }
+    .amoforms__fields__submit .amoforms__submit-button {
+    font-size: 13px;
+    height: 36px;
+    }
+}

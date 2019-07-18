@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Детализация звонков, Распечатка СМС, МТС, Билайн, Мегафон, Теле2, Yota, WhatsApp и не только -
+    SIMROBOT.RU</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- stylesheets css -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap-3.3.5.min.css">
+
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+
+  <link rel="stylesheet" href="plugins/wow/animate.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="plugins/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" href="plugins/nivo-lightbox/default.css">
+
+  <link rel="stylesheet" href="plugins/hover/hover-min.css">
+  <link rel="stylesheet" href="plugins/flexslider/flexslider.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- Оформление заказа -->
+<div class="cart" id="cart">
+  <div class="form">
+    <div class="form-head">
+      <p class="navbar-brand">SIMROBOT.RU</p>
+      <a href="#" class="close" onclick="close_cart();return false;">&#10008;</a>
+    </div>
+    <div id="cart2">
+      <h1 id="order1">Заказ успешно оформлен!</h1>
+      <h3 id="order3">Проверьте свою почту!</h3>
+      <form id="order-form">
+        <input type="text" class="form-control" id="bname" placeholder="Ваше имя" required name="name">
+        <table width="100%">
+          <tr width="100%">
+            <td width="50%">
+              <input type="email" class="form-control" id="bmail" placeholder="Ваш email" required name="email"></td>
+            <td width="50%">
+              <input type="text" class="form-control" id="bphone" placeholder="Мобильный телефон" required name="phone">
+            </td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><p>Распечатка</p></td>
+            <td width="50%"><p>Чистка</p></td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><input type="checkbox" name="pphone" id="pphone"/><label for="pphone">Детализация
+              звонков</label></td>
+            <td width="50%"><input type="checkbox" name="cphone" id="cphone"/><label for="cphone">Чистка
+              детализации</label></td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><input type="checkbox" name="psms" id="psms"/><label for="psms">Распечатка СМС</label></td>
+            <td width="50%"><input type="checkbox" name="csms" id="csms"/><label for="csms">Чистка СМС</label></td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><input type="checkbox" name="ptelegram" id="ptelegram"/><label for="ptelegram">Распечатка
+              Telegram</label></td>
+            <td width="50%"><input type="checkbox" name="ctelegram" id="ctelegram"/><label for="ctelegram">Чистка
+              Telegram</label></td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><input type="checkbox" name="pviber" id="pviber"/><label for="pviber">Распечатка
+              Viber</label></td>
+            <td width="50%"><input type="checkbox" name="cviber" id="cviber"/><label for="cviber">Чистка Viber</label>
+            </td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><input type="checkbox" name="pwhatsapp" id="pwhatsapp"/><label for="pwhatsapp">Распечатка
+              WhatsApp</label></td>
+            <td width="50%"><input type="checkbox" name="cwhatsapp" id="cwhatsapp"/><label for="cwhatsapp">Чистка
+              WhatsApp</label></td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><input type="checkbox" name="pimessage" id="pimessage"/><label for="pimessage">Распечатка
+              iMessage</label></td>
+            <td width="50%"><input type="checkbox" name="cimessage" id="cimessage"/><label for="cimessage">Чистка
+              iMessage</label></td>
+          </tr>
+          <tr>
+            <td><br></td>
+            <td><br></td>
+          </tr>
+          <tr width="100%">
+            <td width="50%"><p>Начало периода</p></td>
+            <td width="50%"><p>Конец периода</p></td>
+          </tr>
+          <tr width="100%">
+            <td width="50%">
+              <input type="date" min="2000-01-01" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" max="22019-02-05" class="form-control" id="bdate" required name="date">
+            </td>
+            <td width="50%">
+              <input type="date" min="2000-01-01" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" max="2019-02-05" class="form-control" id="bdate2" required name="date2">
+            </td>
+          </tr>
+        </table>
+        <textarea name="text" id="btext" placeholder="Комментарий к заказу" rows="2"></textarea>
+        <input type="submit" class="form-control submit" onclick="buy_order(); return false;" value="Отправить" name="buy">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="sk-spinner sk-spinner-pulse"></div>
+</div>
+
+
+<!-- Главаная -->
+<section id="home" class="parallax-section">
+  <div class="gradient-overlay"></div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-12">
+        <h1 class="wow fadeInUp" data-wow-delay="0.6s">SIMROBOT.RU</h1>
+        <p class="wow fadeInUp" data-wow-delay="1.0s">ДЕТАЛИЗАЦИЯ ЗВОНКОВ, РАСПЕЧАТКА СМС, МТС, БИЛАЙН, МЕГАФОН, ТЕЛЕ2,
+          YOTA, WHATSAPP И НЕ ТОЛЬКО</p>
+        <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll" data-wow-delay="1.3s">Почему
+          мы?</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Меню -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">SIMROBOT.RU</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#top" class="smoothScroll">Главаная</a></li>
+        <li><a href="#feature" class="smoothScroll">Почему мы?</a></li>
+        <li><a href="#menu" class="smoothScroll">Услуги</a></li>
+        <li><a href="#team" onclick="open_cart(); return false;" class="smoothScroll">Заказать</a></li>
+        <li><a href="#gallery" class="smoothScroll">Наши услуги</a></li>
+        <li><a href="#contact" class="smoothScroll">Контакты</a></li>
+        <li><a href="article.php" class="smoothScroll">Статьи</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Преимущества -->
+<section id="feature" class="parallax-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
+          <h2>Почему мы?</h2>
+          <h4>Нам доверяют сотни людей!</h4>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="feature-thumb">
+          <div class="feature-icon">
+            <span><i class="fa fa-hourglass-start"></i></span>
+          </div>
+          <h3>Быстро</h3>
+          <p>Мы можем помочь Вам в получении детализации звонков любого номера. Доступны операторы: Билайн, Мегафон,
+            МТС, Теле2, Yota и не только. Изготовление распечаток занимает не более 2х часов с момента как вы сообщите
+            нам об оплате.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="feature-thumb">
+          <div class="feature-icon">
+            <span><i class="fa fa-thumbs-up"></i></span>
+          </div>
+          <h3>Качествено</h3>
+          <p>Гарантией нашего качества являются отзывы тех людей, кто уже сделал заказ, получил результаты и остался
+            доволен нашей работой.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+        <div class="feature-thumb">
+          <div class="feature-icon">
+            <span><i class="fa fa-user-secret"></i></span>
+          </div>
+          <h3>Анонимно</h3>
+          <p> Владелец номера, который вы у нас закажете на предмет получения любой услуги, ни о чем не узнает. Все
+            действия при получении распечаток или их удалении, происходят на уровне програмного обеспечения серверов
+            провайдеров услуг, а не с телефоном абонента. Анонимность гарантированна!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Наши услуги -->
+<section id="menu" class="parallax-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+          <h2>Наши услуги</h2>
+          <h4>Распечатка звонков / СМС / Чатов</h4>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="media wow fadeInUp" data-wow-delay="0.6s">
+          <div class="media-object pull-left">
+            <a href="article.php?id=1">
+              <img src="images/phone.png" class="img-responsive">
+              <span class="menu-price">₽1000</span>
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Детализация звонков</h3>
+            <p>Мы можем помочь Вам в получении детализации звонков любого номера. Доступны операторы: Билайн, Мегафон,
+              МТС, Теле2, Yota и не только.</p>
+          </div>
+        </div>
+
+        <div class="media wow fadeInUp" data-wow-delay="0.9s">
+          <div class="media-object pull-left">
+            <a href="article.php?id=2">
+              <img src="images/sms.png" class="img-responsive">
+              <span class="menu-price">₽1000</span>
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Распечатка СМС</h3>
+            <p>Мы можем помочь Вам в получении СМС переписки любого номера. Доступны операторы: Билайн, Мегафон, МТС,
+              Теле2, Yota и не только. </p>
+          </div>
+        </div>
+
+        <div class="media wow fadeInUp" data-wow-delay="1.2s">
+          <div class="media-object pull-left">
+            <a href="article.php?id=3">
+              <img src="images/whatsapp.png" class="img-responsive">
+              <span class="menu-price">₽2000</span>
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Распечатка WhatsApp</h3>
+            <p>Мы можем помочь Вам в получении переписки WhatsApp любого номера.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="media wow fadeInUp" data-wow-delay="1s">
+          <div class="media-object pull-left">
+            <a href="article.php?id=4">
+              <img src="images/viber.png" class="img-responsive">
+              <span class="menu-price">₽2000</span>
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Распечатка Viber</h3>
+            <p>Мы можем помочь Вам в получении переписки Viber любого номера. </p>
+          </div>
+        </div>
+
+        <div class="media wow fadeInUp" data-wow-delay="1.3s">
+          <div class="media-object pull-left">
+            <a href="article.php?id=5">
+              <img src="images/telegram.png" class="img-responsive">
+              <span class="menu-price">₽2000</span>
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Распечатка Telegram</h3>
+            <p>Мы можем помочь Вам в получении переписки Telegram любого номера. </p>
+          </div>
+        </div>
+
+        <div class="media wow fadeInUp" data-wow-delay="1.6s">
+          <div class="media-object pull-left">
+            <a href="article.php?id=6">
+              <img src="images/imessage.png" class="img-responsive" alt="Распечатка iMessage">
+              <span class="menu-price">₽2000</span>
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading">Распечатка iMessage</h3>
+            <p>Мы можем помочь Вам в получении переписки iMessage любого номера. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Наши качества -->
+<section id="team" class="parallax-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+        <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+          <h2>Сделай заказ прямо сейчас</h2>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <img src="images/quick.png" class="img-responsive" alt="Team">
+          <div class="team-des">
+            <h3>Быстро</h3>
+            <ul class="social-icon">
+              <li><a href="#" onclick="return false;" class="fa fa-hourglass-half"></a></li>
+              <li><a href="#" onclick="return false;" class="fa fa-calendar-o"></a></li>
+              <li><a href="#" onclick="return false;" class="fa fa-laptop"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="team-thumb">
+          <img src="images/quality.png" class="img-responsive" alt="Team">
+          <div class="team-des">
+            <h3>Качествено</h3>
+            <ul class="social-icon">
+              <li><a href="#" onclick="return false;" class="fa fa-check-circle-o"></a></li>
+              <li><a href="#" onclick="return false;" class="fa fa-gears"></a></li>
+              <li><a href="#" onclick="return false;" class="fa fa-registered"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+        <div class="team-thumb">
+          <img src="images/user.png" class="img-responsive" alt="Team">
+          <div class="team-des">
+            <h3>Анонимно</h3>
+            <ul class="social-icon">
+              <li><a href="#" onclick="return false;" class="fa fa-envelope"></a></li>
+              <li><a href="#" onclick="return false;" class="fa fa-lock"></a></li>
+              <li><a href="#" onclick="return false;" class="fa fa-thumbs-o-up"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.1s">
+        <div class="join-team">
+          <i class="fa fa-shopping-cart"></i>
+          <p>Услуги нашей компании могут быть выгодны очень многим. Теперь Вы тоже можете получить всю информацию! </p>
+          <div class="btn btn-default hvr-bounce-to-bottom" onclick="open_cart(); return false;">Заказать</div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+
+      <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+        <h2>Услуги нашей компании</h2>
+        <p>Многие используют детализацию звонков для того, чтобы рассмотреть и распределить расходы, так как в процессе
+          траты незаметны, но сухие цифры на бумаге дают отличное представление о том, что и куда уходит. Так же
+          услугами нашей компании можно воспользоваться, если Вы сомневаетесь в верности вашей второй половины или
+          заметили за ней подозрительную мобильную активность.</p>
+      </div>
+      <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.3s">
+        <h2>Узнать данные владельца СИМ-карты</h2>
+        <p>Иногда необходимо узнать на кого оформлена СИМ-карта. Такое бывает, например, когда кто-то достает вас
+          звонками, или должен вам денег, а кроме номера телефона вам о человеке больше ничего неизвестно. Вот в таких
+          случаях и приходим мы на помощь.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Все услуги -->
+<section id="gallery" class="parallax-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+          <div class="wow fadeInUp section-title" data-wow-delay="0.3s">
+            <h2>Все Наши услуги</h2>
+            <h4>Детализация / Чистка / </h4>
+          </div>
+        </div>
+
+        <!-- iso section -->
+        <div class="iso-section wow fadeInUp" data-wow-delay="0.6s">
+
+          <ul class="filter-wrapper clearfix">
+            <li><a href="#" data-filter="*" class="selected opc-main-bg">Все услуги</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".detail">Детализация</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".clear">Чистка</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".print">Распечатка</a></li>
+          </ul>
+
+          <!-- iso box section -->
+          <div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
+            <div class="iso-box-wrapper col4-iso-box">
+
+              <div class="iso-box breakfast detail lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=1">
+                    <img src="images/phone.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Детализация звонков</h3>
+              </div>
+
+              <div class="iso-box breakfast print lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=2">
+                    <img src="images/sms.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Распечатка СМС</h3>
+              </div>
+
+              <div class="iso-box breakfast print lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=3">
+                    <img src="images/whatsapp.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Распечатка WhatsApp</h3>
+              </div>
+
+              <div class="iso-box breakfast print lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=4">
+                    <img src="images/viber.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Распечатка Viber</h3>
+              </div>
+
+              <div class="iso-box breakfast print lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=5">
+                    <img src="images/telegram.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Распечатка Telegram</h3>
+              </div>
+
+              <div class="iso-box breakfast print lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=6">
+                    <img src="images/imessage.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Распечатка iMessage</h3>
+              </div>
+
+              <div class="iso-box breakfast clear lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=7">
+                    <img src="images/phone.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Чистка детализации</h3>
+              </div>
+
+              <div class="iso-box breakfast clear lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=8">
+                    <img src="images/sms.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Чистка СМС</h3>
+              </div>
+
+              <div class="iso-box breakfast clear lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=9">
+                    <img src="images/whatsapp.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Чистка WhatsApp</h3>
+              </div>
+
+              <div class="iso-box breakfast clear lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=10">
+                    <img src="images/viber.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Чистка Viber</h3>
+              </div>
+
+              <div class="iso-box breakfast clear lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=11">
+                    <img src="images/telegram.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Чистка Telegram</h3>
+              </div>
+
+              <div class="iso-box breakfast clear lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="statya.html">
+                    <img src="article.php?id=12" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Чистка iMessage</h3>
+              </div>
+
+              <div class="iso-box breakfast detail lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb">
+                  <a href="article.php?id=13">
+                    <img src="images/spy.png" class="fluid-img" alt="Gallery">
+                  </a>
+                </div>
+                <h3>Прослушка телефона</h3>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="parallax-section">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+        <div class="section-title" id="subh1">
+          <h2>Мы скоро с Вами свяжемся!</h2>
+          <h4>SIMROBOT.RU</h4>
+        </div>
+        <div id="sub1">
+          <div class="wow fadeInUp section-title" id="sub" data-wow-delay="0.3s">
+            <h2>Остались вопросы?</h2>
+            <h4>напиши Нам!</h4>
+          </div>
+          <div class="contact-form wow fadeInUp" id="subform" data-wow-delay="0.7s">
+            <form id="contact-form" method="post" action="#">
+              <input name="name" id="fname" type="text" class="form-control" placeholder="Ваше имя" required>
+              <input name="email" id="fmail" type="email" class="form-control" placeholder="Ваш Email" required>
+              <textarea name="message" id="fmessage" class="form-control" placeholder="Сообщение" rows="5" required></textarea>
+              <input type="submit" name="contact" class="form-control submit" onclick="send(); return false;" value="Отправить">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.3s" style="width:66.66666666%">
+        <h3>SIMROBOT.RU</h3>
+        <p>Мы можем помочь Вам в получении детализации звонков любого номера. Доступны операторы: Билайн, Мегафон, МТС,
+          Теле2, Yota и не только. Изготовление распечаток занимает не более 2х часов с момента как вы сообщите нам об
+          оплате.</p>
+      </div>
+
+      <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="1.6s">
+        <h3>Контакты</h3>
+        <p>simrobot@hotmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Copyright -->
+<section id="copyright">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-8 col-sm-8 col-xs-8">
+        <p>Copyright © 2017 SIMROBOT.RU</p>
+      </div>
+
+      <div class="col-md-4 col-sm-4 text-right">
+        <a href="#home" class="fa fa-angle-up smoothScroll gototop"></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- javscript -->
+<script src="js/jquery/jquery-1.11.1.min.js"></script>
+<script src="plugins/bootstrap/bootstrap-3.3.5.min.js"></script>
+
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
+
+<script src="plugins/flexslider/jquery.flexslider-min.js"></script>
+
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="plugins/wow/wow.min.js"></script>
+
+<script src="js/custom.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

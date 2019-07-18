@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	font-family: 'poppinsregular';
+	color: #000;
+	font-size: 14px;
+	background: #fff;
+	line-height: 1.3;
+}
+
+@media screen and (max-width: 992px){
+	body{
+		font-size: 12px !important;
+	}
+}
+@media screen and (max-width: 768px){
+	body{
+		font-size: 11px !important;
+	}
+}
+body.admin-bar header#masthead{
+	top: 32px;
+}
+@media screen and (max-width: 768px) {
+	body.admin-bar header#masthead {
+		top: 46px;
+	}
+}
+@media screen and (max-width: 600px) {
+	body.admin-bar header#masthead{
+		top: 0px;
+	}
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+a, a:hover, a:active, a:visited,a:focus{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/********************************placeholder*/
+form *::-webkit-input-placeholder{
+	color: #050505 !important;
+}
+form *::-moz-placeholder          {
+	color: #050505 !important;
+}
+/* Firefox 19+ */
+form *:-moz-placeholder           {
+	color: #050505 !important;
+}
+/* Firefox 18- */
+form *:-ms-input-placeholder      {
+	color: #050505 !important;
+}
+form *:focus::-webkit-input-placeholder {
+	color: transparent !important;
+}
+form *:focus::-moz-placeholder          {
+	color: transparent !important;
+}
+form *:focus:-moz-placeholder           {
+	color: transparent !important;
+}
+form *:focus:-ms-input-placeholder      {
+	color: transparent !important;
+}
+
+.wpcf7-form input.form-control,
+.wpcf7-form textarea.form-control{
+	height: 45px;
+	width: 100%;
+	border-radius: 0px;
+	background: #b4b4b4;
+	color: #050505 !important;
+	font-size: 13px;
+	font-family: 'poppinsmedium';
+	font-style: italic;
+}
+.wpcf7-form textarea.form-control{
+	height: 142px;
+	resize: none;
+	padding: 13px;
+}
+.wpcf7-form .form-group{
+	margin-bottom: 25px;
+}
+.btn-1{
+	padding: 17px 15px 13px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0px;
+	outline: 0px;
+	color: #fff  !important;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	background: #039be5  !important;
+	width: 100%;
+	max-width: 260px;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-style: normal !important;
+	cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+	.btn-1 {
+		padding: 17px 15px 15px;
+	}
+}
+.btn-1:hover{
+	opacity: 0.8;
+}
+
+.wpcf7-form .btn-1{
+	max-width: 160px;
+	padding: 17px 15px;
+}
