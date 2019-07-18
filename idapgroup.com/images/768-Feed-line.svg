@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129px" height="504px" viewBox="0 0 129 504" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Messenger Line Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="117.507546%" y1="120.817069%" x2="62.1936146%" y2="-13.9743371%" id="linearGradient-1">
+            <stop stop-color="#FF5BB0" offset="0%"/>
+            <stop stop-color="#8C51E1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="-2.55685419%" y1="100%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#9552DD" offset="0%"/>
+            <stop stop-color="#E26FC7" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6-Copy-3" transform="translate(-530.000000, -3235.000000)">
+            <g id="Messenger-Line-Copy-3" transform="translate(530.000000, 3235.000000)">
+                <g id="Point">
+                    <path d="M94.7633461,0.994686083 L120.77872,0.994686083 C124.644713,0.994686083 127.77872,4.12869283 127.77872,7.99468608 L127.77872,116.443516 C127.77872,120.309509 124.644713,123.443516 120.77872,123.443516 L14.0142147,123.443516 C10.1482215,123.443516 7.01421471,126.577523 7.01421471,130.443516 C7.01421471,130.448249 7.01421951,130.452983 7.01422911,130.457716 C7.16121162,202.912325 7.30819413,275.366934 7.45517664,347.821543 C7.45499199,347.861237 7.30326645,368.254056 7,409 L7.5,495.707919" id="Path-3" stroke="url(#linearGradient-2)"/>
+                    <circle id="Oval-6-Copy" fill="url(#linearGradient-1)" cx="8" cy="496" r="8"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

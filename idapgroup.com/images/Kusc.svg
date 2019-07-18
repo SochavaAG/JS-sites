@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="48px" viewBox="0 0 50 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="66.9757723%" y1="20.3768978%" x2="178.471914%" y2="140.364955%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"/>
+            <stop stop-color="#9A0F0F" offset="100%"/>
+        </linearGradient>
+        <path d="M27.676259,12.0629038 L48.1468777,12.0629038 L48.1468777,7.88516396 L27.676259,7.88516396 L27.676259,12.0629038 Z M50.0734388,4 L25.7496978,4 C24.6861007,4 23.8243453,4.8691942 23.8243453,5.94319152 L23.8243453,32.7333902 C22.4042014,32.0555894 20.6891511,31.6569548 18.8375252,31.6569548 C13.9558561,31.6569548 10,34.4205778 10,37.8290869 C10,41.237596 13.9558561,44 18.8375252,44 C23.7204029,44 27.676259,41.237596 27.676259,37.8290869 C27.676259,37.8059247 27.6714245,37.7852005 27.6714245,37.7620383 C27.6714245,37.7461904 27.676259,37.7303426 27.676259,37.7144947 L27.676259,15.9492868 L48.1468777,15.9492868 L48.1468777,32.7333902 C46.7279424,32.0555894 45.0128921,31.6569548 43.1612662,31.6569548 C38.2795971,31.6569548 34.323741,34.4205778 34.323741,37.8290869 C34.323741,41.237596 38.2795971,44 43.1612662,44 C48.0441439,44 52,41.237596 52,37.8290869 C52,37.8059247 51.9951655,37.7852005 51.9951655,37.7620383 C51.9951655,37.7461904 52,37.7303426 52,37.7144947 L52,5.94319152 C52,4.8691942 51.137036,4 50.0734388,4 Z" id="path-2"/>
+        <filter x="-26.2%" y="-17.5%" width="152.4%" height="155.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shape-Copy-13" transform="translate(-6.000000, -2.000000)">
+            <g id="Page-1">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"/>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"/>
+            </g>
+        </g>
+    </g>
+</svg>

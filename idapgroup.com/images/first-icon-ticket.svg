@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="195px" viewBox="0 0 195 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="153" height="153" rx="9"/>
+        <filter x="-21.2%" y="-19.9%" width="142.5%" height="142.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="10.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0567255435 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-12.0583038%" id="linearGradient-3">
+            <stop stop-color="#68D2FE" offset="0%"/>
+            <stop stop-color="#FFFFFF" stop-opacity="0.649999976" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#78D4FE" offset="0%"/>
+            <stop stop-color="#FFFFFF" stop-opacity="0.649999976" offset="100%"/>
+        </linearGradient>
+        <filter x="-11.3%" y="-9.1%" width="122.6%" height="136.4%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.501960784   0 0 0 0 0.450980392   0 0 0 0 0.450980392  0 0 0 0.232223732 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path d="M51.581667,11.6193952 L52.874299,11.4083856 L52.874299,0 L38.4164829,0 L38.4164829,5.47620192 L35.3183794,5.47620192 L35.3183794,0 L2.61124455e-13,0 L2.61124455e-13,11.4083856 L1.29263203,11.6194957 C3.53555567,11.9857481 5.16350576,13.8604178 5.16350576,16.0769231 C5.16350576,18.2934284 3.53555567,20.1680981 1.29263203,20.534451 L2.61124455e-13,20.7454606 L2.61124455e-13,32.1538462 L35.3183794,32.1538462 L35.3183794,26.6776442 L38.4164829,26.6776442 L38.4164829,32.1538462 L52.874299,32.1538462 L52.874299,20.7454606 L51.581667,20.5343505 C49.3387433,20.1680981 47.7107932,18.2934284 47.7107932,16.0769231 C47.7107932,13.8604178 49.3387433,11.9857481 51.581667,11.6193952 Z M38.4164829,23.6632212 L35.3183794,23.6632212 L35.3183794,17.634375 L38.4164829,17.634375 L38.4164829,23.6632212 Z M38.4164829,14.5194712 L35.3183794,14.5194712 L35.3183794,8.490625 L38.4164829,8.490625 L38.4164829,14.5194712 Z" id="path-6"/>
+        <linearGradient x1="50%" y1="0.512197066%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#AEDCFD" offset="0%"/>
+            <stop stop-color="#35CCFF" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-1077.000000, -814.000000)">
+            <g id="2-copy-2" transform="translate(520.000000, 773.000000)">
+                <g id="Group-18" transform="translate(0.000000, 60.000000)">
+                    <g id="Group-23" transform="translate(578.000000, 0.000000)">
+                        <g id="Rectangle-7-Copy">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"/>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"/>
+                        </g>
+                        <g id="Group-6" transform="translate(26.000000, 20.000000)">
+                            <g id="Group-2">
+                                <g id="Group">
+                                    <path d="M53.6140818,10.0799719 L84.9244266,28.1225641 C87.7874425,29.7723776 89.5517241,32.8252925 89.5517241,36.1296448 L89.5517241,72.1843234 C89.5517241,75.4886757 87.7874425,78.5415906 84.9244266,80.1914041 L53.6140818,98.2339963 C50.7581495,99.8797279 47.2418505,99.8797279 44.3859182,98.2339963 L13.0755734,80.1914041 C10.2125575,78.5415906 8.44827586,75.4886757 8.44827586,72.1843234 L8.44827586,36.1296448 C8.44827586,32.8252925 10.2125575,29.7723776 13.0755734,28.1225641 L44.3859182,10.0799719 C47.2418505,8.43424035 50.7581495,8.43424035 53.6140818,10.0799719 Z" id="Polygon" fill="url(#linearGradient-3)"/>
+                                    <path d="M53.5865629,1.59697906 L93.3451836,24.3264125 C96.2236917,25.9720142 98,29.0335959 98,32.349288 L98,77.6509154 C98,80.9666074 96.2236917,84.0281891 93.3451836,85.6737909 L53.5865629,108.403224 C50.7446661,110.027896 47.2553339,110.027896 44.4134371,108.403224 L4.65481639,85.6737909 C1.77630833,84.0281891 1.687539e-14,80.9666074 1.24344979e-14,77.6509154 L-8.8817842e-15,32.349288 C-1.24344979e-14,29.0335959 1.77630833,25.9720142 4.65481639,24.3264125 L44.4134371,1.59697906 C47.2553339,-0.0276926222 50.7446661,-0.0276926222 53.5865629,1.59697906 Z" id="Polygon" fill="url(#linearGradient-4)"/>
+                                    <g id="color/primary" filter="url(#filter-5)" transform="translate(48.317164, 55.668327) rotate(-38.000000) translate(-48.317164, -55.668327) translate(21.817164, 39.168327)">
+                                        <mask id="mask-7" fill="white">
+                                            <use xlink:href="#path-6"/>
+                                        </mask>
+                                        <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-6"/>
+                                        <g id="color/blue" mask="url(#mask-7)" fill="url(#linearGradient-8)">
+                                            <g transform="translate(28.385481, 13.522655) rotate(35.000000) translate(-28.385481, -13.522655) translate(-2.511071, -18.433884)" id="Gradient">
+                                                <rect x="0" y="0" width="62.0271562" height="64"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

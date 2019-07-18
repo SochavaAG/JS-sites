@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="50px" viewBox="0 0 64 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6-Copy-3" transform="translate(-699.000000, -10615.000000)">
+            <g id="Group-15" transform="translate(583.000000, 10366.000000)">
+                <g id="Page-1" transform="translate(116.000000, 249.000000)">
+                    <path d="M5.25,43.1662 L2.5,43.1662 C1.396,43.1662 0.5,42.2712 0.5,41.1662 L0.5,2.5002 C0.5,1.3952 1.396,0.5002 2.5,0.5002 L54.731,0.5002 C55.836,0.5002 56.731,1.3952 56.731,2.5002 L56.731,5.1632" id="Stroke-1" stroke="#CF2323" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M61.5,7.3293 L9.269,7.3293 C8.164,7.3293 7.269,8.2253 7.269,9.3293 L7.269,47.9963 C7.269,49.1003 8.164,49.9963 9.269,49.9963 L61.5,49.9963 C62.604,49.9963 63.5,49.1003 63.5,47.9963 L63.5,9.3293 C63.5,8.2253 62.604,7.3293 61.5,7.3293 M61.5,8.3293 C62.052,8.3293 62.5,8.7783 62.5,9.3293 L62.5,47.9963 C62.5,48.5483 62.052,48.9963 61.5,48.9963 L9.269,48.9963 C8.717,48.9963 8.269,48.5483 8.269,47.9963 L8.269,9.3293 C8.269,8.7783 8.717,8.3293 9.269,8.3293 L61.5,8.3293" id="Fill-3" fill="#CF2323"/>
+                    <path d="M31.4321,35.8332 C31.9011,37.6612 29.8961,39.7552 26.9541,40.5102 C24.0121,41.2662 21.2461,40.3952 20.7771,38.5682 C20.3081,36.7402 22.3131,34.6462 25.2551,33.8922 C28.1971,33.1362 30.9631,34.0062 31.4321,35.8332 Z" id="Stroke-5" stroke="#CF2323" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M53.1396,37.0393 C53.6086,38.8673 51.6036,40.9613 48.6616,41.7163 C45.7196,42.4723 42.9536,41.6013 42.4856,39.7743 C42.0156,37.9463 44.0206,35.8523 46.9626,35.0983 C49.9056,34.3423 52.6696,35.2123 53.1396,37.0393 Z" id="Stroke-7" stroke="#CF2323" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline id="Stroke-9" stroke="#CF2323" stroke-linecap="round" stroke-linejoin="round" points="31.5 36.0793 31.5 12.6633 53 12.6633 53 36.7883"/>
+                    <path d="M31.5,17.9963 L45,17.9963" id="Stroke-11" stroke="#CF2323" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M49.125,17.9963 L53,17.9963" id="Stroke-13" stroke="#CF2323" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

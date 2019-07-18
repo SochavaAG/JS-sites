@@ -1,0 +1,352 @@
+.person-box {
+  background: #fff;
+  position: relative;
+  height: 320px; }
+
+.head-person-box {
+  padding: 40px;
+  padding-bottom: 180px;
+  font-size: 41px;
+  color: #321e5a;
+  line-height: 50px; }
+  .head-person-box span {
+    font-size: 21px;
+    display: block; }
+
+.info-person {
+  min-height: 60px;
+  width: 100%;
+  background: #dfdfdf; }
+
+.info-person-wrapper {
+  display: table;
+  width: 100%; }
+  .info-person-wrapper .title-info {
+    display: table-cell;
+    vertical-align: top;
+    width: 356px;
+    padding: 22px 30px;
+    height: 60px;
+    box-sizing: border-box; }
+  .info-person-wrapper .title-info-wrapper {
+    border-left: 7px solid #321e5a;
+    padding-left: 10px; }
+    .info-person-wrapper .title-info-wrapper .name-person {
+      font-size: 13px;
+      font-weight: bold;
+      float: left;
+      margin-right: 5px; }
+    .info-person-wrapper .title-info-wrapper .description-person {
+      font-size: 13px; }
+  .info-person-wrapper .box-info {
+    display: table-cell;
+    vertical-align: top;
+    padding: 25px 30px 25px 0;
+    box-sizing: border-box;
+    font-size: 13px; }
+
+ul.person {
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  z-index: 100; }
+
+.day-two-spikers ul.person li {
+  width: 25%; }
+
+ul.person li {
+  width: 6.66%;
+  height: 150px;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  overflow: visible; }
+  ul.person li a {
+    height: 100%;
+    width: 100%;
+    display: block; }
+
+.person-image-wrapper-global {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 140px; }
+
+.person-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 140px; }
+  .person-image-wrapper.disable-box {
+    opacity: 0.6; }
+
+.person-image-wrapper-active {
+  position: relative;
+  top: -140px;
+  width: 100%;
+  overflow: hidden;
+  height: 140px;
+  z-index: 1; }
+
+.persone-img {
+  top: 0;
+  filter: grayscale(75%); }
+
+.persone-img-active {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0; }
+  .persone-img-active.active-img {
+    opacity: 1 !important; }
+
+.active-person {
+  filter: grayscale(0);
+  z-index: 99 !important; }
+
+.dissable-person {
+  filter: grayscale(100%); }
+
+.person-001-img {
+  position: absolute;
+  left: -7%; }
+
+.person-002-img {
+  position: absolute;
+  left: 0%; }
+
+.person-003-img {
+  position: absolute;
+  left: 5.18%; }
+
+.person-004-img {
+  position: absolute;
+  left: 12.27%; }
+
+.person-005-img {
+  position: absolute;
+  left: 19.36%;
+  z-index: 21; }
+
+.person-006-img {
+  position: absolute;
+  left: 26.45%;
+  z-index: 20; }
+
+.person-007-img {
+  position: absolute;
+  left: 33.54%;
+  z-index: 19; }
+
+.person-008-img {
+  position: absolute;
+  left: 41.63%;
+  z-index: 18; }
+
+.person-009-img {
+  position: absolute;
+  left: 48.72%;
+  z-index: 17; }
+
+.person-010-img {
+  position: absolute;
+  left: 56%;
+  z-index: 16; }
+
+.person-011-img {
+  position: absolute;
+  left: 63%; }
+
+.person-012-img {
+  position: absolute;
+  left: 71%; }
+
+.person-013-img {
+  position: absolute;
+  left: 75.09%; }
+
+.person-014-img {
+  position: absolute;
+  left: 80%; }
+
+.person-015-img {
+  position: absolute;
+  left: 86.27%;
+  z-index: 21; }
+
+.person-016-img {
+  position: absolute;
+  right: 25.36%;
+  z-index: 20; }
+
+.person-017-img {
+  position: absolute;
+  right: 0%; }
+
+.person-018-img {
+  position: absolute;
+  right: 0%;
+  z-index: 19; }
+
+.person-019-img {
+  position: absolute;
+  left: 65.63%;
+  z-index: 18; }
+
+.person-020-img {
+  position: absolute;
+  left: 76.72%;
+  z-index: 17; }
+
+.person-021-img {
+  position: absolute;
+  left: 87%;
+  z-index: 16; }
+
+.day-one-spikers.june ul.person li {
+  width: 9.09% !important; }
+
+.day-two-spikers.june ul.person li {
+  width: 14.02% !important; }
+
+.june .person-001-img {
+  position: absolute;
+  left: -3%; }
+.june .person-002-img {
+  position: absolute;
+  left: 6%; }
+.june .person-003-img {
+  position: absolute;
+  left: 14.18%; }
+.june .person-004-img {
+  position: absolute;
+  left: 22.27%; }
+.june .person-005-img {
+  position: absolute;
+  left: 31.36%;
+  z-index: 21; }
+.june .person-006-img {
+  position: absolute;
+  left: 39.45%;
+  z-index: 20; }
+.june .person-007-img {
+  position: absolute;
+  left: 47.54%;
+  z-index: 19; }
+.june .person-008-img {
+  position: absolute;
+  left: 54.63%;
+  z-index: 18; }
+.june .person-009-img {
+  position: absolute;
+  left: 63.72%;
+  z-index: 17; }
+.june .person-010-img {
+  position: absolute;
+  left: 73%;
+  z-index: 16; }
+.june .person-011-img {
+  position: absolute;
+  left: 84%; }
+.june .person-012-img {
+  position: absolute;
+  left: 0%; }
+.june .person-013-img {
+  position: absolute;
+  left: 14.09%; }
+.june .person-014-img {
+  position: absolute;
+  left: 28.18%; }
+.june .person-015-img {
+  position: absolute;
+  left: 39.27%;
+  z-index: 21; }
+.june .person-016-img {
+  position: absolute;
+  right: 24.36%;
+  z-index: 20; }
+.june .person-017-img {
+  position: absolute;
+  right: 9%; }
+.june .person-018-img {
+  position: absolute;
+  right: -2%;
+  z-index: 19; }
+
+.day-one-spikers.june ul.person li {
+  width: 9.09% !important; }
+
+.day-two-spikers.june ul.person li {
+  width: 14.02% !important; }
+
+.june .person-001-img {
+  position: absolute;
+  left: -3%; }
+.june .person-002-img {
+  position: absolute;
+  left: 6%; }
+.june .person-003-img {
+  position: absolute;
+  left: 14.18%; }
+.june .person-004-img {
+  position: absolute;
+  left: 22.27%; }
+.june .person-005-img {
+  position: absolute;
+  left: 31.36%;
+  z-index: 21; }
+.june .person-006-img {
+  position: absolute;
+  left: 39.45%;
+  z-index: 20; }
+.june .person-007-img {
+  position: absolute;
+  left: 47.54%;
+  z-index: 19; }
+.june .person-008-img {
+  position: absolute;
+  left: 54.63%;
+  z-index: 18; }
+.june .person-009-img {
+  position: absolute;
+  left: 63.72%;
+  z-index: 17; }
+.june .person-010-img {
+  position: absolute;
+  left: 73%;
+  z-index: 16; }
+.june .person-011-img {
+  position: absolute;
+  left: 84%; }
+.june .person-012-img {
+  position: absolute;
+  left: 0%; }
+.june .person-013-img {
+  position: absolute;
+  left: 14.09%; }
+.june .person-014-img {
+  position: absolute;
+  left: 28.18%; }
+.june .person-015-img {
+  position: absolute;
+  left: 39.27%;
+  z-index: 21; }
+.june .person-016-img {
+  position: absolute;
+  right: 24.36%;
+  z-index: 20; }
+.june .person-017-img {
+  position: absolute;
+  right: 9%; }
+.june .person-018-img {
+  position: absolute;
+  right: -2%;
+  z-index: 19; }
+
+.hide-box {
+  display: none; }

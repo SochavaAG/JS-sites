@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="50px" viewBox="0 0 60 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-13.5%" y="-11.9%" width="126.9%" height="133.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient x1="-23.766817%" y1="31.4102817%" x2="187.792961%" y2="249.856695%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"/>
+            <stop stop-color="#FFC558" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shape-Copy-10" transform="translate(4.000000, 2.000000)" fill="url(#linearGradient-2)">
+            <g id="Page-1" filter="url(#filter-1)">
+                <g id="Group-3" transform="translate(26.000000, 0.000000)">
+                    <path d="M12.7803,4.1377 C13.8093,1.7037 16.1583,-0.0003 18.8873,-0.0003 C22.5653,-0.0003 25.2143,3.1477 25.5483,6.8977 C25.5483,6.8977 25.7283,7.8277 25.3343,9.5047 C24.7943,11.7867 23.5283,13.8157 21.8193,15.3627 L12.7803,23.4267 L3.8953,15.3627 C2.1873,13.8157 0.9223,11.7867 0.3823,9.5047 C-0.0137,7.8277 0.1653,6.8977 0.1653,6.8977 C0.4993,3.1457 3.1493,-0.0003 6.8273,-0.0003 C9.5573,-0.0003 11.7543,1.7037 12.7803,4.1377" id="Fill-1"/>
+                </g>
+                <g id="Group-6" transform="translate(0.000000, 8.000000)">
+                    <path d="M28.6182,8.2676 C26.8082,6.6296 25.4692,4.4816 24.8972,2.0636 C24.8012,1.6596 24.7412,1.3006 24.6992,0.9806 C21.6752,1.6346 19.1722,3.7606 17.9622,6.6226 C16.5052,3.1676 13.3882,0.7496 9.5132,0.7496 C4.2932,0.7496 0.5312,5.2146 0.0572,10.5406 C0.0572,10.5406 -0.1968,11.8606 0.3642,14.2396 C1.1312,17.4796 2.9272,20.3586 5.3522,22.5546 L17.9622,33.9996 L30.7912,22.5546 C33.1092,20.4556 34.8432,17.7266 35.6612,14.6606 L28.6182,8.2676 Z" id="Fill-4"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

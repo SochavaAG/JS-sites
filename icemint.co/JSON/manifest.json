@@ -1,0 +1,7 @@
+{
+	"name": "icemint",
+	"icons": [
+	],
+	"theme_color": "#ffffff",
+	"display": "standalone"
+}

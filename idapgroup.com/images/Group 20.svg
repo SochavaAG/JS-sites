@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="447px" viewBox="0 0 228 447" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 20</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.4%" y="-5.2%" width="119.2%" height="111.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100005661 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient x1="77.983154%" y1="79.3287702%" x2="0%" y2="37.6477832%" id="linearGradient-2">
+            <stop stop-color="#FFE915" offset="0%"/>
+            <stop stop-color="#FFB343" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="115.373326%" y1="47.3796638%" x2="62.1936146%" y2="-13.9743371%" id="linearGradient-3">
+            <stop stop-color="#FF5BB0" offset="0%"/>
+            <stop stop-color="#8C51E1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="14.1444694%" y2="15.3544877%" id="linearGradient-4">
+            <stop stop-color="#FF007C" offset="0%"/>
+            <stop stop-color="#FF76A4" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bonk_320" transform="translate(-92.000000, -2162.000000)">
+            <g id="iPhone--1-Copy-2" filter="url(#filter-1)" transform="translate(25.000000, 2033.000000)">
+                <g id="Group-20" transform="translate(85.306464, 143.359429)">
+                    <path d="M2.99949567,410.715778 C11.8953155,351.51728 28.2311471,301.698179 52.0069904,261.258475 C75.7828337,220.818771 105.013012,268.672294 139.697524,404.819043 L2.99949567,410.715778 Z" id="Path-27-Copy-2" fill="url(#linearGradient-2)" transform="translate(71.348510, 329.041366) rotate(178.000000) translate(-71.348510, -329.041366) "/>
+                    <path d="M40.9456192,382.543886 C74.439446,305.904858 107.34695,256.49361 139.668132,234.310142 C171.989314,212.126674 199.460576,261.537922 222.081918,382.543886 L40.9456192,382.543886 Z" id="Path-27-Copy-6" fill="url(#linearGradient-3)" style="mix-blend-mode: multiply;" transform="translate(131.513768, 305.849452) rotate(130.000000) translate(-131.513768, -305.849452) "/>
+                    <path d="M1.71301514,221.101155 C49.3841231,144.462128 96.2207298,95.0508799 142.222835,72.8674121 C188.224941,50.6839442 227.32425,100.095192 259.520763,221.101155 L1.71301514,221.101155 Z" id="Path-27-Copy-7" fill="url(#linearGradient-4)" transform="translate(130.616889, 144.406721) rotate(105.000000) translate(-130.616889, -144.406721) "/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

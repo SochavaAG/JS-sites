@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]>
+<html dir="ltr" lang="ru" class="ie8"><![endif]-->
+<!--[if IE 9 ]>
+<html dir="ltr" lang="ru" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="ru">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>КупиПросто</title>
+
+  <link href="images/favicon.png" rel="icon"/>
+
+  <!--<base href="https://kupiprosto.com.ua/"/>-->
+  <meta name="description" content="КупиПросто"/>
+
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+  <script src="js/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+  <link href="plugins/bootstrap/bootstrap-3.3.5.min.css" rel="stylesheet" media="screen"/>
+  <script src="plugins/bootstrap/bootstrap-3.3.5.min.js" type="text/javascript"></script>
+
+  <link href="css/stylesheet.css" rel="stylesheet">
+
+  <link href="css/nouislider.min.css" rel="stylesheet">
+  <script src="plugins/nouislider/nouislider.min.js" type="text/javascript"></script>
+
+  <link href="plugins/fotorama/fotorama.css" rel="stylesheet">
+  <link href="plugins/fotorama/them-fotorama.css" rel="stylesheet">
+  <script src="plugins/fotorama/fotorama.js" type="text/javascript"></script>
+
+  <script src="plugins/maskedinput/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+  <link href="plugins/swiper/swiper.min.css" type="text/css" rel="stylesheet" media="screen"/>
+  <script src="plugins/swiper/swiper.jquery.js" type="text/javascript"></script>
+
+  <link href="css/opencart.css" type="text/css" rel="stylesheet" media="screen"/>
+  <script src="js/common.js" type="text/javascript"></script>
+
+  <!-- BEGIN JIVOSITE CODE {literal} -->
+  <script type='text/javascript'>
+    (function () {
+      var widget_id = 'keELDxXkXo';
+      var d = document;
+      var w = window;
+
+      function l() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//code.jivosite.com/script/widget/' + widget_id;
+        var ss = document.getElementsByTagName('script')[0];
+        ss.parentNode.insertBefore(s, ss);
+      }
+
+      if (d.readyState == 'complete') {
+        l();
+      } else {
+        if (w.attachEvent) {
+          w.attachEvent('onload', l);
+        } else {
+          w.addEventListener('load', l, false);
+        }
+      }
+    })();</script>
+  <!-- {/literal} END JIVOSITE CODE -->
+  <!-- Global site tag (gtag.js) - Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116086273-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116086273-1');
+  </script>
+-->
+</head>
+
+<body>
+<nav id="top">
+  <div class="container">
+    <div id="top-links" class="nav pull-right">
+      <ul class="list-inline">
+        <!--<li class="right mob-left cart"><a href="http://kupiprosto.com.ua/index.php?route=checkout/cart" title="Корзина"> <span></span></a></li>-->
+        <div class="clean mobile"></div>
+        <div class="pull-left cart mob-left">
+          <form action="https://kupiprosto.com.ua/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="form-language">
+            <div class="btn-group">
+              <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+
+                <span class="color-white left">Русский</span>&nbsp;<i class="fa fa-caret-down color-white"></i></button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button class="btn btn-link btn-block language-select" type="button" name="ua-uk">
+                    <img src="images/ua.png" alt="Українська" title="Українська"/> Українська
+                  </button>
+                </li>
+                <li>
+                  <button class="btn btn-link btn-block language-select" type="button" name="ru-ru">
+                    <img src="images/ru.png" alt="Русский" title="Русский"/> Русский
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <input type="hidden" name="code" value=""/>
+            <input type="hidden" name="redirect" value="http://kupiprosto.com.ua/index.php?route=common/home"/>
+          </form>
+        </div>
+
+        <li class="visible-xs right col-xs-1">
+          <a class="icons" href="http://kupiprosto.com.ua/index.php?route=checkout/cart" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
+        </li>
+        <li class="right col-xs-1 col-sm-a"><a href="#" class="icons ico-insta mob-left"></a></li>
+        <li class="right col-xs-1 col-sm-a"><a href="#" class="icons ico-fb mob-left"></a></li>
+        <li class="right col-xs-5 col-sm-a">
+          <div id="search" class="input-group">
+            <input type="text" name="search" value="" id="input-search" placeholder="Поиск товара" class="form-control input-lg"/>
+            <span class="input-group-btn">
+	<button type="button" class="btn btn-default btn-lg" id="button-search"><i class="fa fa-search"></i></button>
+  </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<a href="http://kupiprosto.com.ua/index.php?route=checkout/cart" title="Корзина">
+  <div id="cart" class="btn-group btn-block">
+    <i class="fa fa-shopping-cart"></i> <span id="cart-total">0</span>
+  </div>
+</a>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-xs-12">
+        <div id="logo">
+          <a href="http://kupiprosto.com.ua/index.php?route=common/home">
+            <img src="images/logos.png" title="КупиПросто" alt="КупиПросто" class="img-responsive"/>
+            <img src="images/logos-active.png" title="КупиПросто" alt="КупиПросто" class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-12 right">
+        <h3 class="left color-deepblue eemid pc" style="margin: 0;">
+          <b><a href="http://kupiprosto.com.ua/index.php?route=information/contact">
+            <i class="fa fa-phone"></i>
+            +38 (098) <span class="color-deepblue "> 326-03-61 </span>
+          </a></b>
+        </h3>
+        <h3 class="left color-deepblue eemid pc" style="margin: 0;">
+          <b><a href="http://kupiprosto.com.ua/index.php?route=information/contact">
+            <i class="fa fa-phone"></i>
+            +38 (050) <span class="color-deepblue "> 082-64-40 </span>
+          </a></b>
+        </h3>
+        <h3 class="left color-deepblue eemid pc" style="margin: 0;">
+          <b><a href="http://kupiprosto.com.ua/index.php?route=information/contact">
+            <i class="fa fa-phone"></i>
+            +38 (063) <span class="color-deepblue ">459-29-49 </span>
+          </a></b>
+        </h3>
+        <div class="clean"></div>
+        <div class="callme" onclick="open_call()">
+          Заказать Звонок
+        </div>
+
+      </div>
+      <div class="col-sm-3 col-xs-10 right">
+        <img src="images/calendar.png" style="height:50px; margin:10px 10px 10px 0;" class="left">
+        <div class="left">
+          <h3 class="left color-blue" style="margin: 0;">График работы</h3>
+          <div class="clean"></div>
+          <h4 class="left color-deepblue bold" style="margin: 10px 0 0 0; line-height:19px;">
+            пн-пт&nbsp;<span class="right">&nbsp;09:00-19:00</span><br>сб<span class="right">&nbsp;10:00-15:00</span>
+          </h4>
+        </div>
+        <div class="clean"></div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="popup" id="call-me">
+    <div class="popup-block">
+      <a href="#" class="closes right" onclick="close_call(); return false;">+</a>
+      <h3 class="color-blue">Заказать Звонок</h3>
+      <form id="contact-form" method="post" action="contact.php">
+        <input name="name" id="fname" type="text" class="form-control" placeholder="Введите ваше имя" required>
+        <input name="phone" id="fphone" type="text" class="form-control" placeholder="Введите ваш телефон" required>
+        <input type="submit" class="form-control submit" onclick="send(); return false;" value="Заказать Звонок">
+      </form>
+    </div>
+  </div>
+  <script>
+    function send() {
+      var r = /^\w+@\w+\.\w{2,4}$/i;
+      document.getElementById("fname").style.border = '1px solid #fff';
+      document.getElementById("fphone").style.border = '1px solid #fff';
+      if (document.getElementById("fname").value.length == 0) {
+        document.getElementById("fname").style.border = '1px solid #f00';
+        alert("Вы не указали свое имя!");
+      }
+      else {
+        if (document.getElementById("fphone").value.length == 0) {
+          document.getElementById("fphone").style.border = '1px solid #f00';
+          alert("Вы не написали номер телефона!");
+        }
+        else {
+          var form_data = $("#contact-form").serialize(); //собераем все данные из формы
+          $.ajax({
+            type: "POST", //Метод отправки
+            url: "contact.php", //путь до php файла отправителя
+            data: form_data,
+            success: function () {
+              alert("Ми вам скоро перезвоним!");
+              close_call();
+            }
+          });
+        }
+      }
+    }
+    function open_call() {
+      document.getElementById("call-me").style.display = "block";
+      setTimeout(function () {
+        document.getElementById("call-me").style.opacity = "1";
+      }, 10);
+    }
+    function close_call() {
+      document.getElementById("call-me").style.opacity = "0";
+      setTimeout(function () {
+        document.getElementById("call-me").style.display = "none";
+      }, 500);
+    }
+  </script>
+</header>
+<div>
+  <nav id="menu" class="navbar">
+    <div class="navbar-header"><span id="category" class="visible-xs">Категории</span>
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <i class="fa fa-bars"></i> Меню
+      </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <table class="nav navbar-nav pc">
+        <tr>
+          <td>
+            <div class="nmenu">
+              <a class="omenu" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=35">
+                Телевизоры
+                <br>
+                <img src="images/smart-tv-60x60.png"></a>
+            </div>
+          </td>
+          <td>
+            <div class="nmenu">
+              <a class="omenu" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1">Встраиваемая
+                бытовая техника<br><img src="images/stove-60x60.png"></a>
+              <div class="menu">
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_110">Аксессуары</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_2">Варочные
+                  поверхности</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_112">Винные шкафы</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_7">Вытяжки </a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_12">Духовые шкафы</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_111">Машины для вакуумной
+                  упаковки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_15">Микроволновые печи
+                  встраиваемые </a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_16">Морозильные камеры
+                  встраиваемые</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_17">Посудомойки
+                  встраиваемые</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_18">Стиральные машины
+                  встраиваемые</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_19">Холодильники
+                  встраиваемые</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_113">Шкаф для подогрева
+                  посуды</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="nmenu">
+              <a class="omenu" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20">Крупная
+                бытовая техника<br><img src="images/appliances-60x60.png"></a>
+              <div class="menu">
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_114">Аксессуары</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_115">Винные шкафы</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_26">Морозильные
+                  камеры</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_21">Плиты</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_29">Посудомойки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_33">Стирально-сушильные
+                  машины</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_30">Стиральные машины</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_34">Сушильные машины</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_25">Холодильники</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="nmenu">
+              <a class="omenu" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36">Техника для
+                дома<br><img src="images/iron-60x60.png"></a>
+              <div class="menu">
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_46">Ванночки для ног</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_45">Весы напольные</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_92">Выпрямители и щипцы
+                  для завивки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_47">Доска гладильная</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_94">Машинки для
+                  стрижки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_38">Мойки высокого
+                  давления</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_39">Парогенераторы и
+                  утюги</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_40">Пароочиститель и
+                  пароочиститель для одежды</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_41">Поломоечная,
+                  подметальная машины</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_42">Пылесосы</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_54">Фен и фен-щетки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_91">Электробритва</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_93">Эпиляторы</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="nmenu">
+              <a class="omenu" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55">Техника для
+                кухни<br><img src="images/blender-60x60.png"></a>
+              <div class="menu">
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_99">Бутербродницы</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_100">Гриль</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_87">Измельчитель</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_76">Кофеварка и
+                  аксессуары</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_84">Кухонный комбайн</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_88">Ломтерезка</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_101">Микроволновая
+                  печь</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_85">Миксер</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_102">Мультиварки и
+                  пароварки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_86">Мясорубка</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_103">Овощерезки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_104">Соковыжималка</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_105">Сушка для овощей и
+                  фруктов</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_106">Тостеры</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_107">Фритюрница</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_108">Хлебопечки</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_109">Чайники</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_83">Блендеры</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="nmenu">
+              <a class="omenu" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68">Аксессуары
+                для кухни<br><img src="images/salver-60x60.png"></a>
+              <div class="menu">
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_69">Аксессуары для
+                  кухонных комбайнов</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_130">Весы</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_73">Измельчитель пищевых
+                  отходов</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_72">Мойка</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_74">Посуда</a>
+                <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_71">Смесители для
+                  кухни</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="menu-category mobile">
+        <a class="left" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=35">
+          <img src="images/smart-tv-60x60.png" class="left">Телевизоры</a>
+      </div>
+      <div class="clean mobile"></div>
+
+      <div class="menu-category mobile tab-arrow">
+        <a onclick="openTab('menu1');return false;" class="left" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1">
+          <img src="images/stove-60x60.png" class="left">Встраиваемая
+          бытовая техника</a></div>
+      <div class="clean mobile"></div>
+      <div class="menu-children-category" id="menu1">
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_110">Аксессуары</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_2">Варочные поверхности</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_112">Винные шкафы</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_7">Вытяжки </a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_12">Духовые шкафы</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_111">Машины для вакуумной
+            упаковки</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_15">Микроволновые печи
+            встраиваемые </a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_16">Морозильные камеры
+            встраиваемые</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_17">Посудомойки встраиваемые</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_18">Стиральные машины
+            встраиваемые</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_19">Холодильники
+            встраиваемые</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1_113">Шкаф для подогрева
+            посуды</a></div>
+        <div class="clean mobile"></div>
+      </div>
+
+      <div class="menu-category mobile tab-arrow">
+        <a onclick="openTab('menu20');return false;" class="left" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20">
+          <img src="images/appliances-60x60.png" class="left">Крупная
+          бытовая техника</a></div>
+      <div class="clean mobile"></div>
+      <div class="menu-children-category" id="menu20">
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_114">Аксессуары</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_115">Винные шкафы</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_26">Морозильные камеры</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_21">Плиты</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_29">Посудомойки</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_33">Стирально-сушильные
+            машины</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_30">Стиральные машины</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_34">Сушильные машины</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20_25">Холодильники</a></div>
+        <div class="clean mobile"></div>
+      </div>
+
+      <div class="menu-category mobile tab-arrow">
+        <a onclick="openTab('menu36');return false;" class="left" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36">
+          <img src="images/iron-60x60.png" class="left">Техника
+          для дома</a></div>
+      <div class="clean mobile"></div>
+      <div class="menu-children-category" id="menu36">
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_46">Ванночки для ног</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_45">Весы напольные</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_92">Выпрямители и щипцы для
+            завивки</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_47">Доска гладильная</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_94">Машинки для стрижки</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_38">Мойки высокого давления</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_39">Парогенераторы и утюги</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_40">Пароочиститель и
+            пароочиститель для одежды</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_41">Поломоечная, подметальная
+            машины</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_42">Пылесосы</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_54">Фен и фен-щетки</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_91">Электробритва</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36_93">Эпиляторы</a></div>
+        <div class="clean mobile"></div>
+      </div>
+
+      <div class="menu-category mobile tab-arrow">
+        <a onclick="openTab('menu55');return false;" class="left" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55">
+          <img src="images/blender-60x60.png" class="left">Техника
+          для кухни</a></div>
+      <div class="clean mobile"></div>
+      <div class="menu-children-category" id="menu55">
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_99">Бутербродницы</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_100">Гриль</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_87">Измельчитель</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_76">Кофеварка и аксессуары</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_84">Кухонный комбайн</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_88">Ломтерезка</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_101">Микроволновая печь</a>
+        </div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_85">Миксер</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_102">Мультиварки и
+            пароварки</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_86">Мясорубка</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_103">Овощерезки</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_104">Соковыжималка</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_105">Сушка для овощей и
+            фруктов</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_106">Тостеры</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_107">Фритюрница</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_108">Хлебопечки</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_109">Чайники</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55_83">Блендеры</a></div>
+        <div class="clean mobile"></div>
+      </div>
+
+      <div class="menu-category mobile tab-arrow">
+        <a onclick="openTab('menu68');return false;" class="left" href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68">
+          <img src="images/salver-60x60.png" class="left">Аксессуары
+          для кухни</a></div>
+      <div class="clean mobile"></div>
+      <div class="menu-children-category" id="menu68">
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_69">Аксессуары для кухонных
+            комбайнов</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_130">Весы</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_73">Измельчитель пищевых
+            отходов</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_72">Мойка</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_74">Посуда</a></div>
+        <div class="clean mobile"></div>
+        <div class="menu-category mobile menu-child-category">
+          <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68_71">Смесители для кухни</a>
+        </div>
+        <div class="clean mobile"></div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div class="fotorama pc" data-width="100%" data-fit="cover" data-transition="crossfade" data-autoplay="true">
+  <!--<div data-img="images/banner1.jpg" class="banner-promo">
+    <h1>НЕ ПРОПУСТИ!</h1>
+    <h3>ГОРЯЧЕЕ ПРЕДЛОЖЕНИЕ<br>ТОЛЬКО ДО <span class="red-promo">26.03</span><br>БЕСПЛАТНАЯ ДОСТАВКА<br>ПРИ ЗАКАЗЕ <span class="red-promo">ДО 5000 ГРН</span><br>ОФОРМЛЯЙ ЗАКАЗ<br>И <span class="red-promo">ЭКОНОМЬ ДО 40%</span></h3>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="#" class="btn btn-primary" onclick="open_call()">ОСТАВИТЬ ЗАЯВКУ</a>
+      </div>
+    </div>
+  </div>-->
+  <div data-img="images/1.jpg">
+    <h1>КупиПросто - интернет-магазин бытовой техники и электроники.</h1>
+    <h3>Большой ассортимент бытовой техники и электроники, цены, удобная навигация, профессиональная консультация
+      специалиста, мгновенная доставка, возможность выбора удобного для вас расчета - все это обеспечивает сервис
+      высокого качества в магазине КупиПросто.</h3>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="#" class="btn btn-primary" onclick="open_call()">Узнать подробнее</a>
+      </div>
+    </div>
+  </div>
+  <div data-img="images/1.jpg">
+    <h1>КупиПросто - интернет-магазин бытовой техники и электроники.</h1>
+    <h3>Большой ассортимент бытовой техники и электроники, цены, удобная навигация, профессиональная консультация
+      специалиста, мгновенная доставка, возможность выбора удобного для вас расчета - все это обеспечивает сервис
+      высокого качества в магазине КупиПросто.</h3>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="#" class="btn btn-primary" onclick="open_call()">Узнать подробнее</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fotorama mobile" data-width="100%" data-fit="cover" data-arrows="false" data-swipe="true" data-transition="crossfade" data-autoplay="true">
+  <div data-img="images/1_mobile.jpg">
+    <h1>КупиПросто - интернет-магазин бытовой техники и электроники.</h1>
+    <h3>Большой ассортимент бытовой техники и электроники, цены, удобная навигация, профессиональная консультация
+      специалиста, мгновенная доставка, возможность выбора удобного для вас расчета - все это обеспечивает сервис
+      высокого качества в магазине КупиПросто.</h3>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="#" class="btn btn-primary" onclick="open_call()">Узнать подробнее</a>
+      </div>
+    </div>
+  </div>
+  <div data-img="images/1_mobile.jpg">
+    <h1>КупиПросто - интернет-магазин бытовой техники и электроники.</h1>
+    <h3>Большой ассортимент бытовой техники и электроники, цены, удобная навигация, профессиональная консультация
+      специалиста, мгновенная доставка, возможность выбора удобного для вас расчета - все это обеспечивает сервис
+      высокого качества в магазине КупиПросто.</h3>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="#" class="btn btn-primary" onclick="open_call()">Узнать подробнее</a>
+      </div>
+    </div>
+  </div>
+  <div data-img="images/1_mobile.jpg">
+    <h1>КупиПросто - интернет-магазин бытовой техники и электроники.</h1>
+    <h3>Большой ассортимент бытовой техники и электроники, цены, удобная навигация, профессиональная консультация
+      специалиста, мгновенная доставка, возможность выбора удобного для вас расчета - все это обеспечивает сервис
+      высокого качества в магазине КупиПросто.</h3>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="#" class="btn btn-primary" onclick="open_call()">Узнать подробнее</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-4 left under-slider" style="padding-left:0">
+  <img src="images/2.jpg">
+  <h2>Акции</h2>
+  <div class="buttons">
+    <div class="pull-right">
+      <a href="http://kupiprosto.com.ua/index.php?route=product/special" class="btn btn-primary">Перейти к просмотру</a>
+    </div>
+  </div>
+</div>
+<div class="col-sm-4 left under-slider">
+  <img src="images/3.jpg">
+  <h2>Новинки</h2>
+  <div class="buttons">
+    <div class="pull-right">
+      <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=64" class="btn btn-primary">Перейти к
+        просмотру</a>
+    </div>
+  </div>
+</div>
+<div class="col-sm-4 left under-slider" style="padding-right:0">
+  <img src="images/4.jpg">
+  <h2>Популярные товары</h2>
+  <div class="buttons">
+    <div class="pull-right">
+      <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=64&amp;sort=rating&amp;order=DESC" class="btn btn-primary">Перейти
+        к просмотру</a>
+    </div>
+  </div>
+</div>
+<div class="clean"></div>
+<div id="common-home" class="container">
+  <div class="row">
+
+    <br>
+  </div>
+
+</div>
+<div class="clean"></div>
+<div class="margin-col-xs-11 col-xs-11 " id="categories">
+  <h1 class="tcenter">Категории</h1>
+  <div class="p3 m1 left banner-category">
+    <div class="crop"><img src="images/category-35.jpg"></div>
+    <h2>Телевизоры</h2>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=35" class="btn btn-primary">Перейти
+          к просмотру</a>
+      </div>
+    </div>
+  </div>
+  <div class="p3 m1 left banner-category">
+    <div class="crop"><img src="images/category-1.jpg"></div>
+    <h2>Встраиваемая бытовая техника</h2>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=1" class="btn btn-primary">Перейти к
+          просмотру</a>
+      </div>
+    </div>
+  </div>
+  <div class="p3 m1 left banner-category">
+    <div class="crop"><img src="images/category-20.jpg"></div>
+    <h2>Крупная бытовая техника</h2>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=20" class="btn btn-primary">Перейти
+          к просмотру</a>
+      </div>
+    </div>
+  </div>
+  <div class="p3 m1 left banner-category">
+    <div class="crop"><img src="images/category-36.jpg"></div>
+    <h2>Техника для дома</h2>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=36" class="btn btn-primary">Перейти
+          к просмотру</a>
+      </div>
+    </div>
+  </div>
+  <div class="p3 m1 left banner-category">
+    <div class="crop"><img src="images/category-55.jpg"></div>
+    <h2>Техника для кухни</h2>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=55" class="btn btn-primary">Перейти
+          к просмотру</a>
+      </div>
+    </div>
+  </div>
+  <div class="p3 m1 left banner-category">
+    <div class="crop"><img src="images/category-68.jpg"></div>
+    <h2>Аксессуары для кухни</h2>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="http://kupiprosto.com.ua/index.php?route=product/category&amp;path=68" class="btn btn-primary">Перейти
+          к просмотру</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clean"></div>
+<div class="banner">
+  <img src="images/10.jpg" class="pc">
+  <img src="images/10_mobile.jpg" class="mobile">
+  <div class="banhtml">
+    <h1>КупиПросто - это сервис высокого качества.</h1>
+    <h3>КупиПросто интернет магазин бытовой техники и электроники номер 1 в Украине. В нашем интернет-магазине
+      насчитывается более 200 наименований товара сертифицированного для продажи в Украине.</h3>
+    <div class="buttons">
+      <div class="pull-right">
+        <a href="#" class="btn btn-primary" onclick="open_call()">Узнать подробнее</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clean"></div>
+<div id="content" class="col-sm-12">
+  <h1 class="tcenter">Наши производители</h1>
+  <div id="slider-manuf">
+    <div class="swiper-viewport">
+      <div id="carousel0" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide text-center">
+            <img src="images/6-130x100.png" alt="BOSCH" class="img-responsive grayscale"/>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/Franke_logo.svg-130x100.png" alt="FRANKE" class="img-responsive grayscale"/>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/3-130x100.png" alt="BEKO" class="img-responsive grayscale"/>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/4-130x100.png" alt="Electrolux" class="img-responsive grayscale"/>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/2-130x100.png" alt="Amica" class="img-responsive grayscale"/>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/AEG-130x100.png" alt="AEG" class="img-responsive grayscale"/>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination carousel0"></div>
+      <div class="swiper-pager">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var browserWidth = window.innerWidth;
+      var item = 5;
+      if (browserWidth <= 768) {
+        item = 1;
+      }
+      $('#carousel0').swiper({
+        mode: 'horizontal',
+        slidesPerView: item,
+        pagination: '.carousel0',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoplay: 2500,
+        loop: true
+      });
+    </script>
+
+
+  </div>
+</div>
+<div class="clean"></div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row margin-col-xs-11 col-xs-11">
+      <div class="col-sm-3">
+        <div id="logo">
+          <a href=""><img src="images/logo-white.png" title="КупиПросто" alt="КупиПросто" class="img-responsive"/>
+            <img src="images/logo-white-active.png" title="КупиПросто" alt="КупиПросто" class="img-responsive"/></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <h5>Дополнительно</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://kupiprosto.com.ua/index.php?route=product/special">Акции</a></li>
+          <li><a href="http://kupiprosto.com.ua/index.php?route=information/contact">Контакты</a></li>
+          <li><a href="http://price.ua/firm9064.html#review" target="_blank">Отзывы</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Информация</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://kupiprosto.com.ua/index.php?route=information/information&amp;information_id=4">Как
+            купить</a></li>
+          <li>
+            <a href="http://kupiprosto.com.ua/index.php?route=information/information&amp;information_id=6">Доставка</a>
+          </li>
+          <li>
+            <a href="http://kupiprosto.com.ua/index.php?route=information/information&amp;information_id=5">Гарантия</a>
+          </li>
+          <!-- <li><a href="https://kupiprosto.com.ua/index.php?route=account/account">Личный Кабинет</a></li> -->
+        </ul>
+      </div>
+      <br class="mobile">
+      <div class="col-sm-3 right mob-left tright mob-tleft">
+        <ul class="list-unstyled">
+          <li style="font-weight: bold;">
+            <a href="http://kupiprosto.com.ua/index.php?route=information/contact">
+					<span style="float:right">
+						+38 (098) <span class="color-white"> 326-03-61</span>
+					</span>
+              <i class="fa fa-phone  mob-left"></i>
+            </a>
+            <div class="clear"></div>
+            <a href="http://kupiprosto.com.ua/index.php?route=information/contact">
+          <span style="float:right">
+            +38 (050) <span class="color-white">082-64-40</span>
+          </span>
+              <i class="fa fa-phone  mob-left"></i>
+            </a>
+            <div class="clear"></div>
+            <a href="http://kupiprosto.com.ua/index.php?route=information/contact">
+          <span style="float:right">
+            +38 (063) <span class="color-white">459-29-49</span>
+          </span>
+              <i class="fa fa-phone  mob-left"></i>
+            </a>
+            <div class="clear"></div>
+            <hr>
+          </li>
+          <div class="clear"></div>
+          <li style="font-weight: bold;">
+            <a href="http://kupiprosto.com.ua/">
+					<span>
+						kupiprosto.<span class="color-white">com.ua</span>
+					</span>
+            </a>
+            <br>
+            <hr>
+          </li>
+          <li style="font-weight: bold;" class="tright mob-tleft">
+            График работы<br>
+            <span class="color-white">пн-пт&nbsp;<span class="right">&nbsp;09:00-19:00</span><br>сб<span class="right">&nbsp;10:00-15:00</span></span>
+          </li>
+        </ul>
+      </div>
+      <div class="clean"></div>
+      <hr>
+      <a href="#" class="icons ico-insta mob-left"></a>
+      <a href="#" class="icons ico-fb mob-left"></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+

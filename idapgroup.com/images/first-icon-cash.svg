@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="195px" viewBox="0 0 195 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="153" height="153" rx="9"/>
+        <filter x="-21.2%" y="-19.9%" width="142.5%" height="142.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="10.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0567255435 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-12.0583038%" id="linearGradient-3">
+            <stop stop-color="#FFC46F" offset="0%"/>
+            <stop stop-color="#FFFFFF" stop-opacity="0.649999976" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#FFC673" offset="0%"/>
+            <stop stop-color="#FFFFFF" stop-opacity="0.649999976" offset="100%"/>
+        </linearGradient>
+        <path d="M39.3318095,8.86402643 L0.20952381,8.86402643 L0.20952381,37.8400466 C0.20952381,41.0649461 2.86312127,43.6787302 6.13714286,43.6787302 L39.7269841,43.6787302 C41.9103238,43.6787302 43.6787302,41.9368562 43.6787302,39.7862744 L43.6787302,13.1912777 C43.6787302,11.040696 41.5151492,8.86402643 39.3318095,8.86402643 Z M34.9848889,8.86402643 L34.9848889,7.32987857 C34.9848889,5.78729013 33.7343739,4.53677512 32.1917854,4.53677512 L7.34954789,4.53677512 C5.80695945,4.53677512 4.55644444,5.78729013 4.55644444,7.32987857 L4.55644444,8.86402643 L0.20952381,8.86402643 L0.20952381,7.65779967 C0.20952381,3.5442305 3.5442305,0.20952381 7.65779967,0.20952381 L31.8835337,0.20952381 C35.9971028,0.20952381 39.3318095,3.5442305 39.3318095,7.65779967 L39.3318095,8.86402643 L34.9848889,8.86402643 Z M35.7752381,29.9102033 C33.5918984,29.9102033 31.8234921,28.1497988 31.8234921,25.9763384 C31.8234921,23.8028781 33.5918984,22.0424736 35.7752381,22.0424736 C37.9585778,22.0424736 39.7269841,23.8028781 39.7269841,25.9763384 C39.7269841,28.1497988 37.9585778,29.9102033 35.7752381,29.9102033 Z" id="path-5"/>
+        <filter x="-9.2%" y="-4.6%" width="118.4%" height="118.4%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.501960784   0 0 0 0 0.450980392   0 0 0 0 0.450980392  0 0 0 0.153928895 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="1.38711735%" id="linearGradient-8">
+            <stop stop-color="#FFA834" offset="0%"/>
+            <stop stop-color="#FFE2AD" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3-Copy-2" transform="translate(-997.000000, -1127.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="2714"/>
+            <g id="2" transform="translate(291.000000, 715.000000)">
+                <g id="Group-18" transform="translate(0.000000, 60.000000)">
+                    <g id="Group-22" transform="translate(727.000000, 371.000000)">
+                        <g id="Rectangle-7">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"/>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"/>
+                        </g>
+                        <g id="1-copy-2" transform="translate(31.000000, 25.000000)">
+                            <g id="2">
+                                <g id="color/primary">
+                                    <g id="Group-2">
+                                        <g id="Group">
+                                            <path d="M49.2149056,9.01911057 L79.4218021,26.4014955 C81.731508,27.7306024 83.1551724,30.192393 83.1551724,32.8572131 L83.1551724,67.5793756 C83.1551724,70.2441957 81.731508,72.7059863 79.4218021,74.0350932 L49.2149056,91.4174781 C46.9150981,92.7408891 44.0849019,92.7408891 41.7850944,91.4174781 L11.5781979,74.0350932 C9.26849203,72.7059863 7.84482759,70.2441957 7.84482759,67.5793756 L7.84482759,32.8572131 C7.84482759,30.192393 9.26849203,27.7306024 11.5781979,26.4014955 L41.7850944,9.01911057 C44.0849019,7.69569957 46.9150981,7.69569957 49.2149056,9.01911057 Z" id="Polygon" fill="url(#linearGradient-3)"/>
+                                            <path d="M49.1927342,1.15758965 L87.2444583,22.8807901 C89.5666429,24.206493 91,26.6752616 91,29.3492155 L91,72.650973 C91,75.324927 89.5666429,77.7936956 87.2444583,79.1193985 L49.1927342,100.842599 C46.904244,102.149066 44.095756,102.149066 41.8072658,100.842599 L3.75554168,79.1193985 C1.43335707,77.7936956 9.76996262e-15,75.324927 9.76996262e-15,72.650973 L-1.15463195e-14,29.3492155 C-1.50990331e-14,26.6752616 1.43335707,24.206493 3.75554168,22.8807901 L41.8072658,1.15758965 C44.095756,-0.148877589 46.904244,-0.148877589 49.1927342,1.15758965 Z" id="Polygon" fill="url(#linearGradient-4)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="icon/all/2-copy-4" transform="translate(25.000000, 27.000000)">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"/>
+                                </mask>
+                                <g id="Wallet" fill-rule="nonzero">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-5"/>
+                                    <use fill="#FFFFFF" xlink:href="#path-5"/>
+                                </g>
+                                <g id="color/color_2" mask="url(#mask-6)" fill="url(#linearGradient-8)">
+                                    <g transform="translate(-3.142857, -3.142857)" id="Rectangle-4">
+                                        <polygon points="0 0 50.0197609 0 50.0197609 50 0 50"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

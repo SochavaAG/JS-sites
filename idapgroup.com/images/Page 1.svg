@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="49px" viewBox="0 0 56 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-14.6%" y="-11.9%" width="129.2%" height="133.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient x1="226.732312%" y1="240.492494%" x2="6.00164503%" y2="8.10056013%" id="linearGradient-2">
+            <stop stop-color="#7A7A7A" offset="0%"/>
+            <stop stop-color="#FFFFFF" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="179.03479%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#8C8C8C" offset="0%"/>
+            <stop stop-color="#FFFFFF" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shape-Copy-11" transform="translate(2.000000, 2.000000)">
+            <g id="Page-1" filter="url(#filter-1)" transform="translate(2.000000, -1.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.500000)" fill="url(#linearGradient-2)">
+                    <path d="M41.75,28.6665 L6.25,28.6665 C5.697,28.6665 5.25,28.2185 5.25,27.6665 C5.25,27.1145 5.697,26.6665 6.25,26.6665 L41.75,26.6665 C42.303,26.6665 42.75,27.1145 42.75,27.6665 C42.75,28.2185 42.303,28.6665 41.75,28.6665 M9.625,18.9595 C9.731,18.9595 9.832,18.9765 9.935,18.9905 L16.072,10.5065 C16.006,10.2975 15.96,10.0795 15.96,9.8485 C15.96,8.6525 16.929,7.6835 18.125,7.6835 C19.321,7.6835 20.29,8.6525 20.29,9.8485 C20.29,10.0305 20.261,10.2055 20.219,10.3745 L26.86,18.5885 C27.084,18.5105 27.32,18.4595 27.571,18.4595 C27.787,18.4595 27.99,18.5005 28.187,18.5595 L36.408,6.7075 C36.283,6.4335 36.21,6.1325 36.21,5.8125 C36.21,4.6165 37.179,3.6475 38.375,3.6475 C39.571,3.6475 40.54,4.6165 40.54,5.8125 C40.54,7.0085 39.571,7.9775 38.375,7.9775 C38.242,7.9775 38.113,7.9615 37.987,7.9385 L29.631,19.9885 C29.693,20.1905 29.736,20.4015 29.736,20.6245 C29.736,21.7785 28.833,22.7115 27.696,22.7775 L27.687,22.7915 L27.677,22.7795 C27.642,22.7815 27.607,22.7905 27.571,22.7905 C26.375,22.7905 25.406,21.8205 25.406,20.6245 C25.406,20.4325 25.439,20.2485 25.486,20.0705 L18.861,11.8765 C18.631,11.9605 18.385,12.0145 18.125,12.0145 C17.913,12.0145 17.713,11.9745 17.52,11.9175 L11.556,20.1635 C11.701,20.4545 11.79,20.7775 11.79,21.1245 C11.79,22.3205 10.821,23.2905 9.625,23.2905 C8.429,23.2905 7.46,22.3205 7.46,21.1245 C7.46,19.9295 8.429,18.9595 9.625,18.9595 M43.149,0.4995 L4.851,0.4995 C2.172,0.4995 0,2.6715 0,5.3505 L0,28.2195 C0,30.8975 2.172,33.0695 4.851,33.0695 L43.149,33.0695 C45.828,33.0695 48,30.8975 48,28.2195 L48,5.3505 C48,2.6715 45.828,0.4995 43.149,0.4995" id="Fill-1"/>
+                </g>
+                <path d="M39.2432,41.5 L8.7572,41.5 C8.1122,41.5 7.5902,40.978 7.5902,40.333 C7.5902,39.689 8.1122,39.167 8.7572,39.167 L39.2432,39.167 C39.8882,39.167 40.4102,39.689 40.4102,40.333 C40.4102,40.978 39.8882,41.5 39.2432,41.5" id="Fill-4" fill="url(#linearGradient-3)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+/* Форма редактирования ноды */
+#edit-field-status {
+
+}
+
+/* Цвета */
+.fix-bg-green {
+    background: #dbffcf !important;
+}
+.fix-bg-red {
+    background: #ffc9c9 !important;
+}
+.fix-bg-blue {
+    background: #c9e9ff !important;
+}
+.fix-bg-yellow {
+    background: #f9ffc9 !important;
+}
+.fix-bg-orange {
+    background: #ffd8bc !important;
+}
+.fix-bg-purple {
+    background: #ffbcf7 !important;
+}

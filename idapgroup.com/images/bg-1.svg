@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2560px" height="543px" viewBox="0 0 2560 543" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="51.1333629%" y1="9.19875912%" x2="50%" y2="121.508933%" id="linearGradient-1">
+            <stop stop-color="#6DEAC7" offset="0%"/>
+            <stop stop-color="#DEFFF6" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="47.5859927%" y1="54.2828352%" x2="47.585994%" y2="101.231508%" id="linearGradient-2">
+            <stop stop-color="#6DEAC7" offset="0%"/>
+            <stop stop-color="#DEFFF6" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Group-21" transform="translate(-17.000000, -859.000000)">
+                <path d="M17,68 L2577,68 L2577,920.257594 L1332.64791,1395.0343 C1309.6898,1403.79386 1284.3102,1403.79386 1261.35209,1395.0343 L17,920.257594 L17,68 Z" id="Path" fill="url(#linearGradient-1)" opacity="0.230865036"/>
+                <path d="M17,0 L2577,0 L2577,859.927211 L1331.9558,1327.86228 C1309.41222,1336.33501 1284.5682,1336.38746 1261.98905,1328.00997 L0.404783843,859.927211 L17,0 Z" id="Rectangle-2" fill="url(#linearGradient-2)"/>
+            </g>
+        </g>
+    </g>
+</svg>

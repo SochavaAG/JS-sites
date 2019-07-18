@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>IDAP Blog - Mobile App Development Blog</title>
+
+  <!-- This site is optimized with the Yoast SEO plugin v9.4 - https://yoast.com/wordpress/plugins/seo/ -->
+  <link rel="canonical" href="blog.html"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="IDAP Blog - Mobile App Development Blog"/>
+  <meta property="og:url" content="blog.html"/>
+  <meta property="og:site_name" content="IDAP Blog"/>
+  <meta property="fb:app_id" content="572002869889687"/>
+  <meta property="og:image" content="images/website-preview.png"/>
+  <meta property="og:image:secure_url" content="images/website-preview.png"/>
+  <meta property="og:image:width" content="600"/>
+  <meta property="og:image:height" content="400"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="IDAP Blog - Mobile App Development Blog"/>
+  <meta name="twitter:image" content="images/website-preview.png"/>
+  <script type='application/ld+json'>
+    {"@context":"https://schema.org","@type":"WebSite","@id":"https://idapgroup.com/blog/#website","url":"https://idapgroup.com/blog/","name":"IDAP Blog","potentialAction":{"@type":"SearchAction","target":"https://idapgroup.com/blog/?s={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  <!-- / Yoast SEO plugin. -->
+
+  <link rel='dns-prefetch' href='//s.w.org'/>
+  <script type="text/javascript">
+    window._wpemojiSettings = {
+      "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
+      "ext": ".png",
+      "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
+      "svgExt": ".svg",
+      "source": {"concatemoji": "https:\/\/idapgroup.com\/blog\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.3"}
+    };
+    !function (a, b, c) {
+      function d(a, b) {
+        var c = String.fromCharCode;
+        l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+        var d = k.toDataURL();
+        l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+        var e = k.toDataURL();
+        return d === e
+      }
+
+      function e(a) {
+        var b;
+        if (!l || !l.fillText)return !1;
+        switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+          case"flag":
+            return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
+          case"emoji":
+            return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b
+        }
+        return !1
+      }
+
+      function f(a) {
+        var c = b.createElement("script");
+        c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+      }
+
+      var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d");
+      for (j = Array("flag", "emoji"), c.supports = {
+        everything: !0,
+        everythingExceptFlag: !0
+      }, i = 0; i < j.length; i++)c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+      c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
+        c.DOMReady = !0
+      }, c.supports.everything || (h = function () {
+        c.readyCallback()
+      }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () {
+          "complete" === b.readyState && c.readyCallback()
+        })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+    }(window, document, window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel='stylesheet' id='crayon-css' href='css/crayon.min.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='wp-block-library-css' href='css/style.min.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='es-widget-css-css' href='css/es-widget.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='searchandfilter-css' href='css/style-blog.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='wp-postratings-css' href='css/postratings-css.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='addtoany-css' href='css/addtoany.min.css' type='text/css' media='all'/>
+  <link rel='stylesheet' id='sage/main.css-css' href='css/main.css' type='text/css' media='all'/>
+
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var idapblog = {"ajaxurl": "https:\/\/idapgroup.com\/blog\/blog\/wp-admin\/admin-ajax.php"};
+    /* ]]> */
+  </script>
+
+  <script type='text/javascript' src='js/jquery/jquery-1.12.4.min.js'></script>
+  <script type='text/javascript' src='js/jquery/jquery-migrate-1.4.1.min.js'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var CrayonSyntaxSettings = {
+      "version": "_2.7.2_beta",
+      "is_admin": "0",
+      "ajaxurl": "https:\/\/idapgroup.com\/blog\/blog\/wp-admin\/admin-ajax.php",
+      "prefix": "crayon-",
+      "setting": "crayon-setting",
+      "selected": "crayon-setting-selected",
+      "changed": "crayon-setting-changed",
+      "special": "crayon-setting-special",
+      "orig_value": "data-orig-value",
+      "debug": ""
+    };
+    var CrayonSyntaxStrings = {"copy": "Press %s to Copy, %s to Paste", "minimize": "Click To Expand Code"};
+    /* ]]> */
+  </script>
+  <script type='text/javascript' src='js/crayon.min.js'></script>
+  <script type='text/javascript' src='js/addtoany.min.js'></script>
+
+  <link rel='https://api.w.org/' href='https://idapgroup.com/blog/wp-json/'/>
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://idapgroup.com/blog/blog/xmlrpc.php?rsd"/>
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://idapgroup.com/blog/blog/wp-includes/wlwmanifest.xml"/>
+  <meta name="generator" content="WordPress 5.0.3"/>
+  <link rel='shortlink' href='https://idapgroup.com/blog/'/>
+  <link rel="alternate" type="application/json+oembed" href="https://idapgroup.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fidapgroup.com%2Fblog%2F"/>
+  <link rel="alternate" type="text/xml+oembed" href="https://idapgroup.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fidapgroup.com%2Fblog%2F&#038;format=xml"/>
+
+  <script data-cfasync="false">
+    window.a2a_config = window.a2a_config || {};
+    a2a_config.callbacks = [];
+    a2a_config.overlays = [];
+    a2a_config.templates = {};
+    (function (d, s, a, b) {
+      a = d.createElement(s);
+      b = d.getElementsByTagName(s)[0];
+      a.async = 1;
+      a.src = "https://static.addtoany.com/menu/page.js";
+      b.parentNode.insertBefore(a, b);
+    })(document, "script");
+  </script>
+
+  <meta name="google-site-verification" content="6Ad2tD1lHqRjpHnjdz_Fbh6VQMDL5wpx2zx0CnEhT_E"/>
+  <link rel="icon" href="images/idap-logo.png" sizes="32x32"/>
+  <link rel="icon" href="images/idap-logo.png" sizes="192x192"/>
+  <link rel="apple-touch-icon-precomposed" href="images/idap-logo.png"/>
+  <meta name="msapplication-TileImage" content="images/idap-logo.png"/>
+  <meta data-pso-pv="1.2.1" data-pso-pt="front" data-pso-th="2e818773907ba58a3cf0656a04ca3f66">
+</head>
+
+<body class="home page-template page-template-template-home template-home page page-id-3660 app-data index-data singular-data page-data page-3660-data page-home-page-data template-home-data front-page-data">
+<header class="banner  ">
+  <div class="container">
+    <nav class="nav-primary main-nav-container">
+      <a href="index.html" class="main-nav__brand-container flex-center hide-to-laptop">
+        <img src="images/logo-black-yellow_215abe1e.png" alt="" class="main-nav__brand-img">
+      </a>
+      <div class="main-nav__links-ul">
+        <div class="menu-primary_navigation_left-container">
+          <ul id="menu-primary_navigation_left" class="nav">
+            <li id="menu-item-1616" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1616">
+              <a href="blog.html">Blog</a>
+            </li>
+            <li id="menu-item-1940" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1940">
+              <a href="about-us.html">About us</a>
+            </li>
+            <li id="menu-item-1617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1617">
+              <a href="works.html">Portfolio</a>
+            </li>
+            <li id="menu-item-1941" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1941">
+              <a href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-nav__search-container flex-center">
+
+        <form role="search" method="get" id="search-form" action="blog.html">
+          <input class="search-field" type="search" placeholder="Search" value="" name="s" required/>
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+  </div>
+</header>
+<header class="mobile-header">
+  <a href="index.html" class="main-nav__brand-container main-nav__brand-container-mobile flex-center">
+    <img src="images/logo-black-yellow_215abe1e.png" alt="" class="main-nav__brand-img">
+  </a>
+  <div class="main-nav__search-container flex-center">
+    <form role="search" method="get" id="search-form" action="blog.html">
+      <input class="search-field" type="search" placeholder="Search" value="" name="s" required/>
+      <button type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+</header>
+<button class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+</button>
+<div class="page-wrapper">
+  <div class="wrap  container  " role="document">
+    <div class="content">
+      <main class="main">
+
+        <div class="home__grid-container">
+
+          <div class="sidebar--first wow fadeIn">
+            <aside class="sidebar home__sidebar--featured">
+              <h2 class="sidebar-title"><i class="far fa-star sidebar--featured-icon"></i>Featured</h2>
+
+              <div class="sidebar-item-container">
+                <div class="sidebar-item-container__text">
+                  <a href="https://idapgroup.com/blog/how-much-cost-develop-custom-app/" class="sidebar-item">
+                    <p class="sidebar-item-text">How Much Does It Cost to Develop a Custom Application?</p>
+                    <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">27 Sep</span>
+                      <span class="home__sidebar-item-meta-views">806
+                          <i class="far fa-eye"></i></span>
+                    </div>
+                  </a>
+                </div>
+                <a href="https://idapgroup.com/blog/how-much-cost-develop-custom-app/" class="sidebar-item-container__img">
+                  <figure style="background-image: url(images/cover_27_12-01.svg)" class="home__article-img img-fluid"></figure>
+                </a>
+              </div>
+
+              <div class="sidebar-item-container">
+                <div class="sidebar-item-container__text">
+                  <a href="https://idapgroup.com/blog/offshore-software-development/" class="sidebar-item">
+                    <p class="sidebar-item-text">Offshore Software Development: Everything You Need To Know</p>
+                    <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">08 Nov</span>
+                      <span class="home__sidebar-item-meta-views">633
+                          <i class="far fa-eye"></i></span>
+                    </div>
+                  </a>
+                </div>
+                <a href="https://idapgroup.com/blog/offshore-software-development/" class="sidebar-item-container__img">
+                  <figure style="background-image: url(images/cover1.jpg)" class="home__article-img img-fluid"></figure>
+                </a>
+              </div>
+
+              <div class="sidebar-item-container">
+                <div class="sidebar-item-container__text">
+                  <a href="https://idapgroup.com/blog/software-development-outsourcing-companies-in-ukraine/" class="sidebar-item">
+                    <p class="sidebar-item-text">Must-Know: Software Development Outsourcing Companies in Ukraine</p>
+                    <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">24 Jul</span>
+                      <span class="home__sidebar-item-meta-views">772
+                          <i class="far fa-eye"></i></span>
+                    </div>
+                  </a>
+                </div>
+                <a href="https://idapgroup.com/blog/software-development-outsourcing-companies-in-ukraine/" class="sidebar-item-container__img">
+                  <figure style="background-image: url(images/ukraine-02.png)" class="home__article-img img-fluid"></figure>
+                </a>
+              </div>
+
+              <div class="sidebar-item-container">
+                <div class="sidebar-item-container__text">
+                  <a href="https://idapgroup.com/blog/it-outsourcing-to-india/" class="sidebar-item">
+                    <p class="sidebar-item-text">Common IT Outsourcing Destinations: India vs. Ukraine</p>
+                    <div class="sidebar-item-meta flex-center">
+                        <span class="sidebar-item-meta-date">29 May</span>
+                      <span class="home__sidebar-item-meta-views">520
+                          <i class="far fa-eye"></i></span>
+                    </div>
+                  </a>
+                </div>
+                <a href="https://idapgroup.com/blog/it-outsourcing-to-india/" class="sidebar-item-container__img">
+                  <figure style="background-image: url(images/India_vs_Ukraine_cover-1.jpg)" class="home__article-img img-fluid"></figure>
+                </a>
+              </div>
+
+              <div class="sidebar-item-container">
+                <a href="https://idapgroup.com/hey/" class="sidebar-item">
+                  <p class="sidebar-item-text"><i class="fas fa-link sidebar-item-icon"></i>HEYYY! Mobile Dating App</p>
+                </a>
+              </div>
+            </aside>
+          </div>
+
+          <div class="sidebar--second">
+            <aside class="sidebar wow fadeIn">
+              <a href="https://idapgroup.com/blog/category/coding/">
+                <h2 class="sidebar-title">Code</h2>
+              </a>
+              <a href="https://idapgroup.com/blog/coding-practices-at-their-worst-rant-about-retain-loops-appearing-in-nstimers-because-no-one-bothers-reading-the-doc/" class="sidebar-item">
+                <p class="sidebar-item-text">Coding practices at their worst. Rant about retain loops appearing...</p>
+                <div class="sidebar-item-meta flex-center">
+                  <span class="sidebar-item-meta-date">09 Aug</span>
+                  <span class="home__sidebar-item-meta-views">1006 <i class="far fa-eye"></i></span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/the-definitive-list-of-blogs-you-should-dig-into-if-you-ever-want-to-be-considered-a-worthy-developer/" class="sidebar-item">
+                <p class="sidebar-item-text">The definitive list of blogs you should dig into, if you ever want...</p>
+                <div class="sidebar-item-meta flex-center">
+                  <span class="sidebar-item-meta-date">02 Aug</span>
+                  <span class="home__sidebar-item-meta-views">1282 <i class="far fa-eye"></i></span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/coding-practices-at-their-worst-a-rant-about-retain-loops-that-appear-when-instance-methods-are-used-as-callbacks/" class="sidebar-item">
+                <p class="sidebar-item-text">Coding practices at their worst. A rant about retain loops that...</p>
+                <div class="sidebar-item-meta flex-center">
+                  <span class="sidebar-item-meta-date">26 Mar</span>
+                  <span class="home__sidebar-item-meta-views">940 <i class="far fa-eye"></i></span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/swift-optionals-without-conditionals/" class="sidebar-item">
+                <p class="sidebar-item-text">Swift: Optionals Without Conditionals</p>
+                <div class="sidebar-item-meta flex-center">
+                  <span class="sidebar-item-meta-date">26 Jan</span>
+                  <span class="home__sidebar-item-meta-views">1745 <i class="far fa-eye"></i></span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/category/coding/" class="button button--light">Show more</a>
+            </aside>
+            <div class="mailing wow fadeIn">
+              <h4 class="mailing__title">Don’t miss insight posts</h4>
+              <p class="mailing__text">Upgrade your inbox and get our editor picks twice a month.</p>
+              <img class="mailing__img" src="images/logo-mailing-home_c48192bd.svg" alt="">
+
+              <!--<form action="#" class="mailing__form">
+                <input type="email" class="mailing__input" placeholder="your email" required>
+                <input type="submit" class="button button--solid mailing__submit" value="Subscribe">
+              </form>-->
+
+              <div id="rainmaker_form_3658" class="rm_form_container rainmaker_form  " data-type="rm_subscription" data-form-id="3658">
+                <form action="/blog/#rainmaker_form_3658">
+                  <div class="rm_form_el_set rm_form_el_email">
+                    <label class="rm_form_label">Email</label>
+                    <input class="rm_form_field" type="email" name="email" required placeholder="Email"/>
+                  </div>
+                  <div class="rm_form_el_set rm_form_el_button ">
+                    <input class="rm_form_field rm_button" type="submit" name="button" value="Submit"/>
+                  </div>
+                </form>
+                <div class="rm-loader"></div>
+              </div>
+              <div id="rm_form_message_3658" class="rm_form_message" style="display:none">Thank you!</div>
+            </div>
+          </div>
+
+          <div class="post--header">
+            <div class="home__article home__article--big wow fadeIn">
+              <a href="https://idapgroup.com/blog/it-outsourcing-trends-in-2019/" class="home__article-img-container">
+                <figure style="background-image: url(images/IT-Outsourcing-Trends-08.svg)" class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/outsourcing/" class="home__article-tag" style="color: #1a96ef">Outsourcing</a>
+              <a href="https://idapgroup.com/blog/it-outsourcing-trends-in-2019/">
+                <h3 class="home__article-title">IT Outsourcing Trends in 2019</h3>
+              </a>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">29 Jan</span>
+                <span class="home__article-meta-views">58 <i class="far fa-eye"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="post--regular">
+
+            <div class="home__article home__article--regular wow fadeIn">
+              <a href="https://idapgroup.com/blog/best-google-cardboard-apps-for-ios-and-android/" class="home__article-img-container">
+                <figure style="background-image: url(images/15-Best-Google-Cardboard-Apps-for-iOS-and-Android-01.jpg)" class="home__article-img img-fluid"></figure>
+              </a>
+              <div class="home__article-text-container">
+                <a href="https://idapgroup.com/blog/category/techologies/" class="home__article-tag" style="color: #ff8800">Technologies Explained</a>
+                <a href="https://idapgroup.com/blog/best-google-cardboard-apps-for-ios-and-android/">
+                  <h3 class="home__article-title">15 Best Google Cardboard Apps for iOS and Android</h3>
+                </a>
+                <p class="home__article-text">Introduction June 25, 2014. This day became remarkable for the whole IT
+                  community worldwide. This is the day the...</p>
+                <div class="home__article-meta-container flex-center">
+                  <span class="home__article-meta-date">22 Jan</span>
+                  <span class="home__article-meta-views">121 <i class="far fa-eye"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="home__article home__article--regular wow fadeIn">
+              <a href="https://idapgroup.com/blog/software-development-outsourcing/" class="home__article-img-container">
+                <figure style="background-image: url(images/cover-18.jpg)" class="home__article-img img-fluid"></figure>
+              </a>
+              <div class="home__article-text-container">
+                <a href="https://idapgroup.com/blog/category/outsourcing/" class="home__article-tag" style="color: #1a96ef">Outsourcing</a>
+                <a href="https://idapgroup.com/blog/software-development-outsourcing/">
+                  <h3 class="home__article-title">IT Outsourcing Guide: Everything You Wanted To Know About...</h3>
+                </a>
+                <p class="home__article-text">Introduction Sooner or later, all entrepreneurs come to the conclusion that much like in 2018, substantial...</p>
+                <div class="home__article-meta-container flex-center">
+                  <span class="home__article-meta-date">16 Jan</span>
+                  <span class="home__article-meta-views">179 <i class="far fa-eye"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="home__article home__article--regular wow fadeIn">
+              <a href="https://idapgroup.com/blog/artificial-intelligence-automotive-industry/" class="home__article-img-container">
+                <figure style="background-image: url(images/How-is-AI-Transforming-The-Automotive-Industry-1.png)" class="home__article-img img-fluid"></figure>
+              </a>
+              <div class="home__article-text-container">
+                <a href="https://idapgroup.com/blog/category/techologies/"
+                    class="home__article-tag"
+                    style="color: #ff8800">Technologies Explained</a>
+                <a href="https://idapgroup.com/blog/artificial-intelligence-automotive-industry/">
+                  <h3 class="home__article-title">How is Artificial Intelligence Transforming The Automotive...</h3>
+                </a>
+                <p class="home__article-text">Introducing You to AI in Automotive The automotive industry is one of the essentials of human lives and most of us...</p>
+                <div class="home__article-meta-container flex-center">
+                  <span class="home__article-meta-date">08 Jan</span>
+                  <span class="home__article-meta-views">215 <i class="far fa-eye"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="home__article home__article--regular wow fadeIn">
+              <a href="https://idapgroup.com/blog/it-outsourcing-philippines/" class="home__article-img-container">
+                <figure style="background-image: url(images/25_12-01.svg)" class="home__article-img img-fluid"></figure>
+              </a>
+              <div class="home__article-text-container">
+                <a href="https://idapgroup.com/blog/category/outsourcing/" class="home__article-tag" style="color: #1a96ef">Outsourcing</a>
+                <a href="https://idapgroup.com/blog/it-outsourcing-philippines/">
+                  <h3 class="home__article-title">Top IT Outsourcing Destinations: the Philippines vs. Ukraine</h3>
+                </a>
+                <p class="home__article-text">
+                  Introduction The ever-growing IT marketplace has an insatiable appetite for new software pieces such as mobile...
+                </p>
+                <div class="home__article-meta-container flex-center">
+                  <span class="home__article-meta-date">25 Dec</span>
+                  <span class="home__article-meta-views">332 <i class="far fa-eye"></i></span>
+                </div>
+              </div>
+            </div>
+            <a href="https://idapgroup.com/blog/articles" class="button button--light home__show-more-btn wow fadeIn">Show more</a>
+          </div>
+        </div>
+
+        <section class="home__clusters wow fadeIn">
+          <div class="relative-posts-carousel__header">
+            <h3 class="home__section-title">Clusters</h3>
+            <a href="https://idapgroup.com/blog/clusters" class="button button--light hide-to-mobileL">View all clusters</a>
+          </div>
+          <div id="owl-carousel--cluster" class="home__carousel owl-carousel owl-theme">
+            <div class="home__cluster">
+              <a href="https://idapgroup.com/blog/category/outsourcing/" class="home__cluster-header">
+                <img src="images/outsourcing-icon.svg" alt="" class="home__cluster-header-img">
+                <div class="home__cluster-header-text-container">
+                  <h3 class="home__cluster-header-title">Outsourcing</h3>
+                  <span class="home__cluster-header-info">21 posts</span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/it-outsourcing-trends-in-2019/"
+                  class="home__cluster-link">IT Outsourcing Trends in 2019</a>
+              <a href="https://idapgroup.com/blog/software-development-outsourcing/"
+                  class="home__cluster-link">IT Outsourcing Guide: Everything You Wanted To Know About D...</a>
+              <a href="https://idapgroup.com/blog/it-outsourcing-philippines/"
+                  class="home__cluster-link">Top IT Outsourcing Destinations: the Philippines vs. Ukraine</a>
+              <a href="https://idapgroup.com/blog/it-outsourcing-to-asia/"
+                  class="home__cluster-link">IT Outsourcing to Asia</a>
+              <!--             <a href="https://idapgroup.com/blog/category/outsourcing/"
+ class="button button--light">More 17</a>
+-->
+            </div>
+            <div class="home__cluster">
+              <a href="https://idapgroup.com/blog/category/business/" class="home__cluster-header">
+                <img src="images/business-icon.svg" alt="" class="home__cluster-header-img">
+                <div class="home__cluster-header-text-container">
+                  <h3 class="home__cluster-header-title">Business</h3>
+                  <span class="home__cluster-header-info">22 posts</span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/custom-app-development-for-startups/"
+                  class="home__cluster-link">Dos &#038; Don’ts of Custom App Development for Startups</a>
+              <a href="https://idapgroup.com/blog/applying-machine-learning-to-business-issues/"
+                  class="home__cluster-link">Applying Machine Learning To Business Issues</a>
+              <a href="https://idapgroup.com/blog/how-to-convert-android-app-to-ios-app/"
+                  class="home__cluster-link">A Comprehensive Guide To Converting Apps From iOS To Androi...</a>
+              <a href="https://idapgroup.com/blog/how-to-build-a-transportation-management-system/"
+                  class="home__cluster-link">How To Build A Transportation Management System</a>
+              <!--             <a href="https://idapgroup.com/blog/category/business/"
+ class="button button--light">More 18</a>
+-->
+            </div>
+            <div class="home__cluster">
+              <a href="https://idapgroup.com/blog/category/techologies/" class="home__cluster-header">
+                <img src="images/technology-icon.svg" alt=""
+                    class="home__cluster-header-img">
+                <div class="home__cluster-header-text-container">
+                  <h3 class="home__cluster-header-title">Technologies Explained</h3>
+                  <span class="home__cluster-header-info">24 posts</span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/best-google-cardboard-apps-for-ios-and-android/"
+                  class="home__cluster-link">15 Best Google Cardboard Apps for iOS and Android</a>
+              <a href="https://idapgroup.com/blog/artificial-intelligence-automotive-industry/"
+                  class="home__cluster-link">How is Artificial Intelligence Transforming The Automotive ...</a>
+              <a href="https://idapgroup.com/blog/dominant-technology-trends-2019/"
+                  class="home__cluster-link">Dominant Technology Trends to Watch in 2019</a>
+              <a href="https://idapgroup.com/blog/top-design-software-tools/"
+                  class="home__cluster-link">Top Design Software Tools</a>
+              <!--             <a href="https://idapgroup.com/blog/category/techologies/"
+ class="button button--light">More 20</a>
+-->
+            </div>
+            <div class="home__cluster">
+              <a href="https://idapgroup.com/blog/category/industry_focus/" class="home__cluster-header">
+                <img src="images/industry-icon.svg" alt="" class="home__cluster-header-img">
+                <div class="home__cluster-header-text-container">
+                  <h3 class="home__cluster-header-title">Industry</h3>
+                  <span class="home__cluster-header-info">28 posts</span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/travel-app-development/"
+                  class="home__cluster-link">Everything You Need to Know About Travel App Development</a>
+              <a href="https://idapgroup.com/blog/artificial-intelligence-in-financial-services/"
+                  class="home__cluster-link">Artificial Intelligence In Financial Services: 6 Improvemen...</a>
+              <a href="https://idapgroup.com/blog/top-10-best-virtual-assistant-apps/"
+                  class="home__cluster-link">Top 10 Best Virtual Assistant Apps</a>
+              <a href="https://idapgroup.com/blog/artificial-intelligence-in-agriculture/"
+                  class="home__cluster-link">Artificial Intelligence in Agriculture: 6 Smart Ways to Imp...</a>
+              <!--             <a href="https://idapgroup.com/blog/category/industry_focus/"
+ class="button button--light">More 24</a>
+-->
+            </div>
+            <div class="home__cluster">
+              <a href="https://idapgroup.com/blog/category/livestreaming/" class="home__cluster-header">
+                <img src="images/livestream-icon.svg" alt="" class="home__cluster-header-img">
+                <div class="home__cluster-header-text-container">
+                  <h3 class="home__cluster-header-title">Live Streaming</h3>
+                  <span class="home__cluster-header-info">13 posts</span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/how-to-make-an-app-like-soundcloud/" class="home__cluster-link">How to Make an App Like Soundcloud</a>
+              <a href="https://idapgroup.com/blog/how-to-develop-an-app-like-periscope/" class="home__cluster-link">How To Develop an App Like Periscope: Things To Consider</a>
+              <a href="https://idapgroup.com/blog/how-to-make-video-chat-app/" class="home__cluster-link">How to Make a Video Chat App: Your Short and Plain Developm...</a>
+              <a href="https://idapgroup.com/blog/top-15-apps-for-live-streaming/" class="home__cluster-link">Top 15 Apps for Live Streaming</a>
+              <!--             <a href="https://idapgroup.com/blog/category/livestreaming/"
+ class="button button--light">More 9</a>
+-->
+            </div>
+            <div class="home__cluster">
+              <a href="https://idapgroup.com/blog/category/insider/" class="home__cluster-header">
+                <img src="images/idap-icon.svg" alt="" class="home__cluster-header-img">
+                <div class="home__cluster-header-text-container">
+                  <h3 class="home__cluster-header-title">IDAP</h3>
+                  <span class="home__cluster-header-info">4 posts</span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/weve-got-a-new-reward-from-clutch-co/"
+                  class="home__cluster-link">We’ve got a NEW REWARD from Clutch.Co!</a>
+              <a href="https://idapgroup.com/blog/how-idap-spent-2017/"
+                  class="home__cluster-link">A look back at 2017. The year of changes at IDAP</a>
+              <a href="https://idapgroup.com/blog/got-idea-app/"
+                  class="home__cluster-link">Got an Idea for an App? Don’t Hire a Developer Before Readi...</a>
+              <a href="https://idapgroup.com/blog/idap-story-the-milestones-of-our-success/"
+                  class="home__cluster-link">IDAP Story: The Milestones of Our Success</a>
+              <!--  -->
+            </div>
+            <div class="home__cluster">
+              <a href="https://idapgroup.com/blog/category/coding/" class="home__cluster-header">
+                <img src="images/code-icon.svg" alt="" class="home__cluster-header-img">
+                <div class="home__cluster-header-text-container">
+                  <h3 class="home__cluster-header-title">Code</h3>
+                  <span class="home__cluster-header-info">18 posts</span>
+                </div>
+              </a>
+              <a href="https://idapgroup.com/blog/coding-practices-at-their-worst-rant-about-retain-loops-appearing-in-nstimers-because-no-one-bothers-reading-the-doc/" class="home__cluster-link">Coding practices at their worst. Rant about retain loops ap...</a>
+              <a href="https://idapgroup.com/blog/the-definitive-list-of-blogs-you-should-dig-into-if-you-ever-want-to-be-considered-a-worthy-developer/" class="home__cluster-link">The definitive list of blogs you should dig into, if you ev...</a>
+              <a href="https://idapgroup.com/blog/coding-practices-at-their-worst-a-rant-about-retain-loops-that-appear-when-instance-methods-are-used-as-callbacks/" class="home__cluster-link">Coding practices at their worst. A rant about retain loops ...</a>
+              <a href="https://idapgroup.com/blog/swift-optionals-without-conditionals/" class="home__cluster-link">Swift: Optionals Without Conditionals</a>
+              <!--             <a href="https://idapgroup.com/blog/category/coding/"
+ class="button button--light">More 14</a>
+-->
+            </div>
+          </div>
+          <div class="home__cluster-mobile">
+            <div class="home__cluster-mobile-item">
+              <a href="https://idapgroup.com/blog/category/outsourcing/" class="home__article-img-container home__cluster-mobile-item-img">
+                <figure style="background-image: url(images/outsourcing-icon.svg)" class="home__article-img home__cluster-mobile-item-img-inner img-fluid"></figure>
+                <h3 class="home__cluster-header-title">Outsourcing</h3>
+              </a>
+            </div>
+            <div class="home__cluster-mobile-item">
+              <a href="https://idapgroup.com/blog/category/business/" class="home__article-img-container home__cluster-mobile-item-img">
+                <figure style="background-image: url(images/business-icon.svg)" class="home__article-img home__cluster-mobile-item-img-inner img-fluid"></figure>
+                <h3 class="home__cluster-header-title">Business</h3>
+              </a>
+            </div>
+            <div class="home__cluster-mobile-item">
+              <a href="https://idapgroup.com/blog/category/techologies/" class="home__article-img-container home__cluster-mobile-item-img">
+                <figure style="background-image: url(images/technology-icon.svg)" class="home__article-img home__cluster-mobile-item-img-inner img-fluid"></figure>
+                <h3 class="home__cluster-header-title">Technologies Explained</h3>
+              </a>
+            </div>
+            <div class="home__cluster-mobile-item">
+              <a href="https://idapgroup.com/blog/category/industry_focus/" class="home__article-img-container home__cluster-mobile-item-img">
+                <figure style="background-image: url(images/industry-icon.svg)" class="home__article-img home__cluster-mobile-item-img-inner img-fluid"></figure>
+                <h3 class="home__cluster-header-title">Industry</h3>
+              </a>
+            </div>
+            <div class="home__cluster-mobile-item">
+              <a href="https://idapgroup.com/blog/category/livestreaming/" class="home__article-img-container home__cluster-mobile-item-img">
+                <figure style="background-image: url(images/livestream-icon.svg)" class="home__article-img home__cluster-mobile-item-img-inner img-fluid"></figure>
+                <h3 class="home__cluster-header-title">Live Streaming</h3>
+              </a>
+            </div>
+            <div class="home__cluster-mobile-item">
+              <a href="https://idapgroup.com/blog/category/insider/" class="home__article-img-container home__cluster-mobile-item-img">
+                <figure style="background-image: url(images/idap-icon.svg)" class="home__article-img home__cluster-mobile-item-img-inner img-fluid"></figure>
+                <h3 class="home__cluster-header-title">IDAP</h3>
+              </a>
+            </div>
+            <div class="home__cluster-mobile-item">
+              <a href="https://idapgroup.com/blog/category/coding/" class="home__article-img-container home__cluster-mobile-item-img">
+                <figure style="background-image: url(images/code-icon.svg)" class="home__article-img home__cluster-mobile-item-img-inner img-fluid"></figure>
+                <h3 class="home__cluster-header-title">Code</h3>
+              </a>
+            </div>
+          </div>
+          <a href="https://idapgroup.com/blog/clusters" class="button button--light home__cluster-mobile-btn show-to-mobileL-iFlex">View all clusters</a>
+        </section>
+
+        <section class="home__clusters wow fadeIn">
+          <div class="relative-posts-carousel__header">
+            <h3 class="home__section-title">Recommended</h3>
+          </div>
+          <div class="home__carousel owl-carousel owl-theme owl-carousel--common hide-to-mobileL">
+
+            <div class="home__article home-article--regular">
+              <a href="https://idapgroup.com/blog/top-10-best-virtual-assistant-apps/" class="home__article-img-container">
+                <figure style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2018/11/cover_6_11.jpg)" alt=""
+                    class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/industry_focus/"
+                  class="home__article-tag"
+                  style="color: #32bd8f">Industry</a>
+              <a href="https://idapgroup.com/blog/top-10-best-virtual-assistant-apps/">
+                <h3 class="home__article-title">Top 10 Best Virtual Assistant Apps</h3>
+              </a>
+              <p class="home__article-text">Introduction It is hard to find a person that doesn&#8217;t remember
+                good-old Clippy that appeared every time you...</p>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">06 Nov</span>
+                <span class="home__article-meta-views">707 <i
+                    class="far fa-eye"></i></span>
+              </div>
+            </div>
+
+            <div class="home__article home-article--regular">
+              <a href="https://idapgroup.com/blog/top-15-apps-for-live-streaming/" class="home__article-img-container">
+                <figure style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2018/10/live_streamapp_18_10.jpg)" alt=""
+                    class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/livestreaming/"
+                  class="home__article-tag"
+                  style="color: #d71b36">Live Streaming</a>
+              <a href="https://idapgroup.com/blog/top-15-apps-for-live-streaming/">
+                <h3 class="home__article-title">Top 15 Apps for Live Streaming</h3>
+              </a>
+              <p class="home__article-text">Streaming is the best way to communicate with people in real time. No matter
+                where your viewers are – you can...</p>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">18 Oct</span>
+                <span class="home__article-meta-views">684 <i
+                    class="far fa-eye"></i></span>
+              </div>
+            </div>
+
+            <div class="home__article home-article--regular">
+              <a href="https://idapgroup.com/blog/much-cost-build-app-like-spotify/" class="home__article-img-container">
+                <figure style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2018/09/spotify_cover1-1.jpg)" alt=""
+                    class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/livestreaming/"
+                  class="home__article-tag"
+                  style="color: #d71b36">Live Streaming</a>
+              <a href="https://idapgroup.com/blog/much-cost-build-app-like-spotify/">
+                <h3 class="home__article-title">How Much Does It Cost to Build Music Streaming App Like Spotify</h3>
+              </a>
+              <p class="home__article-text">Life is somewhat like a movie. Don&#8217;t all of us have music playing in
+                the background when something special...</p>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">11 Sep</span>
+                <span class="home__article-meta-views">415 <i
+                    class="far fa-eye"></i></span>
+              </div>
+            </div>
+
+            <div class="home__article home-article--regular">
+              <a href="https://idapgroup.com/blog/it-outsourcing-in-poland/" class="home__article-img-container">
+                <figure style="background-image: url(images/Poland_vs_Ukraine-01.jpg)" class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/outsourcing/"
+                  class="home__article-tag"
+                  style="color: #1a96ef">Outsourcing</a>
+              <a href="https://idapgroup.com/blog/it-outsourcing-in-poland/">
+                <h3 class="home__article-title">Exploring IT Outsourcing: Poland vs Ukraine</h3>
+              </a>
+              <p class="home__article-text">Intro The possibility of reaching out to highly skilled software developers
+                while saving some production costs is...</p>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">17 Aug</span>
+                <span class="home__article-meta-views">204 <i
+                    class="far fa-eye"></i></span>
+              </div>
+            </div>
+
+            <div class="home__article home-article--regular">
+              <a href="https://idapgroup.com/blog/outsourcing-software-development-to-eastern-europe/" class="home__article-img-container">
+                <figure style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2018/05/eastern-europe.jpg)" alt=""
+                    class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/outsourcing/"
+                  class="home__article-tag"
+                  style="color: #1a96ef">Outsourcing</a>
+              <a href="https://idapgroup.com/blog/outsourcing-software-development-to-eastern-europe/">
+                <h3 class="home__article-title">Outsourcing Software Development to Eastern Europe</h3>
+              </a>
+              <p class="home__article-text">Into Digital technology has been showing an unstoppable growth rate for the
+                past decade. Humanity has come from...</p>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">24 May</span>
+                <span class="home__article-meta-views">1697 <i
+                    class="far fa-eye"></i></span>
+              </div>
+            </div>
+
+            <div class="home__article home-article--regular">
+              <a href="https://idapgroup.com/blog/dating-app-development/" class="home__article-img-container">
+                <figure style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2017/12/dating-app-development-1-800x419-copy.png)" alt=""
+                    class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/industry_focus/"
+                  class="home__article-tag"
+                  style="color: #32bd8f">Industry</a>
+              <a href="https://idapgroup.com/blog/dating-app-development/">
+                <h3 class="home__article-title">Building a dating app: How much does it cost to build dating...</h3>
+              </a>
+              <p class="home__article-text">Until recently, the online dating experience was slightly dull as all of the
+                available online services resembled...</p>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">13 Dec</span>
+                <span class="home__article-meta-views">7077 <i
+                    class="far fa-eye"></i></span>
+              </div>
+            </div>
+
+            <div class="home__article home-article--regular">
+              <a href="https://idapgroup.com/blog/pros-cons-outsourcing-software-development/" class="home__article-img-container">
+                <figure style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2017/07/concentrated-young-colleagues-sitting-in-office-PNYAFP7.jpg)" alt=""
+                    class="home__article-img img-fluid"></figure>
+              </a>
+              <a href="https://idapgroup.com/blog/category/outsourcing/"
+                  class="home__article-tag"
+                  style="color: #1a96ef">Outsourcing</a>
+              <a href="https://idapgroup.com/blog/pros-cons-outsourcing-software-development/">
+                <h3 class="home__article-title">The Pros and Cons of Outsourcing Your Software Development</h3>
+              </a>
+              <p class="home__article-text">Introduction We live in the era of automation and artificial intelligence,
+                which makes informational technologies...</p>
+              <div class="home__article-meta-container flex-center">
+                <span class="home__article-meta-date">25 Jul</span>
+                <span class="home__article-meta-views">1786 <i
+                    class="far fa-eye"></i></span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="recommended-container show-to-mobileL">
+            <div class="sidebar-item-container">
+              <div class="sidebar-item-container__text">
+                <a href="https://idapgroup.com/blog/top-10-best-virtual-assistant-apps/" class="sidebar-item">
+                  <p class="sidebar-item-text">Top 10 Best Virtual Assistant Apps</p>
+                  <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">06 Nov</span>
+                    <span
+                        class="home__sidebar-item-meta-views">707                          <i class="far fa-eye"></i></span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://idapgroup.com/blog/top-10-best-virtual-assistant-apps/"
+                  class="sidebar-item-container__img">
+                <figure
+                    style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2018/11/cover_6_11.jpg)"
+                    alt="" class="home__article-img img-fluid"></figure>
+              </a>
+            </div>
+            <div class="sidebar-item-container">
+              <div class="sidebar-item-container__text">
+                <a href="https://idapgroup.com/blog/top-15-apps-for-live-streaming/" class="sidebar-item">
+                  <p class="sidebar-item-text">Top 15 Apps for Live Streaming</p>
+                  <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">18 Oct</span>
+                    <span
+                        class="home__sidebar-item-meta-views">684                          <i class="far fa-eye"></i></span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://idapgroup.com/blog/top-15-apps-for-live-streaming/"
+                  class="sidebar-item-container__img">
+                <figure
+                    style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2018/10/live_streamapp_18_10.jpg)"
+                    alt="" class="home__article-img img-fluid"></figure>
+              </a>
+            </div>
+            <div class="sidebar-item-container">
+              <div class="sidebar-item-container__text">
+                <a href="https://idapgroup.com/blog/much-cost-build-app-like-spotify/" class="sidebar-item">
+                  <p class="sidebar-item-text">How Much Does It Cost to Build Music Streaming App Like Spotify</p>
+                  <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">11 Sep</span>
+                    <span
+                        class="home__sidebar-item-meta-views">415                          <i class="far fa-eye"></i></span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://idapgroup.com/blog/much-cost-build-app-like-spotify/"
+                  class="sidebar-item-container__img">
+                <figure
+                    style="background-image: url(https://idapgroup.com/blog/blog/wp-content/uploads/2018/09/spotify_cover1-1.jpg)"
+                    alt="" class="home__article-img img-fluid"></figure>
+              </a>
+            </div>
+            <div class="sidebar-item-container">
+              <div class="sidebar-item-container__text">
+                <a href="https://idapgroup.com/blog/it-outsourcing-in-poland/" class="sidebar-item">
+                  <p class="sidebar-item-text">Exploring IT Outsourcing: Poland vs Ukraine</p>
+                  <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">17 Aug</span>
+                    <span
+                        class="home__sidebar-item-meta-views">204 <i class="far fa-eye"></i></span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://idapgroup.com/blog/it-outsourcing-in-poland/"
+                  class="sidebar-item-container__img">
+                <figure style="background-image: url(images/Poland_vs_Ukraine-01.jpg)" class="home__article-img img-fluid"></figure>
+              </a>
+            </div>
+            <div class="sidebar-item-container">
+              <div class="sidebar-item-container__text">
+                <a href="https://idapgroup.com/blog/outsourcing-software-development-to-eastern-europe/" class="sidebar-item">
+                  <p class="sidebar-item-text">Outsourcing Software Development to Eastern Europe</p>
+                  <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">24 May</span>
+                    <span
+                        class="home__sidebar-item-meta-views">1697                          <i class="far fa-eye"></i></span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://idapgroup.com/blog/outsourcing-software-development-to-eastern-europe/"
+                  class="sidebar-item-container__img">
+                <figure
+                    style="background-image: url(images/eastern-europe.jpg)" class="home__article-img img-fluid"></figure>
+              </a>
+            </div>
+            <div class="sidebar-item-container">
+              <div class="sidebar-item-container__text">
+                <a href="https://idapgroup.com/blog/dating-app-development/" class="sidebar-item">
+                  <p class="sidebar-item-text">Building a dating app: How much does it cost to build dating...</p>
+                  <div class="sidebar-item-meta flex-center">
+                        <span
+                            class="sidebar-item-meta-date">13 Dec</span>
+                    <span
+                        class="home__sidebar-item-meta-views">7077                          <i class="far fa-eye"></i></span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://idapgroup.com/blog/dating-app-development/"
+                  class="sidebar-item-container__img">
+                <figure style="background-image: url(images/dating-app-development-1-800x419-copy.png)" class="home__article-img img-fluid"></figure>
+              </a>
+            </div>
+            <div class="sidebar-item-container">
+              <div class="sidebar-item-container__text">
+                <a href="https://idapgroup.com/blog/pros-cons-outsourcing-software-development/" class="sidebar-item">
+                  <p class="sidebar-item-text">The Pros and Cons of Outsourcing Your Software Development</p>
+                  <div class="sidebar-item-meta flex-center">
+                        <span class="sidebar-item-meta-date">25 Jul</span>
+                    <span class="home__sidebar-item-meta-views">1786 <i class="far fa-eye"></i></span>
+                  </div>
+                </a>
+              </div>
+              <a href="https://idapgroup.com/blog/pros-cons-outsourcing-software-development/"
+                  class="sidebar-item-container__img">
+                <figure style="background-image: url(images/concentrated-young-colleagues-sitting-in-office-PNYAFP7.jpg)" class="home__article-img img-fluid"></figure>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <footer class="main-footer content-info">
+    <div class="container">
+      <div class="main-footer__wrap">
+        <div class="main-footer__col">
+          <div class="main-footer__navigation-section">
+            <h5 class="main-footer__navigation-title">Categories<i
+                class="fas fa-angle-down main-footer__navigation-title-icon"></i></h5>
+            <nav class="main-footer__nav">
+              <a class="main-footer__nav-link" href="index.html">Home</a>
+              <a class="main-footer__nav-link" href="approach.html">How We Work</a>
+              <a class="main-footer__nav-link" href="for-business.html">For Business</a>
+              <a class="main-footer__nav-link" href="for-startup.html">For Startup</a>
+              <a class="main-footer__nav-link" href="works.html">Portfolio</a>
+            </nav>
+          </div>
+        </div>
+        <div class="main-footer__col">
+          <div class="main-footer__navigation-section">
+            <h5 class="main-footer__navigation-title">Company<i
+                class="fas fa-angle-down main-footer__navigation-title-icon"></i></h5>
+            <nav class="main-footer__nav">
+              <a class="main-footer__nav-link" href="about-us.html">About</a>
+              <a class="main-footer__nav-link" href="blog.html">Blog</a>
+              <a class="main-footer__nav-link" href="career.html">Career</a>
+              <a class="main-footer__nav-link" href="contacts.html">Contacts</a>
+            </nav>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__navigation-section">
+          <div class="main-footer__col">
+            <h5 class="main-footer__navigation-title">Services<i class="fas fa-angle-down main-footer__navigation-title-icon"></i></h5>
+            <nav class="main-footer__nav main-footer__nav--no-margin">
+              <a class="main-footer__nav-link" href="https://idapgroup.com/enterprise-mobile-development/">Enterprise Mobile Application</a>
+              <a class="main-footer__nav-link" href="https://idapgroup.com/custom-crm/">Custom CRM Development</a>
+              <a class="main-footer__nav-link" href="https://idapgroup.com/software-development/">Custom Software Development</a>
+              <a class="main-footer__nav-link" href="https://idapgroup.com/dedicated-team/">Dedicated Development Team</a>
+            </nav>
+          </div>
+          <div class="main-footer__col">
+            <nav class="main-footer__nav main-footer__nav--no-title">
+              <a class="main-footer__nav-link"
+                  href="https://idapgroup.com/mobile-application-development/">Mobile Application Development</a>
+              <a class="main-footer__nav-link"
+                  href="https://idapgroup.com/ios-application-development/">iOS Application Development</a>
+              <a class="main-footer__nav-link"
+                  href="https://idapgroup.com/android-application-development/">Android Application Development</a>
+              <a class="main-footer__nav-link"
+                  href="https://idapgroup.com/our-tech-stack/">Our Tech Stack</a>
+            </nav>
+          </div>
+        </div>
+        <div class="main-footer__col">
+          <section class="widget_text widget custom_html-3 widget_custom_html">
+            <div class="textwidget custom-html-widget">
+              <div class="main-footer__navigation-section">
+                <h5 class="main-footer__navigation-title">Let's
+                  talk<i class="fas fa-angle-down main-footer__navigation-title-icon"></i></h5>
+                <nav class="main-footer__nav">
+                  <a class="main-footer__nav-link" href="mailto:hello@idapgroup.com"
+                      title="Write a letter">hello@idapgroup.com</a>
+                  <a class="main-footer__nav-link" href="tel:+380950000623" title="Phone call">+38 095 00 00 623</a>
+                  <span class="main-footer__nav-text">Kyiv, Ukraine</span></nav>
+              </div>
+              <div class="main-footer__btn-wrap">
+                <a class="main-btn main-btn--transparent" href="contacts.html">Contact Us</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__foot-wrap">
+      <div class="container">
+        <div class="main-footer__foot-wrap-row">
+          <nav class="main-footer__social-nav"><a class="main-footer__social-nav-link"
+              href="https://www.facebook.com/IDAPGroup/" target="_blank"
+              rel="noopener" alt="Facebook" title="Facebook"><i
+              class="fab fa-facebook-f"></i></a><a class="main-footer__social-nav-link"
+              href="https://twitter.com/idapgroup/" target="_blank" rel="noopener"
+              alt="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a><a
+              class="main-footer__social-nav-link" href="https://www.instagram.com/idap_group/" target="_blank"
+              rel="noopener" alt="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a><a
+              class="main-footer__social-nav-link" href="https://www.linkedin.com/company/10024791/" target="_blank"
+              rel="noopener" alt="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a
+              class="main-footer__social-nav-link" href="https://www.behance.net/IDAP_Group/" target="_blank"
+              rel="noopener" alt="Behance" title="Behance"><i class="fab fa-behance"></i></a><a
+              class="main-footer__social-nav-link"
+              href="https://plus.google.com/u/1/b/112707808548248327056/112707808548248327056/" target="_blank"
+              rel="noopener" alt="Google Plus" title="Google Plus"><i class="fab fa-google-plus-g"></i></a><a
+              class="main-footer__social-nav-link" href="https://github.com/idapgroup/" target="_blank" rel="noopener"
+              alt="GitHub" title="GitHub"><i class="fab fa-github"></i></a></nav>
+          <p class="main-footer__copyright-text">Mobile & Web Application Company<span
+              class="main-footer__copyright-text-part"> © 2019 IDAP. All rights reserved</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <link rel='stylesheet' id='rainmaker_form_style-css' href='css/form.css' type='text/css' media='all'/>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var es_widget_page_notices = {
+      "es_email_notice": "Please enter email address",
+      "es_rate_limit_notice": "You need to wait for sometime before subscribing again",
+      "es_success_message": "Successfully Subscribed.",
+      "es_success_notice": "Your subscription was successful! Kindly check your mailbox and confirm your subscription. If you don't see the email within a few minutes, check the spam\/junk folder.",
+      "es_email_exists": "Email Address already exists!",
+      "es_error": "Oops.. Unexpected error occurred.",
+      "es_invalid_email": "Invalid email address",
+      "es_try_later": "Please try after some time",
+      "es_ajax_url": "https:\/\/idapgroup.com\/blog\/blog\/wp-admin\/admin-ajax.php"
+    };
+    /* ]]> */
+  </script>
+  <script type='text/javascript' src='js/es-widget-page.js'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var ratingsL10n = {
+      "plugin_url": "https:\/\/idapgroup.com\/blog\/blog\/wp-content\/plugins\/wp-postratings",
+      "ajax_url": "https:\/\/idapgroup.com\/blog\/blog\/wp-admin\/admin-ajax.php",
+      "text_wait": "Please rate only 1 item at a time.",
+      "image": "stars_flat_png",
+      "image_ext": "png",
+      "max": "5",
+      "show_loading": "1",
+      "show_fading": "1",
+      "custom": "0"
+    };
+    var ratings_mouseover_image = new Image();
+    ratings_mouseover_image.src = "images/rating_over.png";
+    ;
+    /* ]]> */
+  </script>
+  <script type='text/javascript' src='js/postratings-js.js'></script>
+  <script type='text/javascript' src='js/main_fd234032.js'></script>
+  <script type='text/javascript' src='js/wp-embed.min.js'></script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var rm_pre_data = {
+      "ajax_url": "https:\/\/idapgroup.com\/blog\/blog\/wp-admin\/admin-ajax.php",
+      "rm_nonce_field": "8c9c638ff9"
+    };
+    /* ]]> */
+  </script>
+  <script type='text/javascript' src='js/main.js'></script>
+</div>
+<!-- Feedback button -->
+<button id="feedback-btn" class="button button--solid">?</button>
+<!-- Feedback button -->
+</body>
+</html>

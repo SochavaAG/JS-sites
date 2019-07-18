@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="408px" height="337px" viewBox="0 0 408 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="35.4468083%" y1="100%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFE800" offset="0%"/>
+            <stop stop-color="#F958AE" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="115.373326%" y1="47.3796638%" x2="62.1936146%" y2="-13.9743371%" id="linearGradient-2">
+            <stop stop-color="#FF5BB0" offset="0%"/>
+            <stop stop-color="#8C51E1" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6-Copy-2" transform="translate(-273.000000, -4905.000000)">
+            <g id="Rewards-Copy" transform="translate(272.000000, 4636.000000)">
+                <g id="iPhone--1.2-Copy" transform="translate(0.000000, 249.000000)">
+                    <g id="Bg">
+                        <ellipse id="Oval-11-Copy-2" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" transform="translate(288.320147, 136.200929) rotate(-98.000000) translate(-288.320147, -136.200929) " cx="288.320147" cy="136.200929" rx="115.613787" ry="120.591432"/>
+                        <ellipse id="Oval-11-Copy-5" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" transform="translate(99.115774, 177.422773) rotate(-273.000000) translate(-99.115774, -177.422773) " cx="99.1157739" cy="177.422773" rx="93.8667309" ry="97.9080768"/>
+                        <path d="M55.0950293,361.104231 C56.8287363,260.259743 73.7013823,197.93553 105.712967,174.131591 C137.724552,150.327652 165.729186,219.944222 189.726867,382.9813 L55.0950293,361.104231 Z" id="Path-27-Copy-4" fill-opacity="0.829999983" fill="url(#linearGradient-2)" transform="translate(122.410948, 276.281942) rotate(-81.000000) translate(-122.410948, -276.281942) "/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

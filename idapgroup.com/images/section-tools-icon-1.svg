@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="64px" viewBox="0 0 65 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-6-Copy-3" transform="translate(-698.000000, -10366.000000)" stroke="#CF2323">
+            <g id="Group-15" transform="translate(583.000000, 10366.000000)">
+                <g id="Page-1" transform="translate(115.000000, 0.000000)">
+                    <path d="M52.5003,2.3653 C52.5003,3.4643 48.8973,4.3543 44.4543,4.3543 C40.0123,4.3543 36.4093,3.4643 36.4093,2.3653 C36.4093,1.2653 40.0123,0.3753 44.4543,0.3753 C48.8973,0.3753 52.5003,1.2653 52.5003,2.3653 Z" id="Stroke-1" stroke-width="0.75"/>
+                    <path d="M52.5003,9.9795 C52.5003,11.0785 48.8973,11.9695 44.4543,11.9695 C40.0123,11.9695 36.4093,11.0785 36.4093,9.9795" id="Stroke-3" stroke-width="0.75"/>
+                    <path d="M52.5003,17.5938 C52.5003,18.6928 48.8973,19.5838 44.4543,19.5838 C40.0123,19.5838 36.4093,18.6928 36.4093,17.5938" id="Stroke-5" stroke-width="0.75"/>
+                    <path d="M52.5003,2.3653 L52.5003,17.5943" id="Stroke-7" stroke-width="0.75"/>
+                    <path d="M36.4095,2.3653 L36.4095,17.5943" id="Stroke-9" stroke-width="0.75"/>
+                    <g id="Group-13" transform="translate(0.000000, 62.263700)">
+                        <path d="M0.5003,0.5 L64.5003,0.5" id="Stroke-11"/>
+                    </g>
+                    <path d="M32.7357,5.5723 L19.3827,5.5723 C18.2787,5.5723 17.3827,6.4683 17.3827,7.5723 L17.3827,33.5803 L9.5007,33.5803 L31.7397,59.6553 C32.1377,60.1243 32.8617,60.1243 33.2607,59.6553 L55.5007,33.5803 L47.6167,33.5803 L47.6167,22.8033" id="Stroke-14"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

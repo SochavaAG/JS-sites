@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="47px" viewBox="0 0 320 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 21 Copy 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-4" transform="translate(0.000000, -1371.000000)">
+            <g id="Group-21-Copy-7" transform="translate(0.000000, 1372.000000)">
+                <path d="M0,35.2048304 C8.10142631,33.0459829 16.8384784,13 30.4011626,13 C43.9638469,13 49.2698997,35.2048304 66.7119823,35.2048304 C84.154065,35.2048304 82.9357718,28.0958784 94.1326298,28.0958784 C105.329488,28.0958784 102.20061,35.2048304 116.249063,35.2048304 C124.280042,35.2048304 148.649562,43.6586704 169.809694,38.1167278 C185.664616,33.9642456 203.284136,15.8240925 211.839448,15.4093366 C226.868669,14.6807299 230.801069,36.752266 258.313897,36.752266 C285.826725,36.752266 285.267484,15.4093366 304,15.4093366" id="Path-3" stroke="#E2E2E2" stroke-width="0.5"/>
+                <path d="M29,3.39833366 C40.2016957,3.39833366 46.2252868,42.6996334 56.3156549,42.6996334 C66.406023,42.6996334 68.0341651,26.9726151 79.2390173,26.9726151 C90.4438696,26.9726151 91.7626522,41.0043244 117.341803,41.0043244 C142.920954,41.0043244 161.948669,12.8526907 184.719971,12.8526907 C207.491273,12.8526907 224.901152,44 245.991961,44 C267.082771,44 297.849806,1.94459201 322,0" id="Path-3-Copy" stroke="#71E6C5"/>
+                <circle id="Oval-6" stroke="#6DEAC7" fill="#FFFFFF" cx="185" cy="13" r="1"/>
+                <circle id="Oval-6-Copy" stroke="#6DEAC7" fill="#FFFFFF" cx="247" cy="44" r="1"/>
+                <circle id="Oval-6-Copy-5" stroke="#E2E2E2" fill="#FFFFFF" cx="304" cy="15" r="1"/>
+                <circle id="Oval-6-Copy-6" stroke="#E2E2E2" fill="#FFFFFF" cx="251" cy="36" r="1"/>
+                <circle id="Oval-6-Copy-8" stroke="#E2E2E2" fill="#FFFFFF" cx="213" cy="15" r="1"/>
+                <circle id="Oval-6-Copy-7" stroke="#E2E2E2" fill="#FFFFFF" cx="29" cy="13" r="1"/>
+                <circle id="Oval-6-Copy-2" stroke="#6DEAC7" fill="#FFFFFF" cx="77" cy="27" r="1"/>
+                <circle id="Oval-6-Copy-3" stroke="#6DEAC7" fill="#FFFFFF" cx="29" cy="3" r="1"/>
+                <circle id="Oval-6-Copy-4" stroke="#6DEAC7" fill="#FFFFFF" cx="56" cy="43" r="1"/>
+                <polygon id="Triangle-2" stroke="#7BE8C9" points="50.1781245 2.48483851 59.8607961 4.54200308 52.5719563 12.0898177"/>
+                <polygon id="Triangle-2-Copy" stroke="#7BE8C9" points="63.3270909 7.89034753 57.7925285 16.0973369 53.5247641 6.51178116"/>
+                <polygon id="Triangle-2-Copy-2" stroke="#7BE8C9" transform="translate(298.000000, 39.000000) rotate(19.000000) translate(-298.000000, -39.000000) " points="298 35 303 43 293 43"/>
+                <path d="M252.498485,10.8940166 L254.998485,12.3344795 C255.618141,12.6915158 256,13.352248 256,14.0674039 L256,16.9413369 C256,17.6564928 255.618141,18.317225 254.998485,18.6742613 L252.498485,20.1147241 C251.880453,20.4708249 251.119547,20.4708249 250.501515,20.1147241 L248.001515,18.6742613 C247.381859,18.317225 247,17.6564928 247,16.9413369 L247,14.0674039 C247,13.352248 247.381859,12.6915158 248.001515,12.3344795 L250.501515,10.8940166 C251.119547,10.5379159 251.880453,10.5379159 252.498485,10.8940166 Z" id="Polygon-2" stroke="#94EDD3"/>
+            </g>
+        </g>
+    </g>
+</svg>

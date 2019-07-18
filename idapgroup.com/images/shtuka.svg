@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="119px" height="94px" viewBox="0 0 119 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="44.1165996%" y1="0%" x2="70.5260159%" y2="113.582715%" id="linearGradient-1">
+            <stop stop-color="#FFE800" offset="0%"/>
+            <stop stop-color="#FF1E97" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.889999986">
+        <g id="Bonk_320" transform="translate(-201.000000, -3374.000000)" fill="url(#linearGradient-1)">
+            <path d="M298.409303,3374.13558 C321.133553,3371.11583 342.195342,3419.40735 383.943555,3432.43441 C397.616727,3436.70097 387.825039,3457.45727 357.739604,3457.45727 C332.998818,3457.45727 324.695901,3441.68931 311.100381,3441.68931 C287.930878,3441.68931 281.480681,3460.52866 253.734491,3467.04422 C229.508792,3472.73307 201,3451.49445 201,3443.72916 C201,3435.96387 216.521398,3455.71171 251.673234,3446.096 C303.748021,3431.85105 275.685052,3377.15534 298.409303,3374.13558 Z" id="Path-15"/>
+        </g>
+    </g>
+</svg>

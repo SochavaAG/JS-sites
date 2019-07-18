@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2561px" height="237px" viewBox="0 0 2561 237" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="48.8228262%" y1="67.4274697%" x2="48.8228261%" y2="102.099109%" id="linearGradient-1">
+            <stop stop-color="#68EED7" stop-opacity="0.2" offset="0%"/>
+            <stop stop-color="#FFFFFF" stop-opacity="0.213230299" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" stroke="#37D9AE">
+            <g id="Group-22" transform="translate(-250.000000, 0.000000)">
+                <path d="M736,1519 C-40.0782773,463.626949 -202.078277,13.394223 250,168.301821 C442.037987,234.104901 619.174471,234.104901 697.463767,153.291216 C775.753063,72.4775318 823.433289,30.3480157 900.15003,30.3480157 C1015.22514,30.3480157 1097.72984,153.291216 1231.41981,153.291216 C1365.10979,153.291216 1458.57422,112.204693 1613.99321,153.291216 C1769.41221,194.377739 1868.52509,7 1937.176,7 C2005.82691,7 2009.74306,151.930884 2232.63712,191.215929 C2329.99591,208.375402 2604.01755,77.5111366 2811,168.301821 C2880.3638,198.727526 2889.2789,407.459569 2930.23187,446.95356 C3035.6942,548.658715 2864.4466,680.432877 2844.49223,842.276045 C2821.57159,1028.17758 2236.05094,1253.75223 2182.31733,1519" id="Path-4" fill="url(#linearGradient-1)"/>
+                <circle id="Oval-7" fill="#FFFFFF" cx="1689.5" cy="156.5" r="6.5"/>
+                <circle id="Oval-7-Copy-2" fill="#FFFFFF" cx="1217.5" cy="153.5" r="6.5"/>
+                <circle id="Oval-7-Copy-3" fill="#FFFFFF" cx="889.5" cy="34.5" r="6.5"/>
+                <circle id="Oval-7-Copy" fill="#FFFFFF" cx="1938.5" cy="6.5" r="6.5"/>
+            </g>
+        </g>
+    </g>
+</svg>

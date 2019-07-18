@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="81px" viewBox="0 0 139 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Diamonds</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-25.0690766%" x2="50%" y2="270.54141%" id="linearGradient-1">
+            <stop stop-color="#F9DB2C" offset="0%"/>
+            <stop stop-color="#FC934A" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="7.69290554%" x2="34.18042%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FACB33" offset="0%"/>
+            <stop stop-color="#FCA144" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="14.6368244%" y1="-2.12234774%" x2="73.664473%" y2="61.0272257%" id="linearGradient-3">
+            <stop stop-color="#FACB34" offset="0%"/>
+            <stop stop-color="#FCA144" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="121.28724%" id="linearGradient-4">
+            <stop stop-color="#FFC817" offset="0%"/>
+            <stop stop-color="#FC9748" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-25.0690766%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#F9DB2C" offset="0%"/>
+            <stop stop-color="#FC934A" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6-Copy-2" transform="translate(-762.000000, -4798.000000)">
+            <g id="Rewards-Copy" transform="translate(272.000000, 4636.000000)">
+                <g id="Diamonds" transform="translate(490.000000, 162.000000)">
+                    <g id="Page-1" transform="translate(0.000000, 17.000000)">
+                        <g id="Group-3" fill="url(#linearGradient-1)">
+                            <polygon id="Fill-1" points="11.1979737 0.00176470588 0 16.0394118 68.2428158 16.0394118 56.7434211 0.00176470588"/>
+                        </g>
+                        <g id="Group-6" transform="translate(33.684211, 15.882353)" fill="url(#linearGradient-2)">
+                            <polygon id="Fill-4" points="12.0137632 0.157058824 0.512552632 44.1176471 34.7111316 0.157058824"/>
+                        </g>
+                        <g id="Group-9" transform="translate(0.000000, 15.882353)" fill="url(#linearGradient-3)">
+                            <polygon id="Fill-7" points="0 0.157058824 34.1967632 44.1176471 22.6973684 0.157058824"/>
+                        </g>
+                        <g id="Group-12" transform="translate(21.789474, 15.882353)" fill="url(#linearGradient-4)">
+                            <polygon id="Fill-10" points="0.907894737 0.157058824 12.4072895 44.1176471 23.9085 0.157058824"/>
+                        </g>
+                        <polygon id="Fill-13" fill="#FFCD33" points="0 16.0392353 22.6973684 16.0392353 11.1979737 0.00158823529"/>
+                        <polygon id="Fill-14" fill="#FFCD33" points="22.8478974 16.0392353 45.5452658 16.0392353 34.0458711 0.00158823529"/>
+                        <polygon id="Fill-15" fill="#FFCD33" points="45.5454474 16.0392353 68.2428158 16.0392353 56.7434211 0.00158823529"/>
+                    </g>
+                    <g id="Page-1-Copy-11" transform="translate(77.000000, 0.000000)">
+                        <g id="Group-3" fill="url(#linearGradient-5)">
+                            <polygon id="Fill-1" points="3.89494737 0.0007 0 6.3623 23.7366316 6.3623 19.7368421 0.0007"/>
+                        </g>
+                        <g id="Group-6" transform="translate(12.000000, 6.000000)" fill="url(#linearGradient-2)">
+                            <polygon id="Fill-4" points="3.65855 0.0564853333 0.510322513 15.5384116 11.78355 0.0564853333"/>
+                        </g>
+                        <g id="Group-9" transform="translate(0.000000, 6.000000)" fill="url(#linearGradient-3)">
+                            <polygon id="Fill-7" points="0 0.0564853333 12.4072151 15.6802983 8.55263158 0.0564853333"/>
+                        </g>
+                        <g id="Group-12" transform="translate(8.000000, 6.000000)" fill="url(#linearGradient-4)">
+                            <polygon id="Fill-10" points="0.321428571 0.0564853333 4.39264286 15.8666667 8.4645 0.0564853333"/>
+                        </g>
+                        <polygon id="Fill-13" fill="#FFCD33" points="0 6 8 6 3.94688 0"/>
+                        <polygon id="Fill-14" fill="#FFCD33" points="8 6 16 6 11.94688 0"/>
+                    </g>
+                    <g id="Page-1-Copy-12" transform="translate(101.000000, 47.000000)">
+                        <g id="Group-3" fill="url(#linearGradient-5)">
+                            <polygon id="Fill-1" points="6.167 0.00105 0 9.54345 37.583 9.54345 31.25 0.00105"/>
+                        </g>
+                        <g id="Group-6" transform="translate(18.095238, 8.750000)" fill="url(#linearGradient-2)">
+                            <polygon id="Fill-4" points="7.13287143 0.08722 0.829033333 24.5 19.5733476 0.08722"/>
+                        </g>
+                        <g id="Group-9" transform="translate(0.000000, 8.750000)" fill="url(#linearGradient-3)">
+                            <polygon id="Fill-7" points="0 0.08722 19.7298095 24.5 13.0952381 0.08722"/>
+                        </g>
+                        <g id="Group-12" transform="translate(12.666667, 8.750000)" fill="url(#linearGradient-4)">
+                            <polygon id="Fill-10" points="0.517006803 0.08722 7.06541497 24.5 13.6148571 0.08722"/>
+                        </g>
+                        <polygon id="Fill-13" fill="#FFCD33" points="0 8.75 12.6666667 8.75 6.24922667 0"/>
+                        <polygon id="Fill-14" fill="#FFCD33" points="12.6666667 8.75 25.3333333 8.75 18.9158933 0"/>
+                        <polygon id="Fill-15" fill="#FFCD33" points="25.3333333 8.75 38 8.75 31.58256 0"/>
+                    </g>
+                    <polygon id="Page-1" fill="#FFFFFF" points="8.99950666 28 4 33.0004933 9.00049334 38 14 33.0004933 9.00148002 28"/>
+                    <polygon id="Page-1-Copy-13" fill="#FFFFFF" points="10.9998027 22 9 24.0001973 11.0001973 26 13 24.0001973 11.000592 22"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

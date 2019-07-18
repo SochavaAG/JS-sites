@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="349px" height="477px" viewBox="0 0 349 477" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 27</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="30.008391%" x2="100%" y2="88.3696045%" id="linearGradient-1">
+            <stop stop-color="#F15BFF" offset="0%"/>
+            <stop stop-color="#8C51E1" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="25.7513741%" y1="120.697786%" x2="30.8043074%" y2="-24.6570114%" id="linearGradient-2">
+            <stop stop-color="#FFAA00" offset="0%"/>
+            <stop stop-color="#FF487E" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6-Copy-2" transform="translate(-1571.000000, -6998.000000)">
+            <g id="Group-27" transform="translate(1542.000000, 6962.000000)">
+                <path d="M270.319921,0 C403.890829,94.4138859 476.46484,176.179943 488.041956,245.29817 C499.619072,314.416398 406.271753,367.983674 208,406 L270.319921,0 Z" id="Path-9-Copy" fill="url(#linearGradient-1)" transform="translate(348.500000, 203.000000) scale(-1, 1) translate(-348.500000, -203.000000) "/>
+                <path d="M30.8588584,324.193989 C-10.8978157,403.696132 142.112598,534.772054 378.004565,469.234093 C613.896531,403.696132 304.487814,442.921771 271.605665,369.403328 C226.943522,269.546979 72.6155325,244.691845 30.8588584,324.193989 Z" id="Path-8-Copy-2" fill-opacity="0.920000017" fill="url(#linearGradient-2)" transform="translate(245.000000, 382.000000) rotate(-29.000000) translate(-245.000000, -382.000000) "/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2561px" height="237px" viewBox="0 0 2561 237" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-2.22929945%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"/>
+            <stop stop-color="#EDFFFB" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Artboard-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M561,-1494 L2001,-1476.40051 L2561,-1 L1289.79286,235.9695 C1283.98097,237.052911 1278.01895,237.05333 1272.20691,235.970736 L0,-1 L561,-1494 Z" id="Rectangle" fill="url(#linearGradient-1)"/>
+    </g>
+</svg>

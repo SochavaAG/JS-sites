@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="49px" viewBox="0 0 55 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>001-first-aid-kit</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="35.8189896%" y1="50%" x2="148.574491%" y2="136.06452%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"/>
+            <stop stop-color="#76E6E2" offset="100%"/>
+        </linearGradient>
+        <path d="M40.1791383,6.98569522 L32.239229,6.98569522 L32.239229,4.2127475 C32.239229,1.86640712 30.3208617,0 28.0294785,0 L18.9705215,0 C16.6258503,0 14.760771,1.91973304 14.760771,4.2127475 L14.760771,6.98569522 L6.82086168,6.98569522 C3.03741497,6.98569522 0,10.0252725 0,13.8114127 L0,34.5018687 C0,38.2880089 3.03741497,41.3275862 6.82086168,41.3275862 L40.1791383,41.3275862 C43.962585,41.3275862 47,38.2880089 47,34.5018687 L47,13.8114127 C47,10.0252725 43.962585,6.98569522 40.1791383,6.98569522 Z M18.0113379,4.15942158 C18.0113379,3.6261624 18.4376417,3.19955506 18.9705215,3.19955506 L28.0294785,3.19955506 C28.5623583,3.19955506 28.9886621,3.6261624 28.9886621,4.15942158 L28.9886621,6.9323693 L18.0113379,6.9323693 L18.0113379,4.15942158 Z M29.2018141,25.7564182 L25.0986395,25.7564182 L25.0986395,29.809188 C25.0986395,30.7157286 24.3526077,31.4089655 23.5,31.4089655 C22.6473923,31.4089655 21.9013605,30.6624027 21.9013605,29.809188 L21.9013605,25.7564182 L17.8514739,25.7564182 C16.9455782,25.7564182 16.2528345,25.0098554 16.2528345,24.1566407 C16.2528345,23.303426 16.9988662,22.5568632 17.8514739,22.5568632 L21.9013605,22.5568632 L21.9013605,18.5040934 C21.9013605,17.5975528 22.6473923,16.9043159 23.5,16.9043159 C24.3526077,16.9043159 25.0986395,17.6508788 25.0986395,18.5040934 L25.0986395,22.5568632 L29.1485261,22.5568632 C30.0544218,22.5568632 30.7471655,23.303426 30.7471655,24.1566407 C30.7471655,25.0098554 30.1077098,25.7564182 29.2018141,25.7564182 Z" id="path-2"/>
+        <filter x="-14.9%" y="-12.1%" width="129.8%" height="133.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.153221241 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shape-Copy-8" transform="translate(1.000000, 2.000000)" fill-rule="nonzero">
+            <g id="001-first-aid-kit" transform="translate(3.000000, 0.000000)">
+                <g id="Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"/>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

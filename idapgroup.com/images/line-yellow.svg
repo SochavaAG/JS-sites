@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="606px" height="82px" viewBox="0 0 606 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="1.71037301%" y1="-3.0080551%" x2="94.7683475%" y2="58.9922764%" id="linearGradient-1">
+            <stop stop-color="#FFE915" offset="0%"/>
+            <stop stop-color="#FFA31B" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="126.882651%" y1="-27.5093754%" x2="-7.16595284%" y2="16.8042927%" id="linearGradient-2">
+            <stop stop-color="#FF001F" offset="0%"/>
+            <stop stop-color="#FFAF00" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bonk_1440" transform="translate(-245.000000, -7833.000000)">
+            <g id="Group-12" transform="translate(235.000000, 7085.000000)">
+                <g id="Executing" transform="translate(0.000000, 189.000000)">
+                    <g id="Group-4" transform="translate(313.000000, 600.500000) scale(1, -1) translate(-313.000000, -600.500000) translate(10.000000, 560.000000)">
+                        <circle id="Oval-6-Copy-5" fill="url(#linearGradient-1)" cx="8" cy="8" r="8"/>
+                        <path d="M8,81 L8,25.6879187 C8,20.1650712 12.4771525,15.6879187 18,15.6879187 L605.455038,15.6879187" id="Path-29-Copy" stroke="url(#linearGradient-2)" transform="translate(306.727519, 48.343959) scale(1, -1) translate(-306.727519, -48.343959) "/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

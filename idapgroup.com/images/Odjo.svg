@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><script xmlns="" type="text/javascript" charset="utf-8" id="zm-extension"/>
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="34.5209408%" y1="43.6425757%" x2="223.940718%" y2="160.831661%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"/>
+            <stop stop-color="#4A1D74" offset="100%"/>
+        </linearGradient>
+        <path d="M20.996,29.694 C16.192,29.694 12.298,25.799 12.298,20.996 C12.298,16.192 16.192,12.298 20.996,12.298 C25.8,12.298 29.694,16.192 29.694,20.996 C29.694,25.799 25.8,29.694 20.996,29.694 M20.996,0 C9.4,0 0,9.4 0,20.996 C0,32.591 9.4,41.992 20.996,41.992 C32.592,41.992 41.992,32.591 41.992,20.996 C41.992,9.4 32.592,0 20.996,0" id="path-2"/>
+        <filter x="-16.7%" y="-11.9%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+        <path d="M27,21.999445 C27,25.312737 24.313847,27.99889 21.000555,27.99889 C17.686153,27.99889 15,25.312737 15,21.999445 C15,18.686153 17.686153,16 21.000555,16 C24.313847,16 27,18.686153 27,21.999445" id="path-4"/>
+        <filter x="-58.3%" y="-41.7%" width="216.7%" height="216.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shape-Copy-12" transform="translate(-1.000000, 2.000000)">
+            <g id="Page-1" transform="translate(5.000000, -1.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.992200)">
+                    <g id="Fill-1">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"/>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"/>
+                    </g>
+                </g>
+                <g id="Fill-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"/>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-4"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
